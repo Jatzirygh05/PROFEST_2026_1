@@ -320,6 +320,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                                     <option value=3 <?php if($tipo_instancia==3){ ?> selected="selected" <?php } ?>>Gobierno Municipal</option>
                                     <option value=4 <?php if($tipo_instancia==4){ ?> selected="selected" <?php } ?>>Universidad Pública</option>
                                     <option value=5 <?php if($tipo_instancia==5){ ?> selected="selected" <?php } ?>>Organización de la Sociedad Civil</option>
+                                    <option value=6 <?php if($tipo_instancia==6){ ?> selected="selected" <?php } ?>>Consejos Comunales, Comités Comunitarios o Consejos de Pueblos Indígenas</option>
                                 </select>
                                 <small id="errtipo_instancia" name="errtipo_instancia" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                             </div>
