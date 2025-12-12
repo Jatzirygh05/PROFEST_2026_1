@@ -1,7 +1,7 @@
 
 <?php //require('config_entry.php');
 require('Connections/conexion.php'); 
-/*if (!function_exists("GetSQLValueString")) {
+/*if (!function_exists("GetSQLValueSring")) { prueba git 12/12/2025
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
 {
   $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
