@@ -366,6 +366,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                                 <small id="errgrado_academico" name="errgrado_academico" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                             </div>
                         </div>
+                    <div class="row">       
                         <div class="col-md-4">
                           <div class="form-group"> 
                             <label> Cargo<samp id="errcargoAs" name="errcargoAs" class="control-label">*</samp>:<span class="glyphicon glyphicon glyphicon-question-sign" aria-hidden="true" data-placement="left" title="Cargo de la o el Títular"></span></label>
