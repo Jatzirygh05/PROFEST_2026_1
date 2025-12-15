@@ -1,0 +1,22 @@
+campos que permanecen para la convocatoria 2026
+Tabla: proyecto
+campos existentes: b) desarrollo_proyecto_antecedente
+		   proy_desc_pob_aud_pubobj_festival
+		   desarrollo_proyecto_justificacion
+		   proy_vinc_org_obtrecursos
+		   proy_acciones
+		   acciones_festival_medio_ambiente
+		   proy_info_adic
+		   proy_esp_infra_foros
+		   descripcion_linea_curotorial
+
+nuevos 4 campos se agregarán a la tabla proyecto:
+		   a) objetivo_general_festival
+		   g) proy_fomentar_part_creadores
+		   h) proy_act_situacion_vulnerable
+		   k) proy_favore_itinerancia_act
+
+
+campos eliminados tabla proyecto:
+		   proy_noved_ed_2025
+			
