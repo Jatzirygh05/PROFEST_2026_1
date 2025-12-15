@@ -756,9 +756,7 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
 
             <div class="tab-pane" id="tab-14">
                 <?php include('v2_honorarios_artisticos_academicos_v2021_conformacion2daparte1.php'); ?>
-                <div class="row">
-                  <div class="col-md-8"><br></div>
-                </div>
+                <hr class="red small-margin">
                 <div class="row">
                   <div class="col-md-8">
                     <div class="form-group clearfix">   
@@ -784,7 +782,7 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                       <h3>Carga de documentos obligatorios</h3>
                   </div>  
                   <div class="row">
-                    <div class="col-md-8"><br></div>
+                    <div class="col-md-12"><br></div>
                   </div>
                       <div class="row">
                         <div class="col-md-12">
