@@ -783,6 +783,9 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                   <div class="col-md-8"> 
                       <h3>Carga de documentos obligatorios</h3>
                   </div>  
+                  <div class="row">
+                    <div class="col-md-8"><br></div>
+                  </div>
                       <div class="row">
                         <div class="col-md-12">
                           <div class="form-group clearfix">   
