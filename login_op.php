@@ -294,7 +294,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
               <li class="active"><a data-toggle="tab" href="#tab-01">Información de la instancia</a></li>
               <li><a data-toggle="tab" href="#tab-02">Proyecto</a></li>
               <li><a data-toggle="tab" href="#tab-03">Aspectos financieros</a></li>
-              <li><a data-toggle="tab" href="#tab-04">Carga de documentos</a></li>
+              <li><a data-toggle="tab" href="#tab-04">Carga documentos</a></li>
             </ul>
             <!--presupuesto_proyecto.php
                 guardar_presupuesto.php-->
@@ -753,6 +753,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
             <!--div class="tab-pane" id="tab-13">
                 <?php //include('v2_honorarios_artisticos_academicos_v2021_conformacion.php'); ?>
             </div-->
+
             <div class="tab-pane" id="tab-14">
                 <?php include('v2_honorarios_artisticos_academicos_v2021_conformacion2daparte1.php'); ?>
                 <div class="row">
@@ -762,9 +763,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                   <div class="col-md-8">
                     <div class="form-group clearfix">   
                       <div class="pull-left text-muted text-vertical-align-button">* Campos obligatorios</div>
-                      <div class="pull-right">
-                        <input class="btn btn-primary" type="button" value="Continua carga de documentos obligatorios" id="submit1" name="submit1" onClick="validarEnvio();">
-                      </div>
+                      <!-- div class="pull-right"><input class="btn btn-primary" type="button" value="Continua carga de documentos obligatorios" id="submit1" name="submit1" onClick="validarEnvio();"></div-->
                     </div>
                   </div> 
                 </div>
@@ -775,8 +774,29 @@ Toda la información que se registre en los apartados de este sitio web, servir�
     </div>
     <!-- FIN PESTAÑA "Presupuesto" -->
             </div>
-          </div>
+          </div> 
+          
+          <!-- INICIO PESTAÑA "Carga documentos" -->
+            <div class="tab-pane" id="tab-04">
+                  <div class="row">
+                    <div class="col-md-8"><h3>Carga de documentos obligatorios</h3></div>
+                    <div class="col-md-12"><hr class="red small-margin"></div>
+                  </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group clearfix">   
+                            <div class="pull-center"><input class="btn btn-primary" type="button" value="Continua carga de documentos obligatorios" id="submit1" name="submit1" onClick="validarEnvio();"></div>
+                          </div>
+                        </div> 
+                      </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN PESTAÑA "Carga documentos" -->
+
         </div> 
+
+         
   </form>                  
           <div class="form-group clearfix top-buffer">
             <div class="alert alert-info">
