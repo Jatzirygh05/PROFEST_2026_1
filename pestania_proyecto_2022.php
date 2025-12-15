@@ -359,6 +359,17 @@
           <div class="row">  
             <div class="col-md-12">
               <div class="form-group">
+                <label>Objetivo general del Festival<samp id="errobjetivo_general_festival" name="errobjetivo_general_festival" class="control-label">*</samp>:</label>
+                <small>Máximo 2,500 caracteres</small>
+                <textarea id="objetivo_general_festival" name="objetivo_general_festival" class="form-control guardar_campostext" placeholder="Ingresa el objetico general del festival" rows="10" maxlength="2500"><?=$objetivo_general_festival?></textarea>
+                <small id="errobjetivo_general_festival" name="errobjetivo_general_festival" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">  
+            <div class="col-md-12">
+              <div class="form-group">
                 <label>Proporciona información acerca de la trayectoria del festival<samp id="errdesarrollo_proyecto_antecedenteAs" name="errdesarrollo_proyecto_antecedenteAs" class="control-label">*</samp>:</label>
                 <small>Máximo 2,500 caracteres</small>
                 <textarea id="desarrollo_proyecto_antecedente" name="desarrollo_proyecto_antecedente" class="form-control guardar_campostext" placeholder="Ingresa los antecedentes y trayectoria del festival" rows="10" maxlength="2500"><?=$desarrollo_proyecto_antecedente?></textarea>
@@ -378,7 +389,7 @@
         <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>¿Cómo o por qué el festival logra ampliar la oferta cultural del lugar donde se planea su realización?<samp id="errdesarrollo_proyecto_justificacionAs" name="errdesarrollo_proyecto_justificacionAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <label>¿Cómo o por qué el festival logra ampliar la oferta cultural del municipio, región o estado donde donde se planea su realización?<samp id="errdesarrollo_proyecto_justificacionAs" name="errdesarrollo_proyecto_justificacionAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
               <textarea id="desarrollo_proyecto_justificacion" name="desarrollo_proyecto_justificacion" class="form-control guardar_campostext" placeholder="Ingresa cómo o por qué el festival logra ampliar la oferta cultural del lugar donde se planea su realización" rows="10" maxlength="2500"><?=$desarrollo_proyecto_justificacion?></textarea>
               <small id="errdesarrollo_proyecto_justificacion" name="errdesarrollo_proyecto_justificacion" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
@@ -387,7 +398,7 @@
         <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>Describe la línea curatorial, selección, y/o el perfil de la programación de actividades artísticas, de exhibición y/o formación, del festival<samp id="errdescripcion_linea_curotorialAs" name="errdescripcion_linea_curotorialAs" class="control-label">*</samp>:</label><small>Máximo 2,500 caracteres</small>
+              <label>Describe la programación artística o la línea curatorial del proyecto<samp id="errdescripcion_linea_curotorialAs" name="errdescripcion_linea_curotorialAs" class="control-label">*</samp>:</label><small>Máximo 2,500 caracteres</small>
               <textarea id="descripcion_linea_curotorial" name="descripcion_linea_curotorial" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" rows="10" maxlength="2500"><?=$descripcion_linea_curotorial?></textarea>
               <small id="errdescripcion_linea_curotorial" name="errdescripcion_linea_curotorial" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
@@ -396,7 +407,7 @@
         <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>Considerando las anteriores ediciones, ¿cuáles son las novedades para la edición de este 2025? Usa este espacio para describir actividades a destacar, estrategias de impacto o de vinculación con el público<samp id="errproy_noved_ed_2025As" name="errproy_noved_ed_2025As" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <label>Considerando las anteriores ediciones, ¿cuáles son las novedades para la edición de este 2026? Usa este espacio para describir actividades artísticas a destacar, estrategias de impacto, de difusión o de vinculación con el público<samp id="errproy_noved_ed_2025As" name="errproy_noved_ed_2025As" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
               <textarea id="proy_noved_ed_2025" name="proy_noved_ed_2025" class="form-control guardar_campostext" placeholder="Ingresa la(s) novedades para la edición de este 2025" rows="10" maxlength="2500"><?=$proy_noved_ed_2025?></textarea>
               <small id="errproy_noved_ed_2025" name="errproy_noved_ed_2025" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
