@@ -383,7 +383,7 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                     </div>
                     <div class="col-md-12"><hr class="red small-margin"></div>
                   </div>
-
+              </div>
 
                         <div class="row">
                         <div class="col-md-4">
