@@ -769,6 +769,19 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                   </div> 
                 </div>
             </div>
+
+            <!-- INICIO PESTAÑA "Carga documentos" -->
+            <div class="tab-pane" id="tab-04">
+              <div class="row">
+                <div class="col-sm-12">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#tab-11">Categoría y costo del proyecto</a></li>
+                  </ul>               
+                </div>
+              </div>
+            </div>
+            <!-- FIN PESTAÑA "Carga documentos" -->
+             
           </div>
         </div>
       </div>
