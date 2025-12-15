@@ -784,9 +784,8 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                       <h3>Carga de documentos obligatorios</h3>
                   </div>  
                       <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-12">
                           <div class="form-group clearfix">   
-                            <div class="pull-left text-muted text-vertical-align-button">* Campos obligatorios</div>
                             <div class="pull-right"><input class="btn btn-primary" type="button" value="Continua carga de documentos obligatorios" id="submit1" name="submit1" onClick="validarEnvio();"></div>
                           </div>
                         </div> 
