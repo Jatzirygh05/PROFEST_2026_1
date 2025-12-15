@@ -356,7 +356,7 @@
             </div>
           </div>
            
-          <div class="row">  
+          <!--div class="row">  
             <div class="col-md-12">
               <div class="form-group">
                 <label>Objetivo general del Festival<samp id="errobjetivo_general_festival" name="errobjetivo_general_festival" class="control-label">*</samp>:</label>
@@ -365,8 +365,7 @@
                 <small id="errobjetivo_general_festival" name="errobjetivo_general_festival" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
               </div>
             </div>
-          </div>
-
+          </div-->
           <div class="row">  
             <div class="col-md-12">
               <div class="form-group">
@@ -407,7 +406,7 @@
         <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>Considerando las anteriores ediciones, ¿cuáles son las novedades para la edición de este 2026? Usa este espacio para describir actividades artísticas a destacar, estrategias de impacto, de difusión o de vinculación con el público<samp id="errproy_noved_ed_2025As" name="errproy_noved_ed_2025As" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <label>Considerando las anteriores ediciones, ¿cuáles son las novedades para la edición de este 2026? Usa este espacio para describir actividades artísticas a destacar, estrategias de impacto, de difusión o de vinculación con el público objetivo<samp id="errproy_noved_ed_2025As" name="errproy_noved_ed_2025As" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
               <textarea id="proy_noved_ed_2025" name="proy_noved_ed_2025" class="form-control guardar_campostext" placeholder="Ingresa la(s) novedades para la edición de este 2025" rows="10" maxlength="2500"><?=$proy_noved_ed_2025?></textarea>
               <small id="errproy_noved_ed_2025" name="errproy_noved_ed_2025" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
@@ -425,7 +424,7 @@
         <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>Describe los espacios y/o la infraestructura de los foros donde se pretenden realizar las actividades y el por qué se seleccionan dichos espacios<samp id="errproy_esp_infra_forosAs" name="errproy_esp_infra_forosAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <label>Describe los espacios y/o la infraestructura de los foros donde se pretenden realizar las actividades y el ¿por qué se seleccionan dichos espacios?<samp id="errproy_esp_infra_forosAs" name="errproy_esp_infra_forosAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
               <textarea name="proy_esp_infra_foros" id="proy_esp_infra_foros" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_esp_infra_foros?></textarea>
               <small id="errproy_esp_infra_foros" name="errproy_esp_infra_foros" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
