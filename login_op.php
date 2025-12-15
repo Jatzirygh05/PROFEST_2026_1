@@ -293,7 +293,8 @@ Toda la información que se registre en los apartados de este sitio web, servir�
             <ul class="nav nav-tabs">
               <li class="active"><a data-toggle="tab" href="#tab-01">Información de la instancia</a></li>
               <li><a data-toggle="tab" href="#tab-02">Proyecto</a></li>
-              <li ><a data-toggle="tab" href="#tab-03">Aspectos financieros</a></li>
+              <li><a data-toggle="tab" href="#tab-03">Aspectos financieros</a></li>
+              <li><a data-toggle="tab" href="#tab-04">Carga de documentos</a></li>
             </ul>
             <!--presupuesto_proyecto.php
                 guardar_presupuesto.php-->
