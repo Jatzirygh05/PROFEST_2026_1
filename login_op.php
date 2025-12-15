@@ -342,17 +342,18 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                                 </div>
                             </div>
                           </div>
-                        <div class="row">            
-                            <div class="col-md-4">
-                              <div class="form-group"> 
+
+
+ <div class="row">
+                            <div class="col-md-4"><div class="form-group"> 
                                  <label>RFC de la Instancia Postulante<samp id="errgrado_academicoAs" name="errgrado_academicoAs" class="control-label">*</samp>:</label>      
                                  <input type="text" id="rfc_titular" name="rfc_titular" class="form-control info_inst_reg" placeholder="Ingresa el nombre de la o el Títular" value="<?php echo $rfc_titular; ?>">
                                 <!-- small id="errrfc_titular" name="errrfc_titular" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small-->
-                              </div>
-                            </div>      
+                               </div>
+                            </div>
                             <div class="col-md-4">
-                              <div class="form-group"> 
-                                 <label>Grado académico<samp id="errgrado_academicoAs" name="errgrado_academicoAs" class="control-label">*</samp>:<span class="glyphicon glyphicon glyphicon-question-sign" aria-hidden="true" data-placement="left" title="Grado académico de la o el Títular"></span></label>      
+                                <div class="form-group"> 
+                                <label>Grado académico<samp id="errgrado_academicoAs" name="errgrado_academicoAs" class="control-label">*</samp>:<span class="glyphicon glyphicon glyphicon-question-sign" aria-hidden="true" data-placement="left" title="Grado académico de la o el Títular"></span></label>      
                                  <select id="grado_academico" name="grado_academico" class="form-control info_inst_reg">
                                     <option value="" selected="selected">Selecciona una opción</option>
                                     <option value="Dr." <?php if($grado_academico=="Dr."){ ?> selected="selected" <?php } ?>>Dr.</option>
@@ -364,15 +365,23 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                                     <option value="C." <?php if($grado_academico=="C."){ ?> selected="selected" <?php } ?>>C.</option>                       
                                 </select>
                                 <small id="errgrado_academico" name="errgrado_academico" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+                                </div>
                             </div>
-                        </div>
-                    <div class="row">       
-                        <div class="col-md-4">
-                          <div class="form-group"> 
-                            <label> Cargo<samp id="errcargoAs" name="errcargoAs" class="control-label">*</samp>:<span class="glyphicon glyphicon glyphicon-question-sign" aria-hidden="true" data-placement="left" title="Cargo de la o el Títular"></span></label>
+                          </div>
+
+                        <!-- div class="row">   
+                            <div class="col-md-4">
+                              <div class="form-group"> 
+<label> Cargo<samp id="errcargoAs" name="errcargoAs" class="control-label">*</samp>:<span class="glyphicon glyphicon glyphicon-question-sign" aria-hidden="true" data-placement="left" title="Cargo de la o el Títular"></span></label>
                               <input type="text" id="cargo" name="cargo" class="form-control info_inst_reg" placeholder="Ingresa el cargo de la o el Títular" value="<?php echo $cargo; ?>">
                                 <small id="errcargo" name="errcargo" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
-                          </div>
+                         
+                            
+                              </div>
+                        </div-->
+                        <div class="col-md-4">
+                          <div class="form-group"> 
+                             </div>
                         </div>
                       </div>
 
@@ -762,7 +771,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                     <div class="form-group clearfix">   
                       <div class="pull-left text-muted text-vertical-align-button">* Campos obligatorios</div>
                       <div class="pull-right">
-                        <input class="btn btn-primary" type="button" value="Continua carga de documentos obligatorios" id="submit1" name="submit1" onClick="validarEnvio();">
+                        <input class="btn btn-primary" type="button" value="Enviar" id="submit1" name="submit1" onClick="validarEnvio();">
                       </div>
                     </div>
                   </div> 
