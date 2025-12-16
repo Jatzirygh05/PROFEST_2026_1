@@ -3,7 +3,7 @@
     <ul class="nav nav-tabs">
       <li class="active"><a data-toggle="tab" href="#tab-08">Responsables del proyecto</a></li>
       <li><a data-toggle="tab" href="#tab-09">Desarrollo del proyecto</a></li>
-      <!--li><a data-toggle="tab" href="#tab-10">Lugares de realización</a></li-->
+      <li><a data-toggle="tab" href="#tab-10">Lugar de realización</a></li>
     </ul>
     <!-- INICIO SUB. PESTAÑAS PROYECTO -->
     <div class="tab-content"> 
