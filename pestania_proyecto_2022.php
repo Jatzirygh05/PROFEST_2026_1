@@ -488,6 +488,182 @@
           </div>
           </div>
         </div>
+        <!-- inicio Entidad(es) -->
+        <div class="row">
+          <div class="col-md-8"> 
+            <h3>Entidad(es) donde se planea la realización del proyecto</h3>
+          </div>
+            <div class="col-md-12"><hr class="red small-margin"></div>
+        </div>
+        <div class="form-group">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Entidad</th>
+              </tr>
+            </thead>
+            <?php for($f=1;$f<=10;$f++){ ?>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <?php
+                      echo $f;
+                      $entidades_a=${'entidades_a'.$f};
+                      if($f<=1){ ?>
+                        <samp id="errentidades_a<?=$f?>As" name="errentidades_a<?=$f?>As" class="control-label">*</samp><?php } ?>
+                  </th>
+                  <td> 
+                    <select id="entidades_a<?=$f?>" name="entidades_a<?=$f?>" class="form-control proyectocampo">
+                      <option value="" selected="selected">Selecciona una opción</option>
+                        <?php 
+                            $sql_consulta_ent = "SELECT * FROM `entidades`"; 
+                            $resultado_consulta_ent = mysqli_query($con, $sql_consulta_ent);
+                            $num_resultado_consulta_ent = mysqli_num_rows($resultado_consulta_ent);
+                            for ($m2=0; $m2 <$num_resultado_consulta_ent; $m2++){
+                                $row_proy_ent2 = mysqli_fetch_array($resultado_consulta_ent, MYSQLI_ASSOC);
+                                $id_entidad_proyecto_origen  = $row_proy_ent2["id_entidad_proyecto"];
+                                $nombre_entidad_proyecto  = $row_proy_ent2["nombre_entidad_proyecto"];
+                        ?>
+                      <option value=<?php echo $id_entidad_proyecto_origen; ?> <?php if($id_entidad_proyecto_origen==$entidades_a){ ?> selected="selected" <?php } ?>><?php echo  $nombre_entidad_proyecto; ?></option>
+                    <?php } ?>
+                  </select>
+                  <small id="errentidades_a<?=$f?>" name="errentidades_a<?=$f?>" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+                </td>
+              </tr>
+            </tbody>
+          <?php } ?>
+        </table>
+      </div>
+      <!-- fin Entidad(es) -->
+
+        <!-- inicio Metas numéricas dentro de Desarrollo del Proyecto dentro de Proyecto -->        
+        <div class="row">
+          <div class="col-md-12"><h3>Metas numéricas</h3><p>Anotar de manera cuantitativa las metas del festival</p></div><div class="col-md-12"><hr class="red small-margin"></div></div>
+            <div class="row">
+              <div class="col-md-12">
+              <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Meta</th>
+                        <th>Meta 2025</th>
+                        <th>Meta alcanzada 2024 o en el último año de realización</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Número de actividades artísticas y/o culturales-Número de títulos, cortometrajes, largometrajes, entre otros<samp id="errmeta_num_presentacionesAs" name="errmeta_num_presentacionesCAs" class="control-label">*</samp>:</th>
+                        <td><input type="text" id="meta_num_presentaciones" name="meta_num_presentaciones" class="form-control segunampo" value="<?=$meta_num_presentaciones?>" placeholder="Ingresa n&uacute;mero" onKeyPress="return soloNumeros(event)">
+                            <small id="errmeta_num_presentaciones" name="errmeta_num_presentaciones" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small></td>
+                        <td><input type="text" id="meta_num_presentaciones_alcanzada" name="meta_num_presentaciones_alcanzada" class="form-control segunampo" value="<?=$meta_num_presentaciones_alcanzada?>" placeholder="Ingresa el n&uacute;mero" onKeyPress="return soloNumeros(event)"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Total de público<samp id="errmeta_num_publicoAs" name="errmeta_num_publicoAs" class="control-label">*</samp>:
+                           </th>
+                        <td> <input type="text" id="meta_num_publico" name="meta_num_publico" class="form-control segunampo" value="<?=$meta_num_publico?>" placeholder="Ingresa la cantidad" onKeyPress="return soloNumeros(event)">
+                            <small id="errmeta_num_publico" name="errmeta_num_publico" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+                          </td>
+                          <td><input type="text" id="meta_num_publico_alcanzada" name="meta_num_publico_alcanzada" class="form-control segunampo" value="<?=$meta_num_publico_alcanzada?>" placeholder="Ingresa el n&uacute;mero" onKeyPress="return soloNumeros(event)"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Número de municipios a beneficiar<samp id="errmeta_num_municipioAs" name="errmeta_num_municipioAs" class="control-label">*</samp>:
+                             </th>
+                        <td> <input name="meta_num_municipio" type="text" class="form-control segunampo" id="meta_num_municipio" value="<?=$meta_num_municipio?>" placeholder="Ingresa n&uacute;mero" onKeyPress="return soloNumeros(event)">
+                            <small id="errmeta_num_municipio" name="errmeta_num_municipio" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+                       </td>
+                       <td><input type="text" id="meta_num_municipio_alcanzada" name="meta_num_municipio_alcanzada" class="form-control segunampo" value="<?=$meta_num_municipio_alcanzada?>" placeholder="Ingresa el n&uacute;mero" onKeyPress="return soloNumeros(event)"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Número de foros, sedes o medios de transmisión que se utilizarán<samp id="errmeta_num_forosAs" name="errmeta_num_forosAs" class="control-label">*</samp>:
+                               </th>
+                        <td> <input type="text" id="meta_num_foros" name="meta_num_foros" class="form-control segunampo" value="<?=$meta_num_foros?>" placeholder="Ingresa n&uacute;mero" onKeyPress="return soloNumeros(event)">
+                            <small id="errmeta_num_foros" name="errmeta_num_foros" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+                     </td>
+                     <td><input type="text" id="meta_num_foros_alcanzada" name="meta_num_foros_alcanzada" class="form-control segunampo" value="<?=$meta_num_foros_alcanzada?>" placeholder="Ingresa el n&uacute;mero" onKeyPress="return soloNumeros(event)"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Número total de participantes artísticos<samp id="errmeta_num_artistasAs" name="errmeta_num_artistasAs" class="control-label">*</samp>:
+                                     </th>
+                        <td> <input type="text" id="meta_num_artistas" name="meta_num_artistas" class="form-control segunampo" value="<?=$meta_num_artistas?>" placeholder="Ingresa n&uacute;mero" onKeyPress="return soloNumeros(event)">
+                            <small id="errmeta_num_artistas" name="errmeta_num_artistas" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+                        </td>
+                        <td><input type="text" id="meta_num_artistas_alcanzada" name="meta_num_artistas_alcanzada" class="form-control segunampo" value="<?=$meta_num_artistas_alcanzada?>" placeholder="Ingresa el n&uacute;mero" onKeyPress="return soloNumeros(event)"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Total de grupos artísticos/Secciones o categorías de participación para exhibición de películas, cortometrajes, entre otros<samp id="errmeta_cantidad_gruposAs" name="errmeta_cantidad_gruposAs" class="control-label">*</samp>:
+                                     </th>
+                        <td><input type="text" id="meta_cantidad_grupos" name="meta_cantidad_grupos" class="form-control segunampo" value="<?=$meta_cantidad_grupos?>" placeholder="Ingresa la cantidad" onKeyPress="return soloNumeros(event)">
+                            <small id="errmeta_cantidad_grupos" name="errmeta_cantidad_grupos" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+                        </td>
+                        <td><input type="text" id="meta_cantidad_grupos_alcanzada" name="meta_cantidad_grupos_alcanzada" class="form-control segunampo" value="<?=$meta_cantidad_grupos_alcanzada?>" placeholder="Ingresa el n&uacute;mero" onKeyPress="return soloNumeros(event)"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Número de actividades académicas<samp id="errmeta_num_actividades_academicasAs" name="errmeta_num_actividades_academicasAs" class="control-label">*</samp>:
+                           </th>
+                        <td>  <input type="text" id="meta_num_actividades_academicas" name="meta_num_actividades_academicas" class="form-control segunampo" value="<?=$meta_num_actividades_academicas?>" placeholder="Ingresa el n&uacute;mero" onKeyPress="return soloNumeros(event)">
+                            <small id="errmeta_num_actividades_academicas" name="errmeta_num_actividades_academicas" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+                       </td>
+                        <td><input type="text" id="meta_num_actividades_academicas_alcanzada" name="meta_num_actividades_academicas_alcanzada" class="form-control segunampo" value="<?=$meta_num_actividades_academicas_alcanzada?>" placeholder="Ingresa el n&uacute;mero" onKeyPress="return soloNumeros(event)"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Número de actividades a cargo de personas participantes locales/ Número de títulos de cine mexicano<samp id="errmeta_act_creadores_num_cine_mexAs" name="errmeta_act_creadores_num_cine_mexAs" class="control-label">*</samp>:</th>
+                        <td><input type="text" id="meta_act_creadores_num_cine_mex" name="meta_act_creadores_num_cine_mex" class="form-control segunampo" value="<?=$meta_act_creadores_num_cine_mex?>" placeholder="Ingresa el n&uacute;mero" onKeyPress="return soloNumeros(event)">
+                            <small id="errmeta_act_creadores_num_cine_mex" name="errmeta_act_creadores_num_cine_mex" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+                        </td>
+                        <td><input type="text" id="meta_act_creadores_num_cine_mex_alcanzada" name="meta_act_creadores_num_cine_mex_alcanzada" class="form-control segunampo" value="<?=$meta_act_creadores_num_cine_mex_alcanzada?>" placeholder="Ingresa el n&uacute;mero" onKeyPress="return soloNumeros(event)"></td>
+                      </tr>
+                      <?php /*tr>
+                        <th scope="row">Otros (especificar):</th>
+                        <td><input type="text" id="meta_otro_2025" name="meta_otro_2025" class="form-control segunampo" value="<?=$meta_otro_2025?>" placeholder="Ingresa el n&uacute;mero" onKeyPress="return soloNumeros(event)"></td>
+                        <td><input type="text" id="meta_otro_alcanzada_2024" name="meta_otro_alcanzada_2024" class="form-control segunampo" value="<?=$meta_otro_alcanzada_2024?>" placeholder="Ingresa el n&uacute;mero" onKeyPress="return soloNumeros(event)"></td>
+                      </tr*/ ?>
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+        
+                                                                             
+            <!--div class="row">
+              <div class="col-md-12">
+                <?php $Nro_desh_boton=0; ?>
+                <button type="button" class="btn btn btn-primary" data-toggle="modal" data-target="#panel-03" <?php if($Nro_desh_boton>=50){ ?> disabled="disabled" <?php } ?>><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>Agregar meta</button>
+              </div>
+            </div-->
+            <div class="row">    
+              <div class="col-md-12">
+                <div class="form-group"> 
+                  <!--div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div id="contenedorModalalert">
+                        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" id="alertModal">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header"><h4 class="modal-title">Alerta</h4></div>
+                              <div class="modal-body"><div class="modal-body" id="mensaje_BODY_alert"></div></div>
+                              <div class="modal-footer"><button type="button" class="btn btn-danger" data-dismiss="modal" id="cerrar_mensaje">Cancelar</button><button type="button" class="btn btn-success" id="aceptar_alert">Aceptar</button></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div-->
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group"><small id="errCALCULO" name="errCALCULO" class="form-text form-text-error" style="display:none">Verifica los montos ya que no corresponden</small></div>
+                  </div>
+                </div>
+                <div id="total_cont_all3">
+                  <div class="row"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="totalcont3">
+                    <?php //require_once('catalogo_metas_numericas.php'); ?>
+                  <!--div id="totalcont"></div-->
+                  </div>
+                </div>
+                <div class="row"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="para_Trabajar3"><!--Para trabajar--></div></div>
+              </div>
+            </div>
+          </div>
+        </div>      
+        <!-- fin Metas numéricas dentro de Desarrollo del Proyecto dentro de Proyecto -->
 
         <!--div class="row">
           <div class="col-md-4">
