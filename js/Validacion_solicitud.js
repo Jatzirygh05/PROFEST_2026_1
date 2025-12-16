@@ -678,6 +678,7 @@ function validarEnvio(){
 	
 	//Todos y cada uno de los campos de texto
 	for ( i=0 ; i < campos.length ; i++) {
+		console.log(campos[i].value);
 		var tomar_valor_a = campos[i].value;
 
 		if (tomar_valor_a == '')
