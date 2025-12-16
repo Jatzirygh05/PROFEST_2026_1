@@ -346,9 +346,9 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                         <div class="row">            
                             <div class="col-md-4">
                               <div class="form-group"> 
-                                 <label>RFC de la Instancia Postulante<samp id="errgrado_academicoAs" name="errgrado_academicoAs" class="control-label">*</samp>:</label>      
+                                 <label>RFC de la Instancia Postulante<samp id="errfc_titularAs" name="errfc_titularAs" class="control-label">*</samp>:</label>      
                                  <input type="text" id="rfc_titular" name="rfc_titular" class="form-control info_inst_reg" placeholder="Ingresa el nombre de la o el Títular" value="<?php echo $rfc_titular; ?>">
-                                 <small id="errrfc_titular" name="errrfc_titular" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+                                 <small id="errfc_titular" name="errfc_titular" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                               </div>
                             </div>      
                             <div class="col-md-4">
