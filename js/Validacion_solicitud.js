@@ -18,6 +18,7 @@ function validarEnvio(){
 	
 	/* 2024 si, se quita para 2025 var objetivo_generalEsc = document.getElementById('objetivo_general');
 	pero para 2026 si se va habilitar el campo objetivo_general_festival*/
+	var objetivo_general_festivalEsc = document.getElementById('objetivo_general_festival');
 	var errobjetivo_general_festival= document.getElementById('errobjetivo_general_festival');
 	var errobjetivo_general_festivalAs= document.getElementById('errobjetivo_general_festivalAs');
     
