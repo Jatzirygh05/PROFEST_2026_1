@@ -4,6 +4,7 @@
       <li class="active"><a data-toggle="tab" href="#tab-08">Responsables del proyecto</a></li>
       <li><a data-toggle="tab" href="#tab-09">Desarrollo del proyecto</a></li>
       <li><a data-toggle="tab" href="#tab-10">Lugar de realización</a></li>
+      <li><a data-toggle="tab" href="#tab-11">Metas</a><li>
     </ul>
     <!-- INICIO SUB. PESTAÑAS PROYECTO -->
     <div class="tab-content"> 
@@ -669,7 +670,7 @@
     <!--Inicio de SUB: PESTAÑA PROYECTO / Lugar de realización-->
       <div class="row">
         <div class="col-md-8"> 
-          <h3>Desarrollo del Proyecto</h3>
+          <h3>Lugar de realización</h3>
         </div>
       <div class="col-md-12"><hr class="red small-margin">
     </div>
