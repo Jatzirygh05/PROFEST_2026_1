@@ -437,6 +437,33 @@
         <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
+              <label>l) ¿Cómo se vincula el festival con otros organismos para la obtención de recursos?, ¿qué organismos se suman a su realización y cómo es su aportación?, ¿por qué se vincula con dichos organismos?<samp id="errproy_vinc_org_obtrecursosAs" name="errproy_vinc_org_obtrecursosAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <textarea name="proy_vinc_org_obtrecursos" id="proy_vinc_org_obtrecursos" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_vinc_org_obtrecursos?></textarea>
+              <small id="errproy_vinc_org_obtrecursos" name="errproy_vinc_org_obtrecursos" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+            </div>
+          </div>
+        </div>
+        <div class="row">    
+          <div class="col-md-12">
+            <div class="form-group"> 
+              <label>j) ¿Cómo logra el festival favorecer a la itinerancia de las actividades programadas para llegar a otros públicos?, ¿mantiene vínculos con otros festivales?<samp id="errproy_fav_itineranciaAs" name="errproy_fav_itineranciaAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <textarea name="proy_fav_itinerancia" id="proy_fav_itinerancia" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_fav_itinerancia?></textarea>
+              <small id="errproy_fav_itinerancia" name="errproy_fav_itinerancia" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+            </div>
+          </div>
+        </div>
+        <div class="row">    
+          <div class="col-md-12">
+            <div class="form-group"> 
+              <label>k) Considerando las anteriores ediciones, ¿cuáles son las novedades para la edición de este 2026? Usa este espacio para describir actividades artísticas a destacar, estrategias de impacto, de difusión o de vinculación con el público objetivo<samp id="errproy_favore_itinerancia_actAs" name="errproy_favore_itinerancia_actAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <textarea id="proy_favore_itinerancia_act" name="proy_favore_itinerancia_act" class="form-control guardar_campostext" placeholder="Ingresa la(s) novedades para la edición de este 2025" rows="10" maxlength="2500"><?=$proy_favore_itinerancia_act?></textarea>
+              <small id="errproy_favore_itinerancia_act" name="errproy_favore_itinerancia_act" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+            </div>
+          </div>
+        </div>
+        <div class="row">    
+          <div class="col-md-12">
+            <div class="form-group"> 
               <label>Considerando las anteriores ediciones, ¿cuáles son las novedades para la edición de este 2025? Usa este espacio para describir actividades a destacar, estrategias de impacto o de vinculación con el público<samp id="errproy_noved_ed_2025As" name="errproy_noved_ed_2025As" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
               <textarea id="proy_noved_ed_2025" name="proy_noved_ed_2025" class="form-control guardar_campostext" placeholder="Ingresa la(s) novedades para la edición de este 2025" rows="10" maxlength="2500"><?=$proy_noved_ed_2025?></textarea>
               <small id="errproy_noved_ed_2025" name="errproy_noved_ed_2025" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
@@ -449,24 +476,6 @@
               <label>¿El proyecto considera actividades dirigidas a grupos en situación de vulnerabilidad?, ¿en los espacios de ejecución consideras la accesibilidad a personas con capacidades diferentes? Usa este espacio para describir aquellas actividades dirigidas a grupos en situación de vulnerabilidad y/o aquellas acciones para contar con un espacio accesible para todas y todos<samp id="errdesarrollo_proyecto_descripcionAs" name="errdesarrollo_proyecto_descripcionAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
               <textarea name="desarrollo_proyecto_descripcion" id="desarrollo_proyecto_descripcion" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$desarrollo_proyecto_descripcion?></textarea>
               <small id="errdesarrollo_proyecto_descripcion" name="errdesarrollo_proyecto_descripcion" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
-            </div>
-          </div>
-        </div>
-        <div class="row">    
-          <div class="col-md-12">
-            <div class="form-group"> 
-              <label>¿Cómo se vincula el festival con otros organismos para la obtención de recursos?, ¿qué organismos se suman a su realización y cómo es su aportación?, ¿por qué se vincula con dichos organismos?<samp id="errproy_vinc_org_obtrecursosAs" name="errproy_vinc_org_obtrecursosAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
-              <textarea name="proy_vinc_org_obtrecursos" id="proy_vinc_org_obtrecursos" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_vinc_org_obtrecursos?></textarea>
-              <small id="errproy_vinc_org_obtrecursos" name="errproy_vinc_org_obtrecursos" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
-            </div>
-          </div>
-        </div>
-        <div class="row">    
-          <div class="col-md-12">
-            <div class="form-group"> 
-              <label>¿Cómo logra el festival favorecer a la itinerancia de las actividades programadas?, ¿mantiene vínculos con otros festivales?<samp id="errproy_fav_itineranciaAs" name="errproy_fav_itineranciaAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
-              <textarea name="proy_fav_itinerancia" id="proy_fav_itinerancia" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_fav_itinerancia?></textarea>
-              <small id="errproy_fav_itinerancia" name="errproy_fav_itinerancia" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
           </div>
         </div>

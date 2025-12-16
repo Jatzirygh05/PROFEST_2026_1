@@ -29,6 +29,10 @@ function validarEnvio(){
 	var proy_act_situacion_vulnerableEsc = document.getElementById('proy_act_situacion_vulnerable');
 	var errproy_act_situacion_vulnerable= document.getElementById('errproy_act_situacion_vulnerable');
 	var errproy_act_situacion_vulnerableAs= document.getElementById('errproy_act_situacion_vulnerableAs');
+
+	var proy_favore_itinerancia_actEsc = document.getElementById('proy_favore_itinerancia_act');
+	var errproy_favore_itinerancia_act= document.getElementById('errproy_favore_itinerancia_act');
+	var errproy_favore_itinerancia_actAs= document.getElementById('errproy_favore_itinerancia_actAs');
  	//(FIN) campos de proyecto para convocatoria 2026
 
 	var acciones_festival_medio_ambienteEsc	= document.getElementById('acciones_festival_medio_ambiente');
@@ -387,9 +391,9 @@ function validarEnvio(){
 	var errproy_desc_pob_aud_pubobj_festival= document.getElementById('errproy_desc_pob_aud_pubobj_festival');
 	var errproy_desc_pob_aud_pubobj_festivalAs= document.getElementById('errproy_desc_pob_aud_pubobj_festivalAs');
 
-	var proy_noved_ed_2025Esc = document.getElementById('proy_noved_ed_2025');
+	/* crearemos otro campo para 2026 var proy_noved_ed_2025Esc = document.getElementById('proy_noved_ed_2025');
 	var errproy_noved_ed_2025= document.getElementById('errproy_noved_ed_2025');
-	var errproy_noved_ed_2025As= document.getElementById('errproy_noved_ed_2025As');
+	var errproy_noved_ed_2025As= document.getElementById('errproy_noved_ed_2025As');*/
 
 	var proy_esp_infra_forosEsc = document.getElementById('proy_esp_infra_foros');
 	var errproy_esp_infra_foros= document.getElementById('errproy_esp_infra_foros');
