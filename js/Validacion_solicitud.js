@@ -467,7 +467,7 @@ function validarEnvio(){
 		ColoniaRepLegEsc,
 		calleEsc,		
 		no_extEsc,
-		telefono_fijoEscvalidacione inegracion del inciso k 2026,		
+		telefono_fijoEsc,		
 		Correo_titEsc,
 		nombre_dirEsc,
 		primer_apellido_dirEsc,
