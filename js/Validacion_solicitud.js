@@ -26,7 +26,7 @@ function validarEnvio(){
 		   h) proy_act_situacion_vulnerable
 		   k) proy_favore_itinerancia_act*/
 
-	var proy_fomentar_part_creadoresEsc = document.getElementById('proy_fomentar_part_creadores');
+	/*var proy_fomentar_part_creadoresEsc = document.getElementById('proy_fomentar_part_creadores');
 	var errproy_fomentar_part_creadores= document.getElementById('errproy_fomentar_part_creadores');
 	var errproy_fomentar_part_creadoresAs= document.getElementById('errproy_fomentar_part_creadoresAs');
 
@@ -36,7 +36,7 @@ function validarEnvio(){
 
 	var proy_favore_itinerancia_actEsc = document.getElementById('proy_favore_itinerancia_act');
 	var errproy_favore_itinerancia_act= document.getElementById('errproy_favore_itinerancia_act');
-	var errproy_favore_itinerancia_actAs= document.getElementById('errproy_favore_itinerancia_actAs');
+	var errproy_favore_itinerancia_actAs= document.getElementById('errproy_favore_itinerancia_actAs');*/
     
 	//(FIN) campos nuevos tabla proyecto 2026
 
