@@ -17,11 +17,9 @@ function validarEnvio(){
 	var errnumero_ediciones_previasAs= document.getElementById('errnumero_ediciones_previasAs');
 	
 	// 2024 si, se quita para 2025, 2026 se vuelve habilitar a)
-	var objetivo_general_festivalEsc = document.getElementById('objetivo_general_festival');
-
+	/*var objetivo_general_festivalEsc = document.getElementById('objetivo_general_festival');
 	var errobjetivo_general_festival= document.getElementById('errobjetivo_general_festival');
-		console.log(document.getElementById('errobjetivo_general_festival').value);
-	var errobjetivo_general_festivalAs= document.getElementById('errobjetivo_general_festivalAs');
+	var errobjetivo_general_festivalAs= document.getElementById('errobjetivo_general_festivalAs');*/
     
 	//(INICIO) campos nuevos tabla proyecto 2026
 		  /*g) proy_fomentar_part_creadores
@@ -487,8 +485,7 @@ function validarEnvio(){
 		proy_esp_infra_forosEsc,
 		proy_vinc_org_obtrecursosEsc,
 		proy_fav_itineranciaEsc,
-		proy_accionesEsc,
-		objetivo_general_festivalEsc
+		proy_accionesEsc
 		]; 
 	//Variables de los mensajes "Este campo es obligatorio"	
 	var mensaje = [
@@ -554,8 +551,7 @@ function validarEnvio(){
 		errproy_esp_infra_foros,
 		errproy_vinc_org_obtrecursos,
 		errproy_fav_itinerancia,
-		errproy_acciones,
-		errobjetivo_general_festival
+		errproy_acciones
 		];
 	
 	//Variables de los asteriscos
@@ -622,8 +618,7 @@ function validarEnvio(){
 		errproy_esp_infra_forosAs,
 		errproy_vinc_org_obtrecursosAs,
 		errproy_fav_itineranciaAs,
-		errproy_accionesAs,
-		errobjetivo_general_festivalAs
+		errproy_accionesAs
 	];
 
 	//Variables de los combobox
