@@ -16,10 +16,29 @@ function validarEnvio(){
 	var errnumero_ediciones_previas= document.getElementById('errnumero_ediciones_previas');
 	var errnumero_ediciones_previasAs= document.getElementById('errnumero_ediciones_previasAs');
 	
-	/* 2024 si, se quita para 2025 var objetivo_generalEsc = document.getElementById('objetivo_general');
-	var errobjetivo_general= document.getElementById('errobjetivo_general');
-	var errobjetivo_generalAs= document.getElementById('errobjetivo_generalAs');
-    */
+	// 2024 si, se quita para 2025, 2026 se vuelve habilitar a)
+	var objetivo_general_festivalEsc = document.getElementById('objetivo_general_festival');
+	var errobjetivo_general_festival= document.getElementById('errobjetivo_general_festival');
+	var errobjetivo_general_festivalAs= document.getElementById('errobjetivo_general_festivalAs');
+    
+	//(INICIO) campos nuevos tabla proyecto 2026
+		  /*g) proy_fomentar_part_creadores
+		   h) proy_act_situacion_vulnerable
+		   k) proy_favore_itinerancia_act*/
+
+	var proy_fomentar_part_creadoresEsc = document.getElementById('proy_fomentar_part_creadores');
+	var errproy_fomentar_part_creadores= document.getElementById('errproy_fomentar_part_creadores');
+	var errproy_fomentar_part_creadoresAs= document.getElementById('errproy_fomentar_part_creadoresAs');
+
+	var proy_act_situacion_vulnerableEsc = document.getElementById('proy_act_situacion_vulnerable');
+	var errproy_act_situacion_vulnerable= document.getElementById('errproy_act_situacion_vulnerable');
+	var errproy_act_situacion_vulnerableAs= document.getElementById('errproy_act_situacion_vulnerableAs');
+
+	var proy_favore_itinerancia_actEsc = document.getElementById('proy_favore_itinerancia_act');
+	var errproy_favore_itinerancia_act= document.getElementById('errproy_favore_itinerancia_act');
+	var errproy_favore_itinerancia_actAs= document.getElementById('errproy_favore_itinerancia_actAs');
+    
+	//(FIN) campos nuevos tabla proyecto 2026
 
 	var acciones_festival_medio_ambienteEsc	= document.getElementById('acciones_festival_medio_ambiente');
 	var erracciones_festival_medio_ambiente= document.getElementById('erracciones_festival_medio_ambiente');
@@ -467,7 +486,11 @@ function validarEnvio(){
 		proy_esp_infra_forosEsc,
 		proy_vinc_org_obtrecursosEsc,
 		proy_fav_itineranciaEsc,
-		proy_accionesEsc
+		proy_accionesEsc,
+		objetivo_general_festival,
+		proy_fomentar_part_creadores,
+		proy_act_situacion_vulnerable,
+		proy_favore_itinerancia_act
 		]; 
 	//Variables de los mensajes "Este campo es obligatorio"	
 	var mensaje = [
@@ -534,7 +557,11 @@ function validarEnvio(){
 		errproy_esp_infra_foros,
 		errproy_vinc_org_obtrecursos,
 		errproy_fav_itinerancia,
-		errproy_acciones
+		errproy_acciones,
+		errobjetivo_general_festival,
+		errproy_fomentar_part_creadores,
+		errproy_act_situacion_vulnerable,
+		errproy_favore_itinerancia_act
 		];
 	
 	//Variables de los asteriscos
@@ -602,7 +629,11 @@ function validarEnvio(){
 		errproy_esp_infra_forosAs,
 		errproy_vinc_org_obtrecursosAs,
 		errproy_fav_itineranciaAs,
-		errproy_accionesAs
+		errproy_accionesAs,
+		errobjetivo_general_festivalAs,
+		errproy_fomentar_part_creadoresAs,
+		errproy_act_situacion_vulnerableAs,
+		errproy_favore_itinerancia_actAs
 	];
 
 	//Variables de los combobox
