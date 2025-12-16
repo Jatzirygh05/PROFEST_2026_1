@@ -17,9 +17,9 @@ function validarEnvio(){
 	var errnumero_ediciones_previasAs= document.getElementById('errnumero_ediciones_previasAs');
 	
 	// 2024 si, se quita para 2025, 2026 se vuelve habilitar a)
-	var objetivo_general_festivalEsc = document.getElementById('objetivo_general_festival');
-	var errobjetivo_general_festival= document.getElementById('errobjetivo_general_festival');
-	var errobjetivo_general_festivalAs= document.getElementById('errobjetivo_general_festivalAs');
+	//var objetivo_general_festivalEsc = document.getElementById('objetivo_general_festival');
+	//var errobjetivo_general_festival= document.getElementById('errobjetivo_general_festival');
+	//var errobjetivo_general_festivalAs= document.getElementById('errobjetivo_general_festivalAs');
     
 	//(INICIO) campos nuevos tabla proyecto 2026
 		  /*g) proy_fomentar_part_creadores
@@ -396,9 +396,9 @@ function validarEnvio(){
 	var errproy_desc_pob_aud_pubobj_festival= document.getElementById('errproy_desc_pob_aud_pubobj_festival');
 	var errproy_desc_pob_aud_pubobj_festivalAs= document.getElementById('errproy_desc_pob_aud_pubobj_festivalAs');
 
-	var proy_noved_ed_2025Esc = document.getElementById('proy_noved_ed_2025');
+	/*var proy_noved_ed_2025Esc = document.getElementById('proy_noved_ed_2025');
 	var errproy_noved_ed_2025= document.getElementById('errproy_noved_ed_2025');
-	var errproy_noved_ed_2025As= document.getElementById('errproy_noved_ed_2025As');
+	var errproy_noved_ed_2025As= document.getElementById('errproy_noved_ed_2025As');*/
 
 	var proy_esp_infra_forosEsc = document.getElementById('proy_esp_infra_foros');
 	var errproy_esp_infra_foros= document.getElementById('errproy_esp_infra_foros');
@@ -482,16 +482,10 @@ function validarEnvio(){
 		breve_semblanza_directorEsc,
 		descripcion_linea_curotorialEsc,
 		proy_desc_pob_aud_pubobj_festivalEsc,
-		proy_noved_ed_2025Esc,
 		proy_esp_infra_forosEsc,
 		proy_vinc_org_obtrecursosEsc,
 		proy_fav_itineranciaEsc,
-		proy_accionesEsc,
-		objetivo_general_festivalEsc
-		/*,
-		proy_fomentar_part_creadoresEsc,
-		proy_act_situacion_vulnerableEsc,
-		proy_favore_itinerancia_actEsc*/
+		proy_accionesEsc
 		]; 
 	//Variables de los mensajes "Este campo es obligatorio"	
 	var mensaje = [
@@ -554,16 +548,10 @@ function validarEnvio(){
 		errbreve_semblanza_director,
 		errdescripcion_linea_curotorial,
 		errproy_desc_pob_aud_pubobj_festival,
-		errproy_noved_ed_2025,
 		errproy_esp_infra_foros,
 		errproy_vinc_org_obtrecursos,
 		errproy_fav_itinerancia,
-		errproy_acciones,
-		errobjetivo_general_festival
-		/*,
-		errproy_fomentar_part_creadores,
-		errproy_act_situacion_vulnerable,
-		errproy_favore_itinerancia_act*/
+		errproy_acciones
 		];
 	
 	//Variables de los asteriscos
@@ -627,15 +615,10 @@ function validarEnvio(){
 		errbreve_semblanza_directorAs,
 		errdescripcion_linea_curotorialAs,
 		errproy_desc_pob_aud_pubobj_festivalAs,
-		errproy_noved_ed_2025As,
 		errproy_esp_infra_forosAs,
 		errproy_vinc_org_obtrecursosAs,
 		errproy_fav_itineranciaAs,
-		errproy_accionesAs,
-		errobjetivo_general_festivalAs/*,
-		errproy_fomentar_part_creadoresAs,
-		errproy_act_situacion_vulnerableAs,
-		errproy_favore_itinerancia_actAs*/
+		errproy_accionesAs
 	];
 
 	//Variables de los combobox

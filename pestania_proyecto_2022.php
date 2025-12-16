@@ -356,7 +356,7 @@
             </div>
           </div>
            
-          <div class="row">  
+                          <!--div class="row">  
             <div class="col-md-12">
               <div class="form-group">
                 <label>a) Objetivo general del Festival<samp id="errobjetivo_general_festival" name="errobjetivo_general_festival" class="control-label">*</samp>:</label>
@@ -365,7 +365,7 @@
                 <small id="errobjetivo_general_festival" name="errobjetivo_general_festival" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
               </div>
             </div>
-          </div>
+          </div-->
           <div class="row">  
             <div class="col-md-12">
               <div class="form-group">
@@ -412,7 +412,7 @@
             </div>
           </div>
         </div>
-        <div class="row">  
+        <!--div class="row">  
             <div class="col-md-12">
               <div class="form-group">
                 <label>g) ¿Cómo logra el festival fomentar la participación de creadores locales, regionales y nacionales? ¿Existen acciones que impulse una destacada participación de mujeres tanto en la operación del proyecto, como en las actividades artísticas?<samp id="errproy_fomentar_part_creadores" name="errproy_fomentar_part_creadores" class="control-label">*</samp>:</label>
@@ -421,8 +421,8 @@
                 <small id="errproy_fomentar_part_creadores" name="errproy_fomentar_part_creadores" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
               </div>
             </div>
-          </div>
-        <div class="row">  
+          </div-->
+        <!-- div class="row">  
             <div class="col-md-12">
               <div class="form-group">
                 <label>h) ¿El proyecto considera actividades dirigidas a grupos en situación de vulnerabilidad?, ¿en los espacios de ejecución consideras la accesibilidad a personas con capacidades diferentes? Usa este espacio para describir aquellas actividades dirigidas a grupos en situación de vulnerabilidad y/o aquellas acciones para contar con un espacio accesible para todas y todos.<samp id="errproy_act_situacion_vulnerable" name="errproy_act_situacion_vulnerable" class="control-label">*</samp>:</label>
@@ -431,7 +431,7 @@
                 <small id="errproy_act_situacion_vulnerable" name="errproy_act_situacion_vulnerable" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
               </div>
             </div>
-          </div>
+          </div-->
           <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
@@ -450,7 +450,7 @@
             </div>
           </div>
         </div> 
-        <div class="row">    
+        <!--div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
               <label>k) Considerando las anteriores ediciones, ¿cuáles son las novedades para la edición de este 2026? Usa este espacio para describir actividades artísticas a destacar, estrategias de impacto, de difusión o de vinculación con el público objetivo<samp id="errproy_favore_itinerancia_act" name="errproy_favore_itinerancia_act" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
@@ -458,7 +458,7 @@
               <small id="errproy_favore_itinerancia_act" name="errproy_favore_itinerancia_act" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
           </div>
-        </div>
+        </div-->
         <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
