@@ -18,7 +18,9 @@ function validarEnvio(){
 	
 	// 2024 si, se quita para 2025, 2026 se vuelve habilitar a)
 	var objetivo_general_festivalEsc = document.getElementById('objetivo_general_festival');
+
 	var errobjetivo_general_festival= document.getElementById('errobjetivo_general_festival');
+		console.log(document.getElementById('errobjetivo_general_festival').value);
 	var errobjetivo_general_festivalAs= document.getElementById('errobjetivo_general_festivalAs');
     
 	//(INICIO) campos nuevos tabla proyecto 2026
