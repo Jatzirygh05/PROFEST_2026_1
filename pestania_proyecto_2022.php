@@ -356,7 +356,7 @@
             </div>
           </div>
            
-                          <!--div class="row">  
+          <div class="row">  
             <div class="col-md-12">
               <div class="form-group">
                 <label>a) Objetivo general del Festival<samp id="errobjetivo_general_festival" name="errobjetivo_general_festival" class="control-label">*</samp>:</label>
@@ -365,7 +365,7 @@
                 <small id="errobjetivo_general_festival" name="errobjetivo_general_festival" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
               </div>
             </div>
-          </div-->
+          </div>
           <div class="row">  
             <div class="col-md-12">
               <div class="form-group">
