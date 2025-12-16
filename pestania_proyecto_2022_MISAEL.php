@@ -298,7 +298,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="form-group"> 
-              <label>Nombre del festival<samp id="errnombre_festivalAs" name="errnombre_festivalAs" class="control-label">*</samp>:<span class="glyphicon glyphicon glyphicon-question-sign" aria-hidden="true" data-placement="left" title="El nombre que se registre, en caso de ser aprobado, será con el que se realizarán todas las actividades sin posibilidad de cambio. Utilizar may&uacute;sculas y min&uacute;sculas, incluir n&uacute;mero de emisión actual, y no cambiar nombre en caso de existir ediciones anteriores."></span></label><input type="text" id="nombre_festival" name="nombre_festival" class="form-control segunampo" value="<?=$nombre_festival?>" placeholder="Ingresa el nombre del festival" maxlength="96"><small id="errnombre_festival" name="errnombre_festival" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+              <label>Nombre del festival<samp id="errnombre_festivalAs" name="errnombre_festivalAs" class="control-label">*</samp>:<span class="glyphicon glyphicon glyphicon-question-sign" aria-hidden="true" data-placement="left" title="El nombre del proyecto que se registre deberá ser el definitivo, mismo que se tomará en cuenta para el proceso y no podrá ser modificado en ninguna de las etapas."></span></label><input type="text" id="nombre_festival" name="nombre_festival" class="form-control segunampo" value="<?=$nombre_festival?>" placeholder="Ingresa el nombre del festival" maxlength="96"><small id="errnombre_festival" name="errnombre_festival" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
           </div>
         </div>
@@ -356,10 +356,20 @@
             </div>
           </div>
            
+          <!--div class="row">  
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>a) Objetivo general del Festival<samp id="errobjetivo_general_festival" name="errobjetivo_general_festival" class="control-label">*</samp>:</label>
+                <small>Máximo 2,500 caracteres</small>
+                <textarea id="objetivo_general_festival" name="objetivo_general_festival" class="form-control guardar_campostext" placeholder="Ingresa el objetivo general del festival" rows="10" maxlength="2500"><?=$objetivo_general_festival?></textarea>
+                <small id="errobjetivo_general_festival" name="errobjetivo_general_festival" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+              </div>
+            </div>
+          </div-->
           <div class="row">  
             <div class="col-md-12">
               <div class="form-group">
-                <label>Proporciona información acerca de la trayectoria del festival<samp id="errdesarrollo_proyecto_antecedenteAs" name="errdesarrollo_proyecto_antecedenteAs" class="control-label">*</samp>:</label>
+                <label>b) Proporciona información acerca de la trayectoria del festival<samp id="errdesarrollo_proyecto_antecedenteAs" name="errdesarrollo_proyecto_antecedenteAs" class="control-label">*</samp>:</label>
                 <small>Máximo 2,500 caracteres</small>
                 <textarea id="desarrollo_proyecto_antecedente" name="desarrollo_proyecto_antecedente" class="form-control guardar_campostext" placeholder="Ingresa los antecedentes y trayectoria del festival" rows="10" maxlength="2500"><?=$desarrollo_proyecto_antecedente?></textarea>
                 <small id="errdesarrollo_proyecto_antecedente" name="errdesarrollo_proyecto_antecedente" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
@@ -369,7 +379,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="form-group"> 
-                <label>Describe la población, audiencia y/o público objetivo del festival<samp id="errproy_desc_pob_aud_pubobj_festivalAs" name="errproy_desc_pob_aud_pubobj_festivalAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+                <label>c) Describe la población, audiencia y/o público objetivo del festival<samp id="errproy_desc_pob_aud_pubobj_festivalAs" name="errproy_desc_pob_aud_pubobj_festivalAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
                 <textarea id="proy_desc_pob_aud_pubobj_festival" name="proy_desc_pob_aud_pubobj_festival" class="form-control guardar_campostext" placeholder="Ingresa la Describe la población, audiencia y/o público objetivo del festival" rows="10" maxlength="2500"><?=$proy_desc_pob_aud_pubobj_festival?></textarea>
                 <small id="errproy_desc_pob_aud_pubobj_festival" name="errproy_desc_pob_aud_pubobj_festival" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
               </div>
@@ -378,7 +388,7 @@
         <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>¿Cómo o por qué el festival logra ampliar la oferta cultural del lugar donde se planea su realización?<samp id="errdesarrollo_proyecto_justificacionAs" name="errdesarrollo_proyecto_justificacionAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <label>d) ¿Cómo o por qué el festival logra ampliar la oferta cultural del municipio, región o estado donde se planea su realización?<samp id="errdesarrollo_proyecto_justificacionAs" name="errdesarrollo_proyecto_justificacionAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
               <textarea id="desarrollo_proyecto_justificacion" name="desarrollo_proyecto_justificacion" class="form-control guardar_campostext" placeholder="Ingresa cómo o por qué el festival logra ampliar la oferta cultural del lugar donde se planea su realización" rows="10" maxlength="2500"><?=$desarrollo_proyecto_justificacion?></textarea>
               <small id="errdesarrollo_proyecto_justificacion" name="errdesarrollo_proyecto_justificacion" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
@@ -387,7 +397,7 @@
         <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>Describe la línea curatorial, selección, y/o el perfil de la programación de actividades artísticas, de exhibición y/o formación, del festival<samp id="errdescripcion_linea_curotorialAs" name="errdescripcion_linea_curotorialAs" class="control-label">*</samp>:</label><small>Máximo 2,500 caracteres</small>
+              <label>e) Describe la programación artística o la línea curatorial del proyecto: <samp id="errdescripcion_linea_curotorialAs" name="errdescripcion_linea_curotorialAs" class="control-label">*</samp>:</label><small>Máximo 2,500 caracteres</small>
               <textarea id="descripcion_linea_curotorial" name="descripcion_linea_curotorial" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" rows="10" maxlength="2500"><?=$descripcion_linea_curotorial?></textarea>
               <small id="errdescripcion_linea_curotorial" name="errdescripcion_linea_curotorial" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
@@ -396,34 +406,36 @@
         <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>Considerando las anteriores ediciones, ¿cuáles son las novedades para la edición de este 2025? Usa este espacio para describir actividades a destacar, estrategias de impacto o de vinculación con el público<samp id="errproy_noved_ed_2025As" name="errproy_noved_ed_2025As" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
-              <textarea id="proy_noved_ed_2025" name="proy_noved_ed_2025" class="form-control guardar_campostext" placeholder="Ingresa la(s) novedades para la edición de este 2025" rows="10" maxlength="2500"><?=$proy_noved_ed_2025?></textarea>
-              <small id="errproy_noved_ed_2025" name="errproy_noved_ed_2025" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
-            </div>
-          </div>
-        </div>
-        <div class="row">    
-          <div class="col-md-12">
-            <div class="form-group"> 
-              <label>¿El proyecto considera actividades dirigidas a grupos en situación de vulnerabilidad?, ¿en los espacios de ejecución consideras la accesibilidad a personas con capacidades diferentes? Usa este espacio para describir aquellas actividades dirigidas a grupos en situación de vulnerabilidad y/o aquellas acciones para contar con un espacio accesible para todas y todos<samp id="errdesarrollo_proyecto_descripcionAs" name="errdesarrollo_proyecto_descripcionAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
-              <textarea name="desarrollo_proyecto_descripcion" id="desarrollo_proyecto_descripcion" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$desarrollo_proyecto_descripcion?></textarea>
-              <small id="errdesarrollo_proyecto_descripcion" name="errdesarrollo_proyecto_descripcion" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
-            </div>
-          </div>
-        </div>
-        <div class="row">    
-          <div class="col-md-12">
-            <div class="form-group"> 
-              <label>Describe los espacios y/o la infraestructura de los foros donde se pretenden realizar las actividades y el por qué se seleccionan dichos espacios<samp id="errproy_esp_infra_forosAs" name="errproy_esp_infra_forosAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <label>f) Describe los espacios y/o la infraestructura de los foros donde se pretenden realizar las actividades y el ¿por qué se seleccionan dichos espacios?<samp id="errproy_esp_infra_forosAs" name="errproy_esp_infra_forosAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
               <textarea name="proy_esp_infra_foros" id="proy_esp_infra_foros" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_esp_infra_foros?></textarea>
               <small id="errproy_esp_infra_foros" name="errproy_esp_infra_foros" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
           </div>
         </div>
-        <div class="row">    
+        <!--div class="row">  
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>g) ¿Cómo logra el festival fomentar la participación de creadores locales, regionales y nacionales? ¿Existen acciones que impulse una destacada participación de mujeres tanto en la operación del proyecto, como en las actividades artísticas?<samp id="errproy_fomentar_part_creadores" name="errproy_fomentar_part_creadores" class="control-label">*</samp>:</label>
+                <small>Máximo 2,500 caracteres</small>
+                <textarea id="proy_fomentar_part_creadores" name="proy_fomentar_part_creadores" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" rows="10" maxlength="2500"><?=$proy_fomentar_part_creadores?></textarea>
+                <small id="errproy_fomentar_part_creadores" name="errproy_fomentar_part_creadores" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+              </div>
+            </div>
+          </div-->
+        <!-- div class="row">  
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>h) ¿El proyecto considera actividades dirigidas a grupos en situación de vulnerabilidad?, ¿en los espacios de ejecución consideras la accesibilidad a personas con capacidades diferentes? Usa este espacio para describir aquellas actividades dirigidas a grupos en situación de vulnerabilidad y/o aquellas acciones para contar con un espacio accesible para todas y todos.<samp id="errproy_act_situacion_vulnerable" name="errproy_act_situacion_vulnerable" class="control-label">*</samp>:</label>
+                <small>Máximo 2,500 caracteres</small>
+                <textarea id="proy_act_situacion_vulnerable" name="proy_act_situacion_vulnerable" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" rows="10" maxlength="2500"><?=$proy_act_situacion_vulnerable?></textarea>
+                <small id="errproy_act_situacion_vulnerable" name="errproy_act_situacion_vulnerable" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+              </div>
+            </div>
+          </div-->
+          <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>¿Cómo se vincula el festival con otros organismos para la obtención de recursos?, ¿qué organismos se suman a su realización y cómo es su aportación?, ¿por qué se vincula con dichos organismos?<samp id="errproy_vinc_org_obtrecursosAs" name="errproy_vinc_org_obtrecursosAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <label>i) ¿Cómo se vincula el festival con otros organismos para la obtención de recursos?, ¿qué organismos se suman a su realización y cómo es su aportación?, ¿por qué se vincula con dichos organismos?<samp id="errproy_vinc_org_obtrecursosAs" name="errproy_vinc_org_obtrecursosAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
               <textarea name="proy_vinc_org_obtrecursos" id="proy_vinc_org_obtrecursos" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_vinc_org_obtrecursos?></textarea>
               <small id="errproy_vinc_org_obtrecursos" name="errproy_vinc_org_obtrecursos" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
@@ -432,16 +444,25 @@
         <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>¿Cómo logra el festival favorecer a la itinerancia de las actividades programadas?, ¿mantiene vínculos con otros festivales?<samp id="errproy_fav_itineranciaAs" name="errproy_fav_itineranciaAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <label>j) ¿Cómo logra el festival favorecer a la itinerancia de las actividades programadas?, ¿mantiene vínculos con otros festivales?<samp id="errproy_fav_itineranciaAs" name="errproy_fav_itineranciaAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
               <textarea name="proy_fav_itinerancia" id="proy_fav_itinerancia" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_fav_itinerancia?></textarea>
               <small id="errproy_fav_itinerancia" name="errproy_fav_itinerancia" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
           </div>
-        </div>
+        </div> 
+        <!--div class="row">    
+          <div class="col-md-12">
+            <div class="form-group"> 
+              <label>k) Considerando las anteriores ediciones, ¿cuáles son las novedades para la edición de este 2026? Usa este espacio para describir actividades artísticas a destacar, estrategias de impacto, de difusión o de vinculación con el público objetivo<samp id="errproy_favore_itinerancia_act" name="errproy_favore_itinerancia_act" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <textarea id="proy_favore_itinerancia_act" name="proy_favore_itinerancia_act" class="form-control guardar_campostext" placeholder="Ingresa la(s) novedades para la edición de este 2025" rows="10" maxlength="2500"><?=$proy_favore_itinerancia_act?></textarea>
+              <small id="errproy_favore_itinerancia_act" name="errproy_favore_itinerancia_act" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+            </div>
+          </div>
+        </div-->
         <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>¿Qué acciones se llevarán a cabo para dar a conocer el festival?<samp id="errproy_accionesAs" name="errproy_accionesAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <label>l) ¿Qué acciones se llevarán a cabo para dar a conocer el festival?<samp id="errproy_accionesAs" name="errproy_accionesAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
               <textarea name="proy_acciones" id="proy_acciones" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_acciones?></textarea>
               <small id="errproy_acciones" name="errproy_acciones" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
@@ -450,7 +471,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>¿Cuáles son las acciones de sustentabilidad emprendidas por el festival que contribuyen el cuidado del medio ambiente?<samp id="erracciones_festival_medio_ambienteAs" name="erracciones_festival_medio_ambienteAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <label>m) ¿Cuáles son las acciones emprendidas por el festival para el cuidado del medio ambiente?<samp id="erracciones_festival_medio_ambienteAs" name="erracciones_festival_medio_ambienteAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
               <textarea name="acciones_festival_medio_ambiente" id="acciones_festival_medio_ambiente" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$acciones_festival_medio_ambiente?></textarea>
               <small id="erracciones_festival_medio_ambiente" name="erracciones_festival_medio_ambiente" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
@@ -459,7 +480,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>Usa este espacio para proporcionar cualquier información adicional que se considere pertinente para la evaluación del proyecto, o incluye un link de video para dar a conocer más del festival: (Campo opcional)
+              <label>n) Usa este espacio para proporcionar cualquier información adicional que se considere pertinente para la evaluación del proyecto, o incluye un link de video para dar a conocer más del festival: (Campo no obligatorio).
                 </label> <small>Máximo 2,500 caracteres</small>
               <textarea name="proy_info_adic" id="proy_info_adic" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_info_adic?></textarea>
           </div>

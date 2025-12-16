@@ -16,29 +16,10 @@ function validarEnvio(){
 	var errnumero_ediciones_previas= document.getElementById('errnumero_ediciones_previas');
 	var errnumero_ediciones_previasAs= document.getElementById('errnumero_ediciones_previasAs');
 	
-	// 2024 si, se quita para 2025, 2026 se vuelve habilitar a)
-	/*var objetivo_general_festivalEsc = document.getElementById('objetivo_general_festival');
-	var errobjetivo_general_festival= document.getElementById('errobjetivo_general_festival');
-	var errobjetivo_general_festivalAs= document.getElementById('errobjetivo_general_festivalAs');*/
-    
-	//(INICIO) campos nuevos tabla proyecto 2026
-		  /*g) proy_fomentar_part_creadores
-		   h) proy_act_situacion_vulnerable
-		   k) proy_favore_itinerancia_act*/
-
-	/*var proy_fomentar_part_creadoresEsc = document.getElementById('proy_fomentar_part_creadores');
-	var errproy_fomentar_part_creadores= document.getElementById('errproy_fomentar_part_creadores');
-	var errproy_fomentar_part_creadoresAs= document.getElementById('errproy_fomentar_part_creadoresAs');
-
-	var proy_act_situacion_vulnerableEsc = document.getElementById('proy_act_situacion_vulnerable');
-	var errproy_act_situacion_vulnerable= document.getElementById('errproy_act_situacion_vulnerable');
-	var errproy_act_situacion_vulnerableAs= document.getElementById('errproy_act_situacion_vulnerableAs');
-
-	var proy_favore_itinerancia_actEsc = document.getElementById('proy_favore_itinerancia_act');
-	var errproy_favore_itinerancia_act= document.getElementById('errproy_favore_itinerancia_act');
-	var errproy_favore_itinerancia_actAs= document.getElementById('errproy_favore_itinerancia_actAs');*/
-    
-	//(FIN) campos nuevos tabla proyecto 2026
+	/* 2024 si, se quita para 2025 var objetivo_generalEsc = document.getElementById('objetivo_general');
+	var errobjetivo_general= document.getElementById('errobjetivo_general');
+	var errobjetivo_generalAs= document.getElementById('errobjetivo_generalAs');
+    */
 
 	var acciones_festival_medio_ambienteEsc	= document.getElementById('acciones_festival_medio_ambiente');
 	var erracciones_festival_medio_ambiente= document.getElementById('erracciones_festival_medio_ambiente');
@@ -396,9 +377,9 @@ function validarEnvio(){
 	var errproy_desc_pob_aud_pubobj_festival= document.getElementById('errproy_desc_pob_aud_pubobj_festival');
 	var errproy_desc_pob_aud_pubobj_festivalAs= document.getElementById('errproy_desc_pob_aud_pubobj_festivalAs');
 
-	/*var proy_noved_ed_2025Esc = document.getElementById('proy_noved_ed_2025');
+	var proy_noved_ed_2025Esc = document.getElementById('proy_noved_ed_2025');
 	var errproy_noved_ed_2025= document.getElementById('errproy_noved_ed_2025');
-	var errproy_noved_ed_2025As= document.getElementById('errproy_noved_ed_2025As');*/
+	var errproy_noved_ed_2025As= document.getElementById('errproy_noved_ed_2025As');
 
 	var proy_esp_infra_forosEsc = document.getElementById('proy_esp_infra_foros');
 	var errproy_esp_infra_foros= document.getElementById('errproy_esp_infra_foros');
@@ -482,6 +463,7 @@ function validarEnvio(){
 		breve_semblanza_directorEsc,
 		descripcion_linea_curotorialEsc,
 		proy_desc_pob_aud_pubobj_festivalEsc,
+		proy_noved_ed_2025Esc,
 		proy_esp_infra_forosEsc,
 		proy_vinc_org_obtrecursosEsc,
 		proy_fav_itineranciaEsc,
@@ -548,6 +530,7 @@ function validarEnvio(){
 		errbreve_semblanza_director,
 		errdescripcion_linea_curotorial,
 		errproy_desc_pob_aud_pubobj_festival,
+		errproy_noved_ed_2025,
 		errproy_esp_infra_foros,
 		errproy_vinc_org_obtrecursos,
 		errproy_fav_itinerancia,
@@ -615,6 +598,7 @@ function validarEnvio(){
 		errbreve_semblanza_directorAs,
 		errdescripcion_linea_curotorialAs,
 		errproy_desc_pob_aud_pubobj_festivalAs,
+		errproy_noved_ed_2025As,
 		errproy_esp_infra_forosAs,
 		errproy_vinc_org_obtrecursosAs,
 		errproy_fav_itineranciaAs,
@@ -678,7 +662,6 @@ function validarEnvio(){
 	
 	//Todos y cada uno de los campos de texto
 	for ( i=0 ; i < campos.length ; i++) {
-	
 		var tomar_valor_a = campos[i].value;
 
 		if (tomar_valor_a == '')
@@ -688,8 +671,6 @@ function validarEnvio(){
 			var as_arreglo = asteriscos[i];
 			var esc_arreglo = campos[i];
 
-	console.log(campos[i].value);
-	
 			err_arreglo.style.display = 'block';
 			as_arreglo.className = 'form-text form-text-error';
             esc_arreglo.className = 'form-control form-control-error'; 
