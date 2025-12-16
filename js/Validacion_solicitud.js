@@ -484,7 +484,8 @@ function validarEnvio(){
 		proy_accionesEsc,
 		objetivo_general_festivalEsc,
 		proy_fomentar_part_creadoresEsc,
-		proy_act_situacion_vulnerableEsc
+		proy_act_situacion_vulnerableEsc,
+		proy_favore_itinerancia_actEsc
 		]; 
 	//Variables de los mensajes "Este campo es obligatorio"	
 	var mensaje = [
@@ -554,7 +555,8 @@ function validarEnvio(){
 		errproy_acciones,
 		errobjetivo_general_festival,
 		errproy_fomentar_part_creadores,
-		errproy_act_situacion_vulnerable
+		errproy_act_situacion_vulnerable,
+		errproy_favore_itinerancia_act
 		];
 	
 	//Variables de los asteriscos
@@ -625,7 +627,8 @@ function validarEnvio(){
 		errproy_accionesAs,
 		errobjetivo_general_festivalAs,
 		errproy_fomentar_part_creadoresAs,
-		errproy_act_situacion_vulnerableAs
+		errproy_act_situacion_vulnerableAs,
+		errproy_favore_itinerancia_actAs
 	];
 
 	//Variables de los combobox
