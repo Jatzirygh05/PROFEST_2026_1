@@ -641,7 +641,12 @@
               <tr>
                 <th>#</th>
                 <th>Entidad</th>
-                <th>Municipios</th>
+                <th>Municipio 1</th>
+                <th>Municipio 2</th>
+                <th>Municipio 3</th>
+                <th>Municipio 4</th>
+                <th>Municipio 5</th>
+                <th>Municipio 6</th>
               </tr>
             </thead>
             <?php for($f=1;$f<=10;$f++){ ?>
