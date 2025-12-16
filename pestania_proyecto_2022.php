@@ -641,7 +641,6 @@
               <tr>
                 <th>#</th>
                 <th>Entidad</th>
-                <th>Municipios</th>
               </tr>
             </thead>
             <?php for($f=1;$f<=10;$f++){ ?>
@@ -674,15 +673,6 @@
               </tr>
             </tbody>
           <?php } ?>
-          <div class="row">    
-          <div class="col-md-12">
-            <div class="form-group"> 
-              <label>Escriba el o los municipios en que se llevara acabo la(s) actividad(es)<samp id="errmunicipioAs" name="errmunicipioAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
-              <textarea name="municipio" id="municipio" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$municipio?></textarea>
-              <small id="errmunicipio" name="errmunicipio" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
-            </div>
-          </div>
-        </div>
         </table>
       </div>                   
       <!-- fin Entidad(es) -->
