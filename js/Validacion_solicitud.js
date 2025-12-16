@@ -678,7 +678,7 @@ function validarEnvio(){
 	
 	//Todos y cada uno de los campos de texto
 	for ( i=0 ; i < campos.length ; i++) {
-		console.log(campos[i].value);
+	
 		var tomar_valor_a = campos[i].value;
 
 		if (tomar_valor_a == '')
@@ -688,6 +688,8 @@ function validarEnvio(){
 			var as_arreglo = asteriscos[i];
 			var esc_arreglo = campos[i];
 
+	console.log(campos[i].value);
+	
 			err_arreglo.style.display = 'block';
 			as_arreglo.className = 'form-text form-text-error';
             esc_arreglo.className = 'form-control form-control-error'; 
