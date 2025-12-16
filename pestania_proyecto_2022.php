@@ -359,6 +359,18 @@
           <div class="row">  
             <div class="col-md-12">
               <div class="form-group">
+                <label>a) Objetivo general del Festival<samp id="errobjetivo_general_festival" name="errobjetivo_general_festival" class="control-label">*</samp>:</label>
+                <small>Máximo 2,500 caracteres</small>
+                <textarea id="objetivo_general_festival" name="objetivo_general_festival" class="form-control guardar_campostext" placeholder="Ingresa el objetivo general del festival" rows="10" maxlength="2500"><?=$objetivo_general_festival?></textarea>
+                <small id="errobjetivo_general_festival" name="errobjetivo_general_festival" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">  
+            <div class="col-md-12">
+              <div class="form-group">
                 <label>Proporciona información acerca de la trayectoria del festival<samp id="errdesarrollo_proyecto_antecedenteAs" name="errdesarrollo_proyecto_antecedenteAs" class="control-label">*</samp>:</label>
                 <small>Máximo 2,500 caracteres</small>
                 <textarea id="desarrollo_proyecto_antecedente" name="desarrollo_proyecto_antecedente" class="form-control guardar_campostext" placeholder="Ingresa los antecedentes y trayectoria del festival" rows="10" maxlength="2500"><?=$desarrollo_proyecto_antecedente?></textarea>
