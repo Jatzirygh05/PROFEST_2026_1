@@ -26,7 +26,10 @@ function validarEnvio(){
 	var errproy_fomentar_part_creadores= document.getElementById('errproy_fomentar_part_creadores');
 	var errproy_fomentar_part_creadoresAs= document.getElementById('errproy_fomentar_part_creadoresAs');
   
-
+	var proy_act_situacion_vulnerableEsc = document.getElementById('proy_act_situacion_vulnerable');
+	var errproy_act_situacion_vulnerable= document.getElementById('errproy_act_situacion_vulnerable');
+	var errproy_act_situacion_vulnerableAs= document.getElementById('errproy_act_situacion_vulnerableAs');
+ 	//(FIN) campos de proyecto para convocatoria 2026
 
 	var acciones_festival_medio_ambienteEsc	= document.getElementById('acciones_festival_medio_ambiente');
 	var erracciones_festival_medio_ambiente= document.getElementById('erracciones_festival_medio_ambiente');
@@ -476,7 +479,8 @@ function validarEnvio(){
 		proy_fav_itineranciaEsc,
 		proy_accionesEsc,
 		objetivo_general_festivalEsc,
-		proy_fomentar_part_creadoresEsc
+		proy_fomentar_part_creadoresEsc,
+		proy_act_situacion_vulnerableEsc
 		]; 
 	//Variables de los mensajes "Este campo es obligatorio"	
 	var mensaje = [
@@ -545,7 +549,8 @@ function validarEnvio(){
 		errproy_fav_itinerancia,
 		errproy_acciones,
 		errobjetivo_general_festival,
-		errproy_fomentar_part_creadores
+		errproy_fomentar_part_creadores,
+		errproy_act_situacion_vulnerable
 		];
 	
 	//Variables de los asteriscos
@@ -615,7 +620,8 @@ function validarEnvio(){
 		errproy_fav_itineranciaAs,
 		errproy_accionesAs,
 		errobjetivo_general_festivalAs,
-		errproy_fomentar_part_creadoresAs
+		errproy_fomentar_part_creadoresAs,
+		errproy_act_situacion_vulnerableAs
 	];
 
 	//Variables de los combobox
