@@ -397,9 +397,9 @@
         <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>e) Describe la programación artística o la línea curatorial del proyecto: <samp id="errdescripcion_linea_curotorialAs" name="errdescripcion_linea_curotorialAs" class="control-label">*</samp>:</label><small>Máximo 2,500 caracteres</small>
-              <textarea id="descripcion_linea_curotorial" name="descripcion_linea_curotorial" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" rows="10" maxlength="2500"><?=$descripcion_linea_curotorial?></textarea>
-              <small id="errdescripcion_linea_curotorial" name="errdescripcion_linea_curotorial" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+              <label>e) Describe la programación artística o la línea curatorial del proyecto: <samp id="errdescripcion_linea_curatorialAs" name="errdescripcion_linea_curatorialAs" class="control-label">*</samp>:</label><small>Máximo 2,500 caracteres</small>
+              <textarea id="descripcion_linea_curatorial" name="descripcion_linea_curatorial" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" rows="10" maxlength="2500"><?=$descripcion_linea_curatorial?></textarea>
+              <small id="errdescripcion_linea_curatorial" name="errdescripcion_linea_curatorial" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
           </div>
         </div> 
