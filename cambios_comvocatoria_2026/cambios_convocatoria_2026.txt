@@ -19,4 +19,5 @@ nuevos 4 campos se agregarán a la tabla proyecto:
 
 campos eliminados tabla proyecto:
 		   proy_noved_ed_2025
+			desarrollo_proyecto_descripcion
 			

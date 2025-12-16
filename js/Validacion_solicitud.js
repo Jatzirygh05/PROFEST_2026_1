@@ -220,9 +220,9 @@ function validarEnvio(){
 	var errdesarrollo_proyecto_justificacion= document.getElementById('errdesarrollo_proyecto_justificacion');
 	var errdesarrollo_proyecto_justificacionAs= document.getElementById('errdesarrollo_proyecto_justificacionAs');
 
-	var desarrollo_proyecto_descripcionEsc	= document.getElementById('desarrollo_proyecto_descripcion');
+	/*var desarrollo_proyecto_descripcionEsc	= document.getElementById('desarrollo_proyecto_descripcion');
 	var errdesarrollo_proyecto_descripcion= document.getElementById('errdesarrollo_proyecto_descripcion');
-	var errdesarrollo_proyecto_descripcionAs= document.getElementById('errdesarrollo_proyecto_descripcionAs');
+	var errdesarrollo_proyecto_descripcionAs= document.getElementById('errdesarrollo_proyecto_descripcionAs');*/
 	
 	var desarrollo_proyecto_descripcion_impactoEsc	= document.getElementById('desarrollo_proyecto_descripcion_impacto');
 	var errdesarrollo_proyecto_descripcion_impacto= document.getElementById('errdesarrollo_proyecto_descripcion_impacto');
@@ -446,7 +446,6 @@ function validarEnvio(){
 		desarrollo_proyecto_antecedenteEsc,
 		//desarrollo_proyecto_diagnosticoEsc,
 		desarrollo_proyecto_justificacionEsc,
-		desarrollo_proyecto_descripcionEsc,
 		//desarrollo_proyecto_objetivos_especificosEsc,
 		acciones_festival_medio_ambienteEsc,
 		organigrama_nombre1Esc, 
@@ -516,7 +515,6 @@ function validarEnvio(){
 		errdesarrollo_proyecto_antecedente,
 		//errdesarrollo_proyecto_diagnostico,
 		errdesarrollo_proyecto_justificacion,
-		errdesarrollo_proyecto_descripcion,
 		//errdesarrollo_proyecto_objetivos_especificos,
 		erracciones_festival_medio_ambiente,
 		errorganigrama_nombre1,
@@ -587,7 +585,6 @@ function validarEnvio(){
 		errdesarrollo_proyecto_antecedenteAs,
 		//errdesarrollo_proyecto_diagnosticoAs,
 		errdesarrollo_proyecto_justificacionAs,
-		errdesarrollo_proyecto_descripcionAs,
 		//errdesarrollo_proyecto_objetivos_especificosAs,
 		erracciones_festival_medio_ambienteAs,
 		errorganigrama_nombre1As,

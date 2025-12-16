@@ -464,25 +464,7 @@
         <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>Considerando las anteriores ediciones, ¿cuáles son las novedades para la edición de este 2025? Usa este espacio para describir actividades a destacar, estrategias de impacto o de vinculación con el público<samp id="errproy_noved_ed_2025As" name="errproy_noved_ed_2025As" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
-              <textarea id="proy_noved_ed_2025" name="proy_noved_ed_2025" class="form-control guardar_campostext" placeholder="Ingresa la(s) novedades para la edición de este 2025" rows="10" maxlength="2500"><?=$proy_noved_ed_2025?></textarea>
-              <small id="errproy_noved_ed_2025" name="errproy_noved_ed_2025" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
-            </div>
-          </div>
-        </div>
-        <div class="row">    
-          <div class="col-md-12">
-            <div class="form-group"> 
-              <label>¿El proyecto considera actividades dirigidas a grupos en situación de vulnerabilidad?, ¿en los espacios de ejecución consideras la accesibilidad a personas con capacidades diferentes? Usa este espacio para describir aquellas actividades dirigidas a grupos en situación de vulnerabilidad y/o aquellas acciones para contar con un espacio accesible para todas y todos<samp id="errdesarrollo_proyecto_descripcionAs" name="errdesarrollo_proyecto_descripcionAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
-              <textarea name="desarrollo_proyecto_descripcion" id="desarrollo_proyecto_descripcion" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$desarrollo_proyecto_descripcion?></textarea>
-              <small id="errdesarrollo_proyecto_descripcion" name="errdesarrollo_proyecto_descripcion" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
-            </div>
-          </div>
-        </div>
-        <div class="row">    
-          <div class="col-md-12">
-            <div class="form-group"> 
-              <label>¿Qué acciones se llevarán a cabo para dar a conocer el festival?<samp id="errproy_accionesAs" name="errproy_accionesAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <label>l) ¿Qué acciones se llevarán a cabo para dar a conocer el festival?<samp id="errproy_accionesAs" name="errproy_accionesAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
               <textarea name="proy_acciones" id="proy_acciones" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_acciones?></textarea>
               <small id="errproy_acciones" name="errproy_acciones" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
@@ -491,16 +473,16 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>¿Cuáles son las acciones de sustentabilidad emprendidas por el festival que contribuyen el cuidado del medio ambiente?<samp id="erracciones_festival_medio_ambienteAs" name="erracciones_festival_medio_ambienteAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <label>m) ¿Cuáles son las acciones emprendidas por el festival para el cuidado del medio ambiente?<samp id="erracciones_festival_medio_ambienteAs" name="erracciones_festival_medio_ambienteAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
               <textarea name="acciones_festival_medio_ambiente" id="acciones_festival_medio_ambiente" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$acciones_festival_medio_ambiente?></textarea>
               <small id="erracciones_festival_medio_ambiente" name="erracciones_festival_medio_ambiente" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
           </div>
-        </div>
+        </div>        
         <div class="row">
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>Usa este espacio para proporcionar cualquier información adicional que se considere pertinente para la evaluación del proyecto, o incluye un link de video para dar a conocer más del festival: (Campo opcional)
+              <label>n) Usa este espacio para proporcionar cualquier información adicional que se considere pertinente para la evaluación del proyecto, o incluye un link de video para dar a conocer más del festival: (Campo opcional)
                 </label> <small>Máximo 2,500 caracteres</small>
               <textarea name="proy_info_adic" id="proy_info_adic" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_info_adic?></textarea>
           </div>
