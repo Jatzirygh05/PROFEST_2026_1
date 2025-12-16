@@ -487,10 +487,10 @@ function validarEnvio(){
 		proy_vinc_org_obtrecursosEsc,
 		proy_fav_itineranciaEsc,
 		proy_accionesEsc,
-		objetivo_general_festival,
-		proy_fomentar_part_creadores,
-		proy_act_situacion_vulnerable,
-		proy_favore_itinerancia_act
+		objetivo_general_festivalEsc,
+		proy_fomentar_part_creadoresEsc,
+		proy_act_situacion_vulnerableEsc,
+		proy_favore_itinerancia_actEsc
 		]; 
 	//Variables de los mensajes "Este campo es obligatorio"	
 	var mensaje = [
