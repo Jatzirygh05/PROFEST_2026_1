@@ -500,11 +500,6 @@
                 <th>#</th>
                 <th>Entidad</th>
                 <th>municipio 1</th>
-                <th>municipio 2</th>
-                <th>municipio 3</th>
-                <th>municipio 4</th>
-                <th>municipio 5</th>
-                <th>municipio 6</th>
               </tr>
             </thead>
             <?php for($f=1;$f<=10;$f++){ ?>
