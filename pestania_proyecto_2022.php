@@ -673,6 +673,8 @@
         
         <!-- fin de la pestaña Desarrollo del Proyecto dentro de Proyecto -->
         </div>
+        <!--Inicio de la pestaña Lugar de realización-->
+        
       </div><!--fin content-->
     </div>
 </div>
