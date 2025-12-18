@@ -494,9 +494,9 @@
             <div class="col-md-12"><hr class="red small-margin"></div>
         </div>
         <div class="form-group">
-          <table class="table table-bordered" style="width:100%">
+          <table class="table table-bordered">
             <thead>
-              <tr>
+              <tr style="heigth:100px">
                 <th>#</th>
                 <th>Entidad</th>
                 <th>Municipio 1</th>
