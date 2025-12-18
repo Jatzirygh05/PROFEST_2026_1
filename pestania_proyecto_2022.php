@@ -585,7 +585,7 @@
                       <tr>
                         <th scope="row">Total de público<samp id="errmeta_num_publicoAs" name="errmeta_num_publicoAs" class="control-label">*</samp>:
                            </th>
-                        <td> <input type="text" id="meta_num_publico" name="meta_num_publico" class="form-control segunampo" value="<?=$meta_num_publico?>" placeholder="Ingresa la cantidad" onKeyPress="return soloNumeros(event)">
+                        <td><input type="text" id="meta_num_publico" name="meta_num_publico" class="form-control segunampo" value="<?=$meta_num_publico?>" placeholder="Ingresa la cantidad" onKeyPress="return soloNumeros(event)">
                             <small id="errmeta_num_publico" name="errmeta_num_publico" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                           </td>
                           <td><input type="text" id="meta_num_publico_alcanzada" name="meta_num_publico_alcanzada" class="form-control segunampo" value="<?=$meta_num_publico_alcanzada?>" placeholder="Ingresa el n&uacute;mero" onKeyPress="return soloNumeros(event)"></td>
