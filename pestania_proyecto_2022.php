@@ -546,6 +546,12 @@
                 <td>
                   <input type="text" name="municipio" placeholder="Municipio en que se realizara el festival">
                 </td>
+                                <td>
+                  <input type="text" name="municipio" placeholder="Municipio en que se realizara el festival">
+                </td>
+                                <td>
+                  <input type="text" name="municipio" placeholder="Municipio en que se realizara el festival">
+                </td>
               </tr>
             </tbody>
           <?php } ?>
