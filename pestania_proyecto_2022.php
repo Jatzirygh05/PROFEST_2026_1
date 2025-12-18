@@ -494,7 +494,7 @@
             <div class="col-md-12"><hr class="red small-margin"></div>
         </div>
         <div class="form-group">
-          <table class="table table-bordered">
+          <table class="table table-bordered" style="width:100%">
             <thead>
               <tr>
                 <th>#</th>
@@ -536,7 +536,6 @@
                 </td>
                 <td>
                   <input type="text" name="municipio" placeholder="Municipio en que se realizara el festival">
-                  <small id="errmunicipios<?=$f?>" name="errmunicipios<?=$f?>" class="form-text form-text-error" style="display:none"></small>
                 </td>
                 <td>
                   <input type="text" name="municipio" placeholder="Municipio en que se realizara el festival">
