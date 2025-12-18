@@ -494,7 +494,8 @@
             <div class="col-md-12"><hr class="red small-margin"></div>
         </div>
         <div class="form-group">
-          <table class="table table-responsive">
+          <div class="table table-responsive">
+          <table class="table table-bordered">
             <thead>
               <tr>
                 <th>#</th>
@@ -556,6 +557,7 @@
             </tbody>
           <?php } ?>
         </table>
+       </div>
       </div>
       <!-- fin Entidad(es) -->
 
