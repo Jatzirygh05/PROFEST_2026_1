@@ -534,22 +534,23 @@
                   </select>
                   <small id="errentidades_a<?=$f?>" name="errentidades_a<?=$f?>" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                 </td>
-                  <input type="text" name="municipio" placeholder="Escribe el municipio en el que se realizara el festival">
+                <td>
+                  <input type="text" name="nombre" placeholder="Escribe tu nombre">
                 </td>
                 <td>
-                  <input type="text" name="municipio" placeholder="Escribe el municipio en el que se realizara el festival">
+                  <input type="text" name="nombre" placeholder="Escribe tu nombre">
                 </td>
                 <td>
-                  <input type="text" name="municipio" placeholder="Escribe el municipio en el que se realizara el festival">
+                  <input type="text" name="nombre" placeholder="Escribe tu nombre">
                 </td>
                 <td>
-                  <input type="text" name="municipio" placeholder="Escribe el municipio en el que se realizara el festival">
+                  <input type="text" name="nombre" placeholder="Escribe tu nombre">
                 </td>
                 <td>
-                  <input type="text" name="municipio" placeholder="Escribe el municipio en el que se realizara el festival">
+                  <input type="text" name="nombre" placeholder="Escribe tu nombre">
                 </td>
                 <td>
-                  <input type="text" name="municipio" placeholder="Escribe el municipio en el que se realizara el festival">
+                  <input type="text" name="nombre" placeholder="Escribe tu nombre">
                 </td>
               </tr>
             </tbody>
