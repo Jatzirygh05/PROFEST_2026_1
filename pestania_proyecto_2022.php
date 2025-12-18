@@ -499,7 +499,12 @@
               <tr>
                 <th>#</th>
                 <th>Entidad</th>
-                <th>Municipios</th>
+                <th>Municipio 1</th>
+                <th>Municipio 2</th>
+                <th>Municipio 3</th>
+                <th>Municipio 4</th>
+                <th>Municipio 5</th>
+                <th>Municipio 6</th>
               </tr>
             </thead>
             <?php for($f=1;$f<=10;$f++){ ?>
@@ -528,6 +533,23 @@
                     <?php } ?>
                   </select>
                   <small id="errentidades_a<?=$f?>" name="errentidades_a<?=$f?>" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+                </td>
+                  <input type="text" name="municipio" placeholder="Escribe el municipio en el que se realizara el festival">
+                </td>
+                <td>
+                  <input type="text" name="municipio" placeholder="Escribe el municipio en el que se realizara el festival">
+                </td>
+                <td>
+                  <input type="text" name="municipio" placeholder="Escribe el municipio en el que se realizara el festival">
+                </td>
+                <td>
+                  <input type="text" name="municipio" placeholder="Escribe el municipio en el que se realizara el festival">
+                </td>
+                <td>
+                  <input type="text" name="municipio" placeholder="Escribe el municipio en el que se realizara el festival">
+                </td>
+                <td>
+                  <input type="text" name="municipio" placeholder="Escribe el municipio en el que se realizara el festival">
                 </td>
               </tr>
             </tbody>
