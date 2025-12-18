@@ -494,17 +494,17 @@
             <div class="col-md-12"><hr class="red small-margin"></div>
         </div>
         <div class="form-group">
-          <table class="table table-bordered">
+          <table class="table table-responsive">
             <thead>
               <tr>
                 <th>#</th>
-                <th style="width:100%">Entidad</th>
-                <th style="width:100%">Municipio 1</th>
-                <th style="width:100%">Municipio 2</th>
-                <th style="width:70%">Municipio 3</th>
-                <th style="width:70%">Municipio 4</th>
-                <th style="width:70%">Municipio 5</th>
-                <th style="width:70%">Municipio 6</th>
+                <th>Entidad</th>
+                <th>Municipio 1</th>
+                <th>Municipio 2</th>
+                <th>Municipio 3</th>
+                <th>Municipio 4</th>
+                <th>Municipio 5</th>
+                <th>Municipio 6</th>
               </tr>
             </thead>
             <?php for($f=1;$f<=10;$f++){ ?>
