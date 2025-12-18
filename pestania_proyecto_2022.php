@@ -505,7 +505,7 @@
                 <th>Municipio 3</th>
                 <th>Municipio 4</th>
                 <th>Municipio 5</th>
-                <!--th>Municipio 6</th-->
+                <th>Municipio 6</th>
               </tr>
             </thead>
             <?php for($f=1;$f<=10;$f++){ ?>
@@ -551,7 +551,7 @@
                   <input type="text" name="municipio" placeholder="Municipio en que se realizara el festival">
                 </td>
                 <td>
-                  <!--input type="text" name="municipio" placeholder="Municipio en que se realizara el festival"-->
+                  <input type="text" name="municipio" placeholder="Municipio en que se realizara el festival">
                 </td>
               </tr>
             </tbody>
