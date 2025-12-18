@@ -494,7 +494,7 @@
             <div class="col-md-12"><hr class="red small-margin"></div>
         </div>
         <div class="form-group">
-          <table class="table table-responsive">
+          <table class="table table-responsive" class="table table-bordered">
             <thead>
               <tr>
                 <th>#</th>
@@ -502,7 +502,7 @@
                 <th>Municipio 1</th>
                 <th>Municipio 2</th>
                 <th>Municipio 3</th>
-
+                <th>Municipio 4</th>
               </tr>
             </thead>
             <?php for($f=1;$f<=10;$f++){ ?>
