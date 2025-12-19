@@ -261,6 +261,7 @@
                           $organigrama_nombre_a=${'organigrama_nombre'.$f};
                           $organigrama_cargo_a=${'organigrama_cargo'.$f};
                           $organigrama_funciones_a=${'organigrama_funciones'.$f};
+                          //$organigrama_correo_a=${'organigrama_correo'.$f} ;
                           if($f<=3){ ?>
                             <samp id="errorganigrama_nombre<?=$f?>As" name="errorganigrama_nombre<?=$f?>As" class="control-label">*</samp><?php } ?>
                       </th>
@@ -278,6 +279,11 @@
                         <input type="text" id="organigrama_funciones<?=$f?>" name="organigrama_funciones<?=$f?>" value="<?=$organigrama_funciones_a?>" class="form-control proyectocampo" placeholder="Ingresa la(s) funcione(s)">
                         <small id="errorganigrama_funciones<?=$f?>" name="errorganigrama_funciones<?=$f?>" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                       </td>
+                      <!--td>
+                       <#?php if($f<=3){ ?><samp id="errorganigrama_correo<#?=$f?>As" name="errorganigrama_correo<#?=$f?>As" class="control-label" style="display:none">*</samp><#?php } ?>
+                        <input type="text" id="organigrama_correo<#?=$f?>" name="organigrama_correo<#?=$f?>" value="<#?=$organigrama_correo_a?>" class="form-control proyectocampo" placeholder="Ingresa un correo electrónico">
+                        <small id="errorganigrama_correo<#?=$f?>" name="errorganigrama_correo<#?=$f?>" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small> 
+                      </td-->
                     </tr>
                   </tbody>
                 <?php } ?>
@@ -300,6 +306,7 @@
           <div class="col-md-4">
             <div class="form-group"> 
               <label>Nombre del festival<samp id="errnombre_festivalAs" name="errnombre_festivalAs" class="control-label">*</samp>:<span class="glyphicon glyphicon glyphicon-question-sign" aria-hidden="true" data-placement="left" title="El nombre que se registre, en caso de ser aprobado, será con el que se realizarán todas las actividades sin posibilidad de cambio. Utilizar may&uacute;sculas y min&uacute;sculas, incluir n&uacute;mero de emisión actual, y no cambiar nombre en caso de existir ediciones anteriores."></span></label><input type="text" id="nombre_festival" name="nombre_festival" class="form-control segunampo" value="<?=$nombre_festival?>" placeholder="Ingresa el nombre del festival" maxlength="96"><small id="errnombre_festival" name="errnombre_festival" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+              <!--label>Nombre del festival<samp id="errnombre_festivalAs" name="errnombre_festivalAs" class="control-label">*</samp>:<span class="glyphicon glyphicon glyphicon-question-sign" aria-hidden="true" data-placement="left" title="El nombre del proyecto que aquí se registre deberá ser el mismo con el que se difundirá, y será el que se tomará en cuenta para el proceso de convenio y no podra ser modificado en ninguna de las etapas siguientes."></span></label><input type="text" id="nombre_festival" name="nombre_festival" class="form-control segunampo" value="<?=$nombre_festival?>" placeholder="Ingresa el nombre del festival" maxlength="96"><small id="errnombre_festival" name="errnombre_festival" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small-->
             </div>
           </div>
         </div>
@@ -608,7 +615,7 @@
                      <td><input type="text" id="meta_num_foros_alcanzada" name="meta_num_foros_alcanzada" class="form-control segunampo" value="<?=$meta_num_foros_alcanzada?>" placeholder="Ingresa el n&uacute;mero" onKeyPress="return soloNumeros(event)"></td>
                       </tr>
                       <tr>
-                        <th scope="row">Número total de participantes artísticos<samp id="errmeta_num_artistasAs" name="errmeta_num_artistasAs" class="control-label">*</samp>:
+                        <th scope="row">Número total de personas participantes<samp id="errmeta_num_artistasAs" name="errmeta_num_artistasAs" class="control-label">*</samp>:
                                      </th>
                         <td> <input type="text" id="meta_num_artistas" name="meta_num_artistas" class="form-control segunampo" value="<?=$meta_num_artistas?>" placeholder="Ingresa n&uacute;mero" onKeyPress="return soloNumeros(event)">
                             <small id="errmeta_num_artistas" name="errmeta_num_artistas" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
