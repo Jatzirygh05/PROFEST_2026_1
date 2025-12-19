@@ -558,6 +558,17 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                                 <option value="C" <?php if($Info_financiera_categoria=="C"){ ?> selected="selected" <?php } ?>>c)	$1,000,000.00 (con puntaje mínimo de 180 puntos).</option>
                                 <option value="D" <?php if($Info_financiera_categoria=="D"){ ?> selected="selected" <?php } ?>>d)	$1,500,000.00 (con puntaje mínimo de 185 puntos).</option>
                                 <option value="E" <?php if($Info_financiera_categoria=="E"){ ?> selected="selected" <?php } ?>>e)	$2,000,000.00 (con puntaje mínimo de 195 puntos).</option>
+                                
+                                <!--div>
+                                <option value="" selected="selected">Selecciona una opción</option>
+                                <option value="A" <#?php if($Info_financiera_categoria=="A"){ ?> selected="selected" <#?php } ?>>a)	$300,000.00 (con puntaje mínimo de 170 puntos).</option>
+                                <option value="B" <#?php if($Info_financiera_categoria=="B"){ ?> selected="selected" <#?php } ?>>b)	$500,000.00 (con puntaje mínimo de 175 puntos).</option>
+                                <option value="C" <#?php if($Info_financiera_categoria=="C"){ ?> selected="selected" <#?php } ?>>c)	$800,000.00 (con puntaje mínimo de (Falta puntaje) puntos).</option>
+                                <option value="D" <#?php if($Info_financiera_categoria=="D"){ ?> selected="selected" <#?php } ?>>d)	$1,000,000.00 (con puntaje mínimo de 180 puntos).</option>
+                                <option value="E" <#?php if($Info_financiera_categoria=="E"){ ?> selected="selected" <#?php } ?>>e)	$1,500,000.00 (con puntaje mínimo de 185 puntos).</option>
+                                <option value="F" <#?php if($Info_financiera_categoria=="F"){ ?> selected="selected" <#?php } ?>>f)	$2,000,000.00 (con puntaje mínimo de 195 puntos).</option>
+                                </div-->
+
                               </select>
                               <small id="errinfo_financiera_categoria" name="errinfo_financiera_categoria" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                             </div>
@@ -610,7 +621,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                           <div class="col-md-12"> 
                             <h3>Presupuesto de coinversión</h3>
                                          
-                            <p><strong>Usa este espacio para registrar un resumen del presupuesto de coinversión que aporta o gestiona la instancia que postula el proyecto, usando al menos 3 conceptos de gasto que se enlista en el combo al seleccionar el campo. La cantidad que resulte de la suma de los montos registrados deberá ser igual al monto  de coinversión que el siguiente apartado.</strong></p>
+                            <p><strong>Resumen presupuestal en el que se acrediten los gastos relativos a la contratación de los servicios y el arrendamiento de los bienes esenciales para la realización del Festival, de manera desglosada y especificandola fuente del financiamiento.</strong></p>
                             
                             <div class="row">
                             <div class="col-sm-4">

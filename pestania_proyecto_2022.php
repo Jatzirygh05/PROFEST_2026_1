@@ -572,8 +572,8 @@
                     <thead>
                       <tr>
                         <th>Meta</th>
-                        <th>Meta 2025</th>
-                        <th>Meta alcanzada 2024 o en el último año de realización</th>
+                        <th>Meta 2026</th>
+                        <th>Meta alcanzada 2025 o en el último año de realización</th>
                       </tr>
                     </thead>
                     <tbody>
