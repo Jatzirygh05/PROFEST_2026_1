@@ -243,6 +243,7 @@
                 <p>Usar mayúsculas y minúsculas en los nombres, cargos y funciones.</p>
               </div>
               <div class="col-md-12"><hr class="red small-margin"></div>
+              <div class="table table-responsive">
               <table class="table table-bordered">
                 <thead>
                   <tr>
@@ -250,6 +251,7 @@
                     <th>Nombre</th>
                     <th>Cargo</th>
                     <th>Funciones</th>
+                    <th>Correo electrónico</th>
                   </tr>
                 </thead>
                 <?php for($f=1;$f<=8;$f++){ ?>
@@ -261,7 +263,7 @@
                           $organigrama_nombre_a=${'organigrama_nombre'.$f};
                           $organigrama_cargo_a=${'organigrama_cargo'.$f};
                           $organigrama_funciones_a=${'organigrama_funciones'.$f};
-                          //$organigrama_correo_a=${'organigrama_correo'.$f} ;
+                          $organigrama_correo_a=${'organigrama_correo'.$f} ;
                           if($f<=3){ ?>
                             <samp id="errorganigrama_nombre<?=$f?>As" name="errorganigrama_nombre<?=$f?>As" class="control-label">*</samp><?php } ?>
                       </th>
@@ -279,15 +281,16 @@
                         <input type="text" id="organigrama_funciones<?=$f?>" name="organigrama_funciones<?=$f?>" value="<?=$organigrama_funciones_a?>" class="form-control proyectocampo" placeholder="Ingresa la(s) funcione(s)">
                         <small id="errorganigrama_funciones<?=$f?>" name="errorganigrama_funciones<?=$f?>" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                       </td>
-                      <!--td>
-                       <#?php if($f<=3){ ?><samp id="errorganigrama_correo<#?=$f?>As" name="errorganigrama_correo<#?=$f?>As" class="control-label" style="display:none">*</samp><#?php } ?>
-                        <input type="text" id="organigrama_correo<#?=$f?>" name="organigrama_correo<#?=$f?>" value="<#?=$organigrama_correo_a?>" class="form-control proyectocampo" placeholder="Ingresa un correo electrónico">
-                        <small id="errorganigrama_correo<#?=$f?>" name="errorganigrama_correo<#?=$f?>" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small> 
-                      </td-->
+                      <td>
+                       <?php if($f<=3){ ?><samp id="errorganigrama_correo<?=$f?>As" name="errorganigrama_correo<?=$f?>As" class="control-label" style="display:none">*</samp><?php } ?>
+                        <input type="text" id="organigrama_correo<?=$f?>" name="organigrama_correo<?=$f?>" value="<?=$organigrama_correo_a?>" class="form-control proyectocampo" placeholder="Ingresa un correo electrónico">
+                        <small id="errorganigrama_correo<?=$f?>" name="errorganigrama_correo<?=$f?>" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small> 
+                      </td>
                     </tr>
                   </tbody>
                 <?php } ?>
               </table>
+              </div>
             </div>
           </div>
         </div>
