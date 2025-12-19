@@ -621,7 +621,7 @@ Toda la informaci처n que se registre en los apartados de este sitio web, servir�
                           <div class="col-md-12"> 
                             <h3>Presupuesto de coinversi처n</h3>
                                          
-                            <p><strong>Resumen presupuestal en el que se acrediten los gastos relativos a la contrataci처n de los servicios y el arrendamiento de los bienes esenciales para la realizaci처n del Festival, de manera desglosada y especificandola fuente del financiamiento.</strong></p>
+                            <p><strong>Resumen presupuestal en el que se acrediten los gastos relativos a la contrataci처n de los servicios y el arrendamiento de los bienes esenciales para la realizaci처n del Festival, de manera desglosada y especificando la fuente del financiamiento.</strong></p>
                             
                             <div class="row">
                             <div class="col-sm-4">
