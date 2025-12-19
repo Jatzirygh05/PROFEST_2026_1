@@ -536,6 +536,7 @@
                   </select>
                   <small id="errentidades_a<?=$f?>" name="errentidades_a<?=$f?>" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                 </td>
+                
                 <td>
                   <input class="form-control" placeholder="Municipio" type="Municipio donde se realizara el festival">
                 </td>
