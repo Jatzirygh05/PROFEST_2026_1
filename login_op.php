@@ -342,14 +342,6 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                                     <small id="errnombre_titular" name="errnombre_titular" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                                 </div>
                             </div>
-                            <div class=col-md-4>
-                              <div class="form-group">
-                                  <label>Ejemplo de campo<samp id="errnombre_titularAs" name="errnombre_titularAs" class="control-label">*</samp>:<span class="glyphicon glyphicon glyphicon-question-sign" aria-hidden="true" data-placement="left" title="Nombre de la o el Títular"></span></label>
-                                    <input type="text" id="nombre_titular" name="nombre_titular" class="form-control info_inst_reg" placeholder="Ingresa el nombre de la o el Títular" value="<?php echo $nombre_titular; ?>">
-                                    <small id="errnombre_titular" name="errnombre_titular" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
-                              </div>
-
-                            </div>
                           </div>
                         <div class="row">            
                             <div class="col-md-4">
