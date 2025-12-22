@@ -844,7 +844,7 @@
           </div>
         </div>      
         <!-- fin Metas numéricas dentro de Desarrollo del Proyecto dentro de Proyecto -->
-
+      </div>
       <!--Fin de la pestaña de metas-->
       </div><!--fin content-->
     </div>
