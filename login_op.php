@@ -384,18 +384,18 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                                 <small id="errtelefono_fijo" name="errtelefono_fijo" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                           </div>
                         </div>
-                        <!--div class="col-md-2">
+                        <div class="col-md-2">
                           <div class="form-group">
                             <label> Extensión:</label><input type="text" id="extension" name="extension" class="form-control info_inst_reg" placeholder="Ingresa la extensión"  value="<?php echo $extension; ?>">
                           </div>
-                      </div-->
-                      <!--div class="col-md-3">
+                      </div>
+                      <div class="col-md-3">
                           <div class="form-group">
                               <label for="phone"> Teléfono móvil (10 dígitos)<samp id="errtelefono_movilAs" name="errtelefono_movilAs" class="control-label">*</samp>:</label>
                                 <input type="text" id="telefono_movil" name="telefono_movil" class="form-control info_inst_reg" placeholder="Telefono movil" value="<?php echo $telefono_movil; ?>" onkeypress="return soloNumeros(event)" maxlength="10">
                                 <small id="errtelefono_movil" name="errtelefono_movil" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                           </div>
-                        </div-->
+                        <!--/div-->
                     </div>
 
 
