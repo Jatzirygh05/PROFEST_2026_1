@@ -654,7 +654,9 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                                     </div>
                                   </div> 
                                 </div>
-                      <table class="table-responsive">
+                      <div class="table table-responsive">
+                      <table class="table table-bordered">
+                      <!--table class="table-responsive"-->
                       <tr>
                         <td>#</td>
                         <td>Concepto de gasto<samp id="errConcepto_gasto_aAs" name="errConcepto_gasto_aAs" class="control-label">*</samp>:</td>
