@@ -390,6 +390,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                             <label> Extensión:</label><input type="text" id="extension" name="extension" class="form-control info_inst_reg" placeholder="Ingresa la extensión"  value="<?php echo $extension; ?>">
                           </div>
                         </div>
+                       </div>
                       </div>
 
 
