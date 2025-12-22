@@ -376,7 +376,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                           </div>
                         </div>
                          <div class="row">                        
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                           <div class="form-group">
                               <label for="phone">Teléfono fijo (10 dígitos)<samp id="errtelefono_fijoAs" name="errtelefono_fijoAs" class="control-label">*</samp>:</label>
                                 <input type="text" id="telefono_fijo" name="telefono_fijo" class="form-control info_inst_reg" placeholder="Telefono fijo" value="<?php echo $telefono_fijo; ?>" onkeypress="return soloNumeros(event)" maxlength="10">
