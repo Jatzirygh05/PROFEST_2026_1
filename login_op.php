@@ -660,6 +660,7 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                         <td>Concepto de gasto<samp id="errConcepto_gasto_aAs" name="errConcepto_gasto_aAs" class="control-label">*</samp>:</td>
                         <td>Fuente de financiamiento<samp id="errFuente_finan_aAs" name="errFuente_finan_aAs" class="control-label">*</samp></td>
                         <td>Monto<samp id="errMonto_unidad_aAs" name="errMonto_unidad_aAs" class="control-label">*</samp></td>
+                        <td>Porcentaje<samp id="errPorcentaje_aAs" name="errPorcentaje_aAs"  class="control-label">*</samp></td>
                         <?php /*td>Porcentaje<samp id="errPorcentaje_aAs" name="errPorcentaje_aAs" class="control-label">*</samp></td*/?>
                       </tr>
                       <tr>
