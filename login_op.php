@@ -395,7 +395,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                                 <small id="errtelefono_movil" name="errtelefono_movil" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                           </div>
                     </div>
-                    <div class="row">            
+                    <!--div class="row"-->            
                       <div class="col-md-4">
                         <div class="form-group">
                           <label>Correo electrónico de la o el Títular<samp id="errCorreo_titAs" name="errCorreo_titAs" class="control-label">*</samp>:</label><input type="text" id="Correo_tit" name="Correo_tit" class="form-control info_inst_reg" placeholder="ejemplo@dominio.com" onBlur="validarEmail_titular(this.id);" value="<?php echo $Correo_tit; ?>">
@@ -403,7 +403,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                           <small id="errCorreo_tit" name="errCorreo_tit" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                         </div>
                       </div>
-                    </div>
+                    <!--/div-->
 
                   <div class="row">
                     <div class="col-md-8"> 
