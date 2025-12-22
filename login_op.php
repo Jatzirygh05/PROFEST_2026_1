@@ -384,14 +384,12 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                                 <small id="errtelefono_fijo" name="errtelefono_fijo" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                           </div>
                         </div>
-                        <div class="row">
                         <div class="col-md-2">
                           <div class="form-group">
                             <label> Extensión:</label><input type="text" id="extension" name="extension" class="form-control info_inst_reg" placeholder="Ingresa la extensión"  value="<?php echo $extension; ?>">
                           </div>
-                        </div>
-                       </div>
                       </div>
+                    </div>
 
 
                   <div class="row">
