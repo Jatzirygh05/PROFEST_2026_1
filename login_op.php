@@ -376,7 +376,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                           </div>
                         </div>
                     </div>
-                    <div class="row">                        
+                    <!--div class="row"-->                        
                         <div class="col-md-3">
                           <div class="form-group">
                               <label for="phone"> Teléfono fijo (10 dígitos)<samp id="errtelefono_fijoAs" name="errtelefono_fijoAs" class="control-label">*</samp>:</label>
