@@ -368,13 +368,27 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                             </div>
                         </div>
                     <div class="row">       
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                           <div class="form-group"> 
                             <label> Cargo<samp id="errcargoAs" name="errcargoAs" class="control-label">*</samp>:<span class="glyphicon glyphicon glyphicon-question-sign" aria-hidden="true" data-placement="left" title="Cargo de la o el Títular"></span></label>
                               <input type="text" id="cargo" name="cargo" class="form-control info_inst_reg" placeholder="Ingresa el cargo de la o el Títular" value="<?php echo $cargo; ?>">
                                 <small id="errcargo" name="errcargo" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                           </div>
                         </div>
+                         <div class="row">                        
+                        <div class="col-md-4">
+                          <div class="form-group">
+                              <label for="phone">Teléfono fijo (10 dígitos)<samp id="errtelefono_fijoAs" name="errtelefono_fijoAs" class="control-label">*</samp>:</label>
+                                <input type="text" id="telefono_fijo" name="telefono_fijo" class="form-control info_inst_reg" placeholder="Telefono fijo" value="<?php echo $telefono_fijo; ?>" onkeypress="return soloNumeros(event)" maxlength="10">
+                                <small id="errtelefono_fijo" name="errtelefono_fijo" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label>Extensión:</label><input type="text" id="extension" name="extension" class="form-control info_inst_reg" placeholder="Ingresa la extensión"  value="<?php echo $extension; ?>">
+                          </div>
+                        </div>
+                    </div>
                       </div>
 
 
@@ -486,20 +500,6 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                                 <input type="text" id="no_int" name="no_int" class="form-control info_inst_reg" placeholder="Ingresa el número interior" value="<?php echo $no_int; ?>">
                             </div>
                         </div>            
-                    </div>
-                    <div class="row">                        
-                        <div class="col-md-4">
-                          <div class="form-group">
-                              <label for="phone">Teléfono fijo (10 dígitos)<samp id="errtelefono_fijoAs" name="errtelefono_fijoAs" class="control-label">*</samp>:</label>
-                                <input type="text" id="telefono_fijo" name="telefono_fijo" class="form-control info_inst_reg" placeholder="Telefono fijo" value="<?php echo $telefono_fijo; ?>" onkeypress="return soloNumeros(event)" maxlength="10">
-                                <small id="errtelefono_fijo" name="errtelefono_fijo" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label>Extensión:</label><input type="text" id="extension" name="extension" class="form-control info_inst_reg" placeholder="Ingresa la extensión"  value="<?php echo $extension; ?>">
-                          </div>
-                        </div>
                     </div>  
                     <div class="row">            
                       <div class="col-md-4">
