@@ -763,6 +763,7 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                         </td*/?>
                       </tr>
                     </table>
+                    </div>
             </form>
           </div>
         </div>
