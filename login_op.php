@@ -678,6 +678,8 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                             $Concepto_gasto_s=$fila2['Concepto_gasto'];
                             $Fuente_finan=utf8_encode($fila2['Fuente_finan']);
                             $Monto_unidad=$fila2['Monto_unidad'];
+                            $required=($<=3) ? 'required': '';
+                            $asterisco = ($h <= 3) ? '<span class="text-danger">*</span>' : '';
                             $Porcentaje=$fila2['Porcentaje'];
                         ?>
                         <td><?php echo $h; ?><input type="hidden" name="id_presupuesto<?=$h?>" id="id_presupuesto<?=$h?>" value="<?=$id_presupuesto?>">
@@ -693,6 +695,10 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                                             $valor=$renglon['id_gasto'];
                                             $imp_texto=$renglon['concepto_gasto'];
                               ?>
+                              <input class="form-control" id="Porcentaje<?=$h?>"name="Porcentaje<?=$h?>" value="<?=$Porcentaje?>" placeholder="0.00" type="text"
+                              <?=$required?>>
+                              <?=$asterisco?>
+                              </td>
                                       <option value=<?php echo $valor; ?> <?php if($valor==$Concepto_gasto_s){echo "Selected";}?>><?php echo $imp_texto; ?></option>
                               <?php } ?>
                         </select>
@@ -724,7 +730,7 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                       <tr>
                         <td><?php echo $i; ?></td>
                         <td>
-                          <select class='form-control proyectocampo text-mute' name='Concepto_gasto<?php echo $i?>' id='Concepto_gasto<?php echo $i?>'>
+                          <select class='form-control proyectocampo' name='Concepto_gasto<?php echo $i?>' id='Concepto_gasto<?php echo $i?>'>
                             <option value="" selected="selected">Selecciona opci&oacute;n</option>
                             <?php echo $combobitdos; ?>
                           </select>
