@@ -118,6 +118,13 @@
                 $desarrollo_proyecto_diagnostico            = $row_proy["desarrollo_proyecto_diagnostico"];
                 $desarrollo_proyecto_justificacion          = $row_proy["desarrollo_proyecto_justificacion"];
                 $desarrollo_proyecto_descripcion            = $row_proy["desarrollo_proyecto_descripcion"];
+                
+                //2026 (inicio)
+                $objetivo_general_festival                  = $row_proy["objetivo_general_festival"];
+		            $proy_fomentar_part_creadores               = $row_proy["proy_fomentar_part_creadores"];
+		            $proy_act_situacion_vulnerable              = $row_proy["proy_act_situacion_vulnerable"];
+		            $proy_favore_itinerancia_act                = $row_proy["proy_favore_itinerancia_act"];
+                //2026 (fin)
 
 
                 //2025 (inicio)
