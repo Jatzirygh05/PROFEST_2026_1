@@ -521,27 +521,27 @@ function imprmirentidades($var_ent, $con) {
 	
 		switch($Info_financiera_categoria){
 			case "A":
-			$nombre_Info_financiera_categoria="a)	$300,000.00 (con puntaje <br>mínimo de 170 puntos).";
+			$nombre_Info_financiera_categoria="a)	$300,000.00";
 			$monto_solo='$300,000.00';
 			break;
 			case "B":
-			$nombre_Info_financiera_categoria="b)	$500,000.00 (con puntaje <br>mínimo de 175 puntos).";
+			$nombre_Info_financiera_categoria="b)	$500,000.00";
 			$monto_solo='$500,000.00';
 			break;
             case "C":
-			$nombre_Info_financiera_categoria="c)	$800,000.00 (con puntaje <br>mínimo de 180 puntos).";
+			$nombre_Info_financiera_categoria="c)	$800,000.00";
 			$monto_solo='$800,000.00';
 			break;
 			case "D":
-			$nombre_Info_financiera_categoria="d)	$1,000,000.00 (con puntaje <br>mínimo de 180 puntos).";
+			$nombre_Info_financiera_categoria="d)	$1,000,000.00";
 			$monto_solo='$1,000,000.00';
 			break;
             case "E":
-			$nombre_Info_financiera_categoria="e)	$2,000,000.00 (con puntaje <br>mínimo de 185 puntos).";
+			$nombre_Info_financiera_categoria="e)	$2,000,000.00.";
 			$monto_solo='$1,500,000.00';
 			break; 
 			case "F":
-			$nombre_Info_financiera_categoria="f) $2,000,000.00 (con puntaje <br>mínimo de 195 puntos).";
+			$nombre_Info_financiera_categoria="f) $2,000,000.00";
 			$monto_solo='$2,000,000.00';        
 		}
 

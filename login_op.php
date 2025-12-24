@@ -558,20 +558,20 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                               <label>Categoría en la que participa/ Monto solicitado a la Secretaría de Cultura<samp id="errinfo_financiera_categoriaAs" name="errinfo_financiera_categoriaAs" class="control-label">*</samp>:</label>
                               <select id="info_financiera_categoria" name="info_financiera_categoria" class="form-control cat_categoria">
                                 <option value="" selected="selected">Selecciona una opción</option>
-                                <option value="A" <?php if($Info_financiera_categoria=="A"){ ?> selected="selected" <?php } ?>>a)	$300,000.00 (con puntaje mínimo de 170 puntos).</option>
-                                <option value="B" <?php if($Info_financiera_categoria=="B"){ ?> selected="selected" <?php } ?>>b)	$500,000.00 (con puntaje mínimo de 175 puntos).</option>
-                                <option value="C" <?php if($Info_financiera_categoria=="C"){ ?> selected="selected" <?php } ?>>c)	$1,000,000.00 (con puntaje mínimo de 180 puntos).</option>
-                                <option value="D" <?php if($Info_financiera_categoria=="D"){ ?> selected="selected" <?php } ?>>d)	$1,500,000.00 (con puntaje mínimo de 185 puntos).</option>
-                                <option value="E" <?php if($Info_financiera_categoria=="E"){ ?> selected="selected" <?php } ?>>e)	$2,000,000.00 (con puntaje mínimo de 195 puntos).</option>
-                                
+                                <option value="A" <?php if($Info_financiera_categoria=="A"){ ?> selected="selected" <?php } ?>>a)	$300,000.00</option>
+                                <option value="B" <?php if($Info_financiera_categoria=="B"){ ?> selected="selected" <?php } ?>>b)	$500,000.00</option>
+                                <option value="C" <?php if($Info_financiera_categoria=="C"){ ?> selected="selected" <?php } ?>>c)	$800,000.00</option>
+                                <option value="D" <?php if($Info_financiera_categoria=="D"){ ?> selected="selected" <?php } ?>>d)	$1,000,000.00</option>
+                                <option value="E" <?php if($Info_financiera_categoria=="E"){ ?> selected="selected" <?php } ?>>e)	$1,500,000.00</option>
+                                <option value="F" <?php if($Info_financiera_categoria=="F"){ ?> selected="selected" <?php } ?>>f) $2,000,000.00</option>
                                 <!--div>
                                 <option value="" selected="selected">Selecciona una opción</option>
-                                <option value="A" <#?php if($Info_financiera_categoria=="A"){ ?> selected="selected" <#?php } ?>>a)	$300,000.00 (con puntaje mínimo de 170 puntos).</option>
-                                <option value="B" <#?php if($Info_financiera_categoria=="B"){ ?> selected="selected" <#?php } ?>>b)	$500,000.00 (con puntaje mínimo de 175 puntos).</option>
-                                <option value="C" <#?php if($Info_financiera_categoria=="C"){ ?> selected="selected" <#?php } ?>>c)	$800,000.00 (con puntaje mínimo de (Falta puntaje) puntos).</option>
-                                <option value="D" <#?php if($Info_financiera_categoria=="D"){ ?> selected="selected" <#?php } ?>>d)	$1,000,000.00 (con puntaje mínimo de 180 puntos).</option>
-                                <option value="E" <#?php if($Info_financiera_categoria=="E"){ ?> selected="selected" <#?php } ?>>e)	$1,500,000.00 (con puntaje mínimo de 185 puntos).</option>
-                                <option value="F" <#?php if($Info_financiera_categoria=="F"){ ?> selected="selected" <#?php } ?>>f)	$2,000,000.00 (con puntaje mínimo de 195 puntos).</option>
+                                <option value="A" <#?php if($Info_financiera_categoria=="A"){ ?> selected="selected" <#?php } ?>>a)	$300,000.00.</option>
+                                <option value="B" <#?php if($Info_financiera_categoria=="B"){ ?> selected="selected" <#?php } ?>>b)	$500,000.00.</option>
+                                <option value="C" <#?php if($Info_financiera_categoria=="C"){ ?> selected="selected" <#?php } ?>>c)	$800,000.00.</option>
+                                <option value="D" <#?php if($Info_financiera_categoria=="D"){ ?> selected="selected" <#?php } ?>>d)	$1,000,000.00.</option>
+                                <option value="E" <#?php if($Info_financiera_categoria=="E"){ ?> selected="selected" <#?php } ?>>e)	$1,500,000.00.</option>
+                                <option value="F" <#?php if($Info_financiera_categoria=="F"){ ?> selected="selected" <#?php } ?>>f)	$2,000,000.00.</option>
                                 </div-->
 
                               </select>
