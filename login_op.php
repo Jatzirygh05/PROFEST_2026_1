@@ -724,7 +724,7 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                       <tr>
                         <td><?php echo $i; ?></td>
                         <td>
-                          <select class='form-control proyectocampo' name='Concepto_gasto<?php echo $i?>' id='Concepto_gasto<?php echo $i?>'>
+                          <select class='form-control proyectocampo text-mute' name='Concepto_gasto<?php echo $i?>' id='Concepto_gasto<?php echo $i?>'>
                             <option value="" selected="selected">Selecciona opci&oacute;n</option>
                             <?php echo $combobitdos; ?>
                           </select>
