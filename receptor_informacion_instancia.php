@@ -43,8 +43,8 @@ $pon_variable="`$variable`='$valor',";
 $row1= mysql_query($resultado);
 $cuantos_id=mysql_num_rows($row1);*/
 		  //if($cuantos_id==1){
-					//echo "----MODIFICA REGISTRO----";
-					$q_modifica="UPDATE `usuarios` SET $pon_variable $quita_valor_variable_CLUNI $quita_valor_variables_dir 
+					echo "----MODIFICA REGISTRO----";
+					echo $q_modifica="UPDATE `usuarios` SET $pon_variable $quita_valor_variable_CLUNI $quita_valor_variables_dir 
 					fecha_hora_modificacion=NOW()
 					WHERE `clave_usuario` = '".$cve_user."';";
 					$exe_modifica=mysqli_query($con, $q_modifica);			
