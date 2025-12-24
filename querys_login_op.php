@@ -23,6 +23,7 @@
               $Correo_tit=$row['Correo_tit'];
               $CLUNI=$row['CLUNI'];
               $telefono_movil=$row['telefono_movil'];
+              $rfc_titular=$row['rfc_titular'];
             }
              // FIN informacion para acceso al sistema   
             // INICIO PESTAÑA 'Solicitud'
@@ -118,7 +119,7 @@
                 $desarrollo_proyecto_diagnostico            = $row_proy["desarrollo_proyecto_diagnostico"];
                 $desarrollo_proyecto_justificacion          = $row_proy["desarrollo_proyecto_justificacion"];
                 $desarrollo_proyecto_descripcion            = $row_proy["desarrollo_proyecto_descripcion"];
-                
+
                 //2026 (inicio)
                 $objetivo_general_festival                  = $row_proy["objetivo_general_festival"];
 		            $proy_fomentar_part_creadores               = $row_proy["proy_fomentar_part_creadores"];
