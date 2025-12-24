@@ -707,11 +707,11 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                           </select>
                         </td>
                         <td>
-                          <!--obten_porcentaje funcion que utilizaba cuando guardaba desde que estaba en el campo antes de poner el boton Guardar en esta sección-->
+                          <!--obten_porcentaje funcion que utilizaba cuando guardaba desde que estaba en el campo antes de poner el boton Guardar en esta sección
                           obtenporcentaje(<?=$h?>, <?=$Infor_finan_costo_monto?>);
                           sumaVerticalporcentajes(<?=$h?>, <?=$cuantos?>);
                           calc_presup(<?=$h?>, <?=$Infor_finan_apoyo_monto?>);
-                        
+                        -->
                           <input class="form-control" id="Monto_unidad<?=$h?>" name="Monto_unidad<?=$h?>" value="<?=$Monto_unidad?>" placeholder="0.00" type="text" onChange="sumaVerticalmonto(<?=$h?>, <?=$cuantos?>);" onKeyPress="return evita_comas(event)">
                         </td>
                         <?php /*td>
