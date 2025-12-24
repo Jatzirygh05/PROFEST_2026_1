@@ -22,7 +22,6 @@
               $extension=$row['extension'];
               $Correo_tit=$row['Correo_tit'];
               $CLUNI=$row['CLUNI'];
-              $telefono_movil=$row['telefono_movil'];
             }
              // FIN informacion para acceso al sistema   
             // INICIO PESTAÑA 'Solicitud'

@@ -16,24 +16,8 @@ nuevos 4 campos se agregarán a la tabla proyecto:
 		   h) proy_act_situacion_vulnerable
 		   k) proy_favore_itinerancia_act
 
-nuevo 1 campos se agregarán a la tabla usuario ya se agrego y se valido como obligatorio:
-		   a) telefono_movil
-
 
 campos eliminados tabla proyecto:
 		   proy_noved_ed_2025
 			desarrollo_proyecto_descripcion
 			
-
-agregeue  la tabla cat_instancias: el registro "Consejos Comunales, Comités Comunitarios o Consejos de Pueblos Indígenas" será el 6
-Identificación oficial completa y vigente de la persona representante.
-Acta de constitución o documento fundacional donde se otorga personalidad jurídica.
-Documento que faculte la representación legal.
-Constancia de Situación Fiscal completa, no mayor a 3 meses de emisión, considerando la fecha de publicación de convocatoria.
-Formato 32-D con opinión en sentido positivo con fecha de emisión no mayor a 3 meses, considerando la fecha de publicación de convocatoria.
-
-
-
-
-
-#E0E2DE
