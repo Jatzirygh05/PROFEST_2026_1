@@ -140,6 +140,7 @@ include('querys_login_op.php');
     <script type="text/javascript" src="js/select_dependientes_colonia.js"></script>
     <script type="text/javascript" src="js/select_dependientes_cp.js"></script>
     <script type="text/javascript" src="js/select_dependientes_estado.js"></script>
+    <script type="text/javascript" src="js/obten_porcentaje.js"></script>
     <!--(FIN) script para el codigo postal -->
     <!--obten_porcentaje funcion que utilizaba cuando guardaba desde que estaba en el campo antes de poner el boton Guardar en esta sección>
     <script type="text/javascript" src="js/obten_porcentaje.js"></script-->

@@ -7,7 +7,7 @@
       <li><a data-toggle="tab" href="#tab-15">Metas</a></li>
     </ul>
     <!-- INICIO SUB. PESTAÑAS PROYECTO -->
-punta    <div class="tab-content"> 
+    <div class="tab-content"> 
       <div class="tab-pane active" id="tab-08">
         <!-- INICIO SUB. PESTAÑAS PROYECTO / director(a) del festival -->
         <div class="row">
