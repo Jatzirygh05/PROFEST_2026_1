@@ -134,6 +134,26 @@ function validarEnvio(){
 	//FIN PESTAÑA SOLICITUD
 	
 	//INICIO PESTAÑA PROYECTO
+/* objetivo_general_festival
+		   g) proy_fomentar_part_creadores
+		   h) proy_act_situacion_vulnerable
+		   k) proy_favore_itinerancia_act
+*/
+	var objetivo_general_festivalEsc = document.getElementById('objetivo_general_festival');
+	var errobjetivo_general_festival = document.getElementById('errobjetivo_general_festival');
+	var errobjetivo_general_festivalAs = document.getElementById('errobjetivo_general_festivalAs');
+
+	var proy_fomentar_part_creadoresEsc = document.getElementById('proy_fomentar_part_creadores');
+	var errproy_fomentar_part_creadores = document.getElementById('errproy_fomentar_part_creadores');
+	var errproy_fomentar_part_creadoresAs = document.getElementById('errproy_fomentar_part_creadoresAs');
+
+	var proy_act_situacion_vulnerableEsc = document.getElementById('proy_act_situacion_vulnerable');
+	var errproy_act_situacion_vulnerable = document.getElementById('errproy_act_situacion_vulnerable');
+	var errproy_act_situacion_vulnerableAs = document.getElementById('errproy_act_situacion_vulnerableAs');
+
+	var proy_favore_itinerancia_actEsc = document.getElementById('proy_favore_itinerancia_act');
+	var errproy_favore_itinerancia_act = document.getElementById('errproy_favore_itinerancia_act');
+	var errproy_favore_itinerancia_actAs = document.getElementById('errproy_favore_itinerancia_actAs');
 
 	//Director del festival(INICIO)
 	
@@ -496,7 +516,11 @@ function validarEnvio(){
 		proy_act_situacion_vulnerableEsc,
 		proy_favore_itinerancia_actEsc,
 		rfc_titularEsc,
-		telefono_movilEsc
+		telefono_movilEsc,
+		objetivo_general_festivalEsc,
+		proy_fomentar_part_creadoresEsc,
+		proy_act_situacion_vulnerableEsc,
+		proy_favore_itinerancia_actEsc
 		]; 
 	//Variables de los mensajes "Este campo es obligatorio"	
 	var mensaje = [
@@ -567,7 +591,11 @@ function validarEnvio(){
 		errproy_act_situacion_vulnerable,
 		errproy_favore_itinerancia_act,
 		errfc_titular,
-		errtelefono_movil
+		errtelefono_movil,
+		errobjetivo_general_festival,
+		errproy_fomentar_part_creadores,
+		errproy_act_situacion_vulnerable,
+		errproy_favore_itinerancia_act
 		];
 	
 	//Variables de los asteriscos
@@ -639,7 +667,11 @@ function validarEnvio(){
 		errproy_act_situacion_vulnerableAs,
 		errproy_favore_itinerancia_actAs,
 		errfc_titularAs,
-		errtelefono_movilAs
+		errtelefono_movilAs,
+		errobjetivo_general_festivalAs,
+		errproy_fomentar_part_creadoresAs,
+		errproy_act_situacion_vulnerableAs,
+		errproy_favore_itinerancia_actAs
 	];
 
 	//Variables de los combobox
