@@ -389,6 +389,10 @@ function validarEnvio(){
 	var errtelefono_fijo= document.getElementById('errtelefono_fijo');
 	var errtelefono_fijoAs= document.getElementById('errtelefono_fijoAs');
 
+	var telefono_movilEsc = document.getElementById('telefono_movil');
+	var errtelefono_movil= document.getElementById('errtelefono_movil');
+	var errtelefono_movilAs= document.getElementById('errtelefono_movilAs');
+
 	var Correo_titEsc = document.getElementById('Correo_tit');
 	var errCorreo_tit= document.getElementById('errCorreo_tit');
 	var errCorreo_titAs= document.getElementById('errCorreo_titAs');
@@ -491,7 +495,8 @@ function validarEnvio(){
 		proy_fomentar_part_creadoresEsc,
 		proy_act_situacion_vulnerableEsc,
 		proy_favore_itinerancia_actEsc,
-		rfc_titularEsc
+		rfc_titularEsc,
+		telefono_movilEsc
 		]; 
 	//Variables de los mensajes "Este campo es obligatorio"	
 	var mensaje = [
@@ -561,7 +566,8 @@ function validarEnvio(){
 		errproy_fomentar_part_creadores,
 		errproy_act_situacion_vulnerable,
 		errproy_favore_itinerancia_act,
-		errfc_titular
+		errfc_titular,
+		errtelefono_movil
 		];
 	
 	//Variables de los asteriscos
@@ -632,7 +638,8 @@ function validarEnvio(){
 		errproy_fomentar_part_creadoresAs,
 		errproy_act_situacion_vulnerableAs,
 		errproy_favore_itinerancia_actAs,
-		errfc_titularAs
+		errfc_titularAs,
+		errtelefono_movilAs
 	];
 
 	//Variables de los combobox
