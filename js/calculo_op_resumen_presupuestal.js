@@ -37,8 +37,7 @@ console.log(monto_coinversion2);*/
 								var campov_limpia = document.getElementById('Monto_unidad'+id);
 							    campov_limpia.value = 0;
 								
-								//2025 ya no se ultilizará se habilitara para 2026
-								sumaVerticalporcentajes(id, cuantos);
+								//2025 ya no se ultilizará se habilitara sumaVerticalporcentajes(id, cuantos);
 								
 								alert('Verifica los montos');
 								}
