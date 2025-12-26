@@ -21,12 +21,16 @@ function suma_cantidades(){	//es la función que se esta usando en el apartado I
 		var m2=500000;
 		break;
 		case 'C':
-		var m2=1000000;
+		var m2=800000;
 		break;
 		case 'D': 
-		var m2=1500000;
+		var m2=1000000;
 		break;
 		case 'E': 
+		var m2=1500000;
+		console.log(m2);
+		break;
+		case 'F': 
 		var m2=2000000;
 		console.log(m2);
 		break;
@@ -113,6 +117,34 @@ function suma_cantidades(){	//es la función que se esta usando en el apartado I
 				}
 			break;
 			case 'C':
+				var m2=800000;
+				
+				//console.log('ENTRO A CATEGORIA B')
+				/* 	B) Festivales de cuarta a séptima emisión, hasta $700,000.00 (setecientos mil pesos 00/100 M.N.).*/
+				if(m2<m1) { 			
+			
+				var porc_apoyo_fin_sobre_cost_tot = 100*parseFloat(m2)/parseFloat(m1);
+				campo_porcentaje.value = porc_apoyo_fin_sobre_cost_tot;	
+
+					errInfor_finan_costo_monto.style.display = "none";
+					errInfor_finan_costo_montoAs.className = 'form-text';
+					Infor_finan_costo_monto.className = 'form-control';
+
+				var url_z='receptor_Apoyo_financiero.php?Infor_finan_costo_monto='+m1+'&Infor_finan_apoyo_monto='+m2+'&Infor_finan_apoyo_costo_total_paso='+porc_apoyo_fin_sobre_cost_tot+'&monto_coinversion='+mont_coinversion;
+				hacerPeticion(url_z);				
+				} else {
+					//console.log('es menor');
+					errInfor_finan_costo_monto.style.display = "block";
+					errInfor_finan_costo_montoAs.className = 'form-text form-text-error';
+					Infor_finan_costo_monto.className = 'form-control form-control-error';
+					campo_porcentaje.value = '';
+					porc_apoyo_fin_sobre_cost_tot='';
+					var url_z='receptor_Apoyo_financiero.php?Infor_finan_apoyo_costo_total_paso='+porc_apoyo_fin_sobre_cost_tot;
+				hacerPeticion(url_z);	
+					
+				}
+			break;
+			case 'D':
 				var m2=1000000;
 				
 						//console.log('ENTRO A CATEGORIA C')
@@ -140,7 +172,7 @@ function suma_cantidades(){	//es la función que se esta usando en el apartado I
 					
 				}
 			break;
-			case 'D':
+			case 'E':
 				var m2=1500000;
 				
 			//console.log('ENTRO A CATEGORIA D')
@@ -168,7 +200,7 @@ function suma_cantidades(){	//es la función que se esta usando en el apartado I
 					
 				}
 			break;
-			case 'E':
+			case 'F':
 				var m2=2000000;
 				
 			console.log('ENTRO A CATEGORIA E');
