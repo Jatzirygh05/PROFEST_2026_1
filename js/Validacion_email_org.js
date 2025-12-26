@@ -5,12 +5,12 @@ function validarEmailorg(idCampo) {
 
 //if(idCampo == 'organigrama_correoa'){
 var organigrama_correoaEsc = idCampo.value;
-var organigrama_correoaEsc_campo = idCampo.value;
-
+/*var organigrama_correoaEsc_campo = idCampo.value;
+organigrama_correo1Esc_campo*/
 var emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 
   if (emailRegex.test(organigrama_correoa)){
-  alert("La direcci�n de email " + correo_electronico_admEsc + " es correcta.");
+  alert("La direcci�n de email " + organigrama_correoaEsc + " es correcta.");
   emailOK.innerText = "correcto";
 	/*errorganigrama_correoaAs.className = 'form-text';
 	document.getElementById('emailOK_org').innerText="";
