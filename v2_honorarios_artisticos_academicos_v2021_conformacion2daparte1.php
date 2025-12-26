@@ -96,7 +96,7 @@
               <p>Usa este apartado únicamente para detallar la distribución del recurso solicitado a la Secretaría de Cultura. La suma total de los conceptos registrados deberá ser igual a la cantidad capturada en el apartado de <strong>Monto solicitado a la Secretaría de Cultura</strong>, que figura en la pestaña de Información Financiera.</p>
               <p>Te invitamos a consultar el apartado de Características de los recursos de la Convocatoria, para conocer los conceptos en los que puede destinarse el recurso PROFEST, según la disciplina de tu proyecto.</p>
               <p>Todos los gastos deberán contemplar el pago de impuestos.</p>
-              <p>NOTA: En caso de que el proyecto sea beneficiado, los conceptos y montos aquí registrados deberán adecuarse a lo establecido en cuanto al uso del recurso, descrito en las Reglas de Operación</p>
+              <p><strong>NOTA: En caso de que el proyecto sea beneficiado, los conceptos y montos aquí registrados deberán adecuarse a lo establecido en cuanto al uso del recurso, descrito en las Reglas de Operación</strong></p>
             </div>
           </div>
             <div class="row " id="rowError1" name="rowError1" style="display:none">
