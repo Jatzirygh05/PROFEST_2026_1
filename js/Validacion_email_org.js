@@ -1,32 +1,38 @@
 /* Validacion de e-mail(inicio) */
 function validarEmailorg(idCampo) {
-	
-if(idCampo == 'organigrama_correo1'){
-var organigrama_correo1Esc = document.getElementById('organigrama_correo1').value;
-var organigrama_correo1Esc_campo = document.getElementById('organigrama_correo1');
+
+var cuenta_error_falta_infora=0;
+		
+for(var p=1; p<=150; p++){
+
+	var organigrama_correoa = document.getElementById('organigrama_correo'+p).value;
+
+if(idCampo == 'organigrama_correoa'){
+var organigrama_correoaEsc = document.getElementById('organigrama_correoa').value;
+var organigrama_correoaEsc_campo = document.getElementById('organigrama_correoa');
 
 var emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 
-  if (emailRegex.test(organigrama_correo1)){
+  if (emailRegex.test(organigrama_correoa)){
    //alert("La direcci�n de email " + correo_electronico_admEsc + " es correcta.");
   //emailOK.innerText = "correcto";
-	errorganigrama_correo1As.className = 'form-text';
+	errorganigrama_correoaAs.className = 'form-text';
 	document.getElementById('emailOK_org').innerText="";
-	organigrama_correo1Esc_campo.className = 'form-control' ;
+	organigrama_correoaEsc_campo.className = 'form-control' ;
   }else{
   	
   	document.getElementById('emailOK_org').className = 'form-text form-text-error';
   	organigrama_correo1Esc_campo.value="";
-  	document.getElementById('emailOK_org').innerText="La direcci\u00F3n de email " + organigrama_correo1Esc + " es incorrecta";
+  	document.getElementById('emailOK_org').innerText="La direcci\u00F3n de email " + organigrama_correoaEsc + " es incorrecta";
 	
 	//alert("La direcci�n de email es incorrecta.");
-  	errorganigrama_correo1As.className = 'form-text form-text-error';
+  	errorganigrama_correoaAs.className = 'form-text form-text-error';
   	// esc_arreglo.className = 'form-control form-control-error'; 
-  	organigrama_correo1Esc_campo.className = 'form-control form-control-error' ;
+  	organigrama_correoaEsc_campo.className = 'form-control form-control-error' ;
 
   	var http_request = false;
-  	var nombre = 'organigrama_correo1';
-		var valor = document.getElementById('organigrama_correo1').value;
+  	var nombre = 'organigrama_correoa';
+		var valor = document.getElementById('organigrama_correoa').value;
 
 		console.log(nombre);
 		console.log(valor);
