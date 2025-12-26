@@ -751,9 +751,9 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                           <input type="text" class="form-control" name="pres_anual_tot_2010" id="pres_anual_tot_2010" value="<?php echo $result_resumenpresup[0]; ?>" readonly>
                         <!--input type="text" id="texto" name="texto" class="form-control"/-->
                         </td>
-                        <?php /*td><!--input type="text" class="form-control" name="ene_suma" id="ene_suma" value="<?=$porcentaje_total?>" readonly-->
-                          <input type="text" id="textod" name="textod" class="form-control" value="<?=$result_resumenpresup[1]?>" readonly />
-                        </td*/?>
+                        <td><input type="text" class="form-control" name="ene_suma" id="ene_suma" value="<?=$porcentaje_total?>" readonly>
+                          <!-- input type="text" id="textod" name="textod" class="form-control" value="<?=$result_resumenpresup[1]?>" readonly /-->
+                        </td>
                       </tr>
                     </table>
                     </div>
