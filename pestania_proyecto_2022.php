@@ -284,7 +284,7 @@
                       <td>
                        <?php if($f<=3){ ?><samp id="errorganigrama_correo<?=$f?>As" name="errorganigrama_correo<?=$f?>As" class="control-label" style="display:none">*</samp><?php } ?>
                         <input type="text" id="organigrama_correo<?=$f?>" name="organigrama_correo<?=$f?>" value="<?=$organigrama_correo_a?>" class="form-control proyectocampo" placeholder="Ingresa un correo electrónico">
-                        <small id="errorganigrama_correo<?=$f?>" name="errorganigrama_correo<?=$f?>" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small> 
+                        <small id="errorganigrama_correo<?=$f?>" name="errorganigrama_correo<?=$f?>" class="form-text form-text-error" style="display:none" placeholder="ejemplo@dominio.com" onblur="validarEmail2(this.id);">Este campo es obligatorio</small> 
                       </td>
                     </tr>
                   </tbody>

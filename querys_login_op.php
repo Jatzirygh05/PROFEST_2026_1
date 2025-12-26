@@ -173,26 +173,32 @@
                 $organigrama_nombre1    = $row_proy["organigrama_nombre1"];
                 $organigrama_cargo1     = $row_proy["organigrama_cargo1"];
                 $organigrama_funciones1 = $row_proy["organigrama_funciones1"];
+                $organigrama_correo1 = $row_proy["organigrama_correo1"];
                             
                 $organigrama_nombre2    = $row_proy["organigrama_nombre2"];
                 $organigrama_cargo2     = $row_proy["organigrama_cargo2"];
                 $organigrama_funciones2 = $row_proy["organigrama_funciones2"];
+                $organigrama_correo2 = $row_proy["organigrama_correo2"];                
                                 
                 $organigrama_nombre3    = $row_proy["organigrama_nombre3"];
                 $organigrama_cargo3     = $row_proy["organigrama_cargo3"];
                 $organigrama_funciones3 = $row_proy["organigrama_funciones3"];
+                $organigrama_correo3 = $row_proy["organigrama_correo3"];
                                 
                 $organigrama_nombre4    = $row_proy["organigrama_nombre4"];
                 $organigrama_cargo4     = $row_proy["organigrama_cargo4"];
                 $organigrama_funciones4 = $row_proy["organigrama_funciones4"];
+                $organigrama_correo4 = $row_proy["organigrama_correo4"];
                                 
                 $organigrama_nombre5    = $row_proy["organigrama_nombre5"];
                 $organigrama_cargo5     = $row_proy["organigrama_cargo5"];
                 $organigrama_funciones5 = $row_proy["organigrama_funciones5"];
+                $organigrama_correo5 = $row_proy["organigrama_correo5"];
 
                 $organigrama_nombre6    = $row_proy["organigrama_nombre6"];
                 $organigrama_cargo6     = $row_proy["organigrama_cargo6"];
                 $organigrama_funciones6 = $row_proy["organigrama_funciones6"];
+                $organigrama_correo7 = $row_proy["organigrama_correo7"];
                                 
                 $organigrama_nombre7    = $row_proy["organigrama_nombre7"];
                 $organigrama_cargo7     = $row_proy["organigrama_cargo7"];
@@ -201,6 +207,7 @@
                 $organigrama_nombre8    = $row_proy["organigrama_nombre8"];
                 $organigrama_cargo8     = $row_proy["organigrama_cargo8"];
                 $organigrama_funciones8 = $row_proy["organigrama_funciones8"];
+                $organigrama_correo8 = $row_proy["organigrama_correo8"];
 
                 $entidades_a1   = $row_proy["entidades_a1"];
                 $entidades_a2   = $row_proy["entidades_a2"];
@@ -212,7 +219,6 @@
                 $entidades_a8   = $row_proy["entidades_a8"];
                 $entidades_a9   = $row_proy["entidades_a9"];
                 $entidades_a10  = $row_proy["entidades_a10"];
-
 
                 $Concepto_gasto_a= $row_proy["Concepto_gasto_a"];
                 $Fuente_finan_a = $row_proy["Fuente_finan_a"];
