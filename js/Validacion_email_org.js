@@ -8,7 +8,7 @@ var organigrama_correoaEsc = idCampo.value;
 var organigrama_correoaEsc_campo = idCampo.value;
 
 var emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-
+/*
   if (emailRegex.test(organigrama_correoa)){
    //alert("La direcci�n de email " + correo_electronico_admEsc + " es correcta.");
   //emailOK.innerText = "correcto";
@@ -33,7 +33,7 @@ var emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 		console.log(nombre);
 		console.log(valor);
 	  var url_instancia='receptor2_Proyecto_organigrama.php?variable='+nombre+'&valor='+valor;
-		hacerPeticion(url_instancia);			
+		hacerPeticion(url_instancia);	*/		
   	}
 }
 /* Validacion de e-mail(fin) */
