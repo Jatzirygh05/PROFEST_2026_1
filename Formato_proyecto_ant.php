@@ -144,34 +144,42 @@ require_once('TCPDF-master/tcpdf.php');
   			$organigrama_nombre1  =  utf8_encode($registro3['organigrama_nombre1']);
   			$organigrama_cargo1   =  utf8_encode($registro3['organigrama_cargo1']);
   			$organigrama_funciones1   =  utf8_encode($registro3['organigrama_funciones1']);
+			$organigrama_correo1   =  utf8_encode($registro3['organigrama_correo1']);
 
   			$organigrama_nombre2  =  utf8_encode($registro3['organigrama_nombre2']);
   			$organigrama_cargo2  =  utf8_encode($registro3['organigrama_cargo2']);
   			$organigrama_funciones2   =  utf8_encode($registro3['organigrama_funciones2']);
+			$organigrama_correo2   =  utf8_encode($registro3['organigrama_correo2']);
 
   			$organigrama_nombre3  =  utf8_encode($registro3['organigrama_nombre3']);
   			$organigrama_cargo3   =  utf8_encode($registro3['organigrama_cargo3']);
   			$organigrama_funciones3   =  utf8_encode($registro3['organigrama_funciones3']);
+			$organigrama_correo3   =  utf8_encode($registro3['organigrama_correo3']);
 
   			$organigrama_nombre4  =  utf8_encode($registro3['organigrama_nombre4']);
   			$organigrama_cargo4   =  utf8_encode($registro3['organigrama_cargo4']);
   			$organigrama_funciones4   =  utf8_encode($registro3['organigrama_funciones4']);
+			$organigrama_correo4   =  utf8_encode($registro3['organigrama_correo4']);
 
   			$organigrama_nombre5  =  utf8_encode($registro3['organigrama_nombre5']);
   			$organigrama_cargo5   =  utf8_encode($registro3['organigrama_cargo5']);
   			$organigrama_funciones5   =  utf8_encode($registro3['organigrama_funciones5']);
+			$organigrama_correo5   =  utf8_encode($registro3['organigrama_correo5']);
 
   			$organigrama_nombre6  =  utf8_encode($registro3['organigrama_nombre6']);
   			$organigrama_cargo6   =  utf8_encode($registro3['organigrama_cargo6']);
   			$organigrama_funciones6   =  utf8_encode($registro3['organigrama_funciones6']);
+			$organigrama_correo6   =  utf8_encode($registro3['organigrama_correo6']);
 
   			$organigrama_nombre7  =  utf8_encode($registro3['organigrama_nombre7']);
   			$organigrama_cargo7   =  utf8_encode($registro3['organigrama_cargo7']);
   			$organigrama_funciones7   =  utf8_encode($registro3['organigrama_funciones7']);
+			$organigrama_correo7   =  utf8_encode($registro3['organigrama_correo7']);
 
   			$organigrama_nombre8  =  utf8_encode($registro3['organigrama_nombre8']);
   			$organigrama_cargo8   =  utf8_encode($registro3['organigrama_cargo8']);
   			$organigrama_funciones8   =  utf8_encode($registro3['organigrama_funciones8']);
+			$organigrama_correo8   =  utf8_encode($registro3['organigrama_correo8']);
 
   			//pagina 9
   			//estrategias de difusion del festival

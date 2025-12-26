@@ -299,6 +299,21 @@ function validarEnvio(){
 	var errorganigrama_funciones3		= document.getElementById('errorganigrama_funciones3');
 	var errorganigrama_funciones3As	= document.getElementById('errorganigrama_funciones3As');
 
+/* correo 2025 responsable del proyecto (inicio) */
+
+	var organigrama_correo1Esc		= document.getElementById('organigrama_correo1');
+	var errorganigrama_correo1		= document.getElementById('errorganigrama_correo1');
+	var errorganigrama_correo1As	= document.getElementById('errorganigrama_correo1As');
+
+	var organigrama_correo2Esc		= document.getElementById('organigrama_correo2');
+	var errorganigrama_correo2		= document.getElementById('errorganigrama_correo2');
+	var errorganigrama_correo2As	= document.getElementById('errorganigrama_correo2As');
+
+	var organigrama_correo3Esc		= document.getElementById('organigrama_correo3');
+	var errorganigrama_correo3		= document.getElementById('errorganigrama_correo3');
+	var errorganigrama_correo3As	= document.getElementById('errorganigrama_correo3As');
+/* correo 2025 responsable del proyecto (fin) */
+
 	var err_muestra_check	= document.getElementById('errmuestra_error');
 	var err_est_difucionAs	= document.getElementById('err_est_difucionAs');
 /* 2024 si, se quita para 2025 
@@ -488,6 +503,9 @@ function validarEnvio(){
 		organigrama_funciones1Esc,
 		organigrama_funciones2Esc,
 		organigrama_funciones3Esc,
+		organigrama_correo1Esc,
+		organigrama_correo2Esc,
+		organigrama_correo3Esc,
 		nombre_instancia_postulanteEsc,
 		nombre_titularEsc,
 		cargoEsc,
@@ -563,6 +581,9 @@ function validarEnvio(){
 		errorganigrama_funciones1,
 		errorganigrama_funciones2,
 		errorganigrama_funciones3,
+		errorganigrama_correo1,
+		errorganigrama_correo2,
+		errorganigrama_correo3,
 		errnombre_instancia_postulante,
 		errnombre_titular,
 		errcargo,
@@ -639,6 +660,9 @@ function validarEnvio(){
 		errorganigrama_funciones1As,
 		errorganigrama_funciones2As,
 		errorganigrama_funciones3As,
+		errorganigrama_correo1As,
+		errorganigrama_correo2As,
+		errorganigrama_correo3As,
 		errnombre_instancia_postulanteAs,
 		errnombre_titularAs,
 		errcargoAs,
