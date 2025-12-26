@@ -22,7 +22,7 @@ var emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 	
 	alert("La direcci�n de email es incorrecta.");
   	errorganigrama_correoaAs.className = 'form-text form-text-error';
-  	esc_arreglo.className = 'form-control form-control-error'; 
+  	document.getElementById('emailOK_org').innerText = 'form-control form-control-error'; 
   	organigrama_correoa.className = 'form-control form-control-error' ;
 
   	var http_request = false;
