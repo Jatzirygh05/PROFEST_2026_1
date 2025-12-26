@@ -754,9 +754,6 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                           <input type="text" id="textod" name="textod" class="form-control" value="<?=$result_resumenpresup[1]?>" readonly />
                         </td*/?>
                       </tr>
-                      <tr>
-                        <input class="form-control obten_porcentaje" id="Monto_unidad<?php echo $i?>" name="Monto_unidad<?php echo $i?>" placeholder="0.00" type="text" onChange="calc_presup(<?=$i?>, <?=$Infor_finan_apoyo_monto?>);sumaVerticalmonto(<?=$i?>, <?=$cuantos?>);" onKeyPress="return evita_comas(event)">
-                      </tr>
                     </table>
                     </div>
             </form>
