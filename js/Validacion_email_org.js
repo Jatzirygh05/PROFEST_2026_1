@@ -1,9 +1,9 @@
 /* Validacion de e-mail(inicio) */
 function validarEmailorg(idCampo) {
 
-var cuenta_error_falta_infora=0;
+console.log(idCampo);
 		
-for(var p=1; p<=150; p++){
+for(var p=1; p<=8; p++){
 
 	var organigrama_correoa = document.getElementById('organigrama_correo'+p).value;
 
