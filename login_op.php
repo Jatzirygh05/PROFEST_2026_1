@@ -129,6 +129,7 @@ include('querys_login_op.php');
     <script type="text/javascript" src="js/Validacion_email.js"></script>
     <script type="text/javascript" src="js/Validacion_email2.js"></script>
     <script type="text/javascript" src="js/Validacion_email_dir.js"></script>
+    <script type="text/javascript" src="js/Validacion_email_org.js"></script>    
  
     <script type="text/javascript" src="js/calcula_informacion_financiera_v2.js"></script>
     <script type="text/javascript" src="js/evita_comas.js"></script>
