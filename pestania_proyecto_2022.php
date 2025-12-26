@@ -283,8 +283,8 @@
                       </td>
                       <td>
                        <?php if($f<=3){ ?><samp id="errorganigrama_correo<?=$f?>As" name="errorganigrama_correo<?=$f?>As" class="control-label" style="display:none">*</samp><?php } ?>
-                        <input type="text" id="organigrama_correo<?=$f?>" name="organigrama_correo<?=$f?>" value="<?=$organigrama_correo_a?>" class="form-control proyectocampo" placeholder="Ingresa un correo electrónico">
-                        <small id="errorganigrama_correo<?=$f?>" name="errorganigrama_correo<?=$f?>" class="form-text form-text-error" style="display:none" placeholder="ejemplo@dominio.com" onblur="validarEmailorg(this.id);">Este campo es obligatorio</small>    
+                        <input type="text" id="organigrama_correo<?=$f?>" name="organigrama_correo<?=$f?>" value="<?=$organigrama_correo_a?>" class="form-control proyectocampo" placeholder="ejemplo@dominio.com" onblur="validarEmailorg(this.id);">
+                        <small id="errorganigrama_correo<?=$f?>" name="errorganigrama_correo<?=$f?>" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>    
                         <small id="errorganigrama_correo" name="errorganigrama_correo" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                         <small id="emailOK_org"></small>
                       </td>
