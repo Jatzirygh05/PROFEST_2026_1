@@ -3,10 +3,16 @@ function validarEmailorg(idCampo) {
 
 console.log(idCampo);
 
+const input = document.querySelector(idCampo);
 
+if (input) {
+  console.log(input.value);
+}
+
+/*
 	var organigrama_correoa = document.getElementById('idCampo').value;
 	console.log(organigrama_correoa);
-/*
+
 if(idCampo == 'organigrama_correoa'){
 var organigrama_correoaEsc = document.getElementById('organigrama_correoa').value;
 var organigrama_correoaEsc_campo = document.getElementById('organigrama_correoa');
