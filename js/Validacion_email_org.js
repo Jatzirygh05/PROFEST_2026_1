@@ -1,5 +1,5 @@
 /* Validacion de e-mail(inicio) */
-function validarEmail_dir(idCampo) {
+function validarEmailorg(idCampo) {
 	
 if(idCampo == 'organigrama_correo1'){
 var organigrama_correo1Esc = document.getElementById('organigrama_correo1').value;
