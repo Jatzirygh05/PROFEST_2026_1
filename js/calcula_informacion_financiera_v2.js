@@ -119,7 +119,7 @@ function suma_cantidades(){	//es la función que se esta usando en el apartado I
 			case 'C':
 				var m2=800000;
 				
-				//console.log('ENTRO A CATEGORIA B')
+				//console.log('ENTRO A CATEGORIA C')
 				/* 	B) Festivales de cuarta a séptima emisión, hasta $700,000.00 (setecientos mil pesos 00/100 M.N.).*/
 				if(m2<m1) { 			
 			
