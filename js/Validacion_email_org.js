@@ -3,9 +3,8 @@ function validarEmailorg(idCampo) {
 
 console.log(idCampo);
 
-for(var p=1; p<=8; p++){
 
-	var organigrama_correoa = document.getElementById('idCampo'+p).value;
+	var organigrama_correoa = document.getElementById('idCampo').value;
 	console.log(organigrama_correoa);
 /*
 if(idCampo == 'organigrama_correoa'){
@@ -40,6 +39,5 @@ var emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 	  var url_instancia='receptor2_Proyecto_organigrama.php?variable='+nombre+'&valor='+valor;
 		hacerPeticion(url_instancia);			
   	}*/
-  }
 }
 /* Validacion de e-mail(fin) */
