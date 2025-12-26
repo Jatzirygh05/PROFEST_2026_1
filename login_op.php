@@ -566,16 +566,6 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                                 <option value="D" <?php if($Info_financiera_categoria=="D"){ ?> selected="selected" <?php } ?>>d)	$1,000,000.00</option>
                                 <option value="E" <?php if($Info_financiera_categoria=="E"){ ?> selected="selected" <?php } ?>>e)	$1,500,000.00</option>
                                 <option value="F" <?php if($Info_financiera_categoria=="F"){ ?> selected="selected" <?php } ?>>f) $2,000,000.00</option>
-                                <!--div>
-                                <option value="" selected="selected">Selecciona una opción</option>
-                                <option value="A" <#?php if($Info_financiera_categoria=="A"){ ?> selected="selected" <#?php } ?>>a)	$300,000.00.</option>
-                                <option value="B" <#?php if($Info_financiera_categoria=="B"){ ?> selected="selected" <#?php } ?>>b)	$500,000.00.</option>
-                                <option value="C" <#?php if($Info_financiera_categoria=="C"){ ?> selected="selected" <#?php } ?>>c)	$800,000.00.</option>
-                                <option value="D" <#?php if($Info_financiera_categoria=="D"){ ?> selected="selected" <#?php } ?>>d)	$1,000,000.00.</option>
-                                <option value="E" <#?php if($Info_financiera_categoria=="E"){ ?> selected="selected" <#?php } ?>>e)	$1,500,000.00.</option>
-                                <option value="F" <#?php if($Info_financiera_categoria=="F"){ ?> selected="selected" <#?php } ?>>f)	$2,000,000.00.</option>
-                                </div-->
-
                               </select>
                               <small id="errinfo_financiera_categoria" name="errinfo_financiera_categoria" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                             </div>
