@@ -705,9 +705,9 @@ Toda la informaciÃ³n que se registre en los apartados de este sitio web, servirÃ
                           -->
                           <input class="form-control" id="Monto_unidad<?=$h?>" name="Monto_unidad<?=$h?>" value="<?=$Monto_unidad?>" placeholder="0.00" type="text" onChange="sumaVerticalmonto(<?=$h?>, <?=$cuantos?>);" onKeyPress="return evita_comas(event)">
                         </td>
-                        <?php /*td>
+                        <td>
                           <input class="form-control" id="Porcentaje<?=$h?>" name="Porcentaje<?=$h?>" value="<?=$Porcentaje?>" placeholder="0.00" type="text" readonly="readonly">
-                        </td*/?>
+                        </td>
                       </tr>
                     <?php }
                     $cuantos = $cuantos+1;
