@@ -3,11 +3,11 @@ function validarEmailorg(idCampo) {
 
 console.log(idCampo);
 
-const input = document.querySelector(idCampo);
+const input = document.createElement(idCampo);
+input.id = "correo";
+document.body.appendChild(input);
 
-if (input) {
-  console.log(input.value);
-}
+console.log(input.value);
 
 /*
 	var organigrama_correoa = document.getElementById('idCampo').value;
