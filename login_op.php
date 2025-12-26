@@ -129,7 +129,7 @@ include('querys_login_op.php');
     <script type="text/javascript" src="js/Validacion_email.js"></script>
     <script type="text/javascript" src="js/Validacion_email2.js"></script>
     <script type="text/javascript" src="js/Validacion_email_dir.js"></script>
-   
+    <script type="text/javascript" src="js/Validacion_email_org.js"></script>
  
     <script type="text/javascript" src="js/calcula_informacion_financiera_v2.js"></script>
     <script type="text/javascript" src="js/evita_comas.js"></script>
@@ -827,7 +827,6 @@ Toda la información que se registre en los apartados de este sitio web, servir�
   </div>
 </main>
 
-<script type="text/javascript" src="js/Validacion_email_org.js"></script>
 <script type="text/javascript" src="js/funciones_load_cronograma.js"></script> <!-- código de metas -->
 <script type="text/javascript" src="js/Gu_Mo_El_cronograma.js"></script> <!-- código de metas -->
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> <!-- este es del código de lugares -->
