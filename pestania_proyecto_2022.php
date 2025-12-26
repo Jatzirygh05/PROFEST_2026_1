@@ -284,19 +284,7 @@
                       <td>
                        <?php if($f<=3){ ?><samp id="errorganigrama_correo<?=$f?>As" name="errorganigrama_correo<?=$f?>As" class="control-label" style="display:none">*</samp><?php } ?>
                         <input type="text" id="organigrama_correo<?=$f?>" name="organigrama_correo<?=$f?>" value="<?=$organigrama_correo_a?>" class="form-control proyectocampo" placeholder="Ingresa un correo electrónico">
-                        <small id="errorganigrama_correo<?=$f?>" name="errorganigrama_correo<?=$f?>" class="form-text form-text-error" style="display:none" placeholder="ejemplo@dominio.com" onblur="validarEmail2(this.id);">Este campo es obligatorio</small> 
-                      
-                      <!--
-                      <div class="form-group">
-              <label>Correo electrónico<samp id="errcorreo_electronico_admAs" name="errcorreo_electronico_admAs" class="form-text">*</samp>:</label>
-              <input type="text" id="correo_electronico_adm" name="correo_electronico_adm" class="form-control" value="quince@cultura.gob.mx" placeholder="ejemplo@dominio.com" onblur="validarEmail2(this.id);">
-              <small id="errcorreo_electronico_adm" name="errcorreo_electronico_adm" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
-              <small id="emailOK3"></small>
-              <small id="errCorreocorreo_electronico_adm" name="errcorreo_electronico_adm" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
-              <small id="emailOK_adm" class=""></small>
-            </div>             
-                          -->
-                      
+                        <small id="errorganigrama_correo<?=$f?>" name="errorganigrama_correo<?=$f?>" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small> 
                       </td>
                     </tr>
                   </tbody>
@@ -320,7 +308,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="form-group"> 
-              <label>Nombre del festival<samp id="errnombre_festivalAs" name="errnombre_festivalAs" class="control-label">*</samp><small>El nombre del proyecto que aquí se registre deberá ser el mismo con el que se difundirá, y será el que se tomará en cuenta para el proceso de convenio y no podra ser modificado en ninguna de las etapas siguientes.</small></label><input type="text" id="nombre_festival" name="nombre_festival" class="form-control segunampo" value="<?=$nombre_festival?>" placeholder="Ingresa el nombre del festival" maxlength="96"><small id="errnombre_festival" name="errnombre_festival" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+              <label>Nombre del festival<samp id="errnombre_festivalAs" name="errnombre_festivalAs" class="control-label">*</samp>:<span class="glyphicon glyphicon glyphicon-question-sign" aria-hidden="true" data-placement="left" title="El nombre del proyecto que aquí se registre deberá ser el mismo con el que se difundirá, y será el que se tomará en cuenta para el proceso de convenio y no podra ser modificado en ninguna de las etapas siguientes."></span></label><input type="text" id="nombre_festival" name="nombre_festival" class="form-control segunampo" value="<?=$nombre_festival?>" placeholder="Ingresa el nombre del festival" maxlength="96"><small id="errnombre_festival" name="errnombre_festival" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
               <!--label>Nombre del festival<samp id="errnombre_festivalAs" name="errnombre_festivalAs" class="control-label">*</samp>:<span class="glyphicon glyphicon glyphicon-question-sign" aria-hidden="true" data-placement="left" title="El nombre del proyecto que aquí se registre deberá ser el mismo con el que se difundirá, y será el que se tomará en cuenta para el proceso de convenio y no podra ser modificado en ninguna de las etapas siguientes."></span></label><input type="text" id="nombre_festival" name="nombre_festival" class="form-control segunampo" value="<?=$nombre_festival?>" placeholder="Ingresa el nombre del festival" maxlength="96"><small id="errnombre_festival" name="errnombre_festival" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small-->
             </div>
           </div>
