@@ -735,9 +735,9 @@ Toda la informaciÃ³n que se registre en los apartados de este sitio web, servirÃ
                           */ ?>
                           <input class="form-control obten_porcentaje" id="Monto_unidad<?php echo $i?>" name="Monto_unidad<?php echo $i?>" placeholder="0.00" type="text" onChange="calc_presup(<?=$i?>, <?=$Infor_finan_apoyo_monto?>);sumaVerticalmonto(<?=$i?>, <?=$cuantos?>);" onKeyPress="return evita_comas(event)">
                         </td>
-                        <?php /*td>
+                        <td>
                           <input class="form-control" id="Porcentaje<?php echo $i?>" name="Porcentaje<?php echo $i?>" placeholder="0.00" type="text" readonly>
-                        </td*/?>
+                        </td>
                       </tr>
                       <?php } ?>
                       <tr>
