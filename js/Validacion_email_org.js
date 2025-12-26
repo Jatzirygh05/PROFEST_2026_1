@@ -5,8 +5,9 @@ console.log(idCampo);
 
 for(var p=1; p<=8; p++){
 
-	/*var organigrama_correoa = document.getElementById('idCampo'+p).value;
-
+	var organigrama_correoa = document.getElementById('idCampo'+p).value;
+	console.log(organigrama_correoa);
+/*
 if(idCampo == 'organigrama_correoa'){
 var organigrama_correoaEsc = document.getElementById('organigrama_correoa').value;
 var organigrama_correoaEsc_campo = document.getElementById('organigrama_correoa');
