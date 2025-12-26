@@ -3,13 +3,9 @@ function validarEmailorg(idCampo) {
 
 console.log(idCampo);
 
-const input = document.getElementById("idCampo");
 
-if (input !== null) {
-  console.log(input.value);
-} else {
-  console.error("El elemento no existe");
-}
+  console.log(idCampo.value);
+
 
 /*
 	var organigrama_correoa = document.getElementById('idCampo').value;
