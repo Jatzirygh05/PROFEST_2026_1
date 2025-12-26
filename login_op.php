@@ -800,8 +800,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
           <!-- INICIO PESTAÑA "Carga documentos" -->
             <div class="tab-pane" id="tab-04">
                   <div class="row">
-                    <div class="col-md-8"><h3>Carga de documentos obligatorios</h3></div>
-                    <div>Estimada/o postulante, este campo se habilitará hasta que todas las demás etapas de llenado hayan sido registradas en su totalidad</div>
+                    <div class="col-md-8"><h3>Carga de documentos obligatorios</h3><p>Estimada/o postulante, este campo se habilitará hasta que todas las demás etapas de llenado hayan sido registradas en su totalidad</p></div>
                     <div class="col-md-12"><hr class="red small-margin"></div>
                   </div>
                       <div class="row">
