@@ -4,8 +4,8 @@ function validarEmailorg(idCampo) {
 	console.log(organigrama_correoa);
 
 if(idCampo == 'organigrama_correoa'){
-var organigrama_correoaEsc = document.getElementById('organigrama_correoa').value;
-var organigrama_correoaEsc_campo = document.getElementById('organigrama_correoa');
+var organigrama_correoaEsc = idCampo.value;
+var organigrama_correoaEsc_campo = idCampo.value;
 
 var emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 
