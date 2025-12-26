@@ -744,7 +744,6 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
-                        <td>&nbsp;</td>
                         <td>
                         <?php include_once('funciones_obtener_valores_2022.php'); ?>
                         <!--div id="imp_var_ejemplo"></div-->
