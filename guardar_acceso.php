@@ -6,7 +6,7 @@ require_once('./Connections/conexion.php'); ?>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Convocatoria Profest 2025</title>
+    <title>Convocatoria Profest 2026</title>
     <link rel="shortcut icon" href="https://framework-gb.cdn.gob.mx/favicon.ico">
     <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -24,7 +24,7 @@ require_once('./Connections/conexion.php'); ?>
         </div>
  		<div class="row">
           <div class="col-sm-8">
-            <h1>Convocatoria PROFEST 2025</h1>
+            <h1>Convocatoria PROFEST 2026</h1>
           </div>
 		</div>
         <div class="row top-buffer"></div>

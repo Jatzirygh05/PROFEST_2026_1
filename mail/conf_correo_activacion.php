@@ -27,9 +27,6 @@ try {
 				<td>
 					<p><div style='font-family:Helvetica,Arial; font-size:18px; color:#FF0000'><strong>FAVOR DE NO CONTESTAR A ESTE CORREO, CUALQUIER DUDA O COMENTARIO FAVOR DE COMUNICARSE A profest@cultura.gob.mx</strong></div></p>
 					<br>
-					  <p><div style='font-family:Helvetica,Arial; font-size:18px'><strong>Atentamente<br>
-                      Direcci&oacute;n General de Promoci&oacute;n y Festivales Culturales.</strong></div></p>
-					  <br>
 					  <div style='font-family:Helvetica,Arial; font-size:16px'>
 					  <p>Estimada/o postulante  ".$nombre_usuario_reg_proyecto."<br>
                       Te damos la bienvenida a la Plataforna PROFEST de la Secretar&iacute;a de Cultura, 
@@ -44,7 +41,11 @@ try {
 		  		</td>
        		</tr>
 		</table>";
-		/*<tr>
+		/*
+		 <!-- p><div style='font-family:Helvetica,Arial; font-size:18px'><strong>Atentamente<br>
+                      Direcci&oacute;n General de Promoci&oacute;n y Festivales Culturales.</strong></div></p>
+					  <br-->
+		<tr>
 				<td>
 					<br><p><div style='font-family:Helvetica,Arial; font-size:16px'><strong>".$nombre_firma."<br>".$puesto_firma."</strong></div></p><br>
 				</td>
