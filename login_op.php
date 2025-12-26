@@ -129,7 +129,7 @@ include('querys_login_op.php');
     <script type="text/javascript" src="js/Validacion_email.js"></script>
     <script type="text/javascript" src="js/Validacion_email2.js"></script>
     <script type="text/javascript" src="js/Validacion_email_dir.js"></script>
-    <script type="text/javascript" src="js/Validacion_email_org.js"></script>
+   
  
     <script type="text/javascript" src="js/calcula_informacion_financiera_v2.js"></script>
     <script type="text/javascript" src="js/evita_comas.js"></script>
@@ -702,7 +702,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                           obtenporcentaje(<?=$h?>, <?=$Infor_finan_costo_monto?>);
                           sumaVerticalporcentajes(<?=$h?>, <?=$cuantos?>);
                           calc_presup(<?=$h?>, <?=$Infor_finan_apoyo_monto?>);
-                        -->
+                          -->
                           <input class="form-control" id="Monto_unidad<?=$h?>" name="Monto_unidad<?=$h?>" value="<?=$Monto_unidad?>" placeholder="0.00" type="text" onChange="sumaVerticalmonto(<?=$h?>, <?=$cuantos?>);" onKeyPress="return evita_comas(event)">
                         </td>
                         <?php /*td>
@@ -753,6 +753,9 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                         <?php /*td><!--input type="text" class="form-control" name="ene_suma" id="ene_suma" value="<?=$porcentaje_total?>" readonly-->
                           <input type="text" id="textod" name="textod" class="form-control" value="<?=$result_resumenpresup[1]?>" readonly />
                         </td*/?>
+                      </tr>
+                      <tr>
+                        <input class="form-control obten_porcentaje" id="Monto_unidad<?php echo $i?>" name="Monto_unidad<?php echo $i?>" placeholder="0.00" type="text" onChange="calc_presup(<?=$i?>, <?=$Infor_finan_apoyo_monto?>);sumaVerticalmonto(<?=$i?>, <?=$cuantos?>);" onKeyPress="return evita_comas(event)">
                       </tr>
                     </table>
                     </div>
@@ -827,6 +830,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
   </div>
 </main>
 
+<script type="text/javascript" src="js/Validacion_email_org.js"></script>
 <script type="text/javascript" src="js/funciones_load_cronograma.js"></script> <!-- código de metas -->
 <script type="text/javascript" src="js/Gu_Mo_El_cronograma.js"></script> <!-- código de metas -->
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> <!-- este es del código de lugares -->
