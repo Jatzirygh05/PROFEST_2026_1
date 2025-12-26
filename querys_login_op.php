@@ -198,7 +198,7 @@
                 $organigrama_nombre6    = $row_proy["organigrama_nombre6"];
                 $organigrama_cargo6     = $row_proy["organigrama_cargo6"];
                 $organigrama_funciones6 = $row_proy["organigrama_funciones6"];
-                $organigrama_correo7 = $row_proy["organigrama_correo7"];
+                $organigrama_correo6 = $row_proy["organigrama_correo6"];
                                 
                 $organigrama_nombre7    = $row_proy["organigrama_nombre7"];
                 $organigrama_cargo7     = $row_proy["organigrama_cargo7"];
