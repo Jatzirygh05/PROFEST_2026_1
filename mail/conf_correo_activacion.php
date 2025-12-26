@@ -32,7 +32,7 @@ try {
 					  <br>
 					  <div style='font-family:Helvetica,Arial; font-size:16px'>
 					  <p>Estimada/o postulante  ".$nombre_usuario_reg_proyecto."<br>
-                      Te damos la Bienvenida al Sistema PROFEST de la Secretar&iacute;a de Cultura, 
+                      Te damos la bienvenida a la Plataforna PROFEST de la Secretar&iacute;a de Cultura, 
                       te informamos que tu cuenta ha sido activada correctamente:</p><br>
 					  <p>Usuario: ".$cual_usu."</p>
 					  <p>Contrase&#241;a: ".$cons_cual_primero."</p><br>
