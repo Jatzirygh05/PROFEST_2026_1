@@ -15,6 +15,7 @@
 							}		
 							sumaT=sumaT+campov;
 
+   var campov=eval ('document.apInf.Monto_unidad'+i+'.value');
  campov = parseFloat(campov.replace(/[$,\s]/g, ''));
  console.log(campov);
  console.log(Infor_finan_costo_monto);
