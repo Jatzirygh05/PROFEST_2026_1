@@ -30,14 +30,14 @@ console.log(monto_coinversion2);*/
 					  sumaVerticalporcentajes(id, cuantos);
 
 function sumaVerticalporcentajes(id, cuantos){
-	alert("entro");
+	
 var sumaT=0;
 var cuantos = 50
 
 	for(var i=1;i<=cuantos;i++){
 	
-				var porcentv = eval ('document.formul.Porcentaje'+i+'.value');
-			
+				var porcentv = document.getElementById('Porcentaje'+i).value;
+			alert(porcentv);
 				if(porcentv.length==0) porcentv = 0
 				
 				sumaT=sumaT+parseFloat(porcentv);								
