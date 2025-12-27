@@ -27,10 +27,11 @@
 							sumaT=sumaT+campov;
 
 				sumaT2=sumaT2+parseFloat(subt_varios);
+				
+				}
 				alert(sumaT2);
 				var ene_suma=document.getElementById('ene_suma').value; 
 				ene_suma.value=Math.round(sumaT2);
-				}
 				
 
 			         /*var valor_immp = document.getElementById("pres_anual_tot_2010").value;
