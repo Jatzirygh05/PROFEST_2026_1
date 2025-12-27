@@ -27,7 +27,7 @@ console.log(monto_coinversion2);*/
 							//console.log(sumaT);
 			         //document.getElementById('imp_var_ejemplo').innerHTML = sumaT;
 			          alert(" sumaT: " + sumaT + "\n");
-console.log(id);
+
 				obtenporcentaje(id, Infor_finan_costo_monto);	
 
 function obtenporcentaje(id, Infor_finan_costo_monto){
@@ -35,8 +35,10 @@ function obtenporcentaje(id, Infor_finan_costo_monto){
 var Infor_finan_costo_monto = Infor_finan_costo_monto
 var m1_fuente = Infor_finan_costo_monto
 
+	console.log(Infor_finan_costo_monto);
+
                 var campov=eval ('document.apInf.Monto_unidad'+id+'.value');
-			
+		
 				if(campov.length==0){ 
 					campov = '' 
 					var porcent_v =   eval ('document.apInf.Porcentaje'+id);
