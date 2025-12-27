@@ -141,7 +141,7 @@ include('querys_login_op.php');
     <script type="text/javascript" src="js/select_dependientes_colonia.js"></script>
     <script type="text/javascript" src="js/select_dependientes_cp.js"></script>
     <script type="text/javascript" src="js/select_dependientes_estado.js"></script>
-
+    <script type="text/javascript" src="js/obten_porcentaje.js"></script>
     <!--(FIN) script para el codigo postal -->
     <!--obten_porcentaje funcion que utilizaba cuando guardaba desde que estaba en el campo antes de poner el boton Guardar en esta sección>
     <script type="text/javascript" src="js/obten_porcentaje.js"></script-->
@@ -703,7 +703,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
                           sumaVerticalporcentajes(<?=$h?>, <?=$cuantos?>);
                           calc_presup(<?=$h?>, <?=$Infor_finan_apoyo_monto?>);
                           -->
-                          <input class="form-control" id="Monto_unidad<?=$h?>" name="Monto_unidad<?=$h?>" value="<?=$Monto_unidad?>" placeholder="0.00" type="text" onChange="calc_presup(<?=$i?>, <?=$Infor_finan_apoyo_monto?>);sumaVerticalmonto(<?=$h?>, <?=$cuantos?>);" onKeyPress="return evita_comas(event)">
+                          <input class="form-control" id="Monto_unidad<?=$h?>" name="Monto_unidad<?=$h?>" value="<?=$Monto_unidad?>" placeholder="0.00" type="text" onChange="sumaVerticalmonto(<?=$h?>, <?=$cuantos?>);obtenporcentaje(<?=$h?>, <?=$Infor_finan_costo_monto?>);" onKeyPress="return evita_comas(event)">
                         </td>
                         <td>
                           <input class="form-control" id="Porcentaje<?=$h?>" name="Porcentaje<?=$h?>" value="<?=$Porcentaje?>" placeholder="0.00" type="text" readonly="readonly">
