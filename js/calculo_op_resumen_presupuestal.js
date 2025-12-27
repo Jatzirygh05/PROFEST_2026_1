@@ -16,6 +16,7 @@
 							sumaT=sumaT+campov;
  
 					var subt_varios =  100 * campov / Infor_finan_costo_monto; 
+					console.log(subt_varios);
 					var porcent_v =   eval ('document.apInf.Porcentaje'+i);
 					porcent_v.value = subt_varios;
 
