@@ -4,6 +4,7 @@
 			//var m1_fuente = Infor_finan_costo_monto
 			var monto_coinversion2 = document.getElementById('monto_coinversion2').value;
 			var sumaT=0;
+			var sumaT2=0;
 			var cuantos = 50;
 
 				for(var i=1;i<=cuantos;i++){
