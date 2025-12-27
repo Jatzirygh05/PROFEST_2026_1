@@ -42,7 +42,7 @@ var cuantos = 50
 				
 				sumaT=sumaT+parseFloat(porcentv);								
 	}              			
-				var obtsuma_porcentaje= eval('document.formul.ene_suma');
+				var obtsuma_porcentaje= getElementById('ene_suma')
                 //obtsuma_porcentaje.value=parseInt(sumaT,10)
 				obtsuma_porcentaje.value=Math.round(sumaT);
 }
