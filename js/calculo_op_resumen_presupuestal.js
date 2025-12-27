@@ -14,7 +14,6 @@
 								campov = parseFloat(campov);
 							}		
 							sumaT=sumaT+campov;
-
 				}
 			         /*var valor_immp = document.getElementById("pres_anual_tot_2010").value;
 			           valor_immp=sumaT;*/
@@ -27,18 +26,10 @@ console.log(monto_coinversion2);*/
 							//console.log(sumaT);
 			         //document.getElementById('imp_var_ejemplo').innerHTML = sumaT;
 			          alert(" sumaT: " + sumaT + "\n");
-
-				obtenporcentaje(id, Infor_finan_costo_monto);	
-
-function obtenporcentaje(id, Infor_finan_costo_monto){
-
-var Infor_finan_costo_monto = Infor_finan_costo_monto
-var m1_fuente = Infor_finan_costo_monto
-
-	console.log(Infor_finan_costo_monto);
-
+					var m1_fuente = Infor_finan_costo_monto
+alert(m1_fuente);
                 var campov=eval ('document.apInf.Monto_unidad'+id+'.value');
-		
+			
 				if(campov.length==0){ 
 					campov = '' 
 					var porcent_v =   eval ('document.apInf.Porcentaje'+id);
@@ -50,7 +41,7 @@ var m1_fuente = Infor_finan_costo_monto
 					var porcent_v =   eval ('document.apInf.Porcentaje'+id);
 					porcent_v.value = subt_varios;
 				}
-}
+
 			 /*	prueba	
 function sumaVerticalporcentajes(id, cuantos){
 
@@ -67,6 +58,28 @@ var cuantos = 50
             //obtsuma_porcentaje.value=parseInt(sumaT,10)
 			obtsuma_porcentaje.value=Math.round(sumaT);
 }
+					 
+function obtenporcentaje(id, Infor_finan_costo_monto){
+
+var Infor_finan_costo_monto = Infor_finan_costo_monto
+var m1_fuente = Infor_finan_costo_monto
+
+                var campov=eval ('document.apInf.Monto_unidad'+id+'.value');
+			
+				if(campov.length==0){ 
+					campov = '' 
+					var porcent_v =   eval ('document.apInf.Porcentaje'+id);
+					porcent_v.value = campov;
+				} else { 
+					campov = parseFloat(campov.replace(/[$,\s]/g, ''));
+ 
+					var subt_varios = 100 * campov / m1_fuente; 
+					var porcent_v =   eval ('document.apInf.Porcentaje'+id);
+					porcent_v.value = subt_varios;
+				}
+}
+
+
 
 */
 
