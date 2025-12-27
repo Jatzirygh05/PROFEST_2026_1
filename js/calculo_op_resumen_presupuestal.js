@@ -8,18 +8,18 @@
 
 				for(var i=1;i<=cuantos;i++){
 			      var campov=document.getElementById(`Monto_unidad${i}`).value;
+
+ console.log(campov);
+ console.log(Infor_finan_costo_monto);
+					/*var subt_varios =  100 * campov / Infor_finan_costo_monto; 
+					console.log(subt_varios);
+					var porcent_v =   eval ('document.apInf.Porcentaje'+i);
+					porcent_v.value = subt_varios;*/
+
 							if(campov.length==0){ 
 								campov = 0 
 							} else { 
 								campov = parseFloat(campov);
- console.log(campov);
- console.log(Infor_finan_costo_monto);
-					var subt_varios =  100 * campov / Infor_finan_costo_monto; 
-					console.log(subt_varios);
-					var porcent_v =   eval ('document.apInf.Porcentaje'+i);
-					porcent_v.value = subt_varios;
-
-
 							}		
 							sumaT=sumaT+campov;
 
