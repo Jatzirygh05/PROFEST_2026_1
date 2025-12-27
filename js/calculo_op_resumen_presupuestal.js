@@ -35,19 +35,15 @@ var sumaT=0;
 var cuantos = 50
 
 	for(var i=1;i<=cuantos;i++){
-	
-				var porcentv = eval ('document.apInf.Porcentaje'+i+'.value');
-			
-				if(porcentv.length==0) porcentv = 0
-				
-				sumaT=sumaT+parseFloat(porcentv);								
+		var porcentv = eval ('document.apInf.Porcentaje'+i+'.value');
+		if(porcentv.length==0) porcentv = 0
+			sumaT=sumaT+parseFloat(porcentv);	
+			alert(sumaT);							
 	}              			
-				var obtsuma_porcentaje= eval('document.apInf.ene_suma');
-                //obtsuma_porcentaje.value=parseInt(sumaT,10)
-				obtsuma_porcentaje.value=Math.round(sumaT);
+			var obtsuma_porcentaje= eval('document.apInf.ene_suma');
+            //obtsuma_porcentaje.value=parseInt(sumaT,10)
+			obtsuma_porcentaje.value=Math.round(sumaT);
 }
-
-
 					  /*
 
 
