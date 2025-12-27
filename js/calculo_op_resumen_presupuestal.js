@@ -12,17 +12,16 @@
 								campov = 0 
 							} else { 
 								campov = parseFloat(campov);
-							}		
-							sumaT=sumaT+campov;
-
-   var campov=eval ('document.apInf.Monto_unidad'+i+'.value');
- campov = parseFloat(campov.replace(/[$,\s]/g, ''));
  console.log(campov);
  console.log(Infor_finan_costo_monto);
 					var subt_varios =  100 * campov / Infor_finan_costo_monto; 
 					console.log(subt_varios);
 					var porcent_v =   eval ('document.apInf.Porcentaje'+i);
 					porcent_v.value = subt_varios;
+
+
+							}		
+							sumaT=sumaT+campov;
 
 				}
 			         /*var valor_immp = document.getElementById("pres_anual_tot_2010").value;
