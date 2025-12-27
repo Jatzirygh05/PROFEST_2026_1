@@ -30,7 +30,7 @@
 				}
 				//alert(sumaT2);
 				var ene_suma=document.getElementById('ene_suma'); 
-				ene_suma.value=Math.round(sumaT2);
+				ene_suma.value=parseFloat(sumaT2);
 				
 			         /*var valor_immp = document.getElementById("pres_anual_tot_2010").value;
 			           valor_immp=sumaT;*/
