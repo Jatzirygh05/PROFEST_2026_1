@@ -17,7 +17,7 @@
 				var subt_varios =  100 * campov / Infor_finan_costo_monto; 
 					//console.log(subt_varios);
 				var porcent_v = eval ('document.apInf.Porcentaje'+i);
-					porcent_v.value = parseFloat(subt_varios);
+					porcent_v.value = subt_varios.toFixed(2);
  				//calculo del porcentaje (fin)
 						if(campov.length==0){ 
 							campov = 0 
@@ -30,7 +30,7 @@
 				}
 				//alert(sumaT2);
 				var ene_suma=document.getElementById('ene_suma'); 
-				ene_suma.value=parseFloat(sumaT2);
+				ene_suma.value=sumaT2.toFixed(2);
 				
 			         /*var valor_immp = document.getElementById("pres_anual_tot_2010").value;
 			           valor_immp=sumaT;*/
