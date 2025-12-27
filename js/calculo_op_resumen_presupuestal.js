@@ -8,7 +8,7 @@
 
 				for(var i=1;i<=cuantos;i++){
 			      var campov=document.getElementById(`Monto_unidad${i}`).value;
-
+var Infor_finan_costo_monto=eval ('document.apInf.Infor_finan_costo_monto.value');
  console.log(campov);
  console.log(Infor_finan_costo_monto);
 					/*var subt_varios =  100 * campov / Infor_finan_costo_monto; 
