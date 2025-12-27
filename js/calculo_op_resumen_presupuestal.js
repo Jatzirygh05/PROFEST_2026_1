@@ -26,7 +26,7 @@
 						}		
 							sumaT=sumaT+campov;
 				}
-				sumaT2=sumaT2+parseFloat(porcentv);
+				sumaT2=sumaT2+parseFloat(subt_varios);
 				
 				var ene_suma=document.getElementById('ene_suma').value; 
 				ene_suma.value=Math.round(sumaT2);
