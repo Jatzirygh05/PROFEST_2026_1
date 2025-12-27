@@ -14,6 +14,7 @@
 								campov = parseFloat(campov);
 							}		
 							sumaT=sumaT+campov;
+
 				}
 			         /*var valor_immp = document.getElementById("pres_anual_tot_2010").value;
 			           valor_immp=sumaT;*/
@@ -26,7 +27,9 @@ console.log(monto_coinversion2);*/
 							//console.log(sumaT);
 			         //document.getElementById('imp_var_ejemplo').innerHTML = sumaT;
 			          alert(" sumaT: " + sumaT + "\n");
+console.log(id);
 				obtenporcentaje(id, Infor_finan_costo_monto);	
+
 function obtenporcentaje(id, Infor_finan_costo_monto){
 
 var Infor_finan_costo_monto = Infor_finan_costo_monto
