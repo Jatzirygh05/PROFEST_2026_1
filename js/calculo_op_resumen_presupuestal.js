@@ -27,8 +27,10 @@ console.log(monto_coinversion2);*/
 			         //document.getElementById('imp_var_ejemplo').innerHTML = sumaT;
 			          alert(" sumaT: " + sumaT + "\n");
 
+					  sumaVerticalporcentajes(id, cuantos);
+
 function sumaVerticalporcentajes(id, cuantos){
-	
+	alert("entro");
 var sumaT=0;
 var cuantos = 50
 
