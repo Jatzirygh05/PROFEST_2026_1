@@ -670,7 +670,8 @@ Toda la informaciÃ³n que se registre en los apartados de este sitio web, servirÃ
                             $Monto_unidad=$fila2['Monto_unidad'];
                             $Porcentaje=$fila2['Porcentaje'];
                         ?>
-                        <td><?php echo $h; ?>*<input type="hidden" name="id_presupuesto<?=$h?>" id="id_presupuesto<?=$h?>" value="<?=$id_presupuesto?>">
+                        <td><?php echo $h; 
+                        if($h<=3){ echo "*"; ?><input type="hidden" name="id_presupuesto<?=$h?>" id="id_presupuesto<?=$h?>" value="<?=$id_presupuesto?>">
                         <input type="hidden" name="cuantos_INSERT" id="cuantos_INSERT" value="<?=$cuantos?>">
                         <td> 
                         <select class='form-control proyectocampo' name='Concepto_gasto<?=$h?>' id='Concepto_gasto<?=$h?>'>
