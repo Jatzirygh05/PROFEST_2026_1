@@ -8,13 +8,16 @@
 
 				for(var i=1;i<=cuantos;i++){
 			      var campov=document.getElementById(`Monto_unidad${i}`).value;
-var Infor_finan_costo_monto=document.getElementById('Infor_finan_costo_monto').value;
- console.log(campov);
- console.log(Infor_finan_costo_monto);
-					/*var subt_varios =  100 * campov / Infor_finan_costo_monto; 
+
+				 //calculo del porcentaje (inicio)
+				  var Infor_finan_costo_monto=document.getElementById('Infor_finan_costo_monto').value; 
+					console.log(campov);
+					console.log(Infor_finan_costo_monto);
+				  var subt_varios =  100 * campov / Infor_finan_costo_monto; 
 					console.log(subt_varios);
 					var porcent_v =   eval ('document.apInf.Porcentaje'+i);
-					porcent_v.value = subt_varios;*/
+					porcent_v.value = Math.round(subt_varios);
+ 				//calculo del porcentaje (fin)
 
 							if(campov.length==0){ 
 								campov = 0 
