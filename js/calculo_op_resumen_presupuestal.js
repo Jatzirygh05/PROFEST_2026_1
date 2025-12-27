@@ -37,7 +37,7 @@ alert(Infor_finan_costo_monto);
 				} else { 
 					campov = parseFloat(campov.replace(/[$,\s]/g, ''));
  
-					var subt_varios = 100 * campov / m1_fuente; 
+					var subt_varios = 100 * campov / Infor_finan_costo_monto; 
 					var porcent_v =   eval ('document.apInf.Porcentaje'+id);
 					porcent_v.value = subt_varios;
 				}
