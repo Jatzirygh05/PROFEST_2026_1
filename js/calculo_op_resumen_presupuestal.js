@@ -30,7 +30,7 @@
 				
 				}
 				alert(sumaT2);
-				var ene_suma=document.getElementById('ene_suma').value; 
+				var ene_suma=document.getElementById('ene_suma'); 
 				ene_suma.value=Math.round(sumaT2);
 				
 
