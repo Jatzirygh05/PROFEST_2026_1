@@ -141,27 +141,6 @@ include('querys_login_op.php');
     <script type="text/javascript" src="js/select_dependientes_colonia.js"></script>
     <script type="text/javascript" src="js/select_dependientes_cp.js"></script>
     <script type="text/javascript" src="js/select_dependientes_estado.js"></script>
-<script>
-    function obtenporcentaje(id, Infor_finan_costo_monto){
-
-var Infor_finan_costo_monto = Infor_finan_costo_monto
-var m1_fuente = Infor_finan_costo_monto
-
-                var campov=eval ('document.formul.Monto_unidad'+id+'.value');
-			
-				if(campov.length==0){ 
-					campov = '' 
-					var porcent_v =   eval ('document.formul.Porcentaje'+id);
-					porcent_v.value = campov;
-				} else { 
-					campov = parseFloat(campov.replace(/[$,\s]/g, ''));
- 
-					var subt_varios = 100 * campov / m1_fuente; 
-					var porcent_v =   eval ('document.formul.Porcentaje'+id);
-					porcent_v.value = subt_varios;
-				}
-}
-</script>
     <!--(FIN) script para el codigo postal -->
     <!--obten_porcentaje funcion que utilizaba cuando guardaba desde que estaba en el campo antes de poner el boton Guardar en esta secci√≥n>
     <script type="text/javascript" src="js/obten_porcentaje.js"></script-->
@@ -723,7 +702,7 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                           sumaVerticalporcentajes(<?=$h?>, <?=$cuantos?>);
                           calc_presup(<?=$h?>, <?=$Infor_finan_apoyo_monto?>);
                           -->
-                          <input class="form-control" id="Monto_unidad<?=$h?>" name="Monto_unidad<?=$h?>" value="<?=$Monto_unidad?>" placeholder="0.00" type="text" onChange="sumaVerticalmonto(<?=$h?>, <?=$cuantos?>);obtenporcentaje(<?=$h?>, <?=$Infor_finan_costo_monto?>);" onKeyPress="return evita_comas(event)">
+                          <input class="form-control" id="Monto_unidad<?=$h?>" name="Monto_unidad<?=$h?>" value="<?=$Monto_unidad?>" placeholder="0.00" type="text" onChange="sumaVerticalmonto(<?=$h?>, <?=$cuantos?>);" onKeyPress="return evita_comas(event)">
                         </td>
                         <td>
                           <input class="form-control" id="Porcentaje<?=$h?>" name="Porcentaje<?=$h?>" value="<?=$Porcentaje?>" placeholder="0.00" type="text" readonly="readonly">
@@ -764,6 +743,7 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
+                        <td>&nbsp;</td>
                         <td>
                         <?php include_once('funciones_obtener_valores_2022.php'); ?>
                         <!--div id="imp_var_ejemplo"></div-->
@@ -771,7 +751,7 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                         <!--input type="text" id="texto" name="texto" class="form-control"/-->
                         </td>
                         <td><input type="text" class="form-control" name="ene_suma" id="ene_suma" value="<?=$porcentaje_total?>" readonly>
-                          <!-- input type="text" id="textod" name="textod" class="form-control" value="<?=$result_resumenpresup[1]?>" readonly /-->
+                          <!--input type="text" id="textod" name="textod" class="form-control" value="<?=$result_resumenpresup[1]?>" readonly /-->
                         </td>
                       </tr>
                     </table>
