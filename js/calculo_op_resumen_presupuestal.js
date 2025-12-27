@@ -26,8 +26,8 @@ console.log(monto_coinversion2);*/
 							//console.log(sumaT);
 			         //document.getElementById('imp_var_ejemplo').innerHTML = sumaT;
 			          alert(" sumaT: " + sumaT + "\n");
-					var m1_fuente = Infor_finan_costo_monto
-alert(m1_fuente);
+					
+alert(Infor_finan_costo_monto);
                 var campov=eval ('document.apInf.Monto_unidad'+id+'.value');
 			
 				if(campov.length==0){ 
