@@ -43,7 +43,7 @@ console.log(monto_coinversion2);*/
 							}              		
 										
 										//obtsuma_porcentaje.value=parseInt(sumaT,10)
-										obtsuma_porcentaje.value=Math.round(sumaT);
+										porcentv.value=Math.round(sumaT);
 						}
 					  /*
 
