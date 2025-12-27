@@ -39,6 +39,54 @@ console.log(monto_coinversion2);*/
 								
 								//2025 ya no se ultilizará se habilitara 
 								sumaVerticalporcentajes(id, cuantos);
+
+
+
+
+function sumaVerticalporcentajes(id, cuantos){
+	
+var sumaT=0;
+var cuantos = 50
+
+	for(var i=1;i<=cuantos;i++){
+	
+				var porcentv = eval ('document.formul.Porcentaje'+i+'.value');
+			
+				if(porcentv.length==0) porcentv = 0
+				
+				sumaT=sumaT+parseFloat(porcentv);								
+	}              			
+				var obtsuma_porcentaje= eval('document.formul.ene_suma');
+                //obtsuma_porcentaje.value=parseInt(sumaT,10)
+				obtsuma_porcentaje.value=Math.round(sumaT);
+}
+/*
+function obtenporcentaje(id, Infor_finan_costo_monto){
+
+var Infor_finan_costo_monto = Infor_finan_costo_monto
+var m1_fuente = Infor_finan_costo_monto
+
+                var campov=eval ('document.formul.Monto_unidad'+id+'.value');
+			
+				if(campov.length==0){ 
+					campov = '' 
+					var porcent_v =   eval ('document.formul.Porcentaje'+id);
+					porcent_v.value = campov;
+				} else { 
+					campov = parseFloat(campov.replace(/[$,\s]/g, ''));
+ 
+					var subt_varios = 100 * campov / m1_fuente; 
+					var porcent_v =   eval ('document.formul.Porcentaje'+id);
+					porcent_v.value = subt_varios;
+				}
+}
+
+
+
+*/
+
+
+
 								
 								alert('Verifica los montos');
 								}
