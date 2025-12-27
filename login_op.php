@@ -141,7 +141,27 @@ include('querys_login_op.php');
     <script type="text/javascript" src="js/select_dependientes_colonia.js"></script>
     <script type="text/javascript" src="js/select_dependientes_cp.js"></script>
     <script type="text/javascript" src="js/select_dependientes_estado.js"></script>
-    <script type="text/javascript" src="js/obten_porcentaje.js"></script>
+<script>
+    function obtenporcentaje(id, Infor_finan_costo_monto){
+
+var Infor_finan_costo_monto = Infor_finan_costo_monto
+var m1_fuente = Infor_finan_costo_monto
+
+                var campov=eval ('document.formul.Monto_unidad'+id+'.value');
+			
+				if(campov.length==0){ 
+					campov = '' 
+					var porcent_v =   eval ('document.formul.Porcentaje'+id);
+					porcent_v.value = campov;
+				} else { 
+					campov = parseFloat(campov.replace(/[$,\s]/g, ''));
+ 
+					var subt_varios = 100 * campov / m1_fuente; 
+					var porcent_v =   eval ('document.formul.Porcentaje'+id);
+					porcent_v.value = subt_varios;
+				}
+}
+</script>
     <!--(FIN) script para el codigo postal -->
     <!--obten_porcentaje funcion que utilizaba cuando guardaba desde que estaba en el campo antes de poner el boton Guardar en esta sección>
     <script type="text/javascript" src="js/obten_porcentaje.js"></script-->
