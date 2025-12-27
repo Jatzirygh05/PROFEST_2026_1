@@ -4,29 +4,33 @@
 			//var m1_fuente = Infor_finan_costo_monto
 			var monto_coinversion2 = document.getElementById('monto_coinversion2').value;
 			var sumaT=0;
+			var sumaT2=0;
 			var cuantos = 50;
 
 				for(var i=1;i<=cuantos;i++){
 			      var campov=document.getElementById(`Monto_unidad${i}`).value;
 
 				 //calculo del porcentaje (inicio)
-				  var Infor_finan_costo_monto=document.getElementById('Infor_finan_costo_monto').value; 
-					console.log(campov);
-					console.log(Infor_finan_costo_monto);
-				  var subt_varios =  100 * campov / Infor_finan_costo_monto; 
-					console.log(subt_varios);
-					var porcent_v =   eval ('document.apInf.Porcentaje'+i);
+				var Infor_finan_costo_monto=document.getElementById('Infor_finan_costo_monto').value; 
+					/*console.log(campov);
+					console.log(Infor_finan_costo_monto);*/
+				var subt_varios =  100 * campov / Infor_finan_costo_monto; 
+					//console.log(subt_varios);
+				var porcent_v = eval ('document.apInf.Porcentaje'+i);
 					porcent_v.value = parseFloat(subt_varios);
  				//calculo del porcentaje (fin)
-
-							if(campov.length==0){ 
-								campov = 0 
-							} else { 
-								campov = parseFloat(campov);
-							}		
+						if(campov.length==0){ 
+							campov = 0 
+						} else { 
+							campov = parseFloat(campov);
+						}		
 							sumaT=sumaT+campov;
-
 				}
+				sumaT2=sumaT2+parseFloat(porcentv);
+				
+				var ene_suma=document.getElementById('ene_suma').value; 
+				ene_suma.value=Math.round(sumaT2);
+
 			         /*var valor_immp = document.getElementById("pres_anual_tot_2010").value;
 			           valor_immp=sumaT;*/
 /*console.log(sumaT);
