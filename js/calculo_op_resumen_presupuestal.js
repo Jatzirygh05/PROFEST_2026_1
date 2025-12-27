@@ -39,11 +39,11 @@ console.log(monto_coinversion2);*/
 							var porcentv=document.getElementById(`Porcentaje${i}`).value;
 										if(porcentv.length==0) porcentv = 0
 										
-										sumaT=sumaT+parseFloat(porcentv);								
+										sumaT2=sumaT2+parseFloat(porcentv);								
 							}              		
-										
+										alert(sumaT2);
 										//obtsuma_porcentaje.value=parseInt(sumaT,10)
-										porcentv.value=Math.round(sumaT);
+										porcentv.value=Math.round(sumaT2);
 						}
 					  /*
 
