@@ -26,26 +26,28 @@ console.log(monto_coinversion2);*/
 							//console.log(sumaT);
 			         //document.getElementById('imp_var_ejemplo').innerHTML = sumaT;
 			          alert(" sumaT: " + sumaT + "\n");
-					
-					
-					  sumaVerticalporcentajes(id, cuantos);
 
-					  function sumaVerticalporcentajes(id, cuantos){
+function sumaVerticalporcentajes(id, cuantos){
 	
-						var sumaT=0;
-						var cuantos = 50
+var sumaT=0;
+var cuantos = 50
 
-							for(var i=1;i<=cuantos;i++){
-							var porcentv=document.getElementById(`Porcentaje${i}`).value;
-										if(porcentv.length==0) porcentv = 0
-										
-										sumaT2=sumaT2+parseFloat(porcentv);								
-							}              		
-										alert(sumaT2);
-										//obtsuma_porcentaje.value=parseInt(sumaT,10)
-										porcentv.value=Math.round(sumaT2);
-						}
+	for(var i=1;i<=cuantos;i++){
+	
+				var porcentv = eval ('document.formul.Porcentaje'+i+'.value');
+			
+				if(porcentv.length==0) porcentv = 0
+				
+				sumaT=sumaT+parseFloat(porcentv);								
+	}              			
+				var obtsuma_porcentaje= eval('document.formul.ene_suma');
+                //obtsuma_porcentaje.value=parseInt(sumaT,10)
+				obtsuma_porcentaje.value=Math.round(sumaT);
+}
+
+
 					  /*
+
 
 function obtenporcentaje(id, Infor_finan_costo_monto){
 
