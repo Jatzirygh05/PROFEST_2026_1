@@ -16,7 +16,7 @@
 				  var subt_varios =  100 * campov / Infor_finan_costo_monto; 
 					console.log(subt_varios);
 					var porcent_v =   eval ('document.apInf.Porcentaje'+i);
-					porcent_v.value = Math.round(subt_varios);
+					porcent_v.value = subt_varios.toFixed(2);
  				//calculo del porcentaje (fin)
 
 							if(campov.length==0){ 
