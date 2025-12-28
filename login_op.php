@@ -840,7 +840,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
 <script type="text/javascript" src="js/hacer_peticion_y_altera.js"></script>
 <script type="text/javascript" src="js/guardado_de_campos_loginop.js"></script> <!--aqui se encuentrán todos los scripts donde mando a guardar los campos uno por uno--> 
 <!--script type="text/javascript" src="js/reloj_regresivo_cierre_pruebas.js"></script-->
-<script type="text/javascript" src="js/validacion_guardado_presupuesto_misma_pagina.js"></script>
+<!-- script type="text/javascript" src="js/validacion_guardado_presupuesto_misma_pagina.js"></script-->
 <script type="text/javascript" src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
 <script type="text/javascript" src="https://framework-gb.cdn.gob.mx/assets/scripts/jquery-ui-datepicker.js"></script>
 <script>
