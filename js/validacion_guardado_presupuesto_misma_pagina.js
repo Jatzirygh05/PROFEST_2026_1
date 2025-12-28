@@ -52,7 +52,7 @@ for(var p=1; p<=50; p++){
     var errPorcentaje = document.getElementById('Porcentaje'+p).value;
     console.log(errPorcentaje);
 
-    if(errConcepto_gasto!='' && errFuente_finan!='' && errMonto_unidad!='' && errPorcentaje!=''){
+    if(errConcepto_gasto!='' && errFuente_finan!='' && errMonto_unidad!=''){
                 var fuente_finan_nombre = 'Fuente_finan'+p;
                 var fuente_finan = document.getElementById(fuente_finan_nombre).value;
                 var Monto_unidad_nombre = 'Monto_unidad'+p;
