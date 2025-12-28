@@ -68,7 +68,7 @@ for(var p=1; p<=50; p++){
                 
                 }  */      
     } //fin if
-    else if(errConcepto_gasto!='' || errFuente_finan!='' || errMonto_unidad!='' || errPorcentaje!='') {
+    else if(errConcepto_gasto!='' || errFuente_finan!='' || errMonto_unidad!='' || errPorcentaje!='0.00') {
         alert ('Verifica tu captura ya que no tiene la información necesaria');
         document.getElementById("rowErrora").style.display = 'block';
         //cuenta_error_falta_infor=1;
