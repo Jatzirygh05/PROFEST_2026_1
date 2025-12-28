@@ -154,7 +154,7 @@ var monto_coinversion2 = document.getElementById('monto_coinversion2').value;
                if(res_paso == 1){
                     //console.log('si entro');
                      console.log(" ene_suma: " + ene_suma + "\n");
-                    alert('Información guardada');
+                    alert('Información guardada 2');
                     //$("#exito").delay(500).fadeIn("slow");      
                     // Si hemos tenido éxito, hacemos aparecer el div "exito" con un efecto fadeIn lento tras un delay de 0,5 segundos.
                 } else {
