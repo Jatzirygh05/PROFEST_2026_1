@@ -221,7 +221,7 @@
                 $entidades_a9   = $row_proy["entidades_a9"];
                 $entidades_a10  = $row_proy["entidades_a10"];
 
-                $Concepto_gasto_a= $row_proy["Concepto_gasto_a"];
+                /*$Concepto_gasto_a= $row_proy["Concepto_gasto_a"];
                 $Fuente_finan_a = $row_proy["Fuente_finan_a"];
                 $Monto_unidad_a = $row_proy["Monto_unidad_a"];
                 $Porcentaje_a   = $row_proy["Porcentaje_a"];
@@ -235,6 +235,8 @@
                 $Fuente_finan_c = $row_proy["Fuente_finan_c"];
                 $Monto_unidad_c = $row_proy["Monto_unidad_c"];
                 $Porcentaje_c   = $row_proy["Porcentaje_c"];
+
+                $porcentaje_total   = $row_proy["porcentaje_total"];*/
                 
                 $suma_invalida = $row_proy["suma_invalida"];
                 $suma_porinvalida = $row_proy["suma_porinvalida"];

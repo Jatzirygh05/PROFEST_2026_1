@@ -359,6 +359,8 @@ $query_dos="SELECT * FROM `catalogo_concepto_gastos` order by concepto_gasto";
                             $Fuente_finan=utf8_encode($fila2['Fuente_finan']);
                             $Monto_unidad=$fila2['Monto_unidad'];
                             $Porcentaje=$fila2['Porcentaje'];
+
+                            $porcentaje_total=$fila2['porcentaje_total']; 
                             
                             $monto_unidad_total=$fila2['monto_unidad_total'];
                             $porcentaje_total=$fila2['porcentaje_total'];
