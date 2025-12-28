@@ -139,7 +139,7 @@ var monto_coinversion2 = document.getElementById('monto_coinversion2').value;
     $(document).ready( function() {   // Esta parte del código se ejecutará automáticamente cuando la página esté lista.
     $("#botonenviar").click( function() {     // Con esto establecemos la acción por defecto de nuestro botón de enviar.
         if(validaForm(Infor_finan_costo_monto)){//20122024  , Infor_finan_apoyo_monto Primero validará el formulario.
-            console.log('ya podemos tomar los datos 1');
+            console.log('ya podemos tomar los datos==');
             console.log(" ene_suma: " + ene_suma + "\n");
             //console.log($("#formdata").serialize());
             //enviar_ejemplopresupuesto.php probe antes con esta pagina
