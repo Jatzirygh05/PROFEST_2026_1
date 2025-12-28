@@ -36,7 +36,7 @@ switch (categoria){
     break;
   }
 
-//console.log('ENTRO');
+console.log('ENTRO');
 
 var cuenta_error=0;
 var cuenta_error_fin=0;
