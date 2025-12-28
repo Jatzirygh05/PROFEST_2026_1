@@ -107,7 +107,7 @@ var ene_suma = document.getElementById('ene_suma').value;
 //console.log(" pres_anual_tot_2010: " + pres_anual_tot_2010 + "\n");
 var monto_coinversion2 = document.getElementById('monto_coinversion2').value;
 //console.log(" monto_coinversion2: " + monto_coinversion2 + "\n");
-//console.log(" ene_suma: " + ene_suma + "\n");
+console.log(" ene_suma: " + ene_suma + "\n");
 //2025 ya no se usara ----> console.log(" m1_fuente2: " + m1_fuente2 + "\n");
 //2025 ya no se usara ----> Math.round(ene_suma)==100  &&
     if(pres_anual_tot_2010 == monto_coinversion2 ){
