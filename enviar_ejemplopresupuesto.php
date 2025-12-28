@@ -23,14 +23,16 @@ for($i=1;$i<=$cuantos_mod;$i++){
 	$Concepto_gasto_a=${'Concepto_gasto'.$i};
   	$Fuente_finan_a=${'Fuente_finan'.$i};
  	$Monto_unidad_a=${'Monto_unidad'.$i};
-	//$Porcentaje_a=${'Porcentaje'.$i};
-	//Porcentaje		=	'$Porcentaje_a',
-	//porcentaje_total = '$textod',
+	$Porcentaje_a=${'Porcentaje'.$i};
+	//
+	//
 	$query_b="UPDATE mas_presupuesto SET 
 			Concepto_gasto	=	'$Concepto_gasto_a',
 			Fuente_finan	=	'$Fuente_finan_a',
 			Monto_unidad	=	'$Monto_unidad_a',
 			monto_unidad_total = '$pres_anual_tot_2010',
+			Porcentaje		=	'$Porcentaje_a',
+			porcentaje_total = '$textod',
 			fecha_hora_registro=NOW()
 			WHERE clave_usuario LIKE '".$cve_user."' && id_presupuesto = '".$id_presupuesto_a."';";
 	$mod=mysqli_query($con, $query_b);
@@ -41,14 +43,13 @@ for($a=$cuantos_agrega;$a<=50;$a++){
 	$Concepto_gasto_b=${'Concepto_gasto'.$a};
     $Fuente_finan_b=${'Fuente_finan'.$a};
     $Monto_unidad_b=${'Monto_unidad'.$a};
-	//$Porcentaje_b=${'Porcentaje'.$a};
-	//&& $Porcentaje_b!=''
-	if($Concepto_gasto_b!='' && $Fuente_finan_b!='' && $Monto_unidad_b!='' )
+	$Porcentaje_b=${'Porcentaje'.$a};
+	if($Concepto_gasto_b!='' && $Fuente_finan_b!='' && $Monto_unidad_b!='' && $Porcentaje_b!='')
 	{
 		$query_c = "INSERT INTO mas_presupuesto 
-		(id_presupuesto, clave_usuario, Concepto_gasto, Fuente_finan, Monto_unidad, monto_unidad_total, porcentaje_total, fecha_hora_registro)
+		(id_presupuesto, clave_usuario, Concepto_gasto, Fuente_finan, Monto_unidad, monto_unidad_total, Porcentaje, porcentaje_total, fecha_hora_registro)
 		VALUES
-		(NULL, '$cve_user', '$Concepto_gasto_b', '$Fuente_finan_b', '$Monto_unidad_b', '$pres_anual_tot_2010', '$textod',NOW());";
+		(NULL, '$cve_user', '$Concepto_gasto_b', '$Fuente_finan_b', '$Monto_unidad_b', '$pres_anual_tot_2010', $Porcentaje_b, '$textod',NOW());";
 		$mod_c = mysqli_query($con, $query_c);		
 	}
 	if($mod_c) echo $res_paso=1;

@@ -19,14 +19,18 @@ switch (categoria){
     var m3_fuente=500000;
     break;
     case 'C':
+    var Infor_finan_apoyo_monto=800000;
+    var m3_fuente=800000;
+    break;
+    case 'D': 
     var Infor_finan_apoyo_monto=1000000;
     var m3_fuente=1000000;
     break;
-    case 'D': 
+    case 'E': 
     var Infor_finan_apoyo_monto=1500000;
     var m3_fuente=1500000;
     break;
-    case 'E': 
+    case 'F': 
     var Infor_finan_apoyo_monto=2000000;
     var m3_fuente=2000000;
     break;
@@ -45,10 +49,10 @@ for(var p=1; p<=50; p++){
     var errConcepto_gasto = document.getElementById('Concepto_gasto'+p).value;
     var errFuente_finan = document.getElementById('Fuente_finan'+p).value;
     var errMonto_unidad = document.getElementById('Monto_unidad'+p).value;
-    //2025 ya no se va a usar var errPorcentaje = document.getElementById('Porcentaje'+p).value;
+    var errPorcentaje = document.getElementById('Porcentaje'+p).value;
     
 
-    if(errConcepto_gasto!='' && errFuente_finan!='' && errMonto_unidad!=''){
+    if(errConcepto_gasto!='' && errFuente_finan!='' && errMonto_unidad!='' && errPorcentaje!=''){
                 var fuente_finan_nombre = 'Fuente_finan'+p;
                 var fuente_finan = document.getElementById(fuente_finan_nombre).value;
                 var Monto_unidad_nombre = 'Monto_unidad'+p;
@@ -65,7 +69,7 @@ for(var p=1; p<=50; p++){
                 
                 }  */      
     } //fin if
-    else if(errConcepto_gasto!='' || errFuente_finan!='' || errMonto_unidad!='') {
+    else if(errConcepto_gasto!='' || errFuente_finan!='' || errMonto_unidad!='' || errPorcentaje!='') {
         alert ('Verifica tu captura ya que no tiene la información necesaria');
         document.getElementById("rowErrora").style.display = 'block';
         //cuenta_error_falta_infor=1;
@@ -89,9 +93,9 @@ for(var i=1; i<=3; i++){
     var errConcepto_gasto = document.getElementById('Concepto_gasto'+i).value;
     var errFuente_finan = document.getElementById('Fuente_finan'+i).value;
     var errMonto_unidad = document.getElementById('Monto_unidad'+i).value;
-    //2025 ya no se va a usar  var errPorcentaje = document.getElementById('Porcentaje'+i).value;
+    var errPorcentaje = document.getElementById('Porcentaje'+i).value;
     
-    if(errConcepto_gasto=='' || errFuente_finan=='' || errMonto_unidad==''){
+    if(errConcepto_gasto=='' || errFuente_finan=='' || errMonto_unidad=='' || errPorcentaje==''){
        // cuenta_error_fin = 1
         return false;
     }
@@ -100,7 +104,7 @@ for(var i=1; i<=3; i++){
 
 //INICIO PRESUPUESTO VALIDAR porcentaje total
 var pres_anual_tot_2010 = document.getElementById('pres_anual_tot_2010').value;
-//var ene_suma = document.getElementById('textod').value;   
+var ene_suma = document.getElementById('textod').value;   
 //console.log(" pres_anual_tot_2010: " + pres_anual_tot_2010 + "\n");
 var monto_coinversion2 = document.getElementById('monto_coinversion2').value;
 //console.log(" monto_coinversion2: " + monto_coinversion2 + "\n");
