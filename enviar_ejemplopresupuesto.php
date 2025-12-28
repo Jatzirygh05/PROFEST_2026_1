@@ -9,7 +9,7 @@ foreach($_POST as $k => $v)
 	{
 		${$k}=$_POST[$k];
 	}
-
+$ene_suma = $_POST['ene_suma'];
 '<?xml version="1.0"?>';
 '<root>';
 $query_user2="SELECT * FROM mas_presupuesto WHERE clave_usuario='".$cve_user."';";
