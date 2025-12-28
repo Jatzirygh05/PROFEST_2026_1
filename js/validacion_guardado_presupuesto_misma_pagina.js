@@ -108,7 +108,7 @@ var ene_suma = document.getElementById('textod').value;
 //console.log(" pres_anual_tot_2010: " + pres_anual_tot_2010 + "\n");
 var monto_coinversion2 = document.getElementById('monto_coinversion2').value;
 //console.log(" monto_coinversion2: " + monto_coinversion2 + "\n");
-console.log(" ene_suma: " + ene_suma + "\n");
+//console.log(" ene_suma: " + ene_suma + "\n");
 //2025 ya no se usara ----> console.log(" m1_fuente2: " + m1_fuente2 + "\n");
 //2025 ya no se usara ----> Math.round(ene_suma)==100  &&
     if(pres_anual_tot_2010 == monto_coinversion2 ){
@@ -140,6 +140,7 @@ console.log(" ene_suma: " + ene_suma + "\n");
     $("#botonenviar").click( function() {     // Con esto establecemos la acción por defecto de nuestro botón de enviar.
         if(validaForm(Infor_finan_costo_monto)){//20122024  , Infor_finan_apoyo_monto Primero validará el formulario.
             console.log('ya podemos tomar los datos');
+            console.log(" ene_suma: " + ene_suma + "\n");
             //console.log($("#formdata").serialize());
             //enviar_ejemplopresupuesto.php probe antes con esta pagina
 
