@@ -103,7 +103,7 @@ for(var i=1; i<=3; i++){
 
 //INICIO PRESUPUESTO VALIDAR porcentaje total
 var pres_anual_tot_2010 = document.getElementById('pres_anual_tot_2010').value;
-var ene_suma = document.getElementById('textod').value;   
+var ene_suma = document.getElementById('ene_suma').value;   
 //console.log(" pres_anual_tot_2010: " + pres_anual_tot_2010 + "\n");
 var monto_coinversion2 = document.getElementById('monto_coinversion2').value;
 //console.log(" monto_coinversion2: " + monto_coinversion2 + "\n");
