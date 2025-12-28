@@ -32,7 +32,7 @@ for($i=1;$i<=$cuantos_mod;$i++){
 			Monto_unidad	=	'$Monto_unidad_a',
 			monto_unidad_total = '$pres_anual_tot_2010',
 			Porcentaje		=	'$Porcentaje_a',
-			porcentaje_total = '$textod',
+			porcentaje_total = '$ene_suma',
 			fecha_hora_registro=NOW()
 			WHERE clave_usuario LIKE '".$cve_user."' && id_presupuesto = '".$id_presupuesto_a."';";
 	$mod=mysqli_query($con, $query_b);
@@ -49,7 +49,7 @@ for($a=$cuantos_agrega;$a<=50;$a++){
 		$query_c = "INSERT INTO mas_presupuesto 
 		(id_presupuesto, clave_usuario, Concepto_gasto, Fuente_finan, Monto_unidad, monto_unidad_total, Porcentaje, porcentaje_total, fecha_hora_registro)
 		VALUES
-		(NULL, '$cve_user', '$Concepto_gasto_b', '$Fuente_finan_b', '$Monto_unidad_b', '$pres_anual_tot_2010', $Porcentaje_b, '$textod',NOW());";
+		(NULL, '$cve_user', '$Concepto_gasto_b', '$Fuente_finan_b', '$Monto_unidad_b', '$pres_anual_tot_2010', $Porcentaje_b, '$ene_suma',NOW());";
 		$mod_c = mysqli_query($con, $query_c);		
 	}
 	if($mod_c) echo $res_paso=1;
