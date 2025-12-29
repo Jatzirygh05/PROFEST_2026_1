@@ -689,7 +689,8 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                         </select>
                         </td>
                         <td>
-                          <select class='form-control' name='Fuente_finan<?php echo $h?>' id='Fuente_finan<?php echo $h?>' onChange="calc_presup(<?php echo $h?>, <?php echo $Infor_finan_apoyo_monto; ?>)">
+                        <!-- onChange="calc_presup(<?php echo $h?>, <?php echo $Infor_finan_apoyo_monto; ?>)"-->
+                          <select class='form-control' name='Fuente_finan<?php echo $h?>' id='Fuente_finan<?php echo $h?>'>
                             <option value="" selected="selected">Selecciona opci&oacute;n</option>
                             <option value="1" <?php if($Fuente_finan=='1'){ ?> selected <?php } ?>>Institucional Estatal</option>
                             <option value="2" <?php if($Fuente_finan=='2'){ ?> selected <?php } ?>>Institucional Municipal</option>
@@ -721,7 +722,8 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                           </select>
                         </td>
                         <td>
-                          <select class='form-control' name='Fuente_finan<?php echo $i?>' id='Fuente_finan<?php echo $i?>' onChange="calc_presup(<?php echo $i; ?>, <?php echo $Infor_finan_apoyo_monto; ?>)">
+                          <!-- onChange="calc_presup(<?php echo $i; ?>, <?php echo $Infor_finan_apoyo_monto; ?>)"-->
+                          <select class='form-control' name='Fuente_finan<?php echo $i?>' id='Fuente_finan<?php echo $i?>'>
                             <option value="" selected="selected">Selecciona opci&oacute;n</option>
                             <option value="1">Institucional Estatal</option>
                             <option value="2">Institucional Municipal</option>
