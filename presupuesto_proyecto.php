@@ -169,6 +169,8 @@ var cuantos = 50
 				
 				sumaT=sumaT+campov;
 	}
+
+  console.log('sumaT='.sumaT.'   m1_fuente='.m1_fuente);
 				if(sumaT<=m1_fuente)
 				{
                 var obtsuma= document.formul.pres_anual_tot_2010;
