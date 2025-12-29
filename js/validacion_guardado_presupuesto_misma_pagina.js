@@ -139,8 +139,8 @@ console.log(" ene_suma: " + ene_suma + "\n");
     $("#botonenviar").click( function() {     // Con esto establecemos la acción por defecto de nuestro botón de enviar.
         if(validaForm(Infor_finan_costo_monto)){//20122024  , Infor_finan_apoyo_monto Primero validará el formulario.
             console.log('ya podemos tomar los datos==');
-            var ene_suma = document.getElementById('ene_suma').value;  
-            console.log(ene_suma);
+            //var ene_suma = document.getElementById('ene_suma').value;  
+            //console.log(ene_suma);
             //console.log($("#formdata").serialize());
             //enviar_ejemplopresupuesto.php probe antes con esta pagina
 
@@ -153,7 +153,7 @@ console.log(" ene_suma: " + ene_suma + "\n");
                //alert(res_paso);
                if(res_paso == 1){
                     //console.log('si entro');
-                     console.log(" ene_suma: " + ene_suma + "\n");
+                    //console.log(" ene_suma: " + ene_suma + "\n");
                     alert('Información guardada 2');
                     //$("#exito").delay(500).fadeIn("slow");      
                     // Si hemos tenido éxito, hacemos aparecer el div "exito" con un efecto fadeIn lento tras un delay de 0,5 segundos.
