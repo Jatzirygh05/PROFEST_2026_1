@@ -68,7 +68,7 @@ for(var p=1; p<=50; p++){
                 
                 }  */      
     } //fin if
-    else if(errConcepto_gasto!='' || errFuente_finan!='' || errMonto_unidad!='' || errPorcentaje!='0.00') {
+    else if(errConcepto_gasto!='' || errFuente_finan!='' || errMonto_unidad!='' || errPorcentaje!='') {
         alert ('Verifica tu captura ya que no tiene la información necesaria 2');
         document.getElementById("rowErrora").style.display = 'block';
         //cuenta_error_falta_infor=1;
@@ -94,7 +94,7 @@ for(var i=1; i<=3; i++){
     var errMonto_unidad = document.getElementById('Monto_unidad'+i).value;
     var errPorcentaje = document.getElementById('Porcentaje'+i).value;
     
-    if(errConcepto_gasto=='' || errFuente_finan=='' || errMonto_unidad=='' || errPorcentaje=='0.00'){
+    if(errConcepto_gasto=='' || errFuente_finan=='' || errMonto_unidad=='' || errPorcentaje==''){
        // cuenta_error_fin = 1
         return false;
     }
