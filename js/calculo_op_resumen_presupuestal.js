@@ -4,7 +4,7 @@
 			//var m1_fuente = Infor_finan_costo_monto
 			var monto_coinversion2 = document.getElementById('monto_coinversion2').value;
 			var sumaT=0;
-			var sumaT2=0;
+			//var sumaT2=0;
 			var cuantos = 50;
 
 				for(var i=1;i<=cuantos;i++){
@@ -17,11 +17,11 @@
 						}		
 							sumaT=sumaT+campov;
 
-				sumaT2=sumaT2+parseFloat(subt_varios);
+				//sumaT2=sumaT2+parseFloat(subt_varios);
 				}
 				//alert(sumaT2);
 				var ene_suma=document.getElementById('ene_suma'); 
-				ene_suma.value=sumaT2.toFixed(2);
+				//ene_suma.value=sumaT2.toFixed(2);
 				
 			         /*var valor_immp = document.getElementById("pres_anual_tot_2010").value;
 			           valor_immp=sumaT;*/
