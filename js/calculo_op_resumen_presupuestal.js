@@ -47,7 +47,7 @@
 								
 								//2025 ya no se ultilizará se habilitara sumaVerticalporcentajes(id, cuantos);
 
-								alert('Verifica los montos');
+								alert('Verifica los montos calculo_op_..');
 								}
 			}
 
