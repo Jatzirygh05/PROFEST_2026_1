@@ -51,7 +51,7 @@ for(var p=1; p<=50; p++){
     var errMonto_unidad = document.getElementById('Monto_unidad'+p).value;
     var errPorcentaje = document.getElementById('Porcentaje'+p).value;
     alert(errPorcentaje);
-    if(errConcepto_gasto!='' && errFuente_finan!='' && errMonto_unidad!='' && errPorcentaje!='0.00'){
+    if(errConcepto_gasto!='' && errFuente_finan!='' && errMonto_unidad!='' && errPorcentaje!=''){
                 var fuente_finan_nombre = 'Fuente_finan'+p;
                 var fuente_finan = document.getElementById(fuente_finan_nombre).value;
                 var Monto_unidad_nombre = 'Monto_unidad'+p;
