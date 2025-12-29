@@ -16,9 +16,9 @@
 							campov = parseFloat(campov);
 						}		
 							sumaT=sumaT+campov;
-
+alert('----------------->'.sumaT);
 				//sumaT2=sumaT2+parseFloat(subt_varios);
-				}alert('----------------->'.sumaT);
+				}
 				//alert(sumaT2);
 				var ene_suma=document.getElementById('ene_suma'); 
 				//ene_suma.value=sumaT2.toFixed(2);
