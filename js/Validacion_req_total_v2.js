@@ -33,7 +33,7 @@ for(var p=1; p<=30; p++){
 						}
 			       
 	} else if(errconcepto!='' || errunidad!='' || errdias_a_utilizar!='' || errcosto_unitario_imp_incluidos!='' || errmonto_tot_imp_incluidos!='') {
-		console.log('Verifica tu captura ya que no tiene la información necesaria');
+		console.log('Verifica tu captura ya que no tiene la información necesaria 7');
 		document.getElementById("rowError1").style.display = 'block';
 				
 		cuenta_error_falta_infora=1;
@@ -89,7 +89,7 @@ for(var p=1; p<=30; p++){
 						}
 			       
 	} else if(errconceptoa!='' || errunidada!='' || errdias_a_utilizara!='' || errcosto_unitario_imp_incluidosa!='' || errmonto_tot_imp_incluidosa!='') {
-		console.log('Verifica tu captura ya que no tiene la información necesaria');
+		console.log('Verifica tu captura ya que no tiene la información necesaria 7.1');
 		document.getElementById("rowError2").style.display = 'block';
 				
 		cuenta_error_falta_inforb=1;
