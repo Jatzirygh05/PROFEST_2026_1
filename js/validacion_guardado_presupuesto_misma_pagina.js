@@ -138,7 +138,7 @@ console.log(" ene_suma: " + ene_suma + "\n");
     $(document).ready( function() {   // Esta parte del código se ejecutará automáticamente cuando la página esté lista.
     $("#botonenviar").click( function() {     // Con esto establecemos la acción por defecto de nuestro botón de enviar.
         if(validaForm(Infor_finan_costo_monto)){//20122024  , Infor_finan_apoyo_monto Primero validará el formulario.
-            console.log('ya podemos tomar los datos==');
+            console.log('ya xpodemos tomar los datos==');
             //var ene_suma = document.getElementById('ene_suma').value;  
             //console.log(ene_suma);
             //console.log($("#formdata").serialize());
