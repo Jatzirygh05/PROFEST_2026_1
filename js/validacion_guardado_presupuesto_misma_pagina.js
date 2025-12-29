@@ -50,6 +50,9 @@ for(var p=1; p<=50; p++){
     var errFuente_finan = document.getElementById('Fuente_finan'+p).value;
     var errMonto_unidad = document.getElementById('Monto_unidad'+p).value;
     var errPorcentaje = document.getElementById('Porcentaje'+p).value;
+
+    console.log('nor'.errMonto_unidad);
+    console.log('nor1'.errPorcentaje);
     
     if(errConcepto_gasto!='' && errFuente_finan!='' && errMonto_unidad!='' && errMonto_unidad!='0.00'){
                 var fuente_finan_nombre = 'Fuente_finan'+p;
