@@ -6,7 +6,6 @@
 			var sumaT=0;
 			//var sumaT2=0;
 			var cuantos = 50;
-
 				for(var i=1;i<=cuantos;i++){
 			      var campov=document.getElementById(`Monto_unidad${i}`).value;
 
@@ -17,6 +16,16 @@
 						}		
 							sumaT=sumaT+campov;
 				//sumaT2=sumaT2+parseFloat(subt_varios);
+				 //calculo del porcentaje (inicio)
+				var Infor_finan_costo_monto=document.getElementById('Infor_finan_costo_monto').value; 
+					/*console.log(campov);
+					console.log(Infor_finan_costo_monto);*/
+				var subt_varios =  100 * campov / Infor_finan_costo_monto; 
+					//console.log(subt_varios);
+				var porcent_v = eval ('document.apInf.Porcentaje'+i);
+					porcent_v.value = subt_varios.toFixed(2);
+ 				//calculo del porcentaje (fin)
+
 				}
 				
 				var ene_suma=document.getElementById('ene_suma'); 
