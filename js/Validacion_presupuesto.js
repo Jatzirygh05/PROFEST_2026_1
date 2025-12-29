@@ -71,9 +71,9 @@ for(var i=1; i<=3; i++){
 var pres_anual_tot_2010 = document.getElementById('pres_anual_tot_2010').value;
 var ene_suma = document.getElementById('textod').value;
 	
-	//console.log(ene_suma);	
-	//console.log(pres_anual_tot_2010);	
-	//console.log(m1_fuente);	
+	console.log('ja=ene_suma:'.ene_suma);	
+	console.log('ja=pres_anual_tot_2010:'.pres_anual_tot_2010);	
+	console.log('ja=mi_fuente:'.m1_fuente);	
 	
 	if(Math.round(ene_suma)==100  &&  pres_anual_tot_2010 == m1_fuente ){
 		console.log('ya son el 100%');
