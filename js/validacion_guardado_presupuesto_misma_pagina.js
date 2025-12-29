@@ -159,7 +159,7 @@ console.log(" ene_suma: " + ene_suma + "\n");
                     // Si hemos tenido éxito, hacemos aparecer el div "exito" con un efecto fadeIn lento tras un delay de 0,5 segundos.
                 } else {
                     //console.log('no entro');
-                    alert('Verfica la información ingresada');
+                    alert('Verfica la información ingresad 12:32');
                     //$("#fracaso").delay(500).fadeIn("slow");    }
                     // Si no, lo mismo, pero haremos aparecer el div "fracaso"
                 }
