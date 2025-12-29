@@ -150,7 +150,7 @@ console.log(" ene_suma: " + ene_suma + "\n");
           
             $.post("enviar_ejemplopresupuesto.php",$("#apInf").serialize(),function(res_paso){
                // $("#formulario").fadeOut("slow");   // Hacemos desaparecer el div "formulario" con un efecto fadeOut lento.
-               //alert(res_paso);
+               alert(res_paso);
                if(res_paso == 1){
                     //console.log('si entro');
                     //console.log(" ene_suma: " + ene_suma + "\n");
