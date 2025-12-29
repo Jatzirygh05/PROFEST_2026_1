@@ -72,7 +72,7 @@ for(var p=1; p<=50; p++){
         alert ('Verifica tu captura ya que no tiene la información necesaria 2');
         document.getElementById("rowErrora").style.display = 'block';
         //cuenta_error_falta_infor=1;
-         return false;
+         return false;f
         }   
 } //fin for
 
