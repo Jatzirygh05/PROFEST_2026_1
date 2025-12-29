@@ -45,16 +45,13 @@ var cuenta_error_profest = 0;
 var sumaT=0;        
 
 for(var p=1; p<=50; p++){
-
+console.log("entro en el for");
     var errConcepto_gasto = document.getElementById('Concepto_gasto'+p).value;
     var errFuente_finan = document.getElementById('Fuente_finan'+p).value;
     var errMonto_unidad = document.getElementById('Monto_unidad'+p).value;
     var errPorcentaje = document.getElementById('Porcentaje'+p).value;
 
-    console.log('nor'.errMonto_unidad);
-    console.log('nor1'.errPorcentaje);
-    
-    if(errConcepto_gasto!='' && errFuente_finan!='' && errMonto_unidad!='' && errMonto_unidad!='0.00'){
+    if(errConcepto_gasto!='' && errFuente_finan!='' && errMonto_unidad!='' && errPorcentaje!='0.00'){
                 var fuente_finan_nombre = 'Fuente_finan'+p;
                 var fuente_finan = document.getElementById(fuente_finan_nombre).value;
                 var Monto_unidad_nombre = 'Monto_unidad'+p;
