@@ -37,7 +37,7 @@ for(var p=1; p<=50; p++){
 				}        
 	} //fin if
 	else if(errConcepto_gasto!='' || errFuente_finan!='' || errMonto_unidad!='' || errPorcentaje!='') {
-		alert ('Verifica tu captura ya que no tiene la información necesaria');
+		alert ('Verifica tu captura ya que no tiene la información necesaria 1');
 		document.getElementById("rowError").style.display = 'block';
 		cuenta_error_falta_infor=1;
 		}	
