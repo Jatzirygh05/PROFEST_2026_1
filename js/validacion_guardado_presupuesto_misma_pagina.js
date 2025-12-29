@@ -36,7 +36,7 @@ switch (categoria){
     break;
   }
 
-console.log('ENTRO');
+console.log('ENTRO1');
 
 var cuenta_error=0;
 var cuenta_error_fin=0;
@@ -45,7 +45,7 @@ var cuenta_error_profest = 0;
 var sumaT=0;        
 
 for(var p=1; p<=50; p++){
-console.log("entro en el for");
+    
     var errConcepto_gasto = document.getElementById('Concepto_gasto'+p).value;
     var errFuente_finan = document.getElementById('Fuente_finan'+p).value;
     var errMonto_unidad = document.getElementById('Monto_unidad'+p).value;
@@ -94,7 +94,7 @@ for(var i=1; i<=3; i++){
     var errMonto_unidad = document.getElementById('Monto_unidad'+i).value;
     var errPorcentaje = document.getElementById('Porcentaje'+i).value;
     
-    if(errConcepto_gasto=='' || errFuente_finan=='' || errMonto_unidad=='' || errPorcentaje==''){
+    if(errConcepto_gasto=='' || errFuente_finan=='' || errMonto_unidad=='' || errPorcentaje=='0.00'){
        // cuenta_error_fin = 1
         return false;
     }
