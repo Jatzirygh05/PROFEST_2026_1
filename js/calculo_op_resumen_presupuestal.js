@@ -24,8 +24,8 @@
 				
 			         /*var valor_immp = document.getElementById("pres_anual_tot_2010").value;
 			           valor_immp=sumaT;*/
-					alert(sumaT);
-					alert(monto_coinversion2);
+					//alert(sumaT);
+					//alert(monto_coinversion2);
 					if(sumaT<=monto_coinversion2){
 						 var obtsum_vert= document.getElementById('pres_anual_tot_2010');
 						 	//obtsum_vert.value=Math.round(sumaT);
