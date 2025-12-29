@@ -10,15 +10,6 @@
 				for(var i=1;i<=cuantos;i++){
 			      var campov=document.getElementById(`Monto_unidad${i}`).value;
 
-				 //calculo del porcentaje (inicio)
-				var Infor_finan_costo_monto=document.getElementById('Infor_finan_costo_monto').value; 
-					/*console.log(campov);
-					console.log(Infor_finan_costo_monto);*/
-				var subt_varios =  100 * campov / Infor_finan_costo_monto; 
-					//console.log(subt_varios);
-				var porcent_v = eval ('document.apInf.Porcentaje'+i);
-					porcent_v.value = subt_varios.toFixed(2);
- 				//calculo del porcentaje (fin)
 						if(campov.length==0){ 
 							campov = 0 
 						} else { 
@@ -89,5 +80,21 @@
 									alert ("Verifica los montos ingresados para la fuente de financiamiento Institucional PROFEST");
 								}
 							}    */    
+				}
+			}
+
+			function calc_porcentaje2026(id, cuantos){
+				for(var i=1;i<=cuantos;i++){
+			      var campov=document.getElementById(`Monto_unidad${i}`).value;
+
+				 //calculo del porcentaje (inicio)
+				var Infor_finan_costo_monto=document.getElementById('Infor_finan_costo_monto').value; 
+					/*console.log(campov);
+					console.log(Infor_finan_costo_monto);*/
+				var subt_varios =  100 * campov / Infor_finan_costo_monto; 
+					//console.log(subt_varios);
+				var porcent_v = eval ('document.apInf.Porcentaje'+i);
+					porcent_v.value = subt_varios.toFixed(2);
+ 				//calculo del porcentaje (fin)
 				}
 			}
