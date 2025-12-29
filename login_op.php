@@ -235,7 +235,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
     <a href="#" class="scroll"></a>
     <div class="row " id="rowErrora" name="rowErrora" style="display:none">
       <div class="col-md-12">
-        <div id="lblMensaje" class="alert alert-danger"><strong>¡Atención!</strong> Verifica tu captura del apartado Presupuesto / Resumen presupuestal.</div>
+        <div id="lblMensaje" class="alert alert-danger"><strong>¡Atención!</strong> Verifica tu captura del apartado Presupuesto / Resumen presupuestal. 1</div>
       </div>
     </div>
     <!--INICIO ALERTAS-->
@@ -246,7 +246,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
         </div>
         <div class="row " id="rowErrora" name="rowErrora" style="display:none">
           <div class="col-md-12">
-            <div id="lblMensaje" class="alert alert-danger"><strong>¡Atención!</strong> Verifica tu captura del apartado Presupuesto / Resumen presupuestal.</div>
+            <div id="lblMensaje" class="alert alert-danger"><strong>¡Atención!</strong> Verifica tu captura del apartado Presupuesto / Resumen presupuestal. 2</div>
           </div>
         </div>
         <div class="row" id="rowErrordisciplina" name="rowErrordisciplina" style="display:none">
