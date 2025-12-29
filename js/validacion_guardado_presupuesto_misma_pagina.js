@@ -51,7 +51,7 @@ for(var p=1; p<=50; p++){
     var errMonto_unidad = document.getElementById('Monto_unidad'+p).value;
     var errPorcentaje = document.getElementById('Porcentaje'+p).value;
 
-    if(errConcepto_gasto!='' && errFuente_finan!='' && errMonto_unidad!='' && errPorcentaje!=''){
+    if(errConcepto_gasto!='' && errFuente_finan!='' && errMonto_unidad!=''){
                 var fuente_finan_nombre = 'Fuente_finan'+p;
                 var fuente_finan = document.getElementById(fuente_finan_nombre).value;
                 var Monto_unidad_nombre = 'Monto_unidad'+p;
@@ -68,7 +68,7 @@ for(var p=1; p<=50; p++){
                 
                 }  */      
     } //fin if
-    else if(errConcepto_gasto!='' || errFuente_finan!='' || errMonto_unidad!='' || errPorcentaje!='') {
+    else if(errConcepto_gasto!='' || errFuente_finan!='' || errMonto_unidad!='') {
         alert ('Verifica tu captura ya que no tiene la información necesaria 2');
         document.getElementById("rowErrora").style.display = 'block';
         //cuenta_error_falta_infor=1;
