@@ -12,7 +12,7 @@ foreach($_POST as $k => $v)
 $ene_suma = $_POST['ene_suma'];
 '<?xml version="1.0"?>';
 '<root>';
-echo $query_user2="SELECT * FROM mas_presupuesto WHERE clave_usuario='".$cve_user."';";
+$query_user2="SELECT * FROM mas_presupuesto WHERE clave_usuario='".$cve_user."';";
 $res_user2 =  mysqli_query($con, $query_user2);
 $cuantos=mysqli_num_rows($res_user2);
 
@@ -37,7 +37,7 @@ for($i=1;$i<=$cuantos_mod;$i++){
 			WHERE clave_usuario LIKE '".$cve_user."' && id_presupuesto = '".$id_presupuesto_a."';";
 	$mod=mysqli_query($con, $query_b);
 }
- 
+ echo $query_b;
 if ($mod) {
     echo "Query ejecutado correctamente";
 	echo $res_paso=1;
