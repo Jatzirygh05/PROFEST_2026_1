@@ -37,7 +37,14 @@ for($i=1;$i<=$cuantos_mod;$i++){
 			WHERE clave_usuario LIKE '".$cve_user."' && id_presupuesto = '".$id_presupuesto_a."';";
 	$mod=mysqli_query($con, $query_b);
 }
-if($mod) echo $res_paso=1;
+ 
+if ($mod) {
+    echo "Query ejecutado correctamente";
+	echo $res_paso=1;
+} else {
+    echo "Error: ";
+}
+
 $cuantos_agrega=$cuantos_mod+1;
 for($a=$cuantos_agrega;$a<=50;$a++){
 	$Concepto_gasto_b=${'Concepto_gasto'.$a};
