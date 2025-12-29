@@ -16,16 +16,16 @@
 							campov = parseFloat(campov);
 						}		
 							sumaT=sumaT+campov;
-alert('----------------->'.sumaT);
 				//sumaT2=sumaT2+parseFloat(subt_varios);
 				}
-				//alert(sumaT2);
+				
 				var ene_suma=document.getElementById('ene_suma'); 
 				//ene_suma.value=sumaT2.toFixed(2);
 				
 			         /*var valor_immp = document.getElementById("pres_anual_tot_2010").value;
 			           valor_immp=sumaT;*/
-
+					alert(sumaT);
+					alert(monto_coinversion2);
 					if(sumaT<=monto_coinversion2){
 						 var obtsum_vert= document.getElementById('pres_anual_tot_2010');
 						 	//obtsum_vert.value=Math.round(sumaT);
