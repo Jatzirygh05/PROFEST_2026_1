@@ -26,7 +26,7 @@ for($i=1;$i<=$cuantos_mod;$i++){
 	$Porcentaje_a=${'Porcentaje'.$i};
 	//
 	//
-	$query_b="UPDATE mas_presupuesto SET 
+	echo $query_b="UPDATE mas_presupuesto SET 
 			Concepto_gasto	=	'$Concepto_gasto_a',
 			Fuente_finan	=	'$Fuente_finan_a',
 			Monto_unidad	=	'$Monto_unidad_a',
