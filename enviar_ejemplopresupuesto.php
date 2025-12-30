@@ -24,8 +24,7 @@ for($i=1;$i<=$cuantos_mod;$i++){
   	$Fuente_finan_a=${'Fuente_finan'.$i};
  	$Monto_unidad_a=${'Monto_unidad'.$i};
 	$Porcentaje_a=${'Porcentaje'.$i};
-	//
-	//
+	
 	$query_b="UPDATE mas_presupuesto SET 
 			Concepto_gasto	=	'$Concepto_gasto_a',
 			Fuente_finan	=	'$Fuente_finan_a',
@@ -37,13 +36,7 @@ for($i=1;$i<=$cuantos_mod;$i++){
 			WHERE clave_usuario LIKE '".$cve_user."' && id_presupuesto = '".$id_presupuesto_a."';";
 	$mod=mysqli_query($con, $query_b);
 }
- echo $query_b;
-if ($mod) {
-    echo "Query ejecutado correctamente";
-	echo $res_paso=1;
-} else {
-    echo "Error: ";
-}
+//if($mod) echo $res_paso=2;
 
 $cuantos_agrega=$cuantos_mod+1;
 for($a=$cuantos_agrega;$a<=50;$a++){
@@ -59,6 +52,11 @@ for($a=$cuantos_agrega;$a<=50;$a++){
 		(NULL, '$cve_user', '$Concepto_gasto_b', '$Fuente_finan_b', '$Monto_unidad_b', '$pres_anual_tot_2010', $Porcentaje_b, '$ene_suma',NOW());";
 		$mod_c = mysqli_query($con, $query_c);		
 	}
-	if($mod_c) echo $res_paso=1;
+	
 }	
+if ($mod) {
+	echo $res_paso=1;
+}elseif ($mod_c) {
+	echo $res_paso=1;
+}
 '</root>';

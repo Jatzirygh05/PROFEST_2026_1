@@ -118,7 +118,7 @@ if(clave1!=''){
 			}
 				       
 		} else if(errconcepto!='' || errunidad!='' || errdias_a_utilizar!='' || errcosto_unitario_imp_incluidos!='' || errmonto_tot_imp_incluidos!='') {
-			console.log('Verifica tu captura ya que no tiene la información necesaria 6');
+			console.log('Verifica tu captura ya que no tiene la información necesaria');
 			document.getElementById("rowError1").style.display = 'block';
 					
 			cuenta_error_falta_infora=1;
@@ -193,7 +193,7 @@ var cuenta_error_falta_inforb=0;
 			}
 				       
 		} else if(errconceptoa!='' || errunidada!='' || errdias_a_utilizara!='' || errcosto_unitario_imp_incluidosa!='' || errmonto_tot_imp_incluidosa!='') {
-			console.log('Verifica tu captura ya que no tiene la información necesaria 6.1');
+			console.log('Verifica tu captura ya que no tiene la información necesaria');
 			document.getElementById("rowError2").style.display = 'block';
 					
 			cuenta_error_falta_inforb=1;
@@ -264,7 +264,7 @@ var cuenta_error_falta_inforc=0;
 			}
 				       
 		} else if(errconceptob!='' || errunidadb!='' || errcosto_unitario_imp_incluidosb!='' || errmonto_tot_imp_incluidosb!='') {
-			console.log('Verifica tu captura ya que no tiene la información necesaria 6.2');
+			console.log('Verifica tu captura ya que no tiene la información necesaria');
 			document.getElementById("rowError3").style.display = 'block';
 					
 			cuenta_error_falta_inforc=1;
@@ -333,7 +333,7 @@ var cuenta_error_falta_inford=0;
 			}
 				       
 		} else if(errconceptoc!='' || errunidadc!='' || errcosto_unitario_imp_incluidosc!='' || errmonto_tot_imp_incluidosc!='') {
-			console.log('Verifica tu captura ya que no tiene la información necesaria 6.3');
+			console.log('Verifica tu captura ya que no tiene la información necesaria');
 			document.getElementById("rowError4").style.display = 'block';
 					
 			cuenta_error_falta_inford=1;
@@ -402,7 +402,7 @@ var cuenta_error_falta_infore=0;
 			}
 				       
 		} else if(errnombre_participantes!='' || errorigen_destino_origen!='' || errmonto_tot_imp_incluidosd!='') {
-			console.log('Verifica tu captura ya que no tiene la información necesaria 6.4');
+			console.log('Verifica tu captura ya que no tiene la información necesaria');
 			document.getElementById("rowError5").style.display = 'block';
 					
 			cuenta_error_falta_infore=1;
@@ -470,7 +470,7 @@ var cuenta_error_falta_inforf=0;
 			}
 				       
 		} else if(errconceptoe!='' || errunidade!='' || errcosto_unitario_imp_incluidose!='' || errmonto_tot_imp_incluidos_dos!='') {
-			console.log('Verifica tu captura ya que no tiene la información necesaria 6.5');
+			console.log('Verifica tu captura ya que no tiene la información necesaria');
 			document.getElementById("rowError6").style.display = 'block';
 					
 			cuenta_error_falta_inforf=1;
@@ -539,7 +539,7 @@ var cuenta_error_falta_inforg=0;
 			}
 				       
 		} else if(errconceptog!='' || errunidadg!='' || errcosto_unitario_imp_incluidosg!='' || errmonto_tot_imp_incluidosg!='') {
-			console.log('Verifica tu captura ya que no tiene la información necesaria 6.6');
+			console.log('Verifica tu captura ya que no tiene la información necesaria');
 			document.getElementById("rowError7").style.display = 'block';
 					
 			cuenta_error_falta_inforg=1;
@@ -608,7 +608,7 @@ var cuenta_error_falta_inforz=0;
 			}
 				       
 		} else if(errconceptoz!='' || errunidadz!='' || errcosto_unitario_imp_incluidosz!='' || errmonto_tot_imp_incluidosz!='') {
-			console.log('Verifica tu captura ya que no tiene la información necesaria 6.7');
+			console.log('Verifica tu captura ya que no tiene la información necesaria');
 			document.getElementById("rowError9").style.display = 'block';
 					
 			cuenta_error_falta_inforz=1;

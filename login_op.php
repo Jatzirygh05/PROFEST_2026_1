@@ -674,7 +674,8 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                         if($h<=3){ echo "*"; } ?><input type="hidden" name="id_presupuesto<?=$h?>" id="id_presupuesto<?=$h?>" value="<?=$id_presupuesto?>">
                         <input type="hidden" name="cuantos_INSERT" id="cuantos_INSERT" value="<?=$cuantos?>">
                         <td> 
-                        <select class='form-control proyectocampo' name='Concepto_gasto<?=$h?>' id='Concepto_gasto<?=$h?>'>
+                        <!-- proyectocampo -->
+                        <select class='form-control' name='Concepto_gasto<?=$h?>' id='Concepto_gasto<?=$h?>'>
                           <option value="" <?php if(empty($Concepto_gasto_s)){ ?>selected="selected"<?php } ?>>Selecciona opci&oacute;n</option>
                               <?php $query="SELECT * FROM `catalogo_concepto_gastos` order by concepto_gasto";
                                 $result = mysqli_query($con,$query);
@@ -716,7 +717,8 @@ Toda la informaci√≥n que se registre en los apartados de este sitio web, servir√
                       <tr>
                         <td><?php echo $i; ?></td>
                         <td>
-                          <select class='form-control proyectocampo text-mute' name='Concepto_gasto<?php echo $i?>' id='Concepto_gasto<?php echo $i?>'>
+                     <!-- proyectocampo -->
+                          <select class='form-control text-mute' name='Concepto_gasto<?php echo $i?>' id='Concepto_gasto<?php echo $i?>'>
                             <option value="" selected="selected">Selecciona opci&oacute;n</option>
                             <?php echo $combobitdos; ?>
                           </select>
