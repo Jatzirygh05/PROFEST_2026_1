@@ -283,9 +283,9 @@
                       </td>
                       <td>
                        <?php if($f<=3){ ?><samp id="errorganigrama_correo<?=$f?>As" name="errorganigrama_correo<?=$f?>As" class="control-label" style="display:none">*</samp><?php } ?>
-                        <input type="text" id="organigrama_correo<?=$f?>" name="organigrama_correo<?=$f?>" id="organigrama_correo<?=$f?>" value="<?=$organigrama_correo_a?>" class="form-control proyectocampo" placeholder="ejemplo@dominio.com" onblur="validarEmailorg(this);">
+                        <input type="text" id="organigrama_correo<?=$f?>" name="organigrama_correo<?=$f?>" id="organigrama_correo<?=$f?>" value="<?=$organigrama_correo_a?>" class="form-control proyectocampo" placeholder="ejemplo@dominio.com"  onBlur="validarEmailorg(this.id);">
                         <small id="errorganigrama_correo<?=$f?>" name="errorganigrama_correo<?=$f?>" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>    
-                        <small id="emailOK_org<?=$f?>"></small>
+                        <small id="emailOK_<?=$f?>"></small>
                       </td>
                     </tr>
                   </tbody>
@@ -514,7 +514,7 @@
         <!-- inicio Entidad(es) -->
         <div class="row">
           <div class="col-md-8"> 
-            <h3>Entidad(es) donde se planea la realización del proyecto</h3>
+            <h3>Entidad(es) donde se planea la realización del proyecto</h3> 
           </div>
             <div class="col-md-12"><hr class="red small-margin"></div>
         </div>
@@ -525,7 +525,7 @@
               <tr>
                 <th>#</th>
                 <th>Entidad</th>
-                <th>Municipio 1</th>
+                <th>Municipio 1<samp id="errmunicipio_a1_1As" name="errmunicipio_a1_1As" class="control-label">*</samp></th>
                 <th>Municipio 2</th>
                 <th>Municipio 3</th>
                 <th>Municipio 4</th>
@@ -544,7 +544,7 @@
                         <samp id="errentidades_a<?=$f?>As" name="errentidades_a<?=$f?>As" class="control-label">*</samp><?php } ?>
                   </th>
                   <td> 
-                    <select id="entidades_a<?=$f?>" name="entidades_a<?=$f?>" class="form-control proyectocampo">
+                    <select id="entidades_a<?=$f?>" name="entidades_a<?=$f?>" class="form-control proyectoentidadescampo">
                       <option value="" selected="selected">Selecciona una opción</option>
                         <?php 
                             $sql_consulta_ent = "SELECT * FROM `entidades`"; 
@@ -560,25 +560,14 @@
                   </select>
                   <small id="errentidades_a<?=$f?>" name="errentidades_a<?=$f?>" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                 </td>
-                
+              <?php 
+              for($x=1;$x<=6;$x++){ 
+                ?>  
                 <td>
-                  <input class="form-control" placeholder="Municipio" type="Municipio donde se realizara el festival">
+                  <input class="form-control proyectoentidadescampo" id="municipio_a<?=$f?>_<?=$x?>" name="municipio_a<?=$f?>_<?=$x?>" value="<?=${'municipio_a'.$f.'_'.$x}?>" placeholder="Municipio" type="Municipio donde se realizara el festival">
+                  <small id="errmunicipio_a<?=$f?>_<?=$x?>" name="errmunicipio_a<?=$f?>_<?=$x?>" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                 </td>
-                <td>
-                  <input class="form-control" placeholder="Municipio" type="Municipio donde se realizara el festival">
-                </td>
-                <td>
-                  <input class="form-control" placeholder="Municipio" type="Municipio donde se realizara el festival">
-                </td>
-                <td>
-                  <input class="form-control" placeholder="Municipio" type="Municipio donde se realizara el festival">
-                </td>
-                <td>
-                  <input class="form-control" placeholder="Municipio" type="Municipio donde se realizara el festival">
-                </td>
-                <td>
-                  <input class="form-control" placeholder="Municipio" type="Municipio donde se realizara el festival">
-                </td>
+              <?php } ?>
               </tr>
             </tbody>
           <?php } ?>

@@ -210,41 +210,27 @@
                 $organigrama_funciones8 = $row_proy["organigrama_funciones8"];
                 $organigrama_correo8 = $row_proy["organigrama_correo8"];
 
-                $entidades_a1   = $row_proy["entidades_a1"];
-                $entidades_a2   = $row_proy["entidades_a2"];
-                $entidades_a3   = $row_proy["entidades_a3"];
-                $entidades_a4   = $row_proy["entidades_a4"];
-                $entidades_a5   = $row_proy["entidades_a5"];
-                $entidades_a6   = $row_proy["entidades_a6"];
-                $entidades_a7   = $row_proy["entidades_a7"];
-                $entidades_a8   = $row_proy["entidades_a8"];
-                $entidades_a9   = $row_proy["entidades_a9"];
-                $entidades_a10  = $row_proy["entidades_a10"];
-
-                /*$Concepto_gasto_a= $row_proy["Concepto_gasto_a"];
-                $Fuente_finan_a = $row_proy["Fuente_finan_a"];
-                $Monto_unidad_a = $row_proy["Monto_unidad_a"];
-                $Porcentaje_a   = $row_proy["Porcentaje_a"];
-                
-                $Concepto_gasto_b= $row_proy["Concepto_gasto_b"];
-                $Fuente_finan_b = $row_proy["Fuente_finan_b"];
-                $Monto_unidad_b = $row_proy["Monto_unidad_b"];      
-                $Porcentaje_b   = $row_proy["Porcentaje_b"];
-                
-                $Concepto_gasto_c= $row_proy["Concepto_gasto_c"];
-                $Fuente_finan_c = $row_proy["Fuente_finan_c"];
-                $Monto_unidad_c = $row_proy["Monto_unidad_c"];
-                $Porcentaje_c   = $row_proy["Porcentaje_c"];
-
-                $porcentaje_total   = $row_proy["porcentaje_total"];*/
-                
                 $suma_invalida = $row_proy["suma_invalida"];
                 $suma_porinvalida = $row_proy["suma_porinvalida"];
 
                 $descripcion_linea_curotorial = $row_proy["descripcion_linea_curotorial"];
                 $descripcion_linea_curotorial = str_replace("<br>", "\n", $descripcion_linea_curotorial);
             }
-            // FIN PESTAÑA 'Proyecto 1er'     
+            // FIN PESTAÑA 'Proyecto 1er'  
+            
+            // INICIO LUGARES 'proyecto_entidades_municipios' 
+            $sql_consulta_proy = "SELECT * FROM `proyecto_entidades_municipios` 
+            WHERE `clave_usuario` LIKE '".$cve_user."' "; 
+            $resultado_consulta_proya = mysqli_query($con, $sql_consulta_proy);
+            $num_resultados_proyecto_a = mysqli_num_rows($resultado_consulta_proy);
+            for ($ka=0; $ka <$num_resultados_proyecto_a; $ka++){
+                $row_proya = mysqli_fetch_array($resultado_consulta_proya, MYSQLI_ASSOC);
+                foreach($row_proya as $n=>$vv){
+                  ${$n}=$vv;
+                }
+            }
+            // INICIO LUGARES 'proyecto_entidades_municipios' 
+
             // INICIO PESTAÑA 'Proyecto 2do.' 
             $sql_consulta_proy2 = "SELECT * FROM `proyecto_parte2` WHERE `clave_usuario` LIKE '".$cve_user."' "; 
             $resultado_consulta_proy2 = mysqli_query($con, $sql_consulta_proy2);

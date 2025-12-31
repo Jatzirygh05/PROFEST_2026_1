@@ -218,6 +218,61 @@ var set_pcat = document.querySelectorAll(".cat_categoria");
           }		  
 		  //FIN .proyectocampo Alta y Modificación Proyecto 1er. pestaña
 
+		  
+///////////////
+
+
+		  //INICIO .proyectoentidadescampo Alta y Modificación 
+		  var set_pcX = document.querySelectorAll(".proyectoentidadescampo");
+		
+		  for (var i = 0; i < set_pcX.length; i++) {
+			   set_pcX[i].onchange = function () {
+			  				   
+				 var valor=this.value;
+						
+					////////////INICIO VERIFICAR EL NAVEGADOR	
+						// Opera 8.0+
+						var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+					 
+						// Firefox 1.0+
+						var isFirefox = typeof InstallTrigger !== 'undefined';
+					 
+						// Safari 3.0+ "[object HTMLElementConstructor]"
+						var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+					 
+						// Internet Explorer 6-11
+						var isIE = /*@cc_on!@*/false || !!document.documenttMode;
+					 
+						// Edge 20+
+						var isEdge = !isIE && !!window.StyleMedia;
+					 
+						// Chrome 1+
+						var isChrome = !!window.chrome && !!window.chrome.webstore;
+					 
+						// Blink
+						var isBlink = (isChrome || isOpera) && !!window.CSS;
+					 
+					 var navegador;
+					 
+						if(isOpera) navegador = 1;
+						if(isFirefox)navegador = 2;
+						if(isSafari)navegador = 3;
+						if(isIE)navegador = 4;
+						if(isEdge)navegador = 5;
+						if(isChrome)navegador = 6;
+						if(isBlink)navegador = 7;
+					 
+					////////////FIN VERIFICAR EL NAVEGADOR	
+				var url_X='receptor2_ProyectoEntidades.php?variable='+this.name+'&valor='+valor+'&navegador='+navegador;
+				hacerPeticion(url_X);
+			  }
+          }		  
+		  //FIN .proyectoentidadescampo Alta y Modificación 
+
+//////////////
+
+
+
 		  //INICIO .proyectocampodir Alta y Modificación Proyecto director del festival
 		  var set_pcQ = document.querySelectorAll(".proyectocampodir");
 		

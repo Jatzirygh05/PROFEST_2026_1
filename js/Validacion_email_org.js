@@ -1,40 +1,119 @@
 /* Validacion de e-mail(inicio) */
 function validarEmailorg(idCampo) {
-	var organigrama_correoa = idCampo.value;
-	console.log(organigrama_correoa);
+	//console.log(idCampo);
+	var organigrama_correoEsc = document.getElementById(idCampo).value;
+	//console.log(organigrama_correoEsc);
+	var emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 
-//if(idCampo == 'organigrama_correoa'){
-var organigrama_correoaEsc = idCampo.value;
-/*var organigrama_correoaEsc_campo = idCampo.value;
-organigrama_correo1Esc_campo*/
-var emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+  if (emailRegex.test(organigrama_correoEsc)){
+  if(idCampo=="organigrama_correo1"){
+		organigrama_correo1.className = 'form-control';
+		document.getElementById('emailOK_1').className = 'form-text';
+		document.getElementById('emailOK_1').innerText="";
+	}
 
-  if (emailRegex.test(organigrama_correoa)){
-  alert("La direcci�n de email " + organigrama_correoa + " es correcta.");
-  emailOK.innerText = "correcto";
-	errorganigrama_correoaAs.className = 'form-text';
-	document.getElementById('emailOK_org').innerText="";
-	organigrama_correoa.className = 'form-control' ;
+	if(idCampo=="organigrama_correo2"){
+		organigrama_correo2.className = 'form-control';
+		document.getElementById('emailOK_2').className = 'form-text';
+		document.getElementById('emailOK_2').innerText="";
+	}
+
+	if(idCampo=="organigrama_correo3"){
+		organigrama_correo3.className = 'form-control';
+		document.getElementById('emailOK_3').className = 'form-text';
+		document.getElementById('emailOK_3').innerText="";
+	}
+
+	if(idCampo=="organigrama_correo4"){
+		organigrama_correo4.className = 'form-control';
+		document.getElementById('emailOK_4').className = 'form-text';
+		document.getElementById('emailOK_4').innerText="";
+	}
+
+	if(idCampo=="organigrama_correo5"){
+		organigrama_correo5.className = 'form-control';
+		document.getElementById('emailOK_5').className = 'form-text';
+		document.getElementById('emailOK_5').innerText="";
+	}
+
+	if(idCampo=="organigrama_correo6"){
+		organigrama_correo6.className = 'form-control';
+		document.getElementById('emailOK_6').className = 'form-text';
+		document.getElementById('emailOK_6').innerText="";
+	}
+
+	if(idCampo=="organigrama_correo7"){
+		organigrama_correo7.className = 'form-control';
+		document.getElementById('emailOK_7').className = 'form-text';
+		document.getElementById('emailOK_7').innerText="";
+	}
+
+	if(idCampo=="organigrama_correo8"){
+		organigrama_correo8.className = 'form-control';
+		document.getElementById('emailOK_8').className = 'form-text';
+		document.getElementById('emailOK_8').innerText="";
+	}
   }else{
-  	if($f=1;$f<=8;$f){}
-  	document.getElementById('emailOK_org'.$f).className = 'form-text form-text-error';
-  	document.getElementById('emailOK_org').innerText="La direcci\u00F3n de email " + organigrama_correoa + " es incorrecta";
-	
-	alert("La direcci�n de email es incorrecta.");
-  	errorganigrama_correoaAs.className = 'form-text form-text-error';
-  	document.getElementById('emailOK_org').innerText = 'form-control form-control-error'; 
-  	organigrama_correoa.className = 'form-control form-control-error' ;
-/*
-  	var http_request = false;
-  	var nombre = 'organigrama_correoa';
-		var valor = document.getElementById('organigrama_correoa').value;
+	//alert("correo incorrecto");
+	var nom_completa_err = 'err'+idCampo+"As";
+	//console.log(nom_completa_err);
+			
+	if(idCampo=="organigrama_correo1"){
+		organigrama_correo1.className = 'form-control form-control-error';
+		document.getElementById('emailOK_1').className = 'form-text form-text-error';
+		organigrama_correo1.value="";
+		document.getElementById('emailOK_1').innerText="La direcci\u00F3n de email " + organigrama_correoEsc + " es incorrecta";
+	}
 
-		console.log(nombre);
-		console.log(valor);
-	  var url_instancia='receptor2_Proyecto_organigrama.php?variable='+nombre+'&valor='+valor;
-		hacerPeticion(url_instancia);	*/
-  }
-		}	
-  	//}
+	if(idCampo=="organigrama_correo2"){
+		organigrama_correo2.className = 'form-control form-control-error';
+		document.getElementById('emailOK_2').className = 'form-text form-text-error';
+		organigrama_correo2.value="";
+		document.getElementById('emailOK_2').innerText="La direcci\u00F3n de email " + organigrama_correoEsc + " es incorrecta";
+	}
+
+	if(idCampo=="organigrama_correo3"){
+		organigrama_correo3.className = 'form-control form-control-error';
+		document.getElementById('emailOK_3').className = 'form-text form-text-error';
+		organigrama_correo3.value="";
+		document.getElementById('emailOK_3').innerText="La direcci\u00F3n de email " + organigrama_correoEsc + " es incorrecta";
+	}
+
+	if(idCampo=="organigrama_correo4"){
+		organigrama_correo4.className = 'form-control form-control-error';
+		document.getElementById('emailOK_4').className = 'form-text form-text-error';
+		organigrama_correo4.value="";
+		document.getElementById('emailOK_4').innerText="La direcci\u00F3n de email " + organigrama_correoEsc + " es incorrecta";
+	}
+
+	if(idCampo=="organigrama_correo5"){
+		organigrama_correo5.className = 'form-control form-control-error';
+		document.getElementById('emailOK_5').className = 'form-text form-text-error';
+		organigrama_correo5.value="";
+		document.getElementById('emailOK_5').innerText="La direcci\u00F3n de email " + organigrama_correoEsc + " es incorrecta";
+	}
+
+	if(idCampo=="organigrama_correo6"){
+		organigrama_correo6.className = 'form-control form-control-error';
+		document.getElementById('emailOK_6').className = 'form-text form-text-error';
+		organigrama_correo6.value="";
+		document.getElementById('emailOK_6').innerText="La direcci\u00F3n de email " + organigrama_correoEsc + " es incorrecta";
+	}
+
+	if(idCampo=="organigrama_correo7"){
+		organigrama_correo7.className = 'form-control form-control-error';
+		document.getElementById('emailOK_7').className = 'form-text form-text-error';
+		organigrama_correo7.value="";
+		document.getElementById('emailOK_7').innerText="La direcci\u00F3n de email " + organigrama_correoEsc + " es incorrecta";
+	}
+
+	if(idCampo=="organigrama_correo8"){
+		organigrama_correo8.className = 'form-control form-control-error';
+		document.getElementById('emailOK_8').className = 'form-text form-text-error';
+		organigrama_correo8.value="";
+		document.getElementById('emailOK_8').innerText="La direcci\u00F3n de email " + organigrama_correoEsc + " es incorrecta";
+	}
+
+	}	
 }
 /* Validacion de e-mail(fin) */

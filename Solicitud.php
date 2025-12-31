@@ -156,7 +156,7 @@ $var = 1;
   			$Correo_electronico_op	=	$registro3['Correo_electronico_op'];
   			//fin datos operativo
 
-			//inicio entidades tabla proyecto
+			/*inicio entidades tabla proyecto
 			$entidades_a1	=	$registro3['entidades_a1'];
 			$entidades_a2	=	$registro3['entidades_a2'];
 			$entidades_a3	=	$registro3['entidades_a3'];
@@ -167,7 +167,7 @@ $var = 1;
 			$entidades_a8	=	$registro3['entidades_a8'];
 			$entidades_a9	=	$registro3['entidades_a9'];
 			$entidades_a10	=	$registro3['entidades_a10'];
-			//fin entidades
+			//fin entidades*/
 			 			
 			//INICIO consulta tabla solicitud 2. Características generales del festival
   			$consulta_p4="SELECT * FROM solicitud 

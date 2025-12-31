@@ -484,7 +484,10 @@ if($recurso != NULL){
              			<div id="archivo_solicitud_descargar" hidden="hidden">
                         <label>Descarga formato*:</label>
                         <br />
-                        <a href="Solicitud.php" target="_blank">Formato de Solicitud PROFEST firmada</a>
+                        <a href="Solicitud.php" target="_blank">Formato de Solicitud PROFEST para su firma</a>
+							<p><strong>Nota:</strong>
+								Una vez descargada la Solicitud PROFEST y debidamente firmada, proceder a la carga del archivo en PDF en el sistema.
+							</p>
                         </div>
                         
                         <div id="archivo_proyecto_descargar" hidden="hidden">

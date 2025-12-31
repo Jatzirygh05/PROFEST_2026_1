@@ -12,6 +12,8 @@
 }
 .proyectocampo_varios_presupuesto{
 }
+.proyectocampo{
+}
 .cat_categoria{
 }
 .validafecha{
@@ -23,7 +25,7 @@
 .info_inst_reg{
 }
 
-//INICIO CODIGO PARA ADJUNTAR
+/*INICIO CODIGO PARA ADJUNTAR*/
 .messages{
     float: left;
     font-family: sans-serif;
@@ -61,7 +63,7 @@
     font-size: 18px;
     text-align: center;
 }
-//FIN CODIGO PARA ADJUNTAR
+/*FIN CODIGO PARA ADJUNTAR*/
 .modal-dialog2{
     margin-top: 10px;
     padding-right: 19px;

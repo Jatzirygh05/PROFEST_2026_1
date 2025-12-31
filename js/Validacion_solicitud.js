@@ -379,6 +379,27 @@ function validarEnvio(){
 	var entidades_a1Esc		= document.getElementById('entidades_a1');
 	var errentidades_a1		= document.getElementById('errentidades_a1');
 	var errentidades_a1As	= document.getElementById('errentidades_a1As');
+
+	var municipio_a1_1Esc		= document.getElementById('municipio_a1_1');
+	var errmunicipio_a1_1		= document.getElementById('errmunicipio_a1_1');
+	var errmunicipio_a1_1As	= document.getElementById('errmunicipio_a1_1As');
+
+
+	/*var municipio_a1_2Esc		= document.getElementById('municipio_a1_2');
+	var errmunicipio_a1_2		= document.getElementById('errmunicipio_a1_2');
+
+	var municipio_a1_3Esc		= document.getElementById('municipio_a1_3');
+	var errmunicipio_a1_3		= document.getElementById('errmunicipio_a1_3');
+
+	var municipio_a1_4Esc		= document.getElementById('municipio_a1_4');
+	var errmunicipio_a1_4		= document.getElementById('errmunicipio_a1_4');
+
+	var municipio_a1_5Esc		= document.getElementById('municipio_a1_5');
+	var errmunicipio_a1_5		= document.getElementById('errmunicipio_a1_5');
+	
+	var municipio_a1_6Esc		= document.getElementById('municipio_a1_6');
+	var errmunicipio_a1_6		= document.getElementById('errmunicipio_a1_6');*/
+	
 	
 	var nombre_instancia_postulanteEsc = document.getElementById('nombre_instancia_postulante');
 	var errnombre_instancia_postulante= document.getElementById('errnombre_instancia_postulante');
@@ -538,7 +559,8 @@ function validarEnvio(){
 		objetivo_general_festivalEsc,
 		proy_fomentar_part_creadoresEsc,
 		proy_act_situacion_vulnerableEsc,
-		proy_favore_itinerancia_actEsc
+		proy_favore_itinerancia_actEsc,
+		municipio_a1_1Esc
 		]; 
 	//Variables de los mensajes "Este campo es obligatorio"	
 	var mensaje = [
@@ -616,7 +638,8 @@ function validarEnvio(){
 		errobjetivo_general_festival,
 		errproy_fomentar_part_creadores,
 		errproy_act_situacion_vulnerable,
-		errproy_favore_itinerancia_act
+		errproy_favore_itinerancia_act,
+		errmunicipio_a1_1
 		];
 	
 	//Variables de los asteriscos
@@ -695,7 +718,8 @@ function validarEnvio(){
 		errobjetivo_general_festivalAs,
 		errproy_fomentar_part_creadoresAs,
 		errproy_act_situacion_vulnerableAs,
-		errproy_favore_itinerancia_actAs
+		errproy_favore_itinerancia_actAs,
+		errmunicipio_a1_1As
 	];
 
 	//Variables de los combobox
@@ -893,9 +917,9 @@ for(var p=1; p<=50; p++){
 	var errConcepto_gasto = document.getElementById('Concepto_gasto'+p).value;
 	var errFuente_finan = document.getElementById('Fuente_finan'+p).value;
 	var errMonto_unidad = document.getElementById('Monto_unidad'+p).value;
-	//var errPorcentaje = document.getElementById('Porcentaje'+p).value;
+	var errPorcentaje = document.getElementById('Porcentaje'+p).value;
 	
-	if(errConcepto_gasto!='' && errFuente_finan!='' && errMonto_unidad!=''){
+	if(errConcepto_gasto!='' && errFuente_finan!='' && errMonto_unidad!='' && errPorcentaje!=''){
 				var fuente_finan_nombre = 'Fuente_finan'+p;
 				var fuente_finan = document.getElementById(fuente_finan_nombre).value;
 				var Monto_unidad_nombre = 'Monto_unidad'+p;
@@ -933,9 +957,9 @@ for(var i=1; i<=3; i++){
 	var errConcepto_gasto = document.getElementById('Concepto_gasto'+i).value;
 	var errFuente_finan = document.getElementById('Fuente_finan'+i).value;
 	var errMonto_unidad = document.getElementById('Monto_unidad'+i).value;
-	//var errPorcentaje = document.getElementById('Porcentaje'+i).value;
+	var errPorcentaje = document.getElementById('Porcentaje'+i).value;
 	
-	if(errConcepto_gasto=='' || errFuente_finan=='' || errMonto_unidad==''){
+	if(errConcepto_gasto=='' || errFuente_finan=='' || errMonto_unidad=='' || errPorcentaje==''){
 		cuenta_error++;
 	}
 }
@@ -947,7 +971,8 @@ var pres_anual_tot_2010 = document.apInf.pres_anual_tot_2010.value
 //Math.round(ene_suma)==100  && 
 //pres_anual_tot_2010 == m1_fuente 
 var monto_coinversion2 = document.getElementById('monto_coinversion2').value;
-//console.log(" monto_coinversion2: " + monto_coinversion2 + "\n");
+
+//console.log(" pres_anual_tot_2010: " + pres_anual_tot_2010 + "\n");
 
 	if( pres_anual_tot_2010 == monto_coinversion2 ){
 		//console.log('ya son el 100%');

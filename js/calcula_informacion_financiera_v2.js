@@ -174,7 +174,6 @@ function suma_cantidades(){	//es la función que se esta usando en el apartado I
 			break;
 			case 'E':
 				var m2=1500000;
-				
 			//console.log('ENTRO A CATEGORIA D')
 			/* 	D) Festivales de decimosegunda emisión en adelante, hasta $2,500,000.00 (dos millones quinientos mil pesos 00/100 M.N.).*/
 			if(m2<m1) { 			

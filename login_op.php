@@ -295,7 +295,7 @@ Toda la información que se registre en los apartados de este sitio web, servir�
               <li class="active"><a data-toggle="tab" href="#tab-01">Información de la instancia</a></li>
               <li><a data-toggle="tab" href="#tab-02">Proyecto</a></li>
               <li><a data-toggle="tab" href="#tab-03">Aspectos financieros</a></li>
-              <li><a data-toggle="tab" href="#tab-04">Carga documentos</a></li>
+              <li><a data-toggle="tab" href="#tab-04">Descarga y Carga documentos</a></li>
             </ul>
             <!--presupuesto_proyecto.php
                 guardar_presupuesto.php-->

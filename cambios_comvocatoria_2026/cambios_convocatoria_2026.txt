@@ -23,6 +23,10 @@ nuevo 1 campos se agregarán a la tabla usuario ya se agrego y se valido como ob
 campos eliminados tabla proyecto:
 		   proy_noved_ed_2025
 			desarrollo_proyecto_descripcion
+
+tabla nueva lugares
+`proyecto_entidades_municipios` 
+para las 10 entidades con 6 municipios
 			
 
 agregeue  la tabla cat_instancias: el registro "Consejos Comunales, Comités Comunitarios o Consejos de Pueblos Indígenas" será el 6
