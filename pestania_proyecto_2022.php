@@ -356,7 +356,7 @@
                 <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
                 <small id="errperiodo_realizacion_fecha_inicio" name="errperiodo_realizacion_fecha_inicio" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small> 
                 <!--errperiodo_realizacion  2022-->
-                <small id="errper_proy" name="errper_proy" class="form-text form-text-error" style="display:none">El periodo de realización del proyecto deberá encontrarse entre el 9 de mayo y hasta el 31 de diciembre de 2025.</small> 
+                <small id="errper_proy" name="errper_proy" class="form-text form-text-error" style="display:none">El periodo de realización del proyecto deberá encontrarse entre el 1 de abril y hasta el 31 de diciembre de 2026.</small> 
               </div>
             </div>
             <div class="col-md-4">

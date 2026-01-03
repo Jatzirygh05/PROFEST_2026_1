@@ -786,24 +786,25 @@ var set_pcat = document.querySelectorAll(".cat_categoria");
 						//11 de abril y hasta el 15 de diciembre de 2022
 						//17 de abril y el 15 de diciembre de 2023
 						//9 mayo al 31 de diciembre de 2025
-							if((fecha_fin >= '2025/05/09') && (fecha_fin <= '2025/12/31'))
+						//1 de abril al 31 de diciembre de 2026
+							if((fecha_ini >= '2026/04/01') && (fecha_fin <= '2026/12/31'))
 							{
-								//console.log('entro y esta bien 1');
+								console.log('entro y esta bien 1');
 								document.getElementById("errper_proy").style.display = 'none';
 								var valor_fech = this.value;
 							} else {
-								//console.log('entro y esta mal 1');
+								console.log('entro y esta mal 1');
 								document.getElementById("errper_proy").style.display = 'block';
 								this.value = "";
 							}
 
-							if((fecha_ini <= fecha_fin) && (fecha_ini >= '2025/05/09') &&  (fecha_ini <= '2025/12/31'))
+							if((fecha_ini <= fecha_fin) && (fecha_ini >= '2026/04/01') &&  (fecha_ini <= '2026/12/31'))
 							{
-								//console.log('entro y esta bien 2');
+								console.log('entro y esta bien 2');
 								document.getElementById("errper_proy").style.display = 'none';
 								var valor_fech = this.value;
 							} else {
-								//console.log('entro y esta mal 2');
+								console.log('entro y esta mal 2');
 								this.value = "";
 								document.getElementById("errper_proy").style.display = 'block';
 							}
