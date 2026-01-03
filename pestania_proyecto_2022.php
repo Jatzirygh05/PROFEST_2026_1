@@ -329,13 +329,14 @@
               <select id="disciplina_2022" name="disciplina_2022" class="form-control segunampo">
                 <option value="" selected="selected">Selecciona una opción</option>
                 <option value=1 <?php if($disciplina_2022==1){ ?> selected="selected" <?php } ?>>Música</option>
-                <option value=2 <?php if($disciplina_2022==2){ ?> selected="selected" <?php } ?>>Teatro</option>
-                <option value=3 <?php if($disciplina_2022==3){ ?> selected="selected" <?php } ?>>Danza</option>
-                <option value=4 <?php if($disciplina_2022==4){ ?> selected="selected" <?php } ?>>Artes visuales y diseño</option>
-                <option value=5 <?php if($disciplina_2022==5){ ?> selected="selected" <?php } ?>>Cultura Alimentaria</option>
+                <option value=2 <?php if($disciplina_2022==2){ ?> selected="selected" <?php } ?>>Danza</option>
+                <option value=3 <?php if($disciplina_2022==3){ ?> selected="selected" <?php } ?>>Teatro</option>
+                <option value=4 <?php if($disciplina_2022==4){ ?> selected="selected" <?php } ?>>Cine</option>
+                <option value=5 <?php if($disciplina_2022==5){ ?> selected="selected" <?php } ?>>Multidisciplina</option>
                 <option value=6 <?php if($disciplina_2022==6){ ?> selected="selected" <?php } ?>>Literatura</option>
-                <option value=7 <?php if($disciplina_2022==7){ ?> selected="selected" <?php } ?>>Cine</option>
-                <option value=8 <?php if($disciplina_2022==8){ ?> selected="selected" <?php } ?>>Multidisciplina</option>
+                <option value=7 <?php if($disciplina_2022==7){ ?> selected="selected" <?php } ?>>Artes Visuales, Digitales y de Diseño</option>
+                <option value=8 <?php if($disciplina_2022==8){ ?> selected="selected" <?php } ?>>Cultura Alimentaria</option>
+                <option value=8 <?php if($disciplina_2022==9){ ?> selected="selected" <?php } ?>>Arquitectura</option>
               </select> 
                     <small id="errdisciplina_2022" name="errdisciplina_2022" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                   
@@ -447,7 +448,7 @@
         <div class="row">    
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>l) ¿Cómo se vincula el festival con otros organismos para la obtención de recursos?, ¿qué organismos se suman a su realización y cómo es su aportación?, ¿por qué se vincula con dichos organismos?<samp id="errproy_vinc_org_obtrecursosAs" name="errproy_vinc_org_obtrecursosAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
+              <label>i) ¿Cómo se vincula el festival con otros organismos para la obtención de recursos?, ¿qué organismos se suman a su realización y cómo es su aportación?, ¿por qué se vincula con dichos organismos?<samp id="errproy_vinc_org_obtrecursosAs" name="errproy_vinc_org_obtrecursosAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
               <textarea name="proy_vinc_org_obtrecursos" id="proy_vinc_org_obtrecursos" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_vinc_org_obtrecursos?></textarea>
               <small id="errproy_vinc_org_obtrecursos" name="errproy_vinc_org_obtrecursos" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
@@ -492,7 +493,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-group"> 
-              <label>n) Usa este espacio para proporcionar cualquier información adicional que se considere pertinente para la evaluación del proyecto, o incluye un link de video para dar a conocer más del festival: (Campo opcional)
+              <label>n) Usa este espacio para proporcionar cualquier información adicional que se considere pertinente para la evaluación del proyecto, o incluye un link de video para dar a conocer más del festival:
                 </label> <small>Máximo 2,500 caracteres</small>
               <textarea name="proy_info_adic" id="proy_info_adic" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_info_adic?></textarea>
           </div>

@@ -1,6 +1,6 @@
 <?php 
-	$img_file = '../imagenes/pie_pagina_2025.png'; //se actualizo el logo del reporte 06/02/2025		
-	$this->Image($img_file, 6, 245, 210, 45, '', '', '', false, 50, '', false, false, 0);
+	//$img_file = '../imagenes/pie_pagina_2025.png'; //se actualizo el logo del reporte 06/02/2025		
+	//$this->Image($img_file, 6, 245, 210, 45, '', '', '', false, 50, '', false, false, 0);
 	
 	$this->Ln(50);
 	$this->Cell(5);

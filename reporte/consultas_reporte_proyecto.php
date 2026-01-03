@@ -111,8 +111,13 @@ $navegador = getBrowser($user_agent);
 			 $var_proy_fav_itinerancia                       = $registro3["proy_fav_itinerancia"];
 			 $var_proy_acciones                              = $registro3["proy_acciones"];
 			 $var_proy_info_adic                             = $registro3["proy_info_adic"];
-
 			 //2025 (fin)
+			 //inicio 2026
+			 $objetivo_general_festival = $registro3["objetivo_general_festival"];
+
+			 $var_proy_fomentar_part_creadores= $registro3["proy_fomentar_part_creadores"];
+		   	 $var_proy_act_situacion_vulnerable= $registro3["proy_act_situacion_vulnerable"];
+			 //fin 2026
 
 			
 			if($navegador=="Google Chrome"){
@@ -461,45 +466,81 @@ $navegador = getBrowser($user_agent);
   			$organigrama_nombre1  =  $registro3['organigrama_nombre1'];
   			$organigrama_cargo1   =  $registro3['organigrama_cargo1'];
   			$organigrama_funciones1   =  $registro3['organigrama_funciones1'];
+			$organigrama_correo1  =  $registro3['organigrama_correo1'];
 
   			$organigrama_nombre2  = $registro3['organigrama_nombre2'];
   			$organigrama_cargo2  =  $registro3['organigrama_cargo2'];
   			$organigrama_funciones2   =  $registro3['organigrama_funciones2'];
+			$organigrama_correo2  =  $registro3['organigrama_correo2'];
 
   			$organigrama_nombre3  =  $registro3['organigrama_nombre3'];
   			$organigrama_cargo3   =  $registro3['organigrama_cargo3'];
   			$organigrama_funciones3   =  $registro3['organigrama_funciones3'];
+			$organigrama_correo3  =  $registro3['organigrama_correo3'];
 
   			$organigrama_nombre4  =  $registro3['organigrama_nombre4'];
   			$organigrama_cargo4   =  $registro3['organigrama_cargo4'];
   			$organigrama_funciones4   =  $registro3['organigrama_funciones4'];
+			$organigrama_correo4  =  $registro3['organigrama_correo4'];
 
   			$organigrama_nombre5  =  $registro3['organigrama_nombre5'];
   			$organigrama_cargo5   =  $registro3['organigrama_cargo5'];
   			$organigrama_funciones5   =  $registro3['organigrama_funciones5'];
+			$organigrama_correo5  =  $registro3['organigrama_correo5'];
 
   			$organigrama_nombre6  =  $registro3['organigrama_nombre6'];
   			$organigrama_cargo6   =  $registro3['organigrama_cargo6'];
   			$organigrama_funciones6   =  $registro3['organigrama_funciones6'];
+			$organigrama_correo6  =  $registro3['organigrama_correo6'];
 
   			$organigrama_nombre7  =  $registro3['organigrama_nombre7'];
   			$organigrama_cargo7   =  $registro3['organigrama_cargo7'];
   			$organigrama_funciones7   =  $registro3['organigrama_funciones7'];
+			$organigrama_correo7  =  $registro3['organigrama_correo7'];
 
   			$organigrama_nombre8  =  $registro3['organigrama_nombre8'];
   			$organigrama_cargo8   =  $registro3['organigrama_cargo8'];
   			$organigrama_funciones8   =  $registro3['organigrama_funciones8'];
+			$organigrama_correo8  =  $registro3['organigrama_correo8'];
 
-			  $entidades_a1   = $registro3["entidades_a1"];
-			  $entidades_a2   = $registro3["entidades_a2"];
-			  $entidades_a3   = $registro3["entidades_a3"];
-			  $entidades_a4   = $registro3["entidades_a4"];
-			  $entidades_a5   = $registro3["entidades_a5"];
-			  $entidades_a6   = $registro3["entidades_a6"];
-			  $entidades_a7   = $registro3["entidades_a7"];
-			  $entidades_a8   = $registro3["entidades_a8"];
-			  $entidades_a9   = $registro3["entidades_a9"];
-			  $entidades_a10  = $registro3["entidades_a10"];
+			$proy_fomentar_part_creadores= $registro3["proy_fomentar_part_creadores"];
+		   	$proy_act_situacion_vulnerable= $registro3["proy_act_situacion_vulnerable"];
+
+			$proy_favore_itinerancia_act= $registro3["proy_favore_itinerancia_act"];
+			 
+// INICIO LUGARES 'proyecto_entidades_municipios' 
+           $sql_cons_proy = "SELECT * FROM `proyecto_entidades_municipios` 
+            WHERE `clave_usuario` LIKE '".$cve_user."' "; 
+            $res_consulta_proya = mysqli_query($con, $sql_cons_proy);
+            $rego3 = mysqli_fetch_array($res_consulta_proya, MYSQLI_ASSOC);
+                	$entidades_a1	=	$rego3['entidades_a1'];
+					$entidades_a2	=	$rego3['entidades_a2'];
+					$entidades_a3	=	$rego3['entidades_a3'];
+					$entidades_a4	=	$rego3['entidades_a4'];
+					$entidades_a5	=	$rego3['entidades_a5'];
+					$entidades_a6	=	$rego3['entidades_a6'];
+					$entidades_a7	=	$rego3['entidades_a7'];
+					$entidades_a8	=	$rego3['entidades_a8'];
+					$entidades_a9	=	$rego3['entidades_a9'];
+					$entidades_a10	=	$rego3['entidades_a10'];
+				
+		  foreach($rego3 as $n=>$vv){
+                  ${$n}=$vv;
+                }
+
+	function imprmirentidades($var_ent, $con) {
+		$cons_enti="SELECT * FROM entidades where id_entidad_proyecto=$var_ent;";
+		$query_enti2=mysqli_query($con, $cons_enti);
+		if (!$query_enti2) {
+			die('Consulta no válida: ' . mysqli_error());
+		}
+		$cuantos_id=mysqli_num_rows($query_enti2);
+		while($r_enti2=mysqli_fetch_array($query_enti2, MYSQLI_ASSOC)){
+		$id_entidad_proyecto 			=	$r_enti2['id_entidad_proyecto'];
+		$nombre_entidad_proyecto	=	$r_enti2['nombre_entidad_proyecto'];
+		}
+		return $nombre_entidad_proycto_imp = $nombre_entidad_proyecto;
+	}
 
 
        /* $Concepto_gasto_a   =  utf8_decode($registro3['Concepto_gasto_a']);
@@ -696,7 +737,6 @@ for ($k2=0; $k2 <$num_resultados_proyecto2; $k2++){
 			$consulta4=mysqli_query($con, $consulta_p4);
 
 			$registro4=mysqli_fetch_array($consulta4);
-
 			
   			$nombre_festival		=	$registro4['nombre_festival'];
   			$numero_ediciones_previas= $registro4['numero_ediciones_previas'];
@@ -743,6 +783,8 @@ for ($k2=0; $k2 <$num_resultados_proyecto2; $k2++){
   			$Infor_finan_apoyo_monto	= $registro4['Infor_finan_apoyo_monto'];
   			$Infor_finan_apoyo_costo_total	= $registro4['Infor_finan_apoyo_costo_total'];
 
+			$monto_coinversion= $registro4['monto_coinversion'];
+			
 $Infor_finan_costo_monto = number_format($Infor_finan_costo_monto, 2, '.', ',');
 $Infor_finan_apoyo_monto = number_format($Infor_finan_apoyo_monto, 2, '.', ',');
 $Infor_finan_apoyo_costo_total = number_format($Infor_finan_apoyo_costo_total, 2, '.', ',');
