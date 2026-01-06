@@ -5,7 +5,7 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Convocatoria PROFEST 2026</title>
+    <title>Convocatoria PROFEST 2025</title>
    
     <!-- CSS -->
     <link rel="shortcut icon" href="https://framework-gb.cdn.gob.mx/favicon.ico">
@@ -25,10 +25,10 @@
   <div class="row">
     <div class="col-md-12">
         <h1>Bienvenidos </h1>
-        <h1>Convocatoria PROFEST 2026</h1>
+        <h1>Convocatoria PROFEST 2025</h1>
          <div class="bottom-buffer"></div>
                 <div class="alert alert-warning"><strong>¡Aviso!</strong>
-               Estimado Usuario, hacemos de tu conocimiento que ha cerrado la Convocatoria 2026 ha concluido.</div>
+               Estimado Usuario, hacemos de tu conocimiento que ha cerrado la Convocatoria 2025 ha concluido.</div>
                <?php 
                
               // echo "<META HTTP-EQUIV='Refresh' CONTENT='1;URL=index.php'>";
