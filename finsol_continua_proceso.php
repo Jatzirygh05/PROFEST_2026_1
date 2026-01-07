@@ -218,7 +218,7 @@ $level = $_SESSION['MM_UserGroup'];
                   <br>
                   <strong><p>Atentamente
                   <br>
-                  Dirección General de Promoción y Festivales Culturales.
+                  Dirección General de Circuitos y Festivales.
                   <br>
                   Secretaría de Cultura.</p>
                   </strong>
