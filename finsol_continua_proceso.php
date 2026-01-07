@@ -170,7 +170,7 @@ $level = $_SESSION['MM_UserGroup'];
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Convocatoria PROFEST 2025</title>
+    <title>Convocatoria PROFEST 2026</title>
     <!-- CSS -->
     <link rel="shortcut icon" href="https://framework-gb.cdn.gob.mx/favicon.ico">
     <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
@@ -206,7 +206,7 @@ $level = $_SESSION['MM_UserGroup'];
         
  		<div class="row">
           <div class="col-sm-8">
-            <h1>Convocatoria PROFEST 2025</h1>
+            <h1>Convocatoria PROFEST 2026</h1>
           </div>
         </div>
 		<?php require('./mail/conf_correo_cierre_solicitud.php'); ?>
