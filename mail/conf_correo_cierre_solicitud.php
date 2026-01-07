@@ -40,7 +40,7 @@ $mailWeb->Subject = "Registro finalizado";
 $linea0 = "Convocatoria PROFEST 2026";
 $linea1 = utf8_decode("Te informamos que se ha registrado tu proyecto exitosamente con el No. de Solicitud ".$id_solicitud);
 $linea2 = "Atentamente.";
-$linea3 = utf8_decode("Dirección General de Promoción y Festivales Culturales.");
+$linea3 = utf8_decode("Dirección General de Circuitos y Festivales.");
 $linea4 = utf8_decode("Secretaría de Cultura.");
 
 $mensaje_enviar = '<table align="center" width="60%">
