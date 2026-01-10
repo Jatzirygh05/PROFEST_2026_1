@@ -104,7 +104,6 @@ $level = $_SESSION['MM_UserGroup'];
 if($cve_user==""){ echo "<META HTTP-EQUIV='Refresh' CONTENT='2;URL=index_cierre.php'>";}
 
 $clave_reg = $_GET['clave'];
-
 $q_eli="DELETE FROM `reque_v2_1_2` WHERE clave_usuario='".$cve_user."' and `id`=$clave_reg;";
 $exe_delete=mysqli_query($con, $q_eli);
 
