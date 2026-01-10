@@ -48,23 +48,55 @@
 
 
       function suma_vertical(id){
+        //console.log('entro suma_montos_pestanas_traduccion_v3.js');
         var sumaT=0;
         var cuantos = 50;
         
         for(var i=1;i<=cuantos;i++){
          
-          var campov=eval ('document.apInf.monto_tot__'+i+'.value');
+          var campov=eval ('document.apInf.monto_tot'+i+'.value');
 
            if(campov.length==0){ 
                 var calcula_total = 0 
             } else { 
                 var calcula_total = parseFloat(campov.replace(/[$,\s]/g, ''));
-                sumaT=sumaT+calcula_total;
-            } 
+               
+            }  sumaT=sumaT+calcula_total;
         }
+               
+                 var apoyo_fin_sol_sc=document.apInf.total_2.value;
 
-              var obtsuma= document.apInf.total_esp_tra;
+                if(sumaT<=apoyo_fin_sol_sc){ 
+                //console.log('SI ES CORRECTO EL MONTO');
+               /* document.getElementById("suma_pestanas").style.borderColor="";
+                document.getElementById("sumhono").style.borderColor="";
+                document.getElementById("total_2").style.borderColor="";
+                document.getElementById("errmayormontoSC").style.display = 'none';*/
+                var obtsuma= document.apInf.total_esp_tra;
                   obtsuma.value=sumaT.toFixed(2);
+
+              } else { 
+                
+               // console.log(`ES ALTO EL MONTO: ${sumaT}`);
+               /* document.getElementById("suma_pestanas").style.borderColor="#D0021B";
+                document.getElementById("sumhono").style.borderColor="#D0021B";
+                document.getElementById("total_2").style.borderColor="#D0021B";
+                document.getElementById("errmayormontoSC").style.display = 'block';   */  
+                             
+                var campov=document.getElementById('monto_tot'+id).value;
+								var dos=sumaT-campov;
+
+                //alert(`campov: ${campov} dos ${dos} sumaT ${sumaT}`);   
+								
+								var obtsuma=document.getElementById("total_esp_tra");
+			              		obtsuma.value=dos;
+                
+                var campov_limpiap = document.getElementById('monto_tot'+id);
+							    campov_limpiap.value = 0;
+
+								alert(`Verifica los monto: ${sumaT}`);  
+                
+              } 
 
               /* var suma_pestanas_valor=document.formul.suma_pestanas.value;
               var sumhono1=document.formul.sumhono.value;
