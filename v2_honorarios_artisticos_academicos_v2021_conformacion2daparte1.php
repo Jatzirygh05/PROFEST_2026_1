@@ -161,7 +161,7 @@
                             <input class='form-control honoconceptos' name='conceptos__<?php echo $h; ?>__<?php echo $id; ?>' id='conceptos__<?php echo $h; ?>__<?php echo $id; ?>' value="<?php echo $concepto; ?>" onkeypress="return soloLetras(event)" >
                         </td>
                         <td>
-      <input class="form-control honoconceptos" id="monto_tot__<?php echo $h; ?>__<?php echo $id; ?>" name="monto_tot__<?php echo $h; ?>__<?php echo $id; ?>" value="<?php echo $monto_tot_imp_incluidos1; ?>" placeholder="0.00" type="number" onblur="suma_vertical(<?php echo $h; ?>);">
+      <input class="form-control honoconceptos" id="monto_tot__<?php echo $h; ?>__<?php echo $id; ?>" name="monto_tot__<?php echo $h; ?>__<?php echo $id; ?>" value="<?php echo $monto_tot_imp_incluidos1; ?>" placeholder="0.00" type="number" onblur="suma_vertical(<?php echo $h; ?>, <?php echo $id; ?>);">
                         </td>
                          <td><span class="glyphicon glyphicon-trash" aria-hidden="true" onclick="location.href='elimin_reg_conceptos_v3.php?clave=<?php echo $id; ?>'"></span></td>
                       </tr>

@@ -19,9 +19,9 @@ $variable=(isset($_GET['variable'])?$_GET['variable']:NULL);
 
 $sep_variable = explode("__", $variable);
 
-echo 'variable='.$variable = $sep_variable[0];
-echo 'h consecuivo='.$var_id = $sep_variable[1];
-echo 'id consec='.$var_id_mod = $sep_variable[2];
+$variable = $sep_variable[0];
+$var_id = $sep_variable[1];
+$var_id_mod = $sep_variable[2];
 
 
 if($variable=='monto_tot'){
@@ -52,15 +52,15 @@ if($variable==''){
 
 if($var_id_mod<>''){
 	$var_id_mod_verif = "and id='$var_id_mod'";
-	echo "----MODIFICA REGISTRO 1 ----";
-	echo $q_modifica="UPDATE `reque_v2_1_2` SET $pon_variable 
+	//echo "----MODIFICA REGISTRO 1 ----";
+	$q_modifica="UPDATE `reque_v2_1_2` SET $pon_variable 
 					fecha_hora_registro=NOW()
 					WHERE id=$var_id_mod and `clave_usuario` = '".$cve_user."';";
 		$exe_modifica=mysqli_query($con, $q_modifica);
 } else {
 	$var_id_mod_verif = "";
-	echo "----INSERTA REGISTRO 1 ----";
-	echo $resultado="SELECT consec FROM reque_v2_1_2 WHERE `clave_usuario` = '".$cve_user."' and `consec`=$var_id;";
+	//echo "----INSERTA REGISTRO 1 ----";
+	$resultado="SELECT consec FROM reque_v2_1_2 WHERE `clave_usuario` = '".$cve_user."' and `consec`=$var_id;";
 	$row1= mysqli_query($con, $resultado);
 	$cuantos_id=mysqli_num_rows($row1);
 		while($fila10=mysqli_fetch_array($row1, MYSQLI_ASSOC)){
@@ -68,15 +68,15 @@ if($var_id_mod<>''){
                }
 
 		if($cuantos_id==1){
-			echo "----MODIFICA REGISTRO 2 ----";
+			//echo "----MODIFICA REGISTRO 2 ----";
 			if($var_id_mod<>''){ $pon_variable_clave="`id`=$var_id_mod"; } else { $pon_variable_clave="`consec`=$var_id"; }
-			echo $q_modifica="UPDATE `reque_v2_1_2` SET $pon_variable 
+			$q_modifica="UPDATE `reque_v2_1_2` SET $pon_variable 
 								fecha_hora_registro=NOW()
 								WHERE $pon_variable_clave and `clave_usuario` = '".$cve_user."';";
 								$exe_modifica=mysqli_query($con, $q_modifica);
 		} else {
-			echo "----INSERTA REGISTRO 2 ----";
-			echo $q_inserta="INSERT INTO `reque_v2_1_2` (`id`,`clave_usuario`,`$variable`, `fecha_hora_registro`, `consec`) VALUES (null, '$cve_user', '$valor', NOW(), '$var_id');";
+			//echo "----INSERTA REGISTRO 2 ----";
+			$q_inserta="INSERT INTO `reque_v2_1_2` (`id`,`clave_usuario`,`$variable`, `fecha_hora_registro`, `consec`) VALUES (null, '$cve_user', '$valor', NOW(), '$var_id');";
 			$exe_insert=mysqli_query($con, $q_inserta);
 		}
 }		
