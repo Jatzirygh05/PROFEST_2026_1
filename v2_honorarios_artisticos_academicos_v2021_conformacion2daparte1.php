@@ -144,7 +144,7 @@
                         $Concepto_gasto=0;
                         while ($fila2=mysqli_fetch_array($res_user2, MYSQLI_ASSOC)){
                             $h=$h+1;
-                            $id     = $fila2['consec'];
+                            $id_borr_bot     = $fila2['consec'];
                             //$tipogasto = $fila2['tipogasto'];
                             $concepto = $fila2['concepto'];
                             //$unidad   = $fila2['unidad'];
@@ -163,7 +163,7 @@
                         <td>
       <input class="form-control honoconceptos" id="monto_tot__<?php echo $h; ?>" name="monto_tot__<?php echo $h; ?>" value="<?php echo $monto_tot_imp_incluidos1; ?>" placeholder="0.00" type="number" onblur="suma_vertical(<?php echo $h; ?>);">
                         </td>
-                         <td><span class="glyphicon glyphicon-trash" aria-hidden="true" onclick="location.href='elimin_reg_conceptos_v3.php?clave=<?php echo $id; ?>'"></span></td>
+                         <td><span class="glyphicon glyphicon-trash" aria-hidden="true" onclick="location.href='elimin_reg_conceptos_v3.php?clave=<?php echo $id_borr_bot; ?>'"></span></td>
                       </tr>
                     <?php
                            }

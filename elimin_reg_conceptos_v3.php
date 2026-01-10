@@ -105,7 +105,7 @@ if($cve_user==""){ echo "<META HTTP-EQUIV='Refresh' CONTENT='2;URL=index_cierre.
 
 $clave_reg = $_GET['clave'];
 
-$q_eli="DELETE FROM `reque_v2_1_2` WHERE `id`=$clave_reg;";
+echo $q_eli="DELETE FROM `reque_v2_1_2` WHERE `id`=$clave_reg;";
 $exe_delete=mysqli_query($con, $q_eli);
 
 if($exe_delete==1){
