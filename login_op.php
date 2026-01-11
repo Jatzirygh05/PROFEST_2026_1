@@ -211,7 +211,7 @@ include('querys_login_op.php');
             <div class="user-credencials">
               <ul class="list-unstyled">
                 <li><span class="user-credencials__name"><?php echo $nombrec; ?></span></li>
-                <li>Información adicional<a href="<?php echo $logoutAction ?>" target="_parent" class="btn btn-link pull-right">Salir</a></li>
+                <li>Usario<a href="<?php echo $logoutAction ?>" target="_parent" class="btn btn-link pull-right">Salir</a></li>
               </ul>
             </div>
           </div>
