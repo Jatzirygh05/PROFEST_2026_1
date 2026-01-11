@@ -44,12 +44,15 @@ if($Infor_finan_costo_monto==0){
 			  $apoyo_monto='500000';
 			break;
 			case 'C':
-			  $apoyo_monto='1000000';
+			  $apoyo_monto='800000';
 			break;
 			case 'D': 
-			  $apoyo_monto='1500000';
+			  $apoyo_monto='1000000';
 			break;
 			case 'E': 
+			  $apoyo_monto='1500000';
+			break;
+			case 'F': 
 			  $apoyo_monto='2000000';
 			break;
 		  }
