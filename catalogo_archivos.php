@@ -338,7 +338,11 @@ function habilitar2(form)
       
          <button type="button" class="btn btn btn-primary" data-toggle="modal" data-target="#panel-077">
              <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Descarga y adjunta documentos
-         </button>		
+         </button>
+		<p>
+			<br>
+		 <a href="reporte/Formato_proyecto.php" target="_new">Formato oficial de Proyecto PROFEST (Sólo descarga y consulta).</a>
+		</p>
       </div>
 </div>
 
