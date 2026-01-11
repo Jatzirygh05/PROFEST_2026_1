@@ -1,5 +1,5 @@
 function validaForm(Infor_finan_costo_monto){
-
+//console.log('aqui entro');
 var Infor_finan_costo_monto = Infor_finan_costo_monto
 var m1_fuente = Infor_finan_costo_monto
 var m1_fuente2 = document.getElementById('Infor_finan_costo_monto').value
@@ -148,7 +148,7 @@ var monto_coinversion2 = document.getElementById('monto_coinversion2').value;
                 
                  hacerPeticion(url_zcat);*/
           
-            $.post("enviar_ejemplopresupuesto.php",$("#formulariop").serialize(),function(res_paso){
+            $.post("enviar_ejemplopresupuesto.php",$("#apInf").serialize(),function(res_paso){
             // $("#formulario").fadeOut("slow");   // Hacemos desaparecer el div "formulario" con un efecto fadeOut lento.
             var resultado = res_paso;
             //console.log(resultado);

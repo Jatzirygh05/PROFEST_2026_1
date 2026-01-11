@@ -1,10 +1,12 @@
 			//, Infor_finan_costo_monto
-			function sumaVerticalmonto(id, cuantos){
+			function sumaVerticalmonto(id, cuantos){ 
+			/*este es la funcion que se liga con Resumen presupuestal 11/01/2026*/
 			var Infor_finan_costo_monto = Infor_finan_costo_monto
 			//var m1_fuente = Infor_finan_costo_monto
 			var monto_coinversion2 = document.getElementById('monto_coinversion2').value;
 			var sumaT=0;
 			//var sumaT2=0;
+			let total = 0;
 			var cuantos = 50;
 				for(var i=1;i<=cuantos;i++){
 			      var campov=document.getElementById(`Monto_unidad${i}`).value;
@@ -17,19 +19,18 @@
 							sumaT=sumaT+campov;
 				//sumaT2=sumaT2+parseFloat(subt_varios);
 				 //calculo del porcentaje (inicio)
-				var Infor_finan_costo_monto=document.getElementById('Infor_finan_costo_monto').value; 
+				var monto_coinversion2=document.getElementById('monto_coinversion2').value; 
 					/*console.log(campov);
 					console.log(Infor_finan_costo_monto);*/
-				var subt_varios =  100 * campov / Infor_finan_costo_monto; 
-					//console.log(subt_varios);
+				var subt_varios =  100 * campov / monto_coinversion2; 
 				var porcent_v = eval ('document.apInf.Porcentaje'+i);
-					porcent_v.value = subt_varios.toFixed(2);
+					porcent_v.value = subt_varios;
  				//calculo del porcentaje (fin)
-
+				 total += subt_varios;
 				}
-				
+				//console.log(total);
 				var ene_suma=document.getElementById('ene_suma'); 
-				//ene_suma.value=sumaT2.toFixed(2);
+				ene_suma.value=total;
 				
 			         /*var valor_immp = document.getElementById("pres_anual_tot_2010").value;
 			           valor_immp=sumaT;*/
