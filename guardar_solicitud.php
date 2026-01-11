@@ -231,7 +231,7 @@ $level = $_SESSION['MM_UserGroup'];
                 <li>
                   <span class="user-credencials__name"><?php echo $nombrec; ?></span>
                 </li>
-                <li>Informaci&oacute;n adicional<a href="<?php echo $logoutAction ?>" target="_parent" class="btn btn-link pull-right">Salir</a></li>
+                <li>Usuario<a href="<?php echo $logoutAction ?>" target="_parent" class="btn btn-link pull-right">Salir</a></li>
               </ul>
             </div>
           </div>
