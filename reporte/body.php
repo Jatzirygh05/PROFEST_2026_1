@@ -422,7 +422,7 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->Ln(5);
 	$pdf->Cell(8);
 	$pdf->SetFont('Arial','B',9);
-	$pdf->Cell(150,5,utf8_decode('Número total de personas participantes:'),0,0,'L');
+	$pdf->Cell(150,5,utf8_decode('Número total de artistas o creadores artísticos participantes:'),0,0,'L');
 	$pdf->Ln(4);
 	$pdf->Cell(8);
 	$pdf->SetFont('Arial','',9);

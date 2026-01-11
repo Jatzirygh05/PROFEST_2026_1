@@ -625,7 +625,7 @@
                      <td><input type="text" id="meta_num_foros_alcanzada" name="meta_num_foros_alcanzada" class="form-control segunampo" value="<?=$meta_num_foros_alcanzada?>" placeholder="Ingresa el n&uacute;mero" onKeyPress="return soloNumeros(event)"></td>
                       </tr>
                       <tr>
-                        <th scope="row">Número total de personas participantes<samp id="errmeta_num_artistasAs" name="errmeta_num_artistasAs" class="control-label">*</samp>:
+                        <th scope="row">Número total de artistas o creadores artísticos participantes<samp id="errmeta_num_artistasAs" name="errmeta_num_artistasAs" class="control-label">*</samp>:
                                      </th>
                         <td> <input type="text" id="meta_num_artistas" name="meta_num_artistas" class="form-control segunampo" value="<?=$meta_num_artistas?>" placeholder="Ingresa n&uacute;mero" onKeyPress="return soloNumeros(event)">
                             <small id="errmeta_num_artistas" name="errmeta_num_artistas" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
