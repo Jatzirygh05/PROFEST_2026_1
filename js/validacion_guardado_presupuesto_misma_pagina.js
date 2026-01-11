@@ -69,10 +69,10 @@ for(var p=1; p<=50; p++){
                 }  */      
     } //fin if
     else if(errConcepto_gasto!='' || errFuente_finan!='' || errMonto_unidad!='') {
-        alert ('Verifica tu captura ya que no tiene la información necesaria 2');
+        alert ('Verifica tu captura ya que no tiene la información necesaria');
         document.getElementById("rowErrora").style.display = 'block';
         //cuenta_error_falta_infor=1;
-         return false;f
+         return false;
         }   
 } //fin for
 
@@ -148,9 +148,10 @@ var monto_coinversion2 = document.getElementById('monto_coinversion2').value;
                 
                  hacerPeticion(url_zcat);*/
           
-            $.post("enviar_ejemplopresupuesto.php",$("#apInf").serialize(),function(res_paso){
+            $.post("enviar_ejemplopresupuesto.php",$("#formulariop").serialize(),function(res_paso){
             // $("#formulario").fadeOut("slow");   // Hacemos desaparecer el div "formulario" con un efecto fadeOut lento.
             var resultado = res_paso;
+            //console.log(resultado);
              if(resultado == 1){
                     //console.log('si entro');
                     //console.log(" ene_suma: " + ene_suma + "\n");
@@ -167,4 +168,56 @@ var monto_coinversion2 = document.getElementById('monto_coinversion2').value;
                         
         }
     });    
+
+//inicio 10/01/2026 Boton Presupuesto PROFEST
+function validaFormp(){
+for(var p=1; p<=50; p++){
+        var errconceptos='document.apInf.conceptos'+p+'.value';
+        var errmonto_tot=eval ('document.apInf.monto_tot'+p+'.value');
+        var total_2=document.getElementById('total_2').value;
+        var total_esp_tra= parseInt(document.getElementById('total_esp_tra').value);
+//alert(`total_2: ${total_2}`); 
+//alert(`total_esp_tra: ${total_esp_tra}`);
+       if(errconceptos!='' && errmonto_tot!='' && total_esp_tra==total_2) {
+            //alert ('Información guardada');
+            return true;
+        } else {
+            alert ('Verifica tu captura ya que no tiene la información necesaria Presupuesto PROFEST');
+            //document.getElementById("rowErrora").style.display = 'block';
+            return false;
+        }
+    } //fin for
+
+}
+
+$(document).ready( function() {   // Esta parte del código se ejecutará automáticamente cuando la página esté lista.
+    $("#botonenviarp").click( function() {     // Con esto establecemos la acción por defecto de nuestro botón de enviar.
+        if(validaFormp()){//20122024  , Infor_finan_apoyo_monto Primero validará el formulario.
+           // console.log('ya xpodemos tomar los datos==');
+           
+          
+            $.post("enviar_ejemplopresupuesto_presup_PROFEST.php",$("#apInf").serialize(),function(res_pasop){
+            // $("#formulario").fadeOut("slow");   // Hacemos desaparecer el div "formulario" con un efecto fadeOut lento.
+            var resultado = res_pasop;
+           // console.log(resultado);
+             if(resultado == 1){
+                   // console.log('si entro');
+                    //console.log(" ene_suma: " + ene_suma + "\n");
+                    alert('Información guardada');
+                    //$("#exito").delay(500).fadeIn("slow");      
+                    // Si hemos tenido éxito, hacemos aparecer el div "exito" con un efecto fadeIn lento tras un delay de 0,5 segundos.
+                } else {
+                   // console.log('no entro');
+                    alert('Verifica tu captura ya que no tiene la información necesaria Presupuesto PROFEST');
+                    //$("#fracaso").delay(500).fadeIn("slow");    }
+                    // Si no, lo mismo, pero haremos aparecer el div "fracaso"
+                }
+            });
+                        
+        }
+    });    
+
+//fin 10/01/2025 Boton Presupuesto PROFEST
+   });
+
 });

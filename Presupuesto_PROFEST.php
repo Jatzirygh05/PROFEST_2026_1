@@ -85,7 +85,7 @@
                             $total_esp_mue_inmue1  =  $monto_tot_imp_incluidos + $total_esp_mue_inmue1;
                             $total_esp_tra_1  =  number_format($total_esp_mue_inmue1, 2, '.', '');
                       ?>
-                        <td><?php echo $h; ?><input type="hidden" name="id" id="id" value="<?=$id?>">
+                        <td><?php echo $h; ?><input type="hidden" name="id<?php echo $h; ?>" id="id<?php echo $h; ?>" value="<?=$id?>">
                         <input type="hidden" name="cuantos_INSERT" id="cuantos_INSERT" value="<?=$cuantos?>">
                         </td>
                         <td>
