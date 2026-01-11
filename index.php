@@ -119,7 +119,7 @@ if (isset($_POST['usuario'])) {
             </div>
             <div class="form-group">
               <div class="col-sm-offset-3 col-sm-9" align="right">
-                <a href='formatos_para_descarga_general/Manual_de_llenado_Plataforma_PROFEST_2025.pdf' target="_blank">Descarga Manual de llenado Plataforma PROFEST 2026</a> <span class="glyphicon glyphicon-share" aria-hidden="true"></span>
+                <a href='formatos_para_descarga_general/Manual_de_registro_Plataforma_PROFEST_2026.pdf' target="_blank">Descarga Manual de llenado Plataforma PROFEST 2026</a> <span class="glyphicon glyphicon-share" aria-hidden="true"></span>
               </div>
             </div>
             <!--div class="form-group">
