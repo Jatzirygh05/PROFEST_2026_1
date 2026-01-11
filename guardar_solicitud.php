@@ -335,7 +335,7 @@ $level = $_SESSION['MM_UserGroup'];
                 <div class="row">
                     <div class="col-md-12"> 
                         <h3>Documentos a adjuntar</h3>
-                        	<p>En este espacio deberá descargar el formato oficial de <strong>Solicitud</strong> de la Convocatoria, asimismo, podrás alojarla y cargar la documentación jurídica necesaria para concluir el registro. Selecciona el botón de <strong>Descarga y adjunta documentos</strong> para comenzar.</p>
+                        	<p>En este espacio deberá descargar el formato oficial de <strong>Solicitud</strong> de la Convocatoria, asimismo, podrás alojarla y cargar la documentación jurídica-administrativa necesaria para concluir el registro. Selecciona el botón de <strong>Descarga y adjunta documentos</strong> para comenzar.</p>
                     </div>
                     <div class="col-md-12"><hr class="red small-margin"></div>
                 </div>

@@ -18,7 +18,7 @@ $this->Cell(110);
 
 $this->Ln(27);
 $this->Cell(1);
-$this->Cell(190,5,utf8_decode('||'),$MARGEN_HEADER,1,'C',0);	
+$this->Cell(190,5,utf8_decode(''),$MARGEN_HEADER,1,'C',0);	
 $this->Cell(190,6,utf8_decode('ANEXO 5 PROFEST'),$MARGEN_HEADER,1,'C',0);	
 $this->Cell(1);
 $this->Cell(190,5,utf8_decode('Proyecto Cultural PROFEST'),$MARGEN_HEADER,1,'C',0);

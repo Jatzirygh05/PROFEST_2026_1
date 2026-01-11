@@ -135,7 +135,7 @@ $pdf->SetFont('Arial','B',9);
 
 
 	$pdf->SetFont('Arial','B',9);
-	$pdf->Ln(-2);
+	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('c) Describe la población, audiencia y/o público objetivo del festival.'),0,0,'L');
 	$pdf->Ln(8);
@@ -144,7 +144,7 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->MultiCell(187,4,utf8_decode($proy_desc_pob_aud_pubobj_festival),0,'J');
 
 	$pdf->SetFont('Arial','B',9);
-	$pdf->Ln(-2);
+	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90.5,10,utf8_decode('d) ¿Cómo o por qué el festival logra ampliar la oferta cultural del municipio, región o estado donde se  planea su realización?'),0,0,'L');
 	$pdf->Ln(8);
@@ -153,7 +153,7 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->MultiCell(187,4,utf8_decode($desarrollo_proyecto_justificacion),0,'J');
 
 $pdf->SetFont('Arial','B',9);
-	$pdf->Ln(5);
+	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90.5,10,utf8_decode('e) Describe la programación artística o la línea curatorial del proyecto.'),0,0,'L');
 	$pdf->Ln(8);
@@ -162,7 +162,7 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->MultiCell(187,4,utf8_decode($descripcion_linea_curotorial),0,'J');
 
 	$pdf->SetFont('Arial','B',9);
-	$pdf->Ln(5);
+	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90.5,10,utf8_decode('f) Describe los espacios y/o la infraestructura de los foros donde se pretenden realizar las actividades,'),0,0,'L');
 	$pdf->Ln(3);
@@ -174,9 +174,9 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->MultiCell(187,4,utf8_decode($proy_esp_infra_foros),0,'J');
 
 	$pdf->SetFont('Arial','B',9);
-	$pdf->Ln(-2);
+	$pdf->Ln(3);
 	$pdf->Cell(4);
-	$pdf->Cell(90.5,10,utf8_decode('g) ¿Cómo logra el festival fomentar la participación de creadores locales, regionales y nacionales? ¿Existen acciones '),0,0,'L');
+	$pdf->Cell(90.5,8,utf8_decode('g) ¿Cómo logra el festival fomentar la participación de creadores locales, regionales y nacionales? ¿Existen acciones '),0,0,'L');
 	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90.5,10,utf8_decode(' que impulse una destacada participación de mujeres tanto en la operación del proyecto, como en las actividades artísticas?'),0,0,'L');
@@ -189,10 +189,10 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('h) ¿El proyecto considera actividades dirigidas a grupos en situación de vulnerabilidad?, ¿en los espacios de ejecución '),0,0,'L');
-	$pdf->Ln(3);
+	$pdf->Ln(4);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('consideras la accesibilidad a personas con capacidades diferentes? Usa este espacio para describir aquellas actividades '),0,0,'L');
-	$pdf->Ln(3);
+	$pdf->Ln(4);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('dirigidas a grupos en situación de vulnerabilidad y/o aquellas acciones para contar con un espacio accesible para todas y todos.'),0,0,'L');
 	$pdf->Ln(8);
@@ -204,7 +204,7 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('i) ¿Cómo se vincula el festival con otros organismos para la obtención de recursos?, ¿qué organismos se suman a su'),0,0,'L');
-	$pdf->Ln(3);
+	$pdf->Ln(4);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('realización y cómo es su aportación?, ¿por qué se vincula con dichos organismos?'),0,0,'L');
 	$pdf->Ln(8);
@@ -273,7 +273,7 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->MultiCell(187,4,utf8_decode($proy_acciones),0,'J');
 	
 	$pdf->SetFont('Arial','B',9);
-	$pdf->Ln(-2);
+	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('m) ¿Cuáles son las acciones emprendidas por el festival para el cuidado del medio ambiente?'),0,0,'L');
 	$pdf->Ln(8);
@@ -282,7 +282,7 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->MultiCell(187,4,utf8_decode($acciones_festival_medio_ambiente),0,'J');
 
 	$pdf->SetFont('Arial','B',9);
-	$pdf->Ln(-2);
+	$pdf->Ln();
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('n) Usa este espacio para proporcionar cualquier información adicional que se considere pertinente para la evaluación'),0,0,'L');
 	$pdf->Ln(4);
@@ -640,7 +640,7 @@ $pdf->Ln(5);
 	$pdf->MultiCell(187,5,utf8_decode('s) Resumen presupuestal en el que se acrediten los gastos relativos a la contratación de los servicios y el arrendamiento de los bienes esenciales para la realización del Festival, de manera desglosada y especificando la fuente del financiamiento.'),0,'J');
 	$pdf->Ln(4);
 	$pdf->Cell(4);
-	$pdf->Cell(187,5,utf8_decode('Financiamiento/Presupuesto del costo total del Festival'),1,0,'C');
+	$pdf->Cell(187,5,utf8_decode('Resumen presupuestal de coinversión'),1,0,'C');
 	
 	
 	$pdf->Ln(5);
@@ -798,7 +798,7 @@ $pdf->Ln(5);
 
 		$total_esp_mue_inmue1  =  $monto_tot_imp_incluidos + $total_esp_mue_inmue1;
 		$total_esp_tra_1  =  number_format($total_esp_mue_inmue1, 2, '.', '');
-
+	$pdf->SetFont('Arial','',9);
 	$pdf->Ln(4);
 	$pdf->Cell(4);
 	$pdf->Cell(15,4,$h,1,0,'L');
