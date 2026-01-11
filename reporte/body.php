@@ -173,13 +173,16 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->SetFont('Arial','',9);
 	$pdf->MultiCell(187,4,utf8_decode($proy_esp_infra_foros),0,'J');
 
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90.5,8,utf8_decode('g) ¿Cómo logra el festival fomentar la participación de creadores locales, regionales y nacionales? ¿Existen acciones '),0,0,'L');
 	$pdf->Ln(3);
 	$pdf->Cell(4);
-	$pdf->Cell(90.5,10,utf8_decode(' que impulse una destacada participación de mujeres tanto en la operación del proyecto, como en las actividades artísticas?'),0,0,'L');
+	$pdf->Cell(90.5,10,utf8_decode(' que impulse una destacada participación de mujeres tanto en la operación del proyecto, como en las actividades'),0,0,'L');
+	$pdf->Ln(3);
+	$pdf->Cell(4);
+	$pdf->Cell(90.5,10,utf8_decode(' artísticas?'),0,0,'L');	
 	$pdf->Ln(8);
 	$pdf->Cell(4);
 	$pdf->SetFont('Arial','',9);
