@@ -123,14 +123,12 @@
                 //2026 (inicio)
                 $objetivo_general_festival                  = $row_proy["objetivo_general_festival"];
 		            $proy_fomentar_part_creadores               = $row_proy["proy_fomentar_part_creadores"];
-		            $proy_act_situacion_vulnerable              = $row_proy["proy_act_situacion_vulnerable"];
-		          
-                
+		           
                
                 $objetivo_general_festival    = str_replace("<br>", "\n", $objetivo_general_festival);
                 $proy_fomentar_part_creadores    = str_replace("<br>", "\n", $proy_fomentar_part_creadores);
-                $proy_act_situacion_vulnerable    = str_replace("<br>", "\n", $proy_act_situacion_vulnerable);
-               
+                
+                
                  //2026 (fin)
 
 
@@ -138,15 +136,14 @@
                 $proy_desc_pob_aud_pubobj_festival          = $row_proy["proy_desc_pob_aud_pubobj_festival"];
                 $proy_noved_ed_2025                         = $row_proy["proy_noved_ed_2025"];
                 $proy_esp_infra_foros                       = $row_proy["proy_esp_infra_foros"];
-                $proy_vinc_org_obtrecursos                  = $row_proy["proy_vinc_org_obtrecursos"];
+              
           
                 //***********/
 
                 $proy_desc_pob_aud_pubobj_festival    = str_replace("<br>", "\n", $proy_desc_pob_aud_pubobj_festival);
                 $proy_noved_ed_2025    = str_replace("<br>", "\n", $proy_noved_ed_2025);
                 $proy_esp_infra_foros    = str_replace("<br>", "\n", $proy_esp_infra_foros);
-                $proy_vinc_org_obtrecursos    = str_replace("<br>", "\n", $proy_vinc_org_obtrecursos);
-              
+                
                 //2025 (fin)
                 
                 $desarrollo_proyecto_meta_cuantitativa      = $row_proy["desarrollo_proyecto_meta_cuantitativa"];
@@ -264,6 +261,11 @@
                 $proy_info_adic    = str_replace("<br>", "\n", $proy_info_adic2);
                 $breve_semblanza_director    = str_replace("<br>", "\n", $breve_semblanza_director2);
                 
+                $proy_act_situacion_vulnerable2   = $row_proy2["proy_act_situacion_vulnerable"];
+                $proy_act_situacion_vulnerable    = str_replace("<br>", "\n", $proy_act_situacion_vulnerable2);
+               
+                $proy_vinc_org_obtrecursos2    = $row_proy2["proy_vinc_org_obtrecursos"];
+                $proy_vinc_org_obtrecursos    = str_replace("<br>", "\n", $proy_vinc_org_obtrecursos2);
             } 
           
             // FIN PESTAÑA 'Proyecto 2do.'

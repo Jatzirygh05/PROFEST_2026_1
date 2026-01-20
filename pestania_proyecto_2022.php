@@ -440,7 +440,7 @@
               <div class="form-group">
                 <label>h) ¿El proyecto considera actividades dirigidas a grupos en situación de vulnerabilidad?, ¿en los espacios de ejecución consideras la accesibilidad a personas con capacidades diferentes? Usa este espacio para describir aquellas actividades dirigidas a grupos en situación de vulnerabilidad y/o aquellas acciones para contar con un espacio accesible para todas y todos.<samp id="errproy_act_situacion_vulnerableAs" name="errproy_act_situacion_vulnerableAs" class="control-label">*</samp>:</label>
                 <small>Máximo 2,500 caracteres</small>
-                <textarea id="proy_act_situacion_vulnerable" name="proy_act_situacion_vulnerable" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" rows="10" maxlength="2500"><?=$proy_act_situacion_vulnerable?></textarea>
+                <textarea id="proy_act_situacion_vulnerable" name="proy_act_situacion_vulnerable" class="form-control proyectocampodir" placeholder="Ingresa la información correspondiente" rows="10" maxlength="2500"><?=$proy_act_situacion_vulnerable?></textarea>
                 <small id="errproy_act_situacion_vulnerable" name="errproy_act_situacion_vulnerable" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
               </div>
             </div>
@@ -449,7 +449,7 @@
           <div class="col-md-12">
             <div class="form-group"> 
               <label>i) ¿Cómo se vincula el festival con otros organismos para la obtención de recursos?, ¿qué organismos se suman a su realización y cómo es su aportación?, ¿por qué se vincula con dichos organismos?<samp id="errproy_vinc_org_obtrecursosAs" name="errproy_vinc_org_obtrecursosAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
-              <textarea name="proy_vinc_org_obtrecursos" id="proy_vinc_org_obtrecursos" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_vinc_org_obtrecursos?></textarea>
+              <textarea name="proy_vinc_org_obtrecursos" id="proy_vinc_org_obtrecursos" rows="10" class="form-control proyectocampodir" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_vinc_org_obtrecursos?></textarea>
               <small id="errproy_vinc_org_obtrecursos" name="errproy_vinc_org_obtrecursos" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
           </div>
