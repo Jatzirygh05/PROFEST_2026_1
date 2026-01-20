@@ -31,7 +31,7 @@ require_once('./Connections/conexion.php'); ?>
           <div class="row">
           	<div class="col-sm-12">
 				<?php
-				$nombre_usuario_reg_proyecto=utf8_decode($_POST['nombre_usuario_reg_proyecto']);
+				$nombre_usuario_reg_proyecto=$_POST['nombre_usuario_reg_proyecto'];
 				$Correo_sist=$_POST['Correo_sist'];
 				//------ INICIO VALIDAR QUE el usuario y contrase�a NO EXISTAN ***
 				$rs1 = "SELECT MAX(id_usuario) AS id FROM usuarios";

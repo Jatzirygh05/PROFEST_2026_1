@@ -458,7 +458,7 @@
           <div class="col-md-12">
             <div class="form-group"> 
               <label>j) ¿Cómo logra el festival favorecer a la itinerancia de las actividades programadas para llegar a otros públicos?, ¿mantiene vínculos con otros festivales?<samp id="errproy_fav_itineranciaAs" name="errproy_fav_itineranciaAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
-              <textarea name="proy_fav_itinerancia" id="proy_fav_itinerancia" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_fav_itinerancia?></textarea>
+              <textarea name="proy_fav_itinerancia" id="proy_fav_itinerancia" rows="10" class="form-control proyectocampodir" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_fav_itinerancia?></textarea>
               <small id="errproy_fav_itinerancia" name="errproy_fav_itinerancia" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
           </div>
@@ -467,7 +467,7 @@
           <div class="col-md-12">
             <div class="form-group"> 
               <label>k) Considerando las anteriores ediciones, ¿cuáles son las novedades para la edición de este 2026? Usa este espacio para describir actividades artísticas a destacar, estrategias de impacto, de difusión o de vinculación con el público objetivo<samp id="errproy_favore_itinerancia_actAs" name="errproy_favore_itinerancia_actAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
-              <textarea id="proy_favore_itinerancia_act" name="proy_favore_itinerancia_act" class="form-control guardar_campostext" placeholder="Ingresa la(s) novedades para la edición de este 2025" rows="10" maxlength="2500"><?=$proy_favore_itinerancia_act?></textarea>
+              <textarea id="proy_favore_itinerancia_act" name="proy_favore_itinerancia_act" class="form-control proyectocampodir" placeholder="Ingresa la(s) novedades para la edición de este 2026" rows="10" maxlength="2500"><?=$proy_favore_itinerancia_act?></textarea>
               <small id="errproy_favore_itinerancia_act" name="errproy_favore_itinerancia_act" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
           </div>
@@ -476,7 +476,7 @@
           <div class="col-md-12">
             <div class="form-group"> 
               <label>l) ¿Qué acciones se llevarán a cabo para dar a conocer el festival?<samp id="errproy_accionesAs" name="errproy_accionesAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
-              <textarea name="proy_acciones" id="proy_acciones" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_acciones?></textarea>
+              <textarea name="proy_acciones" id="proy_acciones" rows="10" class="form-control proyectocampodir" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_acciones?></textarea>
               <small id="errproy_acciones" name="errproy_acciones" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
           </div>
@@ -485,7 +485,7 @@
           <div class="col-md-12">
             <div class="form-group"> 
               <label>m) ¿Cuáles son las acciones emprendidas por el festival para el cuidado del medio ambiente?<samp id="erracciones_festival_medio_ambienteAs" name="erracciones_festival_medio_ambienteAs" class="control-label">*</samp>:</label> <small>Máximo 2,500 caracteres</small>
-              <textarea name="acciones_festival_medio_ambiente" id="acciones_festival_medio_ambiente" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$acciones_festival_medio_ambiente?></textarea>
+              <textarea name="acciones_festival_medio_ambiente" id="acciones_festival_medio_ambiente" rows="10" class="form-control proyectocampodir" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$acciones_festival_medio_ambiente?></textarea>
               <small id="erracciones_festival_medio_ambiente" name="erracciones_festival_medio_ambiente" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
             </div>
           </div>
@@ -495,7 +495,7 @@
             <div class="form-group"> 
               <label>n) Usa este espacio para proporcionar cualquier información adicional que se considere pertinente para la evaluación del proyecto, o incluye un link de video para dar a conocer más del festival:
                 </label> <small>Máximo 2,500 caracteres</small>
-              <textarea name="proy_info_adic" id="proy_info_adic" rows="10" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_info_adic?></textarea>
+              <textarea name="proy_info_adic" id="proy_info_adic" rows="10" class="form-control proyectocampodir" placeholder="Ingresa la información correspondiente" maxlength="2500"><?=$proy_info_adic?></textarea>
           </div>
           </div>
         </div>

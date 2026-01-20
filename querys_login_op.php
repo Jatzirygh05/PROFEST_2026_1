@@ -124,8 +124,14 @@
                 $objetivo_general_festival                  = $row_proy["objetivo_general_festival"];
 		            $proy_fomentar_part_creadores               = $row_proy["proy_fomentar_part_creadores"];
 		            $proy_act_situacion_vulnerable              = $row_proy["proy_act_situacion_vulnerable"];
-		            $proy_favore_itinerancia_act                = $row_proy["proy_favore_itinerancia_act"];
-                //2026 (fin)
+		          
+                
+               
+                $objetivo_general_festival    = str_replace("<br>", "\n", $objetivo_general_festival);
+                $proy_fomentar_part_creadores    = str_replace("<br>", "\n", $proy_fomentar_part_creadores);
+                $proy_act_situacion_vulnerable    = str_replace("<br>", "\n", $proy_act_situacion_vulnerable);
+               
+                 //2026 (fin)
 
 
                 //2025 (inicio)
@@ -133,26 +139,20 @@
                 $proy_noved_ed_2025                         = $row_proy["proy_noved_ed_2025"];
                 $proy_esp_infra_foros                       = $row_proy["proy_esp_infra_foros"];
                 $proy_vinc_org_obtrecursos                  = $row_proy["proy_vinc_org_obtrecursos"];
-                $proy_fav_itinerancia                       = $row_proy["proy_fav_itinerancia"];
-                $proy_acciones                              = $row_proy["proy_acciones"];
-                $proy_info_adic                             = $row_proy["proy_info_adic"];
-
+          
                 //***********/
 
                 $proy_desc_pob_aud_pubobj_festival    = str_replace("<br>", "\n", $proy_desc_pob_aud_pubobj_festival);
                 $proy_noved_ed_2025    = str_replace("<br>", "\n", $proy_noved_ed_2025);
                 $proy_esp_infra_foros    = str_replace("<br>", "\n", $proy_esp_infra_foros);
                 $proy_vinc_org_obtrecursos    = str_replace("<br>", "\n", $proy_vinc_org_obtrecursos);
-                $proy_fav_itinerancia    = str_replace("<br>", "\n", $proy_fav_itinerancia);
-                $proy_acciones    = str_replace("<br>", "\n", $proy_acciones);
-                $proy_info_adic    = str_replace("<br>", "\n", $proy_info_adic);
+              
                 //2025 (fin)
                 
                 $desarrollo_proyecto_meta_cuantitativa      = $row_proy["desarrollo_proyecto_meta_cuantitativa"];
                 $desarrollo_proyecto_descripcion_impacto    = $row_proy["desarrollo_proyecto_descripcion_impacto"];
-                $acciones_festival_medio_ambiente          = $row_proy["acciones_festival_medio_ambiente"];
-                $acciones_festival_medio_ambiente    = str_replace("<br>", "\n", $acciones_festival_medio_ambiente);
-
+              
+               
                 $id_entidad_proyecto = $row_proy["id_entidad_proyecto"];
                 $desarrollo_proyecto_antecedente    = str_replace("<br>", "\n", $desarrollo_proyecto_antecedente);
                 $desarrollo_proyecto_justificacion  = str_replace("<br>", "\n", $desarrollo_proyecto_justificacion);
@@ -246,9 +246,24 @@
                 $extension_dir                  = $row_proy2["extension_dir"];
                 $telefono_movil_dir         = $row_proy2["telefono_movil_dir"];
                 $Correo_electronico_dir = $row_proy2["Correo_electronico_dir"];
-                $breve_semblanza_director = $row_proy2["breve_semblanza_director"];
+                $breve_semblanza_director2 = $row_proy2["breve_semblanza_director"];
                 $breve_semblanza_op             = $row_proy2["breve_semblanza_op"];
                 $breve_semblanza_adm            = $row_proy2["breve_semblanza_adm"];
+
+                //2026 se pasaron estos campos de texto para que si guardaran (inicio)
+                $proy_favore_itinerancia_act2          = $row_proy2["proy_favore_itinerancia_act"];
+                $proy_acciones2                       = $row_proy2["proy_acciones"];
+                $acciones_festival_medio_ambiente2       = $row_proy2["acciones_festival_medio_ambiente"];
+                $proy_info_adic2                         = $row_proy2["proy_info_adic"];
+                $proy_fav_itinerancia2               = $row_proy2["proy_fav_itinerancia"];
+                //2026 se pasaron estos campos de texto para que si guardaran (fin)   
+                $proy_fav_itinerancia    = str_replace("<br>", "\n", $proy_fav_itinerancia2);
+                $proy_favore_itinerancia_act    = str_replace("<br>", "\n", $proy_favore_itinerancia_act2);
+                $proy_acciones    = str_replace("<br>", "\n", $proy_acciones2);
+                $acciones_festival_medio_ambiente    = str_replace("<br>", "\n", $acciones_festival_medio_ambiente2);
+                $proy_info_adic    = str_replace("<br>", "\n", $proy_info_adic2);
+                $breve_semblanza_director    = str_replace("<br>", "\n", $breve_semblanza_director2);
+                
             } 
           
             // FIN PESTAÑA 'Proyecto 2do.'

@@ -16,6 +16,8 @@ nuevos 4 campos se agregarán a la tabla proyecto:
 		   h) proy_act_situacion_vulnerable
 		   k) proy_favore_itinerancia_act
 
+
+
 nuevo 1 campos se agregarán a la tabla usuario ya se agrego y se valido como obligatorio:
 		   a) telefono_movil
 
@@ -23,7 +25,7 @@ nuevo 1 campos se agregarán a la tabla usuario ya se agrego y se valido como ob
 campos eliminados tabla proyecto:
 		   proy_noved_ed_2025
 			desarrollo_proyecto_descripcion
-
+ 
 tabla nueva lugares
 `proyecto_entidades_municipios` 
 para las 10 entidades con 6 municipios
@@ -43,3 +45,13 @@ admin.profest_139
 VERIFICAR PORQUE NO LLEVO EL CORREO CON EL REGISTRO DE GMAIL
 
 #E0E2DE
+
+pacmyc.cultura.gob.mx
+https://www.cultura.gob.mx/reglas-de-operacion-programas-presupuestarios-cultura-2026/1.REGLAS-DE-OPERACION-DEL-PROGRAMA-S057-DENOMINADO-PROGRAMA-DEL-FONDO-NACIONAL-DE-FOMENTO-A-LAS-ARTESANIAS-PARA-EL-EJERCICIO-FISCAL-2026.PDF
+ 
+https://www.gob.mx/wikiguias/articulos/guia-rapida-de-lenguaje-ciudadano?state=published
+ 
+https://www.diputados.gob.mx/LeyesBiblio/pdf/LNETB.pdf XXXI. Servicio: cualquier beneficio, programa social o actividad que los Sujetos Obligados brinden a las personas, en el ámbito de su competencia, previo cumplimiento de los requisitos aplicables;                     
+XXV. Trámite: cualquier solicitud o entrega de información que una persona realice ante un Sujeto Obligado competente, para acceder a un derecho, cumplir una obligación u obtener un beneficio previsto en las disposiciones jurídicas aplicables;
+
+

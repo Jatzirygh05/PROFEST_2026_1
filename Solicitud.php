@@ -225,8 +225,8 @@ $var = 1;
   			$Infor_finan_apoyo_monto	= $registro4['Infor_finan_apoyo_monto'];
   			$Infor_finan_apoyo_costo_total	= $registro4['Infor_finan_apoyo_costo_total'];
 			
-			$Infor_finan_costo_monto = number_format($Infor_finan_costo_monto, 2, '.', ',');
-			$Infor_finan_apoyo_monto = number_format($Infor_finan_apoyo_monto, 2, '.', ',');
+			$Infor_finan_costo_monto_imp = number_format($Infor_finan_costo_monto, 2, '.', ',');
+			$Infor_finan_apoyo_monto_imp = number_format($Infor_finan_apoyo_monto_imp, 2, '.', ',');
 			
 			$fecha_hora_captura_concluida	= $registro4['fecha_hora_captura_concluida'];
 			$disciplina_2022	= $registro4['disciplina_2022'];
@@ -545,29 +545,32 @@ function imprmirentidades($var_ent, $con) {
 	
 		switch($Info_financiera_categoria){
 			case "A":
-			$nombre_Info_financiera_categoria="a)$300,000.00";
+			$nombre_Info_financiera_categoria="a) $300,000.00";
 			$monto_solo='$300,000.00';
 			break;
 			case "B":
-			$nombre_Info_financiera_categoria="b)$500,000.00";
+			$nombre_Info_financiera_categoria="b) $500,000.00";
 			$monto_solo='$500,000.00';
 			break;
             case "C":
-			$nombre_Info_financiera_categoria="c)$800,000.00";
+			$nombre_Info_financiera_categoria="c) $800,000.00";
 			$monto_solo='$800,000.00';
 			break;
 			case "D":
-			$nombre_Info_financiera_categoria="d)$1,000,000.00";
+			$nombre_Info_financiera_categoria="d) $1,000,000.00";
 			$monto_solo='$1,000,000.00';
 			break;
             case "E":
-			$nombre_Info_financiera_categoria="e)$2,000,000.00.";
+			$nombre_Info_financiera_categoria="e) $2,000,000.00.";
 			$monto_solo='$1,500,000.00';
 			break; 
 			case "F":
-			$nombre_Info_financiera_categoria="f)$2,000,000.00";
+			$nombre_Info_financiera_categoria="f) $2,000,000.00";
 			$monto_solo='$2,000,000.00';        
 		}
+		
+		$resto=$monto_coinversion*100;
+		$resto_tot=$resto/$Infor_finan_costo_monto;
 
 		$pdf->SetY(120);
 		$pdf->SetX(85);
@@ -583,11 +586,15 @@ function imprmirentidades($var_ent, $con) {
 
 		$pdf->SetY(128);//Costo total de realización del Festival - MONTO
 		$pdf->SetX(76.5);
-		$pdf->writeHTMLCell(40, 0, '', '','$'.$Infor_finan_costo_monto, 0, 0, 0, true, 'C', false);
+		$pdf->writeHTMLCell(40, 0, '', '','$'.$Infor_finan_costo_monto_imp, 0, 0, 0, true, 'C', false);
 
 		$pdf->SetY(135);
 		$pdf->SetX(85);
 		$pdf->writeHTMLCell(0, 0, '', '','$'.$monto_coinversion, 0, 0, 0, true, 'L', false);
+
+		$pdf->SetY(135);
+		$pdf->SetX(178);
+		$pdf->writeHTMLCell(0, 0, '', '',$resto_tot.'%', 0, 0, 0, true, 'L', false);
 		
 		$pdf->SetY(238.5);
 		$pdf->SetX(27);

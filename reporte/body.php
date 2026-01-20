@@ -16,14 +16,14 @@ include('consultas_reporte_proyecto.php');
 	$pdf->Cell(1);
 	//$pdf->Cell(190,5,'Proyecto Cultural PROFEST',0,0,'C');
 
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Cell(5);
 	$pdf->Ln(8);
 	$pdf->Cell(1);
 	$pdf->Cell(45,8,'Nombre del Festival:  '.utf8_decode($nombre_festival),0,0,'L');
 	$pdf->Line(45, 87, 203, 87);
 
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Cell(5);
 	$pdf->Ln(8);
 	$pdf->Cell(1);
@@ -33,7 +33,7 @@ include('consultas_reporte_proyecto.php');
 	$pdf->Cell(45,8,utf8_decode('Número de ediciones previas:  ').$numero_ediciones_previas,0,0,'L');
 	$pdf->Line(145, 95, 203, 95);
 
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Cell(5);
 	$pdf->Ln(8);
 	$pdf->Cell(1);
@@ -97,14 +97,15 @@ include('consultas_reporte_proyecto.php');
 		$apoyo_monto_categoria='e)	$1,500,000.00.';
 		break;
 		case 'F': 
-		$apoyo_monto_categoria='e)	$2,000,000.00.';
+		$apoyo_monto_categoria='f)	$2,000,000.00.';
 		break;
 	}
-	$pdf->Cell(45,8,utf8_decode('Categoría en la que participa:  '.$apoyo_monto_categoria),0,0,'L');
+	$pdf->Cell(1);
+	$pdf->Cell(48,8,utf8_decode('Categoría en la que participa:  '.$apoyo_monto_categoria),0,0,'L');
 	$pdf->Line(57, 110.5, 203, 110.5);
 	
 
-	$pdf->Ln(15);
+	$pdf->Ln(10);
 	//INICIO Segunda parte
 	$pdf->SetFont('Arial','B',9);
 	$pdf->Ln(3);
@@ -115,53 +116,56 @@ include('consultas_reporte_proyecto.php');
 	$pdf->Cell(187,8,utf8_decode('Se recomienda considerar los criterios de Evaluación de la Convocatoria.'),0,0,'C');
 	$pdf->Ln(10);
 
-$pdf->SetFont('Arial','B',9);
+$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(-3);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('a) Objetivo general del Festival.'),0,0,'L');
 	$pdf->Ln(8);
 	$pdf->Cell(4);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->MultiCell(187,4,utf8_decode($objetivo_general_festival),0,'J');
 
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('b) Proporciona información acerca de la trayectoria del Festival.'),0,0,'L');
 	$pdf->Ln(8);
 	$pdf->Cell(4);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->MultiCell(187,4,utf8_decode($desarrollo_proyecto_antecedente),0,'J');
 
 
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('c) Describe la población, audiencia y/o público objetivo del festival.'),0,0,'L');
 	$pdf->Ln(8);
 	$pdf->Cell(4);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->MultiCell(187,4,utf8_decode($proy_desc_pob_aud_pubobj_festival),0,'J');
 
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(3);
 	$pdf->Cell(4);
-	$pdf->Cell(90.5,10,utf8_decode('d) ¿Cómo o por qué el festival logra ampliar la oferta cultural del municipio, región o estado donde se  planea su realización?'),0,0,'L');
+	$pdf->Cell(90.5,10,utf8_decode('d) ¿Cómo o por qué el festival logra ampliar la oferta cultural del municipio, región o estado donde'),0,0,'L');
+	$pdf->Ln(3);
+	$pdf->Cell(4);
+	$pdf->Cell(90.5,10,utf8_decode('se planea su realización?'),0,0,'L');
 	$pdf->Ln(8);
 	$pdf->Cell(4);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->MultiCell(187,4,utf8_decode($desarrollo_proyecto_justificacion),0,'J');
 
-$pdf->SetFont('Arial','B',9);
+$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90.5,10,utf8_decode('e) Describe la programación artística o la línea curatorial del proyecto.'),0,0,'L');
 	$pdf->Ln(8);
 	$pdf->Cell(4);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->MultiCell(187,4,utf8_decode($descripcion_linea_curotorial),0,'J');
 
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90.5,10,utf8_decode('f) Describe los espacios y/o la infraestructura de los foros donde se pretenden realizar las actividades,'),0,0,'L');
@@ -170,7 +174,7 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->Cell(90.5,10,utf8_decode(' ¿por qué se seleccionan dichos espacios?'),0,0,'L');
 	$pdf->Ln(8);
 	$pdf->Cell(4);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->MultiCell(187,4,utf8_decode($proy_esp_infra_foros),0,'J');
 
 	$pdf->SetFont('Arial','B',10);
@@ -185,10 +189,10 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->Cell(90.5,10,utf8_decode(' artísticas?'),0,0,'L');	
 	$pdf->Ln(8);
 	$pdf->Cell(4);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->MultiCell(187,4,utf8_decode($proy_fomentar_part_creadores),0,'J');
 
-$pdf->SetFont('Arial','B',9);
+$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('h) ¿El proyecto considera actividades dirigidas a grupos en situación de vulnerabilidad?, ¿en los espacios de ejecución '),0,0,'L');
@@ -200,10 +204,10 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->Cell(90,10,utf8_decode('dirigidas a grupos en situación de vulnerabilidad y/o aquellas acciones para contar con un espacio accesible para todas y todos.'),0,0,'L');
 	$pdf->Ln(8);
 	$pdf->Cell(4);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->MultiCell(187,4,utf8_decode($proy_act_situacion_vulnerable),0,'J');
 
-$pdf->SetFont('Arial','B',9);
+$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('i) ¿Cómo se vincula el festival con otros organismos para la obtención de recursos?, ¿qué organismos se suman a su'),0,0,'L');
@@ -212,7 +216,7 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->Cell(90,10,utf8_decode('realización y cómo es su aportación?, ¿por qué se vincula con dichos organismos?'),0,0,'L');
 	$pdf->Ln(8);
 	$pdf->Cell(4);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->MultiCell(187,4,utf8_decode($proy_vinc_org_obtrecursos),0,'J');
 
 
@@ -242,7 +246,7 @@ $pdf->SetFont('Arial','B',9);
 
 
 
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('j) ¿Cómo logra el festival favorecer a la itinerancia de las actividades programadas para llegar a otros públicos?,'),0,0,'L');
@@ -251,10 +255,10 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->MultiCell(187,4,utf8_decode(' ¿mantiene vínculos con otros festivales?'),0,'J');
 	$pdf->Ln(1);
 	$pdf->Cell(4);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->MultiCell(187,4,utf8_decode($proy_fav_itinerancia),0,'J');
 
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('k) Considerando las anteriores ediciones, ¿cuáles son las novedades para la edición de este 2026?'),0,0,'L');
@@ -263,28 +267,28 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->MultiCell(187,4,utf8_decode(' Usa este espacio para describir actividades artísticas a destacar, estrategias de impacto, de difusión o de vinculación con el público objetivo.'),0,'J');
 	$pdf->Ln(1);
 	$pdf->Cell(4);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->MultiCell(187,4,utf8_decode($proy_favore_itinerancia_act),0,'J');
 
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('l) ¿Qué acciones se llevarán a cabo para dar a conocer el festival?'),0,0,'L');
 	$pdf->Ln(8);
 	$pdf->Cell(4);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->MultiCell(187,4,utf8_decode($proy_acciones),0,'J');
 	
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(3);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('m) ¿Cuáles son las acciones emprendidas por el festival para el cuidado del medio ambiente?'),0,0,'L');
 	$pdf->Ln(8);
 	$pdf->Cell(4);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->MultiCell(187,4,utf8_decode($acciones_festival_medio_ambiente),0,'J');
 
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln();
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('n) Usa este espacio para proporcionar cualquier información adicional que se considere pertinente para la evaluación'),0,0,'L');
@@ -293,14 +297,14 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->Cell(90,10,utf8_decode('del proyecto, o incluye un link de video para dar a conocer más del festival:'),0,0,'L');
 	$pdf->Ln(8);
 	$pdf->Cell(4);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->MultiCell(187,4,utf8_decode($proy_info_adic),0,'J');
 
 
 	$pdf->AddPage();
 
 	$pdf->SetY(70);
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(-2);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('ñ) Agrega las entidades donde se pretende llevar a cabo el festival.'),0,0,'L');
@@ -308,6 +312,7 @@ $pdf->SetFont('Arial','B',9);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('o) Menciona los municipios donde se pretende llevar a cabo el proyecto.'),0,0,'L');
 	
+	$pdf->SetFont('Arial','',10);
 	$pdf->Ln(8);
 	$pdf->Cell(4);
 	$pdf->MultiCell(187,4,'Entidad (1):'. imprmirentidades($entidades_a1, $con).' Municipio(s): '.$municipio_a1_1.' '.$municipio_a1_2.' '.$municipio_a1_3.' '.$municipio_a1_4.' '.$municipio_a1_5.' '.$municipio_a1_6,0,'J');
@@ -369,104 +374,107 @@ $pdf->SetFont('Arial','B',9);
 
 	$pdf->AddPage();
 
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(2);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('p) Metas cuantitativas del festival.'),0,0,'L');
 
 	$pdf->Ln(8);
 	$pdf->Cell(8);
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Cell(150,5,utf8_decode('Número de actividades artísticas y/o culturales-Número de títulos, cortometrajes, largometrajes, entre otros:'),0,0,'L');
 	$pdf->Ln(4);
 	$pdf->Cell(8);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->Cell(150,5,'Meta 2026:'.$meta_num_presentaciones,0,0,'L');
-	$pdf->Ln(3);
+	$pdf->Ln(4);
 	$pdf->Cell(8);
 	$pdf->Cell(150,5,utf8_decode('Meta alcanzada 2025 o en el último año de realización:').$meta_num_presentaciones_alcanzada,0,0,'L');
 
 	$pdf->Ln(5);
 	$pdf->Cell(8);
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Cell(150,5,utf8_decode('Total de público:'),0,0,'L');
 	$pdf->Ln(4);
 	$pdf->Cell(8);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->Cell(150,5,'Meta 2026:'.$meta_num_publico,0,0,'L');
-	$pdf->Ln(3);
+	$pdf->Ln(4);
 	$pdf->Cell(8);
 	$pdf->Cell(150,5,utf8_decode('Meta alcanzada 2025 o en el último año de realización:').$meta_num_publico_alcanzada,0,0,'L');
 
 	$pdf->Ln(5);
 	$pdf->Cell(8);
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Cell(150,5,utf8_decode('Número de municipios a beneficiar:'),0,0,'L');
 	$pdf->Ln(4);
 	$pdf->Cell(8);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->Cell(150,5,'Meta 2026:'.$meta_num_municipio,0,0,'L');
-	$pdf->Ln(3);
+	$pdf->Ln(4);
 	$pdf->Cell(8);
 	$pdf->Cell(150,5,utf8_decode('Meta alcanzada 2025 o en el último año de realización:').$meta_num_municipio_alcanzada,0,0,'L');
 	
 	$pdf->Ln(5);
 	$pdf->Cell(8);
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Cell(150,5,utf8_decode('Número de foros, sedes o medios de transmisión que se utilizarán:'),0,0,'L');
 	$pdf->Ln(4);
 	$pdf->Cell(8);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->Cell(150,5,'Meta 2026:'.$meta_num_foros,0,0,'L');
-	$pdf->Ln(3);
+	$pdf->Ln(4);
 	$pdf->Cell(8);
 	$pdf->Cell(150,5,utf8_decode('Meta alcanzada 2025 o en el último año de realización:').$meta_num_foros_alcanzada,0,0,'L');
 	
 	$pdf->Ln(5);
 	$pdf->Cell(8);
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Cell(150,5,utf8_decode('Número total de artistas o creadores artísticos participantes:'),0,0,'L');
 	$pdf->Ln(4);
 	$pdf->Cell(8);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->Cell(150,5,'Meta 2026:'.$meta_num_artistas,0,0,'L');
-	$pdf->Ln(3);
+	$pdf->Ln(4);
 	$pdf->Cell(8);
 	$pdf->Cell(150,5,utf8_decode('Meta alcanzada 2025 o en el último año de realización:').$meta_num_artistas_alcanzada,0,0,'L');
 
 $pdf->Ln(5);
 	$pdf->Cell(8);
-	$pdf->SetFont('Arial','B',9);
-	$pdf->Cell(150,5,utf8_decode('Total de grupos artísticos/Secciones o categorías de participación para exhibición de películas, cortometrajes, entre otros:'),0,0,'L');
+	$pdf->SetFont('Arial','B',10);
+	$pdf->Cell(150,5,utf8_decode('Total de grupos artísticos/Secciones o categorías de participación para exhibición de películas, cortometrajes,'),0,0,'L');
 	$pdf->Ln(4);
 	$pdf->Cell(8);
-	$pdf->SetFont('Arial','',9);
+	$pdf->Cell(150,5,utf8_decode('entre otros:'),0,0,'L');
+	$pdf->Ln(4);
+	$pdf->Cell(8);
+	$pdf->SetFont('Arial','',10);
 	$pdf->Cell(150,5,'Meta 2026:'.$meta_cantidad_grupos,0,0,'L');
-	$pdf->Ln(3);
+	$pdf->Ln(4);
 	$pdf->Cell(8);
 	$pdf->Cell(150,5,utf8_decode('Meta alcanzada 2025 o en el último año de realización:').$meta_cantidad_grupos_alcanzada,0,0,'L');
 
 	$pdf->Ln(5);
 	$pdf->Cell(8);
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Cell(150,5,utf8_decode('Número de actividades académicas:'),0,0,'L');
 	$pdf->Ln(4);
 	$pdf->Cell(8);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->Cell(150,5,'Meta 2026:'.$meta_num_actividades_academicas,0,0,'L');
-	$pdf->Ln(3);
+	$pdf->Ln(4);
 	$pdf->Cell(8);
 	$pdf->Cell(150,5,utf8_decode('Meta alcanzada 2025 o en el último año de realización:').$meta_num_actividades_academicas_alcanzada,0,0,'L');
 
 	$pdf->Ln(5);
 	$pdf->Cell(8);
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Cell(150,5,utf8_decode('Número de actividades a cargo de personas participantes locales/ Número de títulos de cine mexicano:'),0,0,'L');
 	$pdf->Ln(4);
 	$pdf->Cell(8);
-	$pdf->SetFont('Arial','',9);
+	$pdf->SetFont('Arial','',10);
 	$pdf->Cell(150,5,'Meta 2026:'.$meta_act_creadores_num_cine_mex,0,0,'L');
-	$pdf->Ln(3);
+	$pdf->Ln(4);
 	$pdf->Cell(8);
 	$pdf->Cell(150,5,utf8_decode('Meta alcanzada 2025 o en el último año de realización:').$meta_act_creadores_num_cine_mex_alcanzada,0,0,'L');
 	
@@ -487,7 +495,7 @@ $pdf->Ln(5);
 
 	$pdf->Ln(8);
 	/*IICIO ocultar etapa 1 v2**/
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(2);
 	$pdf->Cell(4);
 	$pdf->Cell(90,10,utf8_decode('q) Organigrama operativo para la producción del Festival.'),0,0,'L');
@@ -528,24 +536,27 @@ $pdf->Ln(5);
 	$y_jon_ent = $pdf->SetY($y_ent+7);
 	$pdf->Cell(5);	
 
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Cell(4);
-	$pdf->Cell(90,10,utf8_decode('Descripción de la organización del equipo de operativo, administrativo y de producción del festival, así como su perfil'),0,0,'L');
+	$pdf->Cell(90,10,utf8_decode('Descripción de la organización del equipo de operativo, administrativo y de producción del festival,'),0,0,'L');
+	$pdf->Ln(4);
+	$pdf->Cell(9);
+	$pdf->Cell(90,10,utf8_decode('así como su perfil'),0,0,'L');
 	$pdf->Ln(8);
-	$pdf->Cell(4);
-	$pdf->SetFont('Arial','',9);
+	$pdf->Cell(8);
+	$pdf->SetFont('Arial','',10);
 	$pdf->MultiCell(187, 5,'1) Nombre: '.utf8_decode($organigrama_nombre1.'
 	Cargo: '.$organigrama_cargo1.'
 	Funciones: '.$organigrama_funciones1.'
 	Correo electrónico: '.$organigrama_correo1), 0,'L');
 	$pdf->Ln(1);
-	$pdf->Cell(4);
+	$pdf->Cell(8);
 	$pdf->MultiCell(187, 5,'2) Nombre: '.utf8_decode($organigrama_nombre2.'
 	Cargo: '.$organigrama_cargo2.'
 	Funciones: '.$organigrama_funciones2.'
 	Correo electrónico: '.$organigrama_correo2), 0,'L');
 	$pdf->Ln(1);
-	$pdf->Cell(4);
+	$pdf->Cell(8);
 	$pdf->MultiCell(187, 5,'3) Nombre: '.utf8_decode($organigrama_nombre3.'
 	Cargo: '.$organigrama_cargo3.'
 	Funciones: '.$organigrama_funciones3.'
@@ -553,7 +564,7 @@ $pdf->Ln(5);
 	
 	if(!empty($organigrama_nombre4) && !empty($organigrama_cargo4) && !empty($organigrama_funciones4) ){
 	$pdf->Ln(1);
-	$pdf->Cell(4);
+	$pdf->Cell(8);
 	$pdf->MultiCell(187, 5,'4) Nombre: '.utf8_decode($organigrama_nombre4.'
 	Cargo: '.$organigrama_cargo4.'
 	Funciones: '.$organigrama_funciones4.'
@@ -561,7 +572,7 @@ $pdf->Ln(5);
 	}
 	if(!empty($organigrama_nombre5) && !empty($organigrama_cargo5) && !empty($organigrama_funciones5) ){
 	$pdf->Ln(1);
-	$pdf->Cell(4);
+	$pdf->Cell(8);
 	$pdf->MultiCell(187, 5,'5) Nombre: '.utf8_decode($organigrama_nombre5.'
 	Cargo: '.$organigrama_cargo5.'
 	Funciones: '.$organigrama_funciones5.'
@@ -569,7 +580,7 @@ $pdf->Ln(5);
 	}
 	if(!empty($organigrama_nombre6) && !empty($organigrama_cargo6) && !empty($organigrama_funciones6) ){
 	$pdf->Ln(1);
-	$pdf->Cell(4);
+	$pdf->Cell(8);
 	$pdf->MultiCell(187, 5,'6) Nombre: '.utf8_decode($organigrama_nombre6.'
 	Cargo: '.$organigrama_cargo6.'
 	Funciones: '.$organigrama_funciones6.'
@@ -577,7 +588,7 @@ $pdf->Ln(5);
 	}
 	if(!empty($organigrama_nombre7) && !empty($organigrama_cargo7) && !empty($organigrama_funciones7) ){
 	$pdf->Ln(1);
-	$pdf->Cell(4);
+	$pdf->Cell(8);
 	$pdf->MultiCell(187, 5,'7) Nombre: '.utf8_decode($organigrama_nombre7.'
 	Cargo: '.$organigrama_cargo7.'
 	Funciones: '.$organigrama_funciones7.'
@@ -585,7 +596,7 @@ $pdf->Ln(5);
 	}
 	if(!empty($organigrama_nombre8) && !empty($organigrama_cargo8) && !empty($organigrama_funciones8) ){
 	$pdf->Ln(1);
-	$pdf->Cell(4);
+	$pdf->Cell(8);
 	$pdf->MultiCell(187, 5,'8) Nombre: '.utf8_decode($organigrama_nombre8.'
 	Cargo: '.$organigrama_cargo8.'
 	Funciones: '.$organigrama_funciones8.'
@@ -595,7 +606,7 @@ $pdf->Ln(5);
 
 	$pdf->AddPage();
 
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Cell(4);
 	$pdf->Cell(187,8,'Aspectos Financieros',0,0,'C');	
 	$pdf->Ln(8);
@@ -637,7 +648,7 @@ $pdf->Ln(5);
 
 	
 	$pdf->AddPage();
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(8);
 	$pdf->Cell(4);
 	$pdf->MultiCell(187,5,utf8_decode('s) Resumen presupuestal en el que se acrediten los gastos relativos a la contratación de los servicios y el arrendamiento de los bienes esenciales para la realización del Festival, de manera desglosada y especificando la fuente del financiamiento.'),0,'J');
@@ -770,7 +781,7 @@ $pdf->Ln(5);
 	
 	$pdf->AddPage();
 
-	$pdf->SetFont('Arial','B',9);
+	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(8);
 	$pdf->Cell(4);
 	$pdf->MultiCell(187,5,utf8_decode('t) Presupuesto PROFEST.'),0,'J');

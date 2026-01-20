@@ -87,7 +87,7 @@ if (isset($_POST['usuario'])) {
     <link rel="shortcut icon" href="https://framework-gb.cdn.gob.mx/favicon.ico">
     <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/reloj_regresivo_cierre_pruebas.js"></script>
+    <!--script type="text/javascript" src="js/reloj_regresivo_cierre_pruebas.js"></script-->
 	</head>
 <body>
   <div class="container bottom-buffer">
@@ -134,8 +134,8 @@ if (isset($_POST['usuario'])) {
             </div-->
             <div class="form-group">
               <div class="col-sm-offset-3 col-sm-9" align="right">
-                <!--button class="btn btn-default" type="button" onclick="window.location='registrate_aqui.php'">Regístrate aquí</button>
-                <button class="btn btn-primary" type="submit" name="Enviar" value="Enviar">Enviar</button-->
+                <button class="btn btn-default" type="button" onclick="window.location='registrate_aqui.php'">Regístrate aquí</button>
+                <button class="btn btn-primary" type="submit" name="Enviar" value="Enviar">Enviar</button>
               </div>
             </div>
           </form>

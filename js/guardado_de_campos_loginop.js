@@ -280,6 +280,14 @@ var set_pcat = document.querySelectorAll(".cat_categoria");
 			   set_pcQ[q].onchange = function () {
 			  				   
 				 var valor=this.value;
+
+			
+			   var datos_campos_text_area=this.value;
+			   
+			 	    var valor1=datos_campos_text_area.replace(new RegExp("	","g"), " ");
+					var valor2=valor1.replace(new RegExp("'","g"), "");
+					valor2=valor2.replace(new RegExp("	","g"), "- ");
+					var valor=valor2.replace(new RegExp("\n","g"), "<br>");
 						
 					////////////INICIO VERIFICAR EL NAVEGADOR	
 						// Opera 8.0+

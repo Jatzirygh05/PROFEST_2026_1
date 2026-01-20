@@ -108,19 +108,21 @@ $navegador = getBrowser($user_agent);
 			 $var_proy_noved_ed_2025                         = $registro3["proy_noved_ed_2025"];
 			 $var_proy_esp_infra_foros                       = $registro3["proy_esp_infra_foros"];
 			 $var_proy_vinc_org_obtrecursos                  = $registro3["proy_vinc_org_obtrecursos"];
-			 $var_proy_fav_itinerancia                       = $registro3["proy_fav_itinerancia"];
-			 $var_proy_acciones                              = $registro3["proy_acciones"];
-			 $var_proy_info_adic                             = $registro3["proy_info_adic"];
+		
 			 //2025 (fin)
 			 //inicio 2026
-			 $objetivo_general_festival = $registro3["objetivo_general_festival"];
+			 $var_objetivo_gen = $registro3["objetivo_general_festival"];
 
 			 $var_proy_fomentar_part_creadores= $registro3["proy_fomentar_part_creadores"];
 		   	 $var_proy_act_situacion_vulnerable= $registro3["proy_act_situacion_vulnerable"];
+			 
 			 //fin 2026
-
+			
 			
 			if($navegador=="Google Chrome"){
+				$var_1_nuv = str_replace("<br>", "\n", $var_objetivo_gen);//sirvio para 2021 2026
+				$objetivo_general_festival = str_replace('?', "'", $var_1_nuv);
+
 				/*$var_1 = str_replace("<br>", "\n", $var_antecedente);
 				$desarrollo_proyecto_antecedente = str_replace('?', "'", $var_1);
 				
@@ -128,6 +130,12 @@ $navegador = getBrowser($user_agent);
 				$desarrollo_proyecto_diagnostico = str_replace('?', "'", $var_7);*/
 				$var_1 = str_replace("<br>", "\n", $var_antecedente);//sirvio para 2021
 				$desarrollo_proyecto_antecedente = str_replace('?', "'", $var_1);
+
+				$var_proy_fpc_1 = str_replace("<br>", "\n", $var_proy_fomentar_part_creadores);//sirvio para 2026
+				$proy_fomentar_part_creadores = str_replace('?', "'", $var_proy_fpc_1);
+
+				$var_proy_act_1 = str_replace("<br>", "\n", $var_proy_act_situacion_vulnerable);//sirvio para 2026
+				$proy_act_situacion_vulnerable = str_replace('?', "'", $var_proy_act_1);
 				
 				/*$var_7 = utf8_decode(str_replace("<br>", "\n", $var_proyecto_diagnostico));
 				$desarrollo_proyecto_diagnostico = str_replace('?', "'", $var_7);*/
@@ -147,12 +155,7 @@ $navegador = getBrowser($user_agent);
 				$proy_esp_infra_foros = str_replace('?', "'", $var_3_2025);
 				$var_4_2025 = utf8_decode(str_replace("<br>", "\n", $var_proy_vinc_org_obtrecursos));
 				$proy_vinc_org_obtrecursos = str_replace('?', "'", $var_4_2025);
-				$var_5_2025 = utf8_decode(str_replace("<br>", "\n", $var_proy_fav_itinerancia));
-				$proy_fav_itinerancia = str_replace('?', "'", $var_5_2025);
-				$var_6_2025 = utf8_decode(str_replace("<br>", "\n", $var_proy_acciones));
-				$proy_acciones = str_replace('?', "'", $var_6_2025);
-				$var_7_2025 = utf8_decode(str_replace("<br>", "\n", $var_proy_info_adic));
-				$proy_info_adic = str_replace('?', "'", $var_7_2025);
+				
 				//2025(fin)
 				
 			} 
@@ -163,8 +166,26 @@ $navegador = getBrowser($user_agent);
 				$desarrollo_proyecto_antecedente = $var4;
 				$desarrollo_proyecto_antecedente = str_replace('?', "'", $desarrollo_proyecto_antecedente);
 				$desarrollo_proyecto_antecedente = str_replace('’', "'", $desarrollo_proyecto_antecedente);
-				
-				
+
+				$var_1_nuv3 = mysqli_real_escape_string($con, $var_objetivo_gen);//2026
+				$var_1_nuv4 = str_replace("<br>", "\n", $var_1_nuv3);
+				$objetivo_general_festival = $var_1_nuv4;
+				$objetivo_general_festival = str_replace('?', "'", $objetivo_general_festival);
+				$objetivo_general_festival = str_replace('’', "'", $objetivo_general_festival);
+
+				$var_proy_fpc3 = mysqli_real_escape_string($con, $var_proy_fomentar_part_creadores);//2026
+				$var_proy_fpc4 = str_replace("<br>", "\n", $var_proy_fpc3);
+				$proy_fomentar_part_creadores = $var_proy_fpc4;
+				$proy_fomentar_part_creadores = str_replace('?', "'", $proy_fomentar_part_creadores);
+				$proy_fomentar_part_creadores = str_replace('’', "'", $proy_fomentar_part_creadores);
+
+				$var_proy_act3 = mysqli_real_escape_string($con, $var_proy_act_situacion_vulnerable);//2026
+				$var_proy_act4 = str_replace("<br>", "\n", $var_proy_act3);
+				$proy_act_situacion_vulnerable = $var_proy_act4;
+				$proy_act_situacion_vulnerable = str_replace('?', "'", $proy_act_situacion_vulnerable);
+				$proy_act_situacion_vulnerable = str_replace('’', "'", $proy_act_situacion_vulnerable);
+
+			
 				/*$var8 = mysqli_real_escape_string($con, $var_proyecto_diagnostico);
 				$var9 = str_replace("<br>", "\n", $var8);
 				$desarrollo_proyecto_diagnostico = $var9;
@@ -240,9 +261,19 @@ $navegador = getBrowser($user_agent);
 			}
 				
 			if($navegador=="Internet explorer"){
+				
 					$var2 = str_replace("<br>", "\n", $var_antecedente);
 					$desarrollo_proyecto_antecedente = str_replace('?', "'", $var2);
-					
+
+					$var_1_nuv3 = str_replace("<br>", "\n", $var_objetivo_gen);//2026
+					$objetivo_general_festival = str_replace('?', "'", $var_1_nuv3);
+
+					$var_proy_fpc2 = str_replace("<br>", "\n", $var_proy_fomentar_part_creadores);//2026
+					$proy_fomentar_part_creadores = str_replace('?', "'", $var_proy_fpc2);
+
+					$var_proy_act2 = str_replace("<br>", "\n", $var_proy_act_situacion_vulnerable);//2026
+					$proy_act_situacion_vulnerable = str_replace('?', "'", $var_proy_act2);
+
 					/*$var10 = str_replace("<br>", "\n", $var_proyecto_diagnostico);
 					$desarrollo_proyecto_diagnostico = str_replace('?', "'", $var10);*/
 
@@ -275,8 +306,20 @@ $navegador = getBrowser($user_agent);
 			if($navegador=="Opera"){
 						$var5 	= str_replace("<br>", "\n", $var_antecedente);
 						$var6 = $var5;
-						$desarrollo_proyecto_antecedente = str_replace('?', "'", $var6);
+						$desarrollo_proyecto_antecedente = str_replace('?', "'", $var6);				
 						
+						$var_objetivo_gen5 	= str_replace("<br>", "\n", $var_objetivo_gen); //2026
+						$var_objetivo_gen6 = $var_objetivo_gen5;
+						$objetivo_general_festival = str_replace('?', "'", $var_objetivo_gen6);
+
+						$var_proy_fpc5 	= str_replace("<br>", "\n", $var_proy_fomentar_part_creadores);//2026
+						$var_proy_fpc6 = $var_proy_fpc5;
+						$proy_fomentar_part_creadores = str_replace('?', "'", $var_proy_fpc6);	
+
+						$var_proy_act5 	= str_replace("<br>", "\n", $var_proy_act_situacion_vulnerable);//2026
+						$var_proy_act6 = $var_proy_act5;
+						$proy_act_situacion_vulnerable = str_replace('?', "'", $var_proy_act6);	
+
 						/*$var11 	= str_replace("<br>", "\n", $var_proyecto_diagnostico);
 						$var12 = $var11;
 						$desarrollo_proyecto_diagnostico = str_replace('?', "'", $var12);*/
@@ -326,7 +369,19 @@ $navegador = getBrowser($user_agent);
 						$desarrollo_proyecto_antecedente  	= str_replace("<br>", "\n", $var_antecedente);
 						$desarrollo_proyecto_antecedente 	= str_replace('?', "'", $desarrollo_proyecto_antecedente);
 						$desarrollo_proyecto_antecedente  = str_replace("’", "'", $desarrollo_proyecto_antecedente);
-						
+
+						$objetivo_general_festival  	= str_replace("<br>", "\n", $var_objetivo_gen);//2026
+						$objetivo_general_festival 	= str_replace('?', "'", $objetivo_general_festival);
+						$objetivo_general_festival  = str_replace("’", "'", $objetivo_general_festival);
+
+						$proy_fomentar_part_creadores  	= str_replace("<br>", "\n", $var_proy_fomentar_part_creadores);//2026
+						$proy_fomentar_part_creadores 	= str_replace('?', "'", $proy_fomentar_part_creadores);
+						$proy_fomentar_part_creadores  = str_replace("’", "'", $proy_fomentar_part_creadores);
+
+						$proy_act_situacion_vulnerable  = str_replace("<br>", "\n", $var_proy_act_situacion_vulnerable);//2026
+						$proy_act_situacion_vulnerable 	= str_replace('?', "'", $proy_act_situacion_vulnerable);
+						$proy_act_situacion_vulnerable  = str_replace("’", "'", $proy_act_situacion_vulnerable);
+
 						/*$desarrollo_proyecto_diagnostico	=  $var_proyecto_diagnostico;
 						$var8 = mysqli_real_escape_string($con, $var_proyecto_diagnostico);
 						$desarrollo_proyecto_diagnostico = str_replace("<br>", "\n", $var8);*/
@@ -395,11 +450,7 @@ $navegador = getBrowser($user_agent);
 			$descripcion_poblacion_audiencia  = str_replace("?", "-", $descripcion_poblacion_audiencia);
 			$descripcion_poblacion_audiencia = str_replace('’', "'", $descripcion_poblacion_audiencia);
 
-			$acciones_festival_medio_ambiente =  $registro3['acciones_festival_medio_ambiente'];
-			$acciones_festival_medio_ambiente  = str_replace("<br>", "\n", $acciones_festival_medio_ambiente);
-			$acciones_festival_medio_ambiente  = str_replace("?", "-", $acciones_festival_medio_ambiente);
-			$acciones_festival_medio_ambiente = str_replace('’', "'", $acciones_festival_medio_ambiente);
-
+			
 			 //2025 (inicio)
 			 $proy_desc_pob_aud_pubobj_festival =  $registro3['proy_desc_pob_aud_pubobj_festival'];
 			 $proy_desc_pob_aud_pubobj_festival  = str_replace("<br>", "\n", $proy_desc_pob_aud_pubobj_festival);
@@ -503,10 +554,10 @@ $navegador = getBrowser($user_agent);
   			$organigrama_funciones8   =  $registro3['organigrama_funciones8'];
 			$organigrama_correo8  =  $registro3['organigrama_correo8'];
 
-			$proy_fomentar_part_creadores= $registro3["proy_fomentar_part_creadores"];
-		   	$proy_act_situacion_vulnerable= $registro3["proy_act_situacion_vulnerable"];
+			
+		   	$var_proy_act_situacion_vulnerable= $registro3["proy_act_situacion_vulnerable"];
 
-			$proy_favore_itinerancia_act= $registro3["proy_favore_itinerancia_act"];
+			
 			 
 // INICIO LUGARES 'proyecto_entidades_municipios' 
            $sql_cons_proy = "SELECT * FROM `proyecto_entidades_municipios` 
@@ -539,7 +590,7 @@ $navegador = getBrowser($user_agent);
 		$id_entidad_proyecto 			=	$r_enti2['id_entidad_proyecto'];
 		$nombre_entidad_proyecto	=	$r_enti2['nombre_entidad_proyecto'];
 		}
-		return $nombre_entidad_proycto_imp = $nombre_entidad_proyecto;
+		return $nombre_entidad_proycto_imp = utf8_decode($nombre_entidad_proyecto);
 	}
 
 
@@ -591,6 +642,32 @@ for ($k2=0; $k2 <$num_resultados_proyecto2; $k2++){
 
 	$breve_semblanza_adm            = $row_proy2["breve_semblanza_adm"];
 	$breve_semblanza_adm  = str_replace("’", "'", $breve_semblanza_adm);
+
+
+	$var_proy_fav_itinerancia                       = $row_proy2["proy_fav_itinerancia"];
+	$var_proy_acciones                              = $row_proy2["proy_acciones"];
+	$var_proy_info_adic                             = $row_proy2["proy_info_adic"];
+
+			 $var_5_2025 = utf8_decode(str_replace("<br>", "\n", $var_proy_fav_itinerancia));
+				$proy_fav_itinerancia = str_replace('?', "'", $var_5_2025);
+				$var_6_2025 = utf8_decode(str_replace("<br>", "\n", $var_proy_acciones));
+				$proy_acciones = str_replace('?', "'", $var_6_2025);
+				$var_7_2025 = utf8_decode(str_replace("<br>", "\n", $var_proy_info_adic));
+				$proy_info_adic = str_replace('?', "'", $var_7_2025);
+
+	$var_proy_favore_itinerancia_act= $row_proy2["proy_favore_itinerancia_act"];
+				$var_proy_favore3 = mysqli_real_escape_string($con, $var_proy_favore_itinerancia_act);//2026
+				$var_proy_favore4 = str_replace("<br>", "\n", $var_proy_favore3);
+				$proy_favore_itinerancia_act = $var_proy_favore4;
+				$proy_favore_itinerancia_act = str_replace('?', "'", $proy_favore_itinerancia_act);
+				$proy_favore_itinerancia_act = str_replace('’', "'", $proy_favore_itinerancia_act);
+		
+$acciones_festival_medio_ambiente =  $row_proy2['acciones_festival_medio_ambiente'];
+			$acciones_festival_medio_ambiente  = str_replace("<br>", "\n", $acciones_festival_medio_ambiente);
+			$acciones_festival_medio_ambiente  = str_replace("?", "-", $acciones_festival_medio_ambiente);
+			$acciones_festival_medio_ambiente = str_replace('’', "'", $acciones_festival_medio_ambiente);
+
+
 }
 
 //FIN SEMBALANZA OP, ADM, Y DATOS DE DIRECTOR

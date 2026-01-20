@@ -28,11 +28,9 @@ function suma_cantidades(){	//es la función que se esta usando en el apartado I
 		break;
 		case 'E': 
 		var m2=1500000;
-		console.log(m2);
 		break;
 		case 'F': 
 		var m2=2000000;
-		console.log(m2);
 		break;
 	  }
 			   muestra_monto_presup_PROFEST = document.apInf.total_2;
