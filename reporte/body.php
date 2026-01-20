@@ -55,25 +55,28 @@ include('consultas_reporte_proyecto.php');
 			$disciplina_2022_nombre="Música";
 		break;
 		case 2:
-			$disciplina_2022_nombre="Teatro";
-		break;
-		case 3:
 			$disciplina_2022_nombre="Danza";
 		break;
+		case 3:
+			$disciplina_2022_nombre="Teatro";
+		break;
 		case 4:
-			$disciplina_2022_nombre="Artes visuales y diseño";
+			$disciplina_2022_nombre="Cine";
 		break;
 		case 5:
-			$disciplina_2022_nombre="Cultura Alimentaria";
+			$disciplina_2022_nombre="Multidisciplina";
 		break;
 		case 6:
 			$disciplina_2022_nombre="Literatura";
 		break;
 		case 7:
-			$disciplina_2022_nombre="Cine";
+			$disciplina_2022_nombre="Artes Visuales, Digitales y de Diseño";
 		break;
 		case 8:
-			$disciplina_2022_nombre="Multidisciplina";
+			$disciplina_2022_nombre="Cultura Alimentaria";
+		break;
+		case 9:
+			$disciplina_2022_nombre="Arquitectura";
 		break;
 	}
 	$pdf->Cell(45,8,'Disciplina:  '.utf8_decode($disciplina_2022_nombre),0,0,'L');

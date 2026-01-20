@@ -336,7 +336,7 @@
                 <option value=6 <?php if($disciplina_2022==6){ ?> selected="selected" <?php } ?>>Literatura</option>
                 <option value=7 <?php if($disciplina_2022==7){ ?> selected="selected" <?php } ?>>Artes Visuales, Digitales y de Diseño</option>
                 <option value=8 <?php if($disciplina_2022==8){ ?> selected="selected" <?php } ?>>Cultura Alimentaria</option>
-                <option value=8 <?php if($disciplina_2022==9){ ?> selected="selected" <?php } ?>>Arquitectura</option>
+                <option value=9 <?php if($disciplina_2022==9){ ?> selected="selected" <?php } ?>>Arquitectura</option>
               </select> 
                     <small id="errdisciplina_2022" name="errdisciplina_2022" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
                   
