@@ -107,15 +107,15 @@ $navegador = getBrowser($user_agent);
 			 $var_proy_desc_pob_aud_pubobj_festival          = $registro3["proy_desc_pob_aud_pubobj_festival"];
 			 $var_proy_noved_ed_2025                         = $registro3["proy_noved_ed_2025"];
 			 $var_proy_esp_infra_foros                       = $registro3["proy_esp_infra_foros"];
-			 $var_proy_vinc_org_obtrecursos                  = $registro3["proy_vinc_org_obtrecursos"];
+			 
 		
 			 //2025 (fin)
 			 //inicio 2026
 			 $var_objetivo_gen = $registro3["objetivo_general_festival"];
 
 			 $var_proy_fomentar_part_creadores= $registro3["proy_fomentar_part_creadores"];
-		   	 $var_proy_act_situacion_vulnerable= $registro3["proy_act_situacion_vulnerable"];
-			 
+		   	 
+			
 			 //fin 2026
 			
 			
@@ -134,6 +134,7 @@ $navegador = getBrowser($user_agent);
 				$var_proy_fpc_1 = str_replace("<br>", "\n", $var_proy_fomentar_part_creadores);//sirvio para 2026
 				$proy_fomentar_part_creadores = str_replace('?', "'", $var_proy_fpc_1);
 
+				
 				$var_proy_act_1 = str_replace("<br>", "\n", $var_proy_act_situacion_vulnerable);//sirvio para 2026
 				$proy_act_situacion_vulnerable = str_replace('?', "'", $var_proy_act_1);
 				
@@ -555,7 +556,7 @@ $navegador = getBrowser($user_agent);
 			$organigrama_correo8  =  $registro3['organigrama_correo8'];
 
 			
-		   	$var_proy_act_situacion_vulnerable= $registro3["proy_act_situacion_vulnerable"];
+		
 
 			
 			 
@@ -666,8 +667,19 @@ $acciones_festival_medio_ambiente =  $row_proy2['acciones_festival_medio_ambient
 			$acciones_festival_medio_ambiente  = str_replace("<br>", "\n", $acciones_festival_medio_ambiente);
 			$acciones_festival_medio_ambiente  = str_replace("?", "-", $acciones_festival_medio_ambiente);
 			$acciones_festival_medio_ambiente = str_replace('’', "'", $acciones_festival_medio_ambiente);
+ 	
+			$proy_act_situacion_vulnerable= $row_proy2["proy_act_situacion_vulnerable"];
+			$proy_act_situacion_vulnerable  = str_replace("<br>", "\n", $proy_act_situacion_vulnerable);
+			$proy_act_situacion_vulnerable  = str_replace("?", "-", $proy_act_situacion_vulnerable);
+			$proy_act_situacion_vulnerable = str_replace('’', "'", $proy_act_situacion_vulnerable);
+ 	
+   	$var_proy_act_situacion_vulnerable= $row_proy2["proy_act_situacion_vulnerable"];
 
-
+		$proy_vinc_org_obtrecursos= $row_proy2["proy_vinc_org_obtrecursos"];
+			$proy_vinc_org_obtrecursos  = str_replace("<br>", "\n", $proy_vinc_org_obtrecursos);
+			$proy_vinc_org_obtrecursos  = str_replace("?", "-", $proy_vinc_org_obtrecursos);
+			$proy_vinc_org_obtrecursos = str_replace('’', "'", $proy_vinc_org_obtrecursos);
+$var_proy_vinc_org_obtrecursos                  = $row_proy2["proy_vinc_org_obtrecursos"];
 }
 
 //FIN SEMBALANZA OP, ADM, Y DATOS DE DIRECTOR
