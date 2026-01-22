@@ -371,29 +371,29 @@ $level = $_SESSION['MM_UserGroup'];
 										for ($i=0; $i <$num_resultados; $i++)
 										{
 										$row = mysqli_fetch_array($resultado);
-										$id_instancia	= $row["id_instancia"];
+										 $id_instancia	= $row["id_instancia"];
 										}
-										
+								
                     //inicio validación de la categoria para saber si se solicito 4ta. categoria				
-                    $sql_num_ed = "SELECT Info_financiera_categoria FROM `solicitud` WHERE `clave_usuario` LIKE '".$cve_user."' "; 
+                  $sql_num_ed = "SELECT Info_financiera_categoria FROM `solicitud` WHERE `clave_usuario` LIKE '".$cve_user."' "; 
                     $resultado_sql_num_ed = mysqli_query($con, $sql_num_ed);
                     $row_ed = mysqli_fetch_array($resultado_sql_num_ed);
                     $Info_financiera_categoria = $row_ed["Info_financiera_categoria"];
 
                     if($Info_financiera_categoria=="D"){
-                      $validacion_cat = "(0,'".$id_instancia."', 6)";
+                      $validacion_cat = "(0,'".$id_instancia."')";
                     } else {
                       $validacion_cat =  "(0,'".$id_instancia."')";
                     }
 
-									$query_doctos="SELECT * from nombre_formatos where id_instancia in $validacion_cat and id_docto not in (2,3) ;";										
+								$query_doctos="SELECT * from nombre_formatos where id_instancia in $validacion_cat;";										
 													$res_doctos =  mysqli_query($con,$query_doctos);
 													$cuantos_doctos =  mysqli_num_rows($res_doctos);
-										      $total_entre_losdos=$cuantos_doctos+$vat_tope;
+										     	$total_entre_losdos=$cuantos_doctos+$vat_tope;
 										 
                  $query_doctos_cargo="SELECT * FROM anexos WHERE clave_usuario = '".$cve_user."' "; 
 													$res_doctos_cargo =  mysqli_query($con,$query_doctos_cargo);
-										      $cuantos_doctos_cargo =  mysqli_num_rows($res_doctos_cargo);
+										     	$cuantos_doctos_cargo =  mysqli_num_rows($res_doctos_cargo);
 						?>
                             <div class="form-group clearfix bottom-buffer">
                                     <div class="pull-right">

@@ -16,7 +16,7 @@ nuevos 4 campos se agregarán a la tabla proyecto:
 		   h) proy_act_situacion_vulnerable
 		   k) proy_favore_itinerancia_act
 
-
+//proyectocampodir
 
 nuevo 1 campos se agregarán a la tabla usuario ya se agrego y se valido como obligatorio:
 		   a) telefono_movil
