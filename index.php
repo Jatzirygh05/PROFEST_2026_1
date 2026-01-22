@@ -146,12 +146,21 @@ if (isset($_POST['usuario'])) {
       <div class="form-group clearfix">
         <div class="alert alert-info">
           <p><strong>Aviso de privacidad simplificado para quienes participan en el Otorgamiento de Subsidios en Coinversión a Festivales Culturales y Artísticos </strong></p>
-                    <p>La Secretaría de Cultura, a través de la Dirección General de Circuitos y Festivales, área PROFEST, con domicilio en Avenida Paseo de la Reforma No. 175, Planta Baja, Colonia Cuauhtémoc, Alcaldía Cuauhtémoc, Código Postal 06500, Ciudad de México, teléfono 55 4155 0200 Ext. 9526 y 9551, es la responsable del tratamiento de los datos personales que nos proporcione, los cuales serán protegidos conforme a lo dispuesto por la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados (LGPDPPSO), y demás normatividad que resulte aplicable.
+          <p>La Secretaría de Cultura, a través de la Dirección General de Promoción y Festivales Culturales, con domicilio en Avenida Paseo de la Reforma No. 175, Colonia Cuauhtémoc, Alcaldía Cuauhtémoc, Código Postal 06500, Ciudad de México, teléfono 55 4155 0200 Ext. 2221, es la responsable del tratamiento de los datos personales que nos proporcione, los cuales serán protegidos conforme a lo dispuesto por la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados (LGPDPPSO), y demás normatividad que resulte aplicable.</p>
+<p>
 Los datos personales recabados serán utilizados con las siguientes finalidades:
-</p><p>●	Integrar el registro de las postulaciones, para poder realizar las notificaciones del fallo de la Comisión Dictaminadora y en caso de ser aprobados, dar continuidad a los trámites jurídicos y administrativos, hasta la conclusión de los proyectos.
+</p>
+<p>
+●	Integrar el registro de las postulaciones, para poder realizar las notificaciones del fallo de la Comisión Dictaminadora y en caso de ser aprobados, dar continuidad a los trámites jurídicos y administrativos, hasta la conclusión de los proyectos.
+</p>
+<p>
 La Secretaría de Cultura del Gobierno de México, no realizará transferencias de datos personales sin su consentimiento expreso, salvo aquéllas que sean necesarias para atender requerimientos de información de una autoridad competente que estén debidamente fundados y motivado, o bien se actualice alguno de los supuestos señalados en los artículos 16, 60 y 64 de la LGPDPPSO y 36 de los Lineamientos Generales de Protección de Datos Personales para el Sector Público, en las que no se requerirá de su consentimiento.
-El presente aviso de privacidad puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos legales o por otras causas, en este caso, lo haremos de su conocimiento a través del siguiente vínculo electrónico: https://festivales.cultura.gob.mx/profest
-          </p>
+
+El presente aviso de privacidad puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos legales o por otras causas, en este caso, lo haremos de su conocimiento a través del siguiente vínculo electrónico: 
+</p>
+<p>
+Última actualización: 25/11/2025
+</p>
           <p>Si deseas conocer nuestro aviso de privacidad integral, lo podrás consultar en el portal <a href="formatos_para_descarga_general/AVISO_DE_PRIVACIDAD_INTEGRAL_PROFEST.pdf" target="_blank">Aviso de Privacidad Integral</a></p>
         </div>
       </div> 
