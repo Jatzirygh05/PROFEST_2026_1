@@ -430,7 +430,7 @@
               <div class="form-group">
                 <label>g) ¿Cómo logra el festival fomentar la participación de creadores locales, regionales y nacionales? ¿Existen acciones que impulse una destacada participación de mujeres tanto en la operación del proyecto, como en las actividades artísticas?<samp id="errproy_fomentar_part_creadoresAs" name="errproy_fomentar_part_creadoresAs" class="control-label">*</samp>:</label>
                 <small>Máximo 2,500 caracteres</small>
-                <textarea id="proy_fomentar_part_creadores" name="proy_fomentar_part_creadores" class="form-control guardar_campostext" placeholder="Ingresa la información correspondiente" rows="10" maxlength="2500"><?=$proy_fomentar_part_creadores?></textarea>
+                <textarea id="proy_fomentar_part_creadores" name="proy_fomentar_part_creadores" class="form-control proyectocampodir" placeholder="Ingresa la información correspondiente" rows="10" maxlength="2500"><?=$proy_fomentar_part_creadores?></textarea>
                 <small id="errproy_fomentar_part_creadores" name="errproy_fomentar_part_creadores" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
               </div>
             </div>

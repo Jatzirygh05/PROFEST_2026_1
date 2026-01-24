@@ -122,13 +122,12 @@
 
                 //2026 (inicio)
                 $objetivo_general_festival                  = $row_proy["objetivo_general_festival"];
-		            $proy_fomentar_part_creadores               = $row_proy["proy_fomentar_part_creadores"];
+		           
 		           
                
                 $objetivo_general_festival    = str_replace("<br>", "\n", $objetivo_general_festival);
-                $proy_fomentar_part_creadores    = str_replace("<br>", "\n", $proy_fomentar_part_creadores);
-                
-                
+              
+              
                  //2026 (fin)
 
 
@@ -266,6 +265,11 @@
                
                 $proy_vinc_org_obtrecursos2    = $row_proy2["proy_vinc_org_obtrecursos"];
                 $proy_vinc_org_obtrecursos    = str_replace("<br>", "\n", $proy_vinc_org_obtrecursos2);
+
+                $proy_fomentar_part_creadores = $row_proy2["proy_fomentar_part_creadores"];
+                $proy_fomentar_part_creadores = str_replace("<br>", "\n", $proy_fomentar_part_creadores);
+                
+                
             } 
           
             // FIN PESTAÑA 'Proyecto 2do.'

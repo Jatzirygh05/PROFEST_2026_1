@@ -113,8 +113,7 @@ $navegador = getBrowser($user_agent);
 			 //inicio 2026
 			 $var_objetivo_gen = $registro3["objetivo_general_festival"];
 
-			 $var_proy_fomentar_part_creadores= $registro3["proy_fomentar_part_creadores"];
-		   	 
+			
 			
 			 //fin 2026
 			
@@ -131,6 +130,8 @@ $navegador = getBrowser($user_agent);
 				$var_1 = str_replace("<br>", "\n", $var_antecedente);//sirvio para 2021
 				$desarrollo_proyecto_antecedente = str_replace('?', "'", $var_1);
 
+				
+		   	 
 				$var_proy_fpc_1 = str_replace("<br>", "\n", $var_proy_fomentar_part_creadores);//sirvio para 2026
 				$proy_fomentar_part_creadores = str_replace('?', "'", $var_proy_fpc_1);
 
@@ -680,6 +681,13 @@ $acciones_festival_medio_ambiente =  $row_proy2['acciones_festival_medio_ambient
 			$proy_vinc_org_obtrecursos  = str_replace("?", "-", $proy_vinc_org_obtrecursos);
 			$proy_vinc_org_obtrecursos = str_replace('’', "'", $proy_vinc_org_obtrecursos);
 $var_proy_vinc_org_obtrecursos                  = $row_proy2["proy_vinc_org_obtrecursos"];
+
+$proy_fomentar_part_creadores= $row_proy2["proy_fomentar_part_creadores"];
+$proy_fomentar_part_creadores  = str_replace("<br>", "\n", $proy_fomentar_part_creadores);
+$proy_fomentar_part_creadores  = str_replace("?", "-", $proy_fomentar_part_creadores);
+$proy_fomentar_part_creadores = str_replace('’', "'", $proy_fomentar_part_creadores);
+$var_proy_fomentar_part_creadores= $row_proy2["proy_fomentar_part_creadores"];
+
 }
 
 //FIN SEMBALANZA OP, ADM, Y DATOS DE DIRECTOR
