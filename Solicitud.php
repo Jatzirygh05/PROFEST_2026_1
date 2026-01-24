@@ -544,6 +544,7 @@ function imprmirentidades($var_ent, $con) {
 		$pdf->writeHTMLCell(0, 0, '', '',$periodo_realizacion_fecha_termino, 0, 0, 0, true, 'L', false);
 	
 		switch($Info_financiera_categoria){
+			/**/
 			case "A":
 			$nombre_Info_financiera_categoria="a) $300,000.00";
 			$monto_solo='$300,000.00';
@@ -561,7 +562,7 @@ function imprmirentidades($var_ent, $con) {
 			$monto_solo='$1,000,000.00';
 			break;
             case "E":
-			$nombre_Info_financiera_categoria="e) $2,000,000.00.";
+			$nombre_Info_financiera_categoria="e) $1,500,000.00.";
 			$monto_solo='$1,500,000.00';
 			break; 
 			case "F":
