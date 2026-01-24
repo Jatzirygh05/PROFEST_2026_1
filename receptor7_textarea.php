@@ -31,7 +31,7 @@ $cuantos_id=mysqli_num_rows($row1);
 					$q_modifica="UPDATE proyecto SET $variable='$valor', 
 					fecha_hora_registro=NOW() 
 					WHERE clave_usuario = '".$cve_user."';";
-					//echo " XXXX  $q_modifica \n";
+					echo " XXXX  $q_modifica \n";
 					//mysql_query("SET NAMES 'utf8'");
 					$exe_modifica=mysqli_query($con, $q_modifica);
 					} else {
