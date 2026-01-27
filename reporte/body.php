@@ -691,7 +691,8 @@ $pdf->Ln(5);
 			$Monto_unidad   = 	$row_presup['Monto_unidad'];
 			$Porcentaje   	= 	$row_presup['Porcentaje'];
 			$monto_unidad_total = $row_presup['monto_unidad_total'];
-			$porcentaje_total = $row_presup['porcentaje_total'];
+			$porcentaje_total_a = $row_presup['porcentaje_total'];
+			$porcentaje_total = number_format($porcentaje_total_a, 2, '.', ',');
 
 			if($k==$i){
 				$k=0;
