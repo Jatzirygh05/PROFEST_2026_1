@@ -571,7 +571,8 @@ function imprmirentidades($var_ent, $con) {
 		}
 		
 		$resto=$monto_coinversion*100;
-		$resto_tot=$resto/$Infor_finan_costo_monto;
+		$resto_tot_a =$resto/$Infor_finan_costo_monto;
+		$resto_tot = number_format($resto_tot_a, 2, '.', ',');
 
 		$pdf->SetY(120);
 		$pdf->SetX(85);
