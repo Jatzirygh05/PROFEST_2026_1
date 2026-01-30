@@ -374,7 +374,7 @@
               <div class="form-group">
                 <label>a) Objetivo general del Festival<samp id="errobjetivo_general_festivalAs" name="errobjetivo_general_festivalAs" class="control-label">*</samp>:</label>
                 <small>Máximo 2,500 caracteres</small>
-                <textarea id="objetivo_general_festival" name="objetivo_general_festival" class="form-control guardar_campostext" placeholder="Ingresa el objetivo general del festival" rows="10" maxlength="2500"><?=$objetivo_general_festival?></textarea>
+                <textarea id="objetivo_general_festival" name="objetivo_general_festival" class="form-control proyectocampodir" placeholder="Ingresa el objetivo general del festival" rows="10" maxlength="2500"><?=$objetivo_general_festival?></textarea>
                 <small id="errobjetivo_general_festival" name="errobjetivo_general_festival" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
               </div>
             </div>

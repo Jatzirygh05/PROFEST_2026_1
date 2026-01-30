@@ -67,5 +67,6 @@ $mensaje_enviar = '<table align="center" width="60%">
 		echo 'El mensaje ha sido enviado';
 } catch (Exception $e) {
 	echo 'El mensaje no se ha podido enviar, error: ', $mail->ErrorInfo;
+	error_log($mail->ErrorInfo);
 }
 	

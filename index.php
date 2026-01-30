@@ -99,7 +99,7 @@ if (isset($_POST['usuario'])) {
         <div class="col-md-8">
           <div>
             <h1>Bienvenidos</h1>
-            <h1>al Plataforma PROFEST</h1>
+            <h1>a la Plataforma PROFEST 2026</h1>
             	<div id="error_forma"></div>
             <h2 id="objetivo">Iniciar sesión</h2>
           </div>

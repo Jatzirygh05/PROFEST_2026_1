@@ -60,4 +60,5 @@ try {
     //echo '<center>El mensaje ha sido enviado</center>';
 } catch (Exception $e) {
     echo 'El mensaje no se ha podido enviar, error: ', $mail->ErrorInfo;
+	error_log($mail->ErrorInfo);
 }

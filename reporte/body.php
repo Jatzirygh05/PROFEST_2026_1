@@ -283,7 +283,7 @@ $pdf->SetFont('Arial','B',10);
 	$pdf->Ln(8);
 	$pdf->Cell(4);
 	$pdf->SetFont('Arial','',10);
-	$pdf->MultiCell(187,4,utf8_decode($proy_acciones),0,'J');
+	$pdf->MultiCell(187,4,$proy_acciones,0,'J');
 	
 	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(3);
@@ -304,7 +304,7 @@ $pdf->SetFont('Arial','B',10);
 	$pdf->Ln(8);
 	$pdf->Cell(4);
 	$pdf->SetFont('Arial','',10);
-	$pdf->MultiCell(187,4,utf8_decode($proy_info_adic),0,'J');
+	$pdf->MultiCell(187,4,$proy_info_adic,0,'J');
 
 
 	$pdf->AddPage();
@@ -321,60 +321,60 @@ $pdf->SetFont('Arial','B',10);
 	$pdf->SetFont('Arial','',10);
 	$pdf->Ln(8);
 	$pdf->Cell(4);
-	$pdf->MultiCell(187,4,'Entidad (1):'. imprmirentidades($entidades_a1, $con).' Municipio(s): '.$municipio_a1_1.' '.$municipio_a1_2.' '.$municipio_a1_3.' '.$municipio_a1_4.' '.$municipio_a1_5.' '.$municipio_a1_6,0,'J');
+	$pdf->MultiCell(187,4,'Entidad (1):'. imprmirentidades($entidades_a1, $con).' Municipio(s): '.utf8_decode($municipio_a1_1).' '.utf8_decode($municipio_a1_2).' '.utf8_decode($municipio_a1_3).' '.utf8_decode($municipio_a1_4).' '.utf8_decode($municipio_a1_5).' '.utf8_decode($municipio_a1_6),0,'J');
 	
 	if($entidades_a2!=''){  
 	$pdf->Ln(2);
 	$pdf->Cell(4);
-	$pdf->MultiCell(187,4,'Entidad (2): '.imprmirentidades($entidades_a2, $con).' Municipio(s): '.$municipio_a2_1.' '.$municipio_a2_2.' '.$municipio_a2_3.' '.$municipio_a2_4.' '.$municipio_a2_5.' '.$municipio_a2_6,0,'J');
+	$pdf->MultiCell(187,4,'Entidad (2): '.imprmirentidades($entidades_a2, $con).' Municipio(s): '.utf8_decode($municipio_a2_1).' '.utf8_decode($municipio_a2_2).' '.utf8_decode($municipio_a2_3).' '.utf8_decode($municipio_a2_4).' '.utf8_decode($municipio_a2_5).' '.utf8_decode($municipio_a2_6),0,'J');
 	}
 	
 	if($entidades_a3!=''){  
 	$pdf->Ln(2);
 	$pdf->Cell(4);
-	$pdf->MultiCell(187,4,'Entidad (3): '.imprmirentidades($entidades_a3, $con).' Municipio(s): '.$municipio_a3_1.' '.$municipio_a3_2.' '.$municipio_a3_3.' '.$municipio_a3_4.' '.$municipio_a3_5.' '.$municipio_a3_6,0,'J');
+	$pdf->MultiCell(187,4,'Entidad (3): '.imprmirentidades($entidades_a3, $con).' Municipio(s): '.utf8_decode($municipio_a3_1).' '.utf8_decode($municipio_a3_2).' '.utf8_decode($municipio_a3_3).' '.utf8_decode($municipio_a3_4).' '.utf8_decode($municipio_a3_5).' '.utf8_decode($municipio_a3_6),0,'J');
 	}
 
 	if($entidades_a4!=''){  
 	$pdf->Ln(2);
 	$pdf->Cell(4);
-	$pdf->MultiCell(187,4,'Entidad (4): '.imprmirentidades($entidades_a4, $con).' Municipio(s): '.$municipio_a4_1.' '.$municipio_a4_2.' '.$municipio_a4_3.' '.$municipio_a4_4.' '.$municipio_a4_5.' '.$municipio_a4_6,0,'J');
+	$pdf->MultiCell(187,4,'Entidad (4): '.imprmirentidades($entidades_a4, $con).' Municipio(s): '.utf8_decode($municipio_a4_1).' '.utf8_decode($municipio_a4_2).' '.utf8_decode($municipio_a4_3).' '.utf8_decode($municipio_a4_4).' '.utf8_decode($municipio_a4_5).' '.utf8_decode($municipio_a4_6),0,'J');
 	}
 
 	if($entidades_a5!=''){  
 	$pdf->Ln(2);
 	$pdf->Cell(4);
-	$pdf->MultiCell(187,4,'Entidad (5): '.imprmirentidades($entidades_a5, $con).' Municipio(s): '.$municipio_a5_1.' '.$municipio_a5_2.' '.$municipio_a5_3.' '.$municipio_a5_4.' '.$municipio_a5_5.' '.$municipio_a5_6,0,'J');
+	$pdf->MultiCell(187,4,'Entidad (5): '.imprmirentidades($entidades_a5, $con).' Municipio(s): '.utf8_decode($municipio_a5_1).' '.utf8_decode($municipio_a5_2).' '.utf8_decode($municipio_a5_3).' '.utf8_decode($municipio_a5_4).' '.utf8_decode($municipio_a5_5).' '.utf8_decode($municipio_a5_6),0,'J');
 	}
 	
 	if($entidades_a6!=''){  
 	$pdf->Ln(2);
 	$pdf->Cell(4);
-	$pdf->MultiCell(187,4,'Entidad (6): '.imprmirentidades($entidades_a6, $con).' Municipio(s): '.$municipio_a6_1.' '.$municipio_a6_2.' '.$municipio_a6_3.' '.$municipio_a6_4.' '.$municipio_a6_5.' '.$municipio_a6_6,0,'J');
+	$pdf->MultiCell(187,4,'Entidad (6): '.imprmirentidades($entidades_a6, $con).' Municipio(s): '.utf8_decode($municipio_a6_1).' '.utf8_decode($municipio_a6_2).' '.utf8_decode($municipio_a6_3).' '.utf8_decode($municipio_a6_4).' '.utf8_decode($municipio_a6_5).' '.utf8_decode($municipio_a6_6),0,'J');
 	}
 
 	if($entidades_a7!=''){  
 	$pdf->Ln(2);
 	$pdf->Cell(4);
-	$pdf->MultiCell(187,4,'Entidad (7): '.imprmirentidades($entidades_a7, $con).' Municipio(s): '.$municipio_a7_1.' '.$municipio_a7_2.' '.$municipio_a7_3.' '.$municipio_a7_4.' '.$municipio_a7_5.' '.$municipio_a7_6,0,'J');
+	$pdf->MultiCell(187,4,'Entidad (7): '.imprmirentidades($entidades_a7, $con).' Municipio(s): '.utf8_decode($municipio_a7_1).' '.utf8_decode($municipio_a7_2).' '.utf8_decode($municipio_a7_3).' '.utf8_decode($municipio_a7_4).' '.utf8_decode($municipio_a7_5).' '.utf8_decode($municipio_a7_6),0,'J');
 	}
 
 	if($entidades_a8!=''){  
 	$pdf->Ln(2);
 	$pdf->Cell(4);
-	$pdf->MultiCell(187,4,'Entidad (8): '.imprmirentidades($entidades_a8, $con).' Municipio(s): '.$municipio_a8_1.' '.$municipio_a8_2.' '.$municipio_a8_3.' '.$municipio_a8_4.' '.$municipio_a8_5.' '.$municipio_a8_6,0,'J');
+	$pdf->MultiCell(187,4,'Entidad (8): '.imprmirentidades($entidades_a8, $con).' Municipio(s): '.utf8_decode($municipio_a8_1).' '.utf8_decode($municipio_a8_2).' '.utf8_decode($municipio_a8_3).' '.utf8_decode($municipio_a8_4).' '.utf8_decode($municipio_a8_5).' '.utf8_decode($municipio_a8_6),0,'J');
 	}
 
 	if($entidades_a9!=''){  
 	$pdf->Ln(2);
 	$pdf->Cell(4);
-	$pdf->MultiCell(187,4,'Entidad (9): '.imprmirentidades($entidades_a9, $con).' Municipio(s): '.$municipio_a9_1.' '.$municipio_a9_2.' '.$municipio_a9_3.' '.$municipio_a9_4.' '.$municipio_a9_5.' '.$municipio_a9_6,0,'J');
+	$pdf->MultiCell(187,4,'Entidad (9): '.imprmirentidades($entidades_a9, $con).' Municipio(s): '.utf8_decode($municipio_a9_1).' '.utf8_decode($municipio_a9_2).' '.utf8_decode($municipio_a9_3).' '.utf8_decode($municipio_a9_4).' '.utf8_decode($municipio_a9_5).' '.utf8_decode($municipio_a9_6),0,'J');
 	}
 
 	if($entidades_a10!=''){  
 	$pdf->Ln(2);
 	$pdf->Cell(4);
-	$pdf->MultiCell(187,4,'Entidad (10): '.imprmirentidades($entidades_a10, $con).' Municipio(s): '.$municipio_a10_1.' '.$municipio_a10_2.' '.$municipio_a10_3.' '.$municipio_a10_4.' '.$municipio_a10_5.' '.$municipio_a10_6,0,'J');
+	$pdf->MultiCell(187,4,'Entidad (10): '.imprmirentidades($entidades_a10, $con).' Municipio(s): '.utf8_decode($municipio_a10_1).' '.utf8_decode($municipio_a10_2).' '.utf8_decode($municipio_a10_3).' '.utf8_decode($municipio_a10_4).' '.utf8_decode($municipio_a10_5).' '.utf8_decode($municipio_a10_6),0,'J');
 	}
 
 

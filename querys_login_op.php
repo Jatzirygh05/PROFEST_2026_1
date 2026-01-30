@@ -120,15 +120,7 @@
                 $desarrollo_proyecto_justificacion          = $row_proy["desarrollo_proyecto_justificacion"];
                 $desarrollo_proyecto_descripcion            = $row_proy["desarrollo_proyecto_descripcion"];
 
-                //2026 (inicio)
-                $objetivo_general_festival                  = $row_proy["objetivo_general_festival"];
-		           
-		           
                
-                $objetivo_general_festival    = str_replace("<br>", "\n", $objetivo_general_festival);
-              
-              
-                 //2026 (fin)
 
 
                 //2025 (inicio)
@@ -269,7 +261,10 @@
                 $proy_fomentar_part_creadores = $row_proy2["proy_fomentar_part_creadores"];
                 $proy_fomentar_part_creadores = str_replace("<br>", "\n", $proy_fomentar_part_creadores);
                 
-                
+                $objetivo_general_festival    = $row_proy2["objetivo_general_festival"];
+                $objetivo_general_festival    = str_replace("<br>", "\n", $objetivo_general_festival);
+              
+              
             } 
           
             // FIN PESTAÑA 'Proyecto 2do.'
