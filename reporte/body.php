@@ -126,7 +126,7 @@ $pdf->SetFont('Arial','B',10);
 	$pdf->Ln(8);
 	$pdf->Cell(4);
 	$pdf->SetFont('Arial','',10);
-	$pdf->MultiCell(187,4,utf8_decode($objetivo_general_festival),0,'J');
+	$pdf->MultiCell(187,4,utf8_decode($var_objetivo_gen),0,'J');
 
 	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(3);
@@ -262,7 +262,7 @@ $pdf->SetFont('Arial','B',10);
 	$pdf->Ln(1);
 	$pdf->Cell(4);
 	$pdf->SetFont('Arial','',10);
-	$pdf->MultiCell(187,4,utf8_decode($proy_fav_itinerancia),0,'J');
+	$pdf->MultiCell(187,4,$proy_fav_itinerancia,0,'J');
 
 	$pdf->SetFont('Arial','B',10);
 	$pdf->Ln(3);
@@ -655,7 +655,7 @@ $pdf->Ln(5);
 	
 	$pdf->AddPage();
 	$pdf->SetFont('Arial','B',10);
-	$pdf->Ln(8);
+	$pdf->Ln(1);
 	$pdf->Cell(4);
 	$pdf->MultiCell(187,5,utf8_decode('s) Resumen presupuestal en el que se acrediten los gastos relativos a la contratación de los servicios y el arrendamiento de los bienes esenciales para la realización del Festival, de manera desglosada y especificando la fuente del financiamiento.'),0,'J');
 	$pdf->Ln(4);
@@ -774,7 +774,7 @@ $pdf->Ln(5);
 	$pdf->Cell(171);
 	$pdf->Multicell(20,5,$Porcentaje.'%',1,'C');
 	$k++;
-	$pdf->Ln(5);
+	$pdf->Ln(1);
 		}
 		}
 	$y5=$pdf->GetY();

@@ -111,8 +111,7 @@ $navegador = getBrowser($user_agent);
 		
 			 //2025 (fin)
 			 //inicio 2026
-			 $var_objetivo_gen = $registro3["objetivo_general_festival"];
-
+		
 			
 			
 			 //fin 2026
@@ -687,7 +686,11 @@ $proy_fomentar_part_creadores  = str_replace("<br>", "\n", $proy_fomentar_part_c
 $proy_fomentar_part_creadores  = str_replace("?", "-", $proy_fomentar_part_creadores);
 $proy_fomentar_part_creadores = str_replace('’', "'", $proy_fomentar_part_creadores);
 $var_proy_fomentar_part_creadores= $row_proy2["proy_fomentar_part_creadores"];
-
+ 
+$var_objetivo_gen = $row_proy2["objetivo_general_festival"];
+$var_objetivo_gen  = str_replace("<br>", "\n", $var_objetivo_gen);
+$var_objetivo_gen  = str_replace("?", "-", $var_objetivo_gen);
+$var_objetivo_gen = str_replace('’', "'", $var_objetivo_gen);
 }
 
 //FIN SEMBALANZA OP, ADM, Y DATOS DE DIRECTOR
@@ -844,6 +847,7 @@ $var_proy_fomentar_part_creadores= $row_proy2["proy_fomentar_part_creadores"];
 			$objetivo_general  = str_replace("?", "-", $objetivo_general);
 			$objetivo_general  = str_replace("’", "'", $objetivo_general);
 
+	
 
   			$pagina_web_festival	=	$registro4['pagina_web_festival'];
   			$facebook_festival		=	$registro4['facebook_festival'];

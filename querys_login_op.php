@@ -243,9 +243,7 @@
                 $proy_acciones2                       = $row_proy2["proy_acciones"];
                 $acciones_festival_medio_ambiente2       = $row_proy2["acciones_festival_medio_ambiente"];
                 $proy_info_adic2                         = $row_proy2["proy_info_adic"];
-                $proy_fav_itinerancia2               = $row_proy2["proy_fav_itinerancia"];
-                //2026 se pasaron estos campos de texto para que si guardaran (fin)   
-                $proy_fav_itinerancia    = str_replace("<br>", "\n", $proy_fav_itinerancia2);
+               
                 $proy_favore_itinerancia_act    = str_replace("<br>", "\n", $proy_favore_itinerancia_act2);
                 $proy_acciones    = str_replace("<br>", "\n", $proy_acciones2);
                 $acciones_festival_medio_ambiente    = str_replace("<br>", "\n", $acciones_festival_medio_ambiente2);
@@ -264,7 +262,10 @@
                 $objetivo_general_festival    = $row_proy2["objetivo_general_festival"];
                 $objetivo_general_festival    = str_replace("<br>", "\n", $objetivo_general_festival);
               
-              
+
+
+                $proy_fav_itinerancia2   = $row_proy2["proy_fav_itinerancia"]; 
+                $proy_fav_itinerancia    = str_replace("<br>", "\n", $proy_fav_itinerancia2);
             } 
           
             // FIN PESTAÑA 'Proyecto 2do.'
